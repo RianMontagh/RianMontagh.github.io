@@ -1,4 +1,4 @@
-## This is my first blog post
+## First Blog Post! Winter Quarter Plan
 
 For my the second quarter of my PhD, I am starting to lay out a more tangible research goals. 
 
