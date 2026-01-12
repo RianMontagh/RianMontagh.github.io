@@ -20,4 +20,10 @@ In order to start modeling, I will need the recent 2024 topobathy, sediment samp
 at the North Cedarville USGS gage. Luckily, this information is readily available from Wuming, who has been running the Nooksack Delft33D model for the 2021 flood as part of his/
 postdoc. However, it will be useful for me to put the model together myself so that I can gain comfortabilty working with the software and input data files. 
 
-
+<script src="https://utteranc.es/client.js"
+        repo="RianMontagh.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
