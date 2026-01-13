@@ -2,9 +2,7 @@
 
 For my the second quarter of my PhD, I am starting to lay out a more tangible research goals. 
 
-On the coursework side, I am taking a grad-level class called Hydrodynamics, which will solidify environmental fluid mechanics/
-I learned in my masters, and help me think about them in the context of my research at UW. I will also be following Dr. Gary Parker's/
-publicly-available course called "1D SEDIMENT TRANSPORT MORPHODYNAMICS with applications to RIVERS AND TURBIDITY CURRENTS" as an independent study. So far I have completed the following chapters of the first part of the course, '1D Sediment Transport.' 
+On the coursework side, I am taking a grad-level class called Hydrodynamics, which will solidify environmental fluid mechanics I learned in my masters, and help me think about them in the context of my research at UW. I will also be following Dr. Gary Parker's [publicly-available course] (http://hydrolab.illinois.edu/people/parkerg/morphodynamics_e-book.htm) called "1D SEDIMENT TRANSPORT MORPHODYNAMICS with applications to RIVERS AND TURBIDITY CURRENTS" as an independent study. So far I have completed the following chapters of the first part of the course, '1D Sediment Transport.' 
 
 1.    Felix M. Exner and the Origins of River Morphodynamics
 2.    Characterization of Sediment and Grain Size Distributions
