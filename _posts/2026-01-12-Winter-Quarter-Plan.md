@@ -14,11 +14,3 @@ publicly-available course called "1D SEDIMENT TRANSPORT MORPHODYNAMICS with appl
 On the research side, my goal is to put together a working Delft3D model of the Nooksack River during the recent atmospheric river in Washington State by February. With this model, and the 2021 flood model, I will investigate the three (maybe more) sediment transport formulas that we have been using in the 2021 model. These three formulas have been returning widely varying results, showing different levels of aggradation and degradation, oftentimes contradicting each other. 
 
 In order to start modeling, I will need the recent 2024 topobathy, sediment sample data, land cover data, the grid/mesh, and boundary condition data like the upstream hydrograph at the North Cedarville USGS gage. Luckily, this information is readily available from Wuming, who has been running the Nooksack Delft33D model for the 2021 flood as part of his postdoc. However, it will be useful for me to put the model together myself so that I can gain comfortabilty working with the software and input data files. 
-
-<script src="https://utteranc.es/client.js"
-        repo="RianMontagh.github.io"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
