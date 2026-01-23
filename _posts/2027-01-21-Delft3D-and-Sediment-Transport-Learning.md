@@ -15,18 +15,18 @@ Question: Why does a bankfull flow help with initializing the model?
 
 At the downstream, the model has two tidal boundaries - one to Bellingham Bay and one to Lummi Bay. These boundaries are far from the section of river with the sediment transport dynamics we are most interested in (the Everson Corridor), so should have little impact on results. These are input as astronomical boundaries, with tidal components taken from an ocean model run by Wuming. 
 
-<img width="735" height="296" alt="image" src="https://github.com/user-attachments/assets/05a4dd1d-7376-4997-b593-d36eeae046f2" />
+<img width="735" alt="image" src="https://github.com/user-attachments/assets/05a4dd1d-7376-4997-b593-d36eeae046f2" />
 
-The overflow boundary that describes the avulsive flow north to Sumas is set as a constant water level elevation. This is not realistic, because there should only be water at the boundary when flow is present there, but the way the boundary is set up is to have water present all the time. 
-Question: how far did flow travel through the overflow corridor in the flood? 
+The overflow boundary that describes the avulsive flow north to Sumas is set as a constant water level elevation. This is not realistic, because there should only be water at the boundary when flow is present there. Wuming set up a secondary Neumann condition, setting the gradient in water level across the boundary to zero. This prevents strange jumps/discontinuities at the boundary, but Wuming still reported some difficulty at this boundary -- it will be interesting to see what this looks like in my model run.  
 
-<img width="750" height="306" alt="image" src="https://github.com/user-attachments/assets/426967c1-ed5c-471b-aa3b-6ba61f188bc3" />
+Question: How far did flow travel through the overflow corridor in the flood? 
 
-Wuming set up a secondary Neumann condition, setting the gradient in water level across the boundary to zero. This prevents strange jumps/discontinuities at the boundary. 
+<img width="750" alt="image" src="https://github.com/user-attachments/assets/426967c1-ed5c-471b-aa3b-6ba61f188bc3" />
 
 #### Roughness 
+A key part of any river model is the roughness parameter, in this case Mannings n. This parameter relates to the amount of friction flow feels as in moves over a surface. For example, if the banks of the channel are vegetated but the center of the channel is sandy, the river flow will feel a different force once it reaches overflow conditions. I downloaded land cover data from NLCD (
 
-<img width="1044" height="776" alt="image" src="https://github.com/user-attachments/assets/b63aee4b-1970-4726-9d32-026916a6b590" />
+<img width="1044" alt="image" src="https://github.com/user-attachments/assets/b63aee4b-1970-4726-9d32-026916a6b590" />
 
 
 
