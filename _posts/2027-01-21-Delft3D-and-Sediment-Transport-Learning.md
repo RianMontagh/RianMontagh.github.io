@@ -1,6 +1,6 @@
 ## Delft3D Model Updates and Sediment Transport Concepts
 
-### Modeling the 2025 Flood
+### Modeling the 2025 Flood in the Nooksack River
 
 As mentioned last week, part of my research goal this quarter is to put together a Delft3D model of the Lower Nookack during the 2025 atmospheric river. So far, I have added the grid and completed the boundary conditions. I have started creating the roughness file, which tells the model how the Mannings n values are spatially varied. 
 
@@ -24,9 +24,21 @@ Question: How far did flow travel through the overflow corridor in the flood?
 <img width="750" alt="image" src="https://github.com/user-attachments/assets/426967c1-ed5c-471b-aa3b-6ba61f188bc3" />
 
 #### Roughness 
-A key part of any river model is the roughness parameter, in this case Mannings n. This parameter relates to the amount of friction flow feels as in moves over a surface. For example, if the banks of the channel are vegetated but the center of the channel is sandy, the river flow will feel a different force once it reaches overflow conditions. I downloaded land cover data from NLCD (
+A key part of any river model is the roughness parameter, in this case Mannings n. This parameter relates to the amount of friction flow feels as in moves over a surface. For example, if the banks of the channel are vegetated but the center of the channel is sandy, the river flow will feel a different force once it reaches overflow conditions. I downloaded landcover data from the [National Landcover Database] (https://www.mrlc.gov/viewer/) and am currently processing it to make sense for the model. For now, I am starting with changing the landcover type at areas with bridges from "developed" to "open water." This is because the river flows under the bridge, so is not affected by the roughness of the structures. Later down the line, I will also want to use the 
 
 <img width="1044" alt="image" src="https://github.com/user-attachments/assets/b63aee4b-1970-4726-9d32-026916a6b590" />
+
+#### Next Steps with the 2025 Nooksack Model
+
+Boundary Conditions: Complete
+Grid: Need to add the new 2024 topobathy
+Roughness: In progress
+Settings: Need to copy from Wuming's model
+Initial conditions: Need to make the BCs initially wet to prevent crashing
+Morphology: add in sediment layers and gradations
+
+
+
 
 
 
