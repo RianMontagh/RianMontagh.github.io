@@ -1,4 +1,4 @@
-## Delft3D Model Updates and Sediment Transport Concepts
+## Delft3D Model Updates - Boundary Conditions and Roughness
 
 ### Modeling the 2025 Flood in the Nooksack River
 
