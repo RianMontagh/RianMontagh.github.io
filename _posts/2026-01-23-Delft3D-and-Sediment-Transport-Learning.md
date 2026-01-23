@@ -30,11 +30,11 @@ A key part of any river model is the roughness parameter, in this case Mannings 
 
 #### Next Steps with the 2025 Nooksack Model
 
-Boundary Conditions: Complete
-Grid: Need to add the new 2024 topobathy
-Roughness: In progress
-Settings: Need to copy from Wuming's model
-Initial conditions: Need to make the BCs initially wet to prevent crashing
+Boundary Conditions: Complete  
+Grid: Need to add the new 2024 topobathy  
+Roughness: In progress  
+Settings: Need to copy from Wuming's model  
+Initial conditions: Need to make the BCs initially wet to prevent crashing  
 Morphology: add in sediment layers and gradations
 
 
