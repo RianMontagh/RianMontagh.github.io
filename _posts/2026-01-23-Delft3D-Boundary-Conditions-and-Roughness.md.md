@@ -28,6 +28,8 @@ A key part of any river model is the roughness parameter, in this case Mannings 
 
 <img width="1044" alt="image" src="https://github.com/user-attachments/assets/b63aee4b-1970-4726-9d32-026916a6b590" />
 
+<img width="252" alt="image" src="https://github.com/user-attachments/assets/36b7a4f0-f1f8-43a0-831b-f0a3c2ce1bb0" />
+
 #### Next Steps with the 2025 Nooksack Model
 
 Boundary Conditions: Complete  
