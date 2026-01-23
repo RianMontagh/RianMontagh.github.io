@@ -16,6 +16,7 @@ Wuming set up a secondary Neumann condition, setting the gradient in water level
 ####Roughness 
 
 
+<img width="749" alt="image" src="https://github.com/user-attachments/assets/6af1b9c1-50bc-458c-8b21-f7b1f153659a" />
 
 
 
