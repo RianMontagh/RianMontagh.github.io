@@ -16,12 +16,12 @@ I successfully logged into Hyak and sent in my first batch job to Slurm (Simple 
 
 #### Next Steps with the 2025 Nooksack Model
 
-Boundary Conditions: Complete  
-Grid: Need to add the new 2024 topobathy  
-Roughness: In progress  
-Settings: Need to copy from Wuming's model  
-Initial conditions: Need to make the BCs initially wet to prevent crashing  
-Morphology: add in sediment layers and gradations
+Boundary Conditions: Consider adding the tributary boundaries and differentiating the two tidal boundaries. They are the same right now. 
+Grid: Need to add the new 2024 topobathy. Waiting to receive it, currently using 2022 topobathy.  
+Roughness: Using Wuming's
+Settings: Done - mimicked the basic settings of Wuming's but did not turn the special knobs he has turned. 
+Initial conditions: initial water level from Wuming. 
+Morphology: Need to add in sediment layers and gradations
 
 
 
