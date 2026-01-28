@@ -11,8 +11,20 @@ Hyak is an ecosystem of high-performance compute clusters, currently deployed in
 
 I successfully logged into Hyak and sent in my first batch job to Slurm (Simple Linux Utility for Resource Management) which is a job scheduler that Hyak uses. Two pieces of code are needed&mdash;one that tells Slurm the properties of the job, such as how many nodes to allocate to the job, the time limit of the job, etc. and one that specifies how the parallelization of the job should occur. For the Nooksack, there are 62 parts running in parallel, and two nodes are allocated to the job. Nodes are singular computers/servers within the overall cluster. 
 
-####Piecing Together the Results
+#### Visualizing the Results
 
+The goal of this first run is partly to learn how to put together the results so that they can be viewed in Delft3D. Wuming has written MATLAB code that does this for the Nooksack - it ___________________________. Once doing this, it is possible to see if the model worked or not based on the model output. 
+
+#### Lessons Learned
+
+- File organization is key
+  - The project directory should contain a subfolder with the project files and the two code files for running with Hyak.
+  - There is only one .mdu file (main project file with general settings)
+  - The project subfolder contains multiple input files that the .mdu file can direct to.
+  - I started a OneNote to keep track of what each version of the model output means
+- The GUI (graphical user interface) is not reliable
+  - the project files should be generated and edited as much as possible outside of the GUI due to bugs
+  - when saving a project, it is better to export individual files rather than save the whole project&ndash; otherwise the GUI will overwrite your naming conventions.
 
 #### Next Steps with the 2025 Nooksack Model
 
