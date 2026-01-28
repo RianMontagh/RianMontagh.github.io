@@ -5,7 +5,7 @@ Last week, I was working on adding the roughness and the boundary conditions. Th
 ### Hyak
 Hyak is an ecosystem of high-performance compute clusters, currently deployed in its third generation, Klone (Hyak = "fast" and Klone = "three" in the Chinook language). This is what I will be running the model on, because my local laptop would not be powerful enough. The model is run in parallel, which means the grid is split up into different chunks that are run separately and pass information to each other, which allows for a quicker runtime. This means the output from the model run is split into these different chunks, which I then need to piece together before I can view them in Delft3D. Specifically, the parallel runs create ghost points between the sections of grid in order to pass information between them - these points need to be removed because they do not represent actual model results. The computer infrastructure looks like this:
 
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/e3b363e1-9fe6-4515-a353-a1ff122a3344" />
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/e3b363e1-9fe6-4515-a353-a1ff122a3344" />
 
 ### First Run
 
