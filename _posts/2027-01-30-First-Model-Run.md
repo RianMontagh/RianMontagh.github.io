@@ -11,7 +11,7 @@ Hyak is an ecosystem of high-performance compute clusters, currently deployed in
 
 I successfully logged into Hyak and sent in my first batch job to Slurm (Simple Linux Utility for Resource Management) which is a job scheduler that Hyak uses. Two pieces of code are needed&mdash;one that tells Slurm the properties of the job, such as how many nodes to allocate to the job, the time limit of the job, etc. and one that specifies how the parallelization of the job should occur. For the Nooksack, there are 62 parts running in parallel, and two nodes are allocated to the job. Nodes are singular computers/servers within the overall cluster. 
 
-
+####Piecing Together the Results
 
 
 #### Next Steps with the 2025 Nooksack Model
