@@ -3,12 +3,15 @@
 Last week, I was working on adding the roughness and the boundary conditions. This week, in order to speed up the process, I used files from Wuming that contain elements such as the roughness, the levees, the observation points, observation cross sections, initial water level. These would have taken me a long time to develope on my own, and it seemed worth it to use them and get results sooner even though I didn't learn how to develope them myself. I will likely have to learn this during the research process naturally. 
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/74d58770-5f7a-4763-87dc-6467d6890ea2" />  
+
 The above shows all of the roads and levees in the model (roads are non-erodible right now). 
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/d5c83612-7f7e-41d1-ae2d-41e2f7556d03" />  
+
 The image above shows the observations points and cross-sections, which tell the model the specific locations where we want it to save data. 
 
 <img width="700" height="573" alt="image" src="https://github.com/user-attachments/assets/769090fd-3554-47db-b591-652fbfa57c34" />  
+
 The image above shows the initial water elevation - the channel starts out wet, as well as the overflow boundary condition. 
 
 ### Hyak
