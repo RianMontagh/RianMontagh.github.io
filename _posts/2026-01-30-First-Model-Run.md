@@ -25,7 +25,7 @@ I successfully logged into Hyak and sent in my first batch job to Slurm (Simple 
 
 #### Visualizing the Results
 
-The goal of this first run is partly to learn how to put together the results so that they can be viewed in Delft3D. Wuming has written MATLAB code that does this for the Nooksack - it ___________________________. Once doing this, it is possible to see if the model worked or not based on the model output. 
+The goal of this first run is partly to learn how to put together the results so that they can be viewed in Delft3D. Wuming has written MATLAB code that does this for the Nooksack - it combiens the 62 model partitions back into one grid. Once doing this, it is possible to see if the model worked or not based on the model output. At this point, I need to wait for Wuming to provide me the Open Earth Tools code, which are used in his code to visualize the model results. However, I did see preliminary water level results during the flood on Wumng's computer, and it looked reasonable! So I am optimistic that this first run was sucessful. 
 
 #### Lessons Learned
 
@@ -46,6 +46,7 @@ Roughness: Using Wuming's
 Settings: Done - mimicked the basic settings of Wuming's but did not turn the special knobs he has turned. 
 Initial conditions: initial water level from Wuming. 
 Morphology: Need to add in sediment layers and gradations
+Visualizing Results: Need to download Open Earth Tools from Wuming's gscratch once he uploads it. 
 
 
 
