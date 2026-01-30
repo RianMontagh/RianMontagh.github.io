@@ -40,7 +40,7 @@ The goal of this first run is partly to learn how to put together the results so
 
 #### Next Steps with the 2025 Nooksack Model
 
-Boundary Conditions: Consider adding the tributary boundaries and differentiating the two tidal boundaries. They are the same right now. 
+Boundary Conditions: Consider adding the tributary boundaries and differentiating the two tidal boundaries. They are the same right now.  
 Grid: Need to add the new 2024 topobathy. Waiting to receive it, currently using 2022 topobathy.  
 Roughness: Using Wuming's
 Settings: Done - mimicked the basic settings of Wuming's but did not turn the special knobs he has turned. 
