@@ -12,7 +12,7 @@ The water level spatial placement seems reasonable; the snapshot below is a few 
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/b3eae236-4dd9-418b-afbb-06e3c32a03b1" />
 
-In addition, there are sections of the model where the river channel dries up &mdash; this is definitely not correct.
+In addition, there were sections of the model where the river channel dries up &mdash; this is definitely not correct. It turns out that this result was from some of the partitioned results missing, and when I redownloaded the data from Hyak, the water in the channel became continuous. It is good to know what it looks like if some of the partitions are missing. 
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/66d2cd06-d1f0-4f3f-ab2a-3986daae55ba" />
 
