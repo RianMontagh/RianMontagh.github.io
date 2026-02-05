@@ -17,6 +17,11 @@ In addition, there were sections of the model where the river channel dries up &
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/66d2cd06-d1f0-4f3f-ab2a-3986daae55ba" />
 
+### Processing the 2024 Topobathy
+
+Whatcom County and Northwest Hydraulics Consultants (NHC) have provided us with the 2024 topobathy of the Nooksack Basin, which will be essential to modeling events in 2025. The results in the above section are from a model using the 2025 North Cedarville Hydrograph and the old 2022 topobathy, which has likely changed due to the river eroding and aggrading its channel. To use the elevation raster, I needed to process the raster by resizing it to the size of the model grid, downsampling so that the resolution decreased from about 1x1m to 5x5m, projecting the raster to NAD83 UTM Zone 10N, converting from feet to meters, and converting from a TIF file to an XYZ file that Delft3D can use. This required a combination of tools in ArcGIS Pro and QGIS. Now, I have a _net.nc file (NetCDF grid file with bed level) for the 2022 and 2024 topobathy. Below is the new bed level in the Delft3D GUI.
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/e476b52b-1619-413d-b981-b92bdfb3fd24" />
 
 #### Lessons Learned
 
