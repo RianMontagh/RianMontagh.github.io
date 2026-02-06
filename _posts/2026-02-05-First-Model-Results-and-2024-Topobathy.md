@@ -1,14 +1,14 @@
 ## First Model Run Results and 2024 Topobathy
 
-Last week, I was able to run the 2025 flood model successfully, but wasn't able to fully view the results. This week, I dusted off my MATLAB skills and plotted up results! I want to make sure these results make sense on their own and when compared to high water marks and gage data. 
+Last week, I was able to run the 2025 flood model successfully, but wasn't able to fully view the results. This week, I processed the 2024 topo, reran the model with this new bed level, and dusted off my MATLAB skills to plot up results! 
 
-### Preliminary Results
+### Thoughts from Results with the 2022 Topo
 
 These results are for the 2025 Flood, which peaked on December 11 at 2:30 am. They are using the 2022 topobathy, which is not accurate for the 2025 flood, but should be fine for making sure the model is reasonable.
 
 #### Water Level
 
-The water level spatial placement seems reasonable; the snapshot below is a few hours after the discharge peak, and shows water overtopping the banks and flowing north to the Overflow boundary. This matches generally with what occurred during the 2025 flood. One thing that is strange to me is the dry cells that are surrounded by wet cells&mdash;this seems unlikely to me unless there is a large, local increase in elevation at these dry cells.
+The water level spatial placement seems reasonable; the snapshot below is a few hours after the discharge peak, and shows water overtopping the banks and flowing north to the Overflow boundary. This matches generally with what occurred during the 2025 flood. One thing that is strange to me is the dry cells that are surrounded by wet cells&mdash;this seems unlikely to me unless there is a large, local increase in elevation at these dry cells. However, Wuming assured me that these are normal. 
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/b3eae236-4dd9-418b-afbb-06e3c32a03b1" />
 
@@ -23,11 +23,15 @@ Whatcom County and Northwest Hydraulics Consultants (NHC) have provided us with 
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/e476b52b-1619-413d-b981-b92bdfb3fd24" />
 
+### 2025 Flood with 2025 Topo
+
+Just before publishing this blog, I was able to check out the output for my 2024 topo run. For some reason, there are no results in the output folder, even though Hyak said that the model completed (as opposed to failed). I will have to figure this issue out today to get results for next week. 
+
 #### Lessons Learned
 
 - Make sure that all 62 partitions of the model are downloaded from Hyak
   - Otherwise, there will be 'holes' in the model
-- 1-2 GBs is about the limit for the file size that is will work in Delft3D
+- 1-2 GB is about the limit for the file size that is will work in Delft3D
   - Processing of the 2024 topo reduced the file size from a 19 GB TIF to a 1.6 GB XYZ, which was slow but usable in Delft3D. 
 
 #### Next Steps with the 2025 Nooksack Model
