@@ -25,24 +25,19 @@ Whatcom County and Northwest Hydraulics Consultants (NHC) have provided us with 
 
 #### Lessons Learned
 
-- File organization is key
-  - The project directory should contain a subfolder with the project files and the two code files for running with Hyak.
-  - There is only one .mdu file (main project file with general settings)
-  - The project subfolder contains multiple input files that the .mdu file can direct to.
-  - I started a OneNote to keep track of what each version of the model output means
-- The GUI (graphical user interface) is not reliable
-  - the project files should be generated and edited as much as possible outside of the GUI due to bugs
-  - when saving a project, it is better to export individual files rather than save the whole project&ndash; otherwise the GUI will overwrite your naming conventions.
+- Make sure that all 62 partitions of the model are downloaded from Hyak
+  - Otherwise, there will be 'holes' in the model
+- 1-2 GBs is about the limit for the file size that is will work in Delft3D
+  - Processing of the 2024 topo reduced the file size from a 19 GB TIF to a 1.6 GB XYZ, which was slow but usable in Delft3D. 
 
 #### Next Steps with the 2025 Nooksack Model
 
 Boundary Conditions: Consider adding the tributary boundaries and differentiating the two tidal boundaries. They are the same right now.  
-Grid: Need to add the new 2024 topobathy. Waiting to receive it, currently using 2022 topobathy.  
-Roughness: Using Wuming's  
-Settings: Done - mimicked the basic settings of Wuming's but did not turn the special knobs he has turned.  
-Initial conditions: initial water level from Wuming.  
-Morphology: Need to add in sediment layers and gradations  
-Visualizing Results: Need to download Open Earth Tools from Wuming's gscratch once he uploads it. 
+Roughness: Have it update during model run. 
+Morphology: Need to add in sediment layers and gradations, and turn on  morpho.
+Avulsion research: Obtain future projected hydrographs
+Validation: Validate the 2025 model
+
 
 
 
