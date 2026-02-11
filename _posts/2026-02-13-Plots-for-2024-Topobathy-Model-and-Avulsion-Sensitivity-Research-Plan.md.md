@@ -111,13 +111,19 @@ I decided to make these functions because I figured I would be using them repeat
     im = plot_WSE_modelvsUSGS(filepath, station_name_Everson, gageno_Everson, startdate, enddate, offset_Everson);
     im = plot_WSE_modelvsUSGS(filepath, station_name_Ferndale, gageno_Ferndale, startdate, enddate, offset_Ferndale);
     im = plot_WSE_modelvsUSGS(filepath, station_name_overflow, gageno_overflow, startdate, enddate, offset_overflow);
-and got the following plots.
+and got the following plots (Figures 4-6).
 
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/c9597359-cfb9-453c-b4d4-a201c1b81ac0" />
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/40c57207-4442-4f09-a0ce-273f2502bc03" />
 
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/5eb298bf-88d8-4db8-9035-5d45920c993f" />
+*Figure 4. Model and USGS Gage WSE at Everson.*
 
-<img width="500" height="617" alt="image" src="https://github.com/user-attachments/assets/5eb31efe-e314-404d-9d97-4ea77fdc2264" />
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/5eb298bf-88d8-4db8-9035-5d45920c993f" />
+
+*Figure 5. Model and USGS Gage WSE at Ferndale.*
+
+<img width="700" height="617" alt="image" src="https://github.com/user-attachments/assets/5eb31efe-e314-404d-9d97-4ea77fdc2264" />
+
+*Figure 6. Model and USGS Gage WSE at Overflow Gage.*
 
 
 #### Lessons Learned
