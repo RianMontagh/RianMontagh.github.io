@@ -143,9 +143,9 @@ Two of the first things that come to mind that might improve the match to the US
 #### Next Steps with the 2025 Nooksack Model
 
 Boundary Conditions: Consider adding the tributary boundaries and differentiating the two tidal boundaries. They are the same right now.  
-Roughness: Have it update during model run. 
-Morphology: Need to add in sediment layers and gradations, and turn on  morpho.
-Avulsion research: Obtain future projected hydrographs
+Roughness: Have it update during model run.   
+Morphology: Need to add in sediment layers and gradations, and turn on morpho.  
+Avulsion research: Obtain future projected hydrographs  
 Validation: Validate the 2025 model  
 Topo: Need to check for artifacts of bridges in the channel?
 
