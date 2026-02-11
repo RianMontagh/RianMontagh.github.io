@@ -25,7 +25,99 @@ A few hours after the flood peak, the velocity in the channel is about 2-4 m/s. 
 Bed stress ($\tau_b$) can tell us information on sediment transport rates. Wherever $\tau_b$ is high, it means the flow of water is exerting a friction stress on the bed, and the bed is exerting a friction force on the flow &mdash; more $\tau_b$ means more possibility for sediment transport. We do see $\tau_b > 100 \mathrm{N m^{-2}}$ especially at the constriction at the Everson Road bridge. There are also pockets of high $\tau_b$ in the overflow section, but not at the very upstream part of it. I would have expected lower sediment transport and lower $\tau_b$ at the overflow section because we predict that deposition occur here, not scour and transport.  
 Question: Did any gravel bars form during this flood and can we compare it to $\tau_b$? (Would expect low $\tau_b$ where the bar formed)
 
+### History File Plots
 
+I plotted the water surface elevation (WSE) in NAVD88 for comparison with three USGS gages: Everson, Ferndale, and the Overflow at Main St. To do this, I wrote a script to process the _hist.nc file into a data structure with time, water level, and all the station names that exist in the model. Each observation point is a station in the _hist.nc file. I wrote three functions to do this. 
+
+This function below reads the history file and puts it into a `struct` with time in seconds since the model reference time (2001/01/01 00:00), timestamp, and water level. It would be simple to add more results like discharge or velocity. The file path to the _hist.nc file is a n input variable. 
+
+    % read hist result
+    function [data, im] = readhist(filepath)
+      hisfile = dir([filepath '/*_his.nc']);
+      hispath = fullfile(hisfile.folder, hisfile.name);
+      
+      im = ncinfo(hispath);
+      
+      data = struct();
+      data.time = ncread(hispath, 'time'); %seconds since reference data 2001/01/01 (set in model)
+      data.timestamp = datetime(2001,01,01)+seconds(ncread(hispath,'time')); %convert to YYYY-MM-DD HH:mm:ss
+      data.stations = ncread(hispath, 'station_name');
+      data.stations = string(data.stations'); %convert from char array to string
+      data.stations = strtrim(data.stations); %trims all the trailing spaces
+      
+      data.waterlevel = ncread(hispath, 'waterlevel'); %store water level - dimensions are (stations, time)
+    end
+
+This function scrapes the USGS gage web page by reading a text file into a table in MATLAB. The date range and gage number must be specified, as well as the gage datum, or offset from NAVD88 (in feet). The function stores the table and renames two of the columns that have unique ID numbers in them to make the table headers universal between gages. Then the offset is added to the gage height and the gage height is converted to meters. 
+
+    % Scrape USGS streamgaging data from NWIS server - adapted from Shelby's Python (demo_scraping_NWIS_data.ipynb)
+    function [measdata] = import_USGS_gageheight(gageno, startdate, enddate, offset)                     
+        %USGS gage height data URL and column names for data link
+        url = 'https://waterservices.usgs.gov/nwis/iv/?sites='+string(gageno)+'&agencyCd=USGS&startDT='+startdate+...
+            '-08:00&endDT='+enddate+'-08:00&parameterCd=00065&format=rdb';
+            
+        %Meaning of column headers
+            % 'agency_cd',... %USGS
+            % 'site_no',...%gage number
+            % 'datetime',...%date time in YYYY-MM-DD HH:MM
+            % 'tz_cd',...%time zone (PST)
+            % 'TS_ID_00065',...%gage height (ft)
+        	% 'TS_ID_00065_cd'; %gage height data qualification code (P=provisional)
+        
+        %Import site data
+        measdata = readtable(url, 'FileType', 'text', 'Delimiter', '\t', 'CommentStyle', '#', 'VariableNamingRule', 'preserve');
+    
+        %rename columns with TS_ID to a consistent name between gages
+        measdata = renamevars(measdata, [5, 6], {'gage_height', 'gage_height_code'});
+    
+        %Account for the offset 
+        measdata.gage_height = measdata.gage_height + offset;
+    
+        %convert to meters
+        measdata.gage_height = measdata.gage_height * 0.3048;
+    
+    end
+
+The last function used the first two functions to plot the data and create the im `struct`, which contains the _hist.nc file information. The function calls the `import_USGS_gageheight` function to get the USGS data, and the `readhist` function to get the model station data, and then plots these two timeseries on the same plot. 
+
+    % Plot Water Surface Elevation from the model and USGS 
+    function [im] = plot_WSE_modelvsUSGS(filepath, station_name, gageno, startdate, enddate, offset)
+    
+        measdata = import_USGS_gageheight(gageno, startdate, enddate, offset);
+    
+        USGS_WSE = measdata.gage_height;
+        USGS_time = measdata.datetime;
+    
+        [data, im] = readhist(filepath);
+        
+        station_idx = find(data.stations == station_name);
+        WSE_model = data.waterlevel(station_idx,:); %extracts the timeseries at the station we want
+        
+        figure
+        plot(data.timestamp, WSE_model,'LineWidth',1.5);
+        hold on;
+        plot(USGS_time, USGS_WSE, 'LineWidth',1.5);
+        xlabel('Time')
+        ylabel('Water level (m)')
+        title(["Water level at " station_name], 'Interpreter', 'none')
+        legend('model', 'USGS')
+        
+        movegui('center');
+    
+    end
+
+I decided to make these functions because I figured I would be using them repeatedly to plot different USGS gages and model stations together. For example, I ran the following lines:
+
+    im = plot_WSE_modelvsUSGS(filepath, station_name_Everson, gageno_Everson, startdate, enddate, offset_Everson);
+    im = plot_WSE_modelvsUSGS(filepath, station_name_Ferndale, gageno_Ferndale, startdate, enddate, offset_Ferndale);
+    im = plot_WSE_modelvsUSGS(filepath, station_name_overflow, gageno_overflow, startdate, enddate, offset_overflow);
+and got the following plots.
+
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/c9597359-cfb9-453c-b4d4-a201c1b81ac0" />
+
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/5eb298bf-88d8-4db8-9035-5d45920c993f" />
+
+<img width="500" height="617" alt="image" src="https://github.com/user-attachments/assets/5eb31efe-e314-404d-9d97-4ea77fdc2264" />
 
 
 #### Lessons Learned
