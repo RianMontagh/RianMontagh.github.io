@@ -129,6 +129,8 @@ and got the following plots (Figures 4-6).
 
 The Nooksack and Ferndale plots seem to line up well in terms of peak timing and the stage is relatively tracking well. There are some noticeable deviations between them, however. The first peak is slightly overestimated, while the third peak is underestimated by 0.5-1 meter. The recovery stage after the first and third peak is overestimated at both gages. The second peak is quite accurate at Everson but overestimated at Ferndale.  
 
+At the overflow gage, the stage peak is matched nicely. The dry period is offset by about 0.2 meters, which makes me wonder if the offset from NAVD88 is accurate. 
+
 Two of the first things that come to mind that might improve the match to the USGS gage are 1) turning on morphology and 2) adjusting the North Cedarvile input hydrograph based on channel change during the storm. These two adjustments have to do with a change in channel conveyance, which influences the stage that the same volume of flow would cause. For example, a wider channel would experience a lower stage for the same volume of flow. 
 
 #### Lessons Learned
