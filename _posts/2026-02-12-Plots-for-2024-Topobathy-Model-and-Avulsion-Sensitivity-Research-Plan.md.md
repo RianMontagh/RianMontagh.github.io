@@ -10,7 +10,7 @@ Of the variables available to plot from the map files (results that spatially va
 
 *Figure 1. Water surface elevation in NAVD88 (m) at 8:00 a.m. on December 11.*
 
-Figure 1 helped me get a sense of how water interacts with roads an levees during a flood. For example, the large dry rectangle south of the most downstream section of the river shown seems to line up with Abbott Road and Polinder Road, which are represented as levees in the model. I wonder how realistic this is and how the lateral extent of flooding is effected by this representation. 
+Figure 1 helped me get a sense of how water interacts with roads and levees during a flood. For example, the large dry rectangle south of the most downstream section of the river shown seems to line up with Abbott Road and Polinder Road, which are represented as levees in the model. I wonder how realistic this is and how the lateral extent of flooding is effected by this representation. 
 
 <img width="1288" alt="image" src="https://github.com/user-attachments/assets/b80f0150-f2cb-4aa0-ac0e-045d61ccb593" />
 
