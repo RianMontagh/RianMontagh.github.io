@@ -134,20 +134,34 @@ At the overflow gage, the stage peak is matched nicely. The dry period is offset
 
 Two of the first things that come to mind that might improve the match to the USGS gage are 1) turning on morphology and 2) adjusting the North Cedarvile input hydrograph based on channel change during the storm. These two adjustments have to do with a change in channel conveyance, which influences the stage that the same volume of flow would cause. For example, a wider channel would experience a lower stage for the same volume of flow. 
 
+### Reseach Proposal for Avulsion Sensitivity Testing
+
+I started mapping out the following proposal for the avulsion sensitivity testing. I need to do more literature review to see how people are turning these knobs.
+
+> Objective: The Nooksack River has high avulsion potential at the Everson Overflow corridor, which is a preferential pathway where water flows during large floods; it is important to understand the types of storms and other conditions that could trigger an avulsion into this historic channel, as opposed to conditions that simply cause flooding in the channel. I will conduct experiments in a morphodynamic flood model built in Delft3D to explore the parameter space — this will aid in understanding if an avulsion is possible to create in the model, what the parameters are that would create it, and if these combinations of conditions are plausible in the real-world Nooksack watershed. With the model, we can vary the types of storms, the floodplain conditions, and the amount and type of input sediment. 
+>
+>Definitions:
+>
+>Avulsion: sustained flow in the overflow channel at Everson. The flow must continue after the high levels in the river have attenuated to separate this from the flow diversion that happens regularly during large floods.  
+Storm: Precipitation event that causes high discharge in the Nooksack. Implemented as a discharge hydrograph at the upstream boundary condition in the model.  
+Floodplain erodibility: ability of flow to erode the floodplain. Implemented as non-erodible levees and grainsizes.
+>
+>Hypothesis: The conditions that will create avulsions are the conditions that create enough shear stress for enough time to erode the preferential channel (annexational style avulsion) to increase the amount of “preference” the flow in the parent channel has to the relict channel. Overbank flow must overcome critical shear stress of the floodplain material.
+
+<img width="644" alt="image" src="https://github.com/user-attachments/assets/23e54ce4-4314-4eda-94a6-6997f8aa185a" />
+
+
 #### Lessons Learned
 
-- Make sure that all 62 partitions of the model are downloaded from Hyak
-  - Otherwise, there will be 'holes' in the model
-- 1-2 GB is about the limit for the file size that is will work in Delft3D
-  - Processing of the 2024 topo reduced the file size from a 19 GB TIF to a 1.6 GB XYZ, which was slow but usable in Delft3D. 
+- Code Organization and Documentation! Comments, comments, comments
 
 #### Next Steps with the 2025 Nooksack Model
 
 Boundary Conditions: Consider adding the tributary boundaries and differentiating the two tidal boundaries. They are the same right now.  
 Roughness: Have it update during model run.   
 Morphology: Need to add in sediment layers and gradations, and turn on morpho.  
-Avulsion research: Obtain future projected hydrographs  
-Validation: Validate the 2025 model  
+Avulsion research: Obtain future projected hydrographs. Quantify the knobs we want to turn. 
+Validation: Potentially adjust incoming hydrograph to improve calibration. 
 Topo: Need to check for artifacts of bridges in the channel?
 
 
