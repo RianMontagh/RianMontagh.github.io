@@ -122,7 +122,7 @@ and got the following plots (Figures 4-6).
 
 *Figure 5. Model and USGS Gage WSE at Ferndale.*
 
-<img width="700" height="617" alt="image" src="https://github.com/user-attachments/assets/5eb31efe-e314-404d-9d97-4ea77fdc2264" />
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/5eb31efe-e314-404d-9d97-4ea77fdc2264" />
 
 *Figure 6. Model and USGS Gage WSE at Overflow Gage.*
 
