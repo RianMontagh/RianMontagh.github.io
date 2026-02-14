@@ -22,7 +22,7 @@ A few hours after the flood peak, the velocity in the channel is about 2-4 m/s. 
 
 *Figure 3. Total Bed Shear Stress Magnitude (N/m^2) at 8:00 a.m. on December 11.*
 
-Bed stress ($\tau_b$) can tell us information on sediment transport rates. Wherever $\tau_b$ is high, it means the flow of water is exerting a friction stress on the bed, and the bed is exerting a friction force on the flow &mdash; more \( \tau_b \) means more possibility for sediment transport. We do see $\tau_b > 100 \mathrm{N m^{-2}}$ especially at the constriction at the Everson Road bridge. There are also pockets of high $\tau_b$ in the overflow section, but not at the very upstream part of it. I would have expected lower sediment transport and lower $\tau_b$ at the overflow section because we predict that deposition occur here, not scour and transport.  
+Bed stress ($\tau_b$) can tell us information on sediment transport rates. Wherever $\tau_b$ is high, it means the flow of water is exerting a friction stress on the bed, and the bed is exerting a friction force on the flow &mdash; more $\tau_b$ means more possibility for sediment transport. We do see $\tau_b > 100 \mathrm{N m^{-2}}$ especially at the constriction at the Everson Road bridge. There are also pockets of high $\tau_b$ in the overflow section, but not at the very upstream part of it. I would have expected lower sediment transport and lower $\tau_b$ at the overflow section because we predict that deposition occur here, not scour and transport.  
 Question: Did any gravel bars form during this flood and can we compare it to $\tau_b$? (Would expect low $\tau_b$ where the bar formed)
 
 ### History File Plots
