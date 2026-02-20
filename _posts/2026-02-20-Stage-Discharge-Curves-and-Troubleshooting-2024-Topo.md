@@ -95,9 +95,19 @@ Both plots seem to agree well with the USGS rating curves in general, especially
 
 Wuming ran the 2021 flood model with my 2024 topo, and did not see any difference in the results. This indicates that the bedlevel was somehow not saved correctly to the mesh.
 
-Sure enough, when plotting the difference between the 2022 and 2024 bed level stored in the mesh, they are the same. 
+Sure enough, when plotting the difference between the 2022 and 2024 bed level stored in the mesh, the bed levels are the same. 
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/19540d52-b3c9-4e31-ad1e-75e2de17cd73" />
+
+*Figure 3. Plot of (2024 bed level) - (2022 bed level).*
+
+I redid my changing of the bed level in the Delft3D GUI and now they plot a difference in the bed level. My theory is that something went wrong when I exported the grid from the GUI &mdash; maybe my operations were not saved? 
+
+<img width="1043" alt="image" src="https://github.com/user-attachments/assets/3a506004-d5ed-41ea-ae99-c8af67868d35" />
+
+*Figure 4. Plot of (2024 bed level) - (2022 bed level) after redoing the replacement of the 2022 bed level with 2024 bed level.*
+
+
 
 
 
