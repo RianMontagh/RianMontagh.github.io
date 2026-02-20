@@ -103,9 +103,22 @@ Sure enough, when plotting the difference between the 2022 and 2024 bed level st
 
 I redid my changing of the bed level in the Delft3D GUI and now they plot a difference in the bed level. My theory is that something went wrong when I exported the grid from the GUI &mdash; maybe my operations were not saved? 
 
-<img width="1043" alt="image" src="https://github.com/user-attachments/assets/3a506004-d5ed-41ea-ae99-c8af67868d35" />
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/3a506004-d5ed-41ea-ae99-c8af67868d35" />
 
 *Figure 4. Plot of (2024 bed level) - (2022 bed level) after redoing the replacement of the 2022 bed level with 2024 bed level.*
+
+### Lessons Learned
+
+- make sure to check that any files exported from the GUI are as expected &mdash; this could be more involved than visually inspecting them.
+
+### Next Steps with the 2025 Nooksack Model
+
+Boundary Conditions: Consider adding the tributary boundaries and differentiating the two tidal boundaries. They are the same right now.  
+Roughness: Have it update during model run.   
+Morphology: Need to add in sediment layers and gradations, and turn on morpho.  
+Avulsion research: Obtain future projected hydrographs. Quantify the knobs we want to turn.  
+Validation: Potentially adjust incoming hydrograph to improve calibration.  
+Topo: Need to check for artifacts of bridges in the channel?  
 
 
 
