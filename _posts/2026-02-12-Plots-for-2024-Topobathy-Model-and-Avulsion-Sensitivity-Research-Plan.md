@@ -160,9 +160,9 @@ Floodplain erodibility: ability of flow to erode the floodplain. Implemented as 
 Boundary Conditions: Consider adding the tributary boundaries and differentiating the two tidal boundaries. They are the same right now.  
 Roughness: Have it update during model run.   
 Morphology: Need to add in sediment layers and gradations, and turn on morpho.  
-Avulsion research: Obtain future projected hydrographs. Quantify the knobs we want to turn. 
-Validation: Potentially adjust incoming hydrograph to improve calibration. 
-Topo: Need to check for artifacts of bridges in the channel?
+Avulsion research: Obtain future projected hydrographs. Quantify the knobs we want to turn.  
+Validation: Potentially adjust incoming hydrograph to improve calibration.  
+Topo: Need to check for artifacts of bridges in the channel?  
 
 
 
