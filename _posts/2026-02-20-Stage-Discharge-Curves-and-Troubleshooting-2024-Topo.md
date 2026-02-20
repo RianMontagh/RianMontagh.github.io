@@ -82,10 +82,26 @@ end
 #### The Qh Plots
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/c514ce32-4a54-4967-b5bf-064ae3a6a06f" />
-*Figure 1. Stage-discharge from the Model and from USGS (regression rating curve) at Everson.*
+
+*Figure 1. Stage-discharge from the Model and from USGS (regression rating curve) at Everson*.
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/7090fe44-782d-4c73-b718-969786c717c4" />
-*Figure 2. Stage-discharge from the Model and from USGS (regression rating curve) at Ferndale.*
+
+*Figure 2. Stage-discharge from the Model and from USGS (regression rating curve) at Ferndale*.
+
+Both plots seem to agree well with the USGS rating curves in general, especially with the match in curve shape. The Everson plot diverges from the rating curve at high flows, which could be due to that cross section being more unstable than Ferndale. Once I turn morhodynamics on, I am hoping to see more histeurisis in the plots, and maybe more of an indication if the channel aggrades or erodes.
+
+### 2024 Topo Issues
+
+Wuming ran the 2021 flood model with my 2024 topo, and did not see any difference in the results. This indicates that the bedlevel was somehow not saved correctly to the mesh.
+
+Sure enough, when plotting the difference between the 2022 and 2024 bed level stored in the mesh, they are the same. 
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/19540d52-b3c9-4e31-ad1e-75e2de17cd73" />
+
+
+
+
 
 
 
