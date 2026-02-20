@@ -79,5 +79,18 @@ function plot_Qh_modelvsUSGS(filepath, station_name, xsec_name, gageno, startdat
 end
 ```
 
+#### The Qh Plots
+
+<img width="1092" alt="image" src="https://github.com/user-attachments/assets/c514ce32-4a54-4967-b5bf-064ae3a6a06f" />
+*Figure 1. Stage-discharge from the Model and from USGS (regression rating curve) at **Everson**.*
+
+<img width="1108" alt="image" src="https://github.com/user-attachments/assets/7090fe44-782d-4c73-b718-969786c717c4" />
+*Figure 2. Stage-discharge from the Model and from USGS (regression rating curve) at **Ferndale**.*
+
+
+
+
+
+
 
 
