@@ -28,22 +28,23 @@ I was also curious how the topo would affect the fit to the USGS water surface e
 
 This figure matches the results in the Everson gage Qh plot (Figure 1). We see overall higher modeled water surface elevations compared to the USGS rating curve. 
 
-Question: Was the rating curve updated to reflect change in topography? Why does the 2022 plot have a better fit?
+Question: Was the rating curve updated to reflect change in topography? Why does the 2022 plot seem to have a better fit?
 
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/23a494e0-f1fe-4002-9e52-c5c16b7064f6" />
 
 *Figure 4. 2022 and 2024 topo WSE plots at Ferndale.*
 
-
+The two Ferndale model outputs are very similar to each other, but the 2024 topo model fits the second peak better than the 2022 topo model. The Qh curve looks about the same, but there might be some divergences in the intermediate flow regime. 
 
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/78a5064f-7e3f-401d-9c37-b75ecb53de7e" />
 
 *Figure 5. 2022 and 2024 topo WSE plots at Overflow.*
 
+There is a <0.1 m increase in WSE from the 2022 to the 2024 topo model in the pre- and post-flood peak WSE. The fit at the peak seems about the same. There is no Qh curve to inform this increase in WSE, but it matches with the story of conveyance decrease at Everson, which would push more water to the overflow gage. 
 
 ### Lessons Learned
 
-- make sure to check that any files exported from the GUI are as expected &mdash; this could be more involved than visually inspecting them.
+- Remember to do subplots to put the two plots next to each other
 
 ### Next Steps with the 2025 Nooksack Model
 
