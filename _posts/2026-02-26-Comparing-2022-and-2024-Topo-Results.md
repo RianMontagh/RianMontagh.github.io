@@ -10,7 +10,7 @@ Comparing the state-discharge curves between two model results with different to
 
 *Figure 1. 2022 topo (left) and 2024 topo (right) modeled Qh curve for the 2025 flood at Everson.* 
 
-At the 200 to 400 m^3/s, the 2024 topo Qh curve plots higher above the USGS rating curve than the 2022 topo Qh curve. This means that between 2022 and 2024, the bed terrain changed such that at the same channel discharge, the water surface elevation increased. We can infer that this means the channel conveyance reduced at this discharge. 
+At the 200 to 400 $m^3/s$, the 2024 topo Qh curve plots higher above the USGS rating curve than the 2022 topo Qh curve. This means that between 2022 and 2024, the bed terrain changed such that at the same channel discharge, the water surface elevation increased. We can infer that this means the channel conveyance reduced at this discharge. 
 
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/ee51afce-7f62-4ccf-9f51-08f4301be873" />
 
@@ -26,9 +26,15 @@ I was also curious how the topo would affect the fit to the USGS water surface e
 
 *Figure 3. 2022 and 2024 topo WSE plots at Everson.*
 
+This figure matches the results in the Everson gage Qh plot (Figure 1). We see overall higher modeled water surface elevations compared to the USGS rating curve. 
+
+Question: Was the rating curve updated to reflect change in topography? Why does the 2022 plot have a better fit?
+
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/23a494e0-f1fe-4002-9e52-c5c16b7064f6" />
 
 *Figure 4. 2022 and 2024 topo WSE plots at Ferndale.*
+
+
 
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/78a5064f-7e3f-401d-9c37-b75ecb53de7e" />
 
