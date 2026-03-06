@@ -43,3 +43,8 @@ hr {
   font-size: 2.5em;
   opacity: 0.3;
 }
+
+/* Make blog posts wider for research figures */
+.wrapper {
+  max-width: 1200px;
+}
