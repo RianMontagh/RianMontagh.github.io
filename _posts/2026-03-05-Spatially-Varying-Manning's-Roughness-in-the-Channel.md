@@ -42,8 +42,11 @@ Figure 5 shows that the Manning's roughness changes more from iteration 2 to 3 t
 We can also look at some statistics:
 
 >mean difference (MN2-MN1) = 0.000026
+>
 >RMSE between MN2 and MN1 = 0.000179
+>
 >mean difference (MN3-MN2) = -0.000003
+>
 >RMSE between MN3 and MN2 = 0.000172
 
 The mean difference has decreased by a factor of about 10 from iteration 2 to iteration 3 (MN2 and MN3). The RMSE has also decreased, but not by much. These statistics could be improved by only using the values in the channel, as the floodplain has zero change and is skewing these statistics. 
