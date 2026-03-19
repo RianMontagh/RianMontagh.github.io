@@ -24,7 +24,7 @@ As seen in Figure 1, the 500-year event was not analyzed, so I revised my origin
 
 ## Morpho On Model
 
-I ran my first model with sediment transport and bed level change turned on! 
+I ran my first model with sediment transport and bed level change turned on! This was fairly simple to do because Wuming has already developed the .sed and .mor files. For this run, I used the Wilcock and Crowe sediment transport formula for the gravel and Van Rijn for the sand. Wilcock and Crowe does not model the transport of washload, which is sand is likely partitioning into especially during large flows. 
 
 I only had time to plot the bed level change at the last time step relative to the first time step.
 
