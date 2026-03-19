@@ -8,10 +8,19 @@ To create this matrix, I obtained projected changes in the peak magnitude of the
 
 <img width="588" alt="Screenshot 2026-03-19 at 12 28 22 AM" src="https://github.com/user-attachments/assets/dc7a5fe6-74d1-44d3-8fe9-00ed49eecf0c" />
 
-*Figure 1. Table 11 from Evan Paul's masters thesis. These are the predicted change in peak flow magnitudes for 30 year normals centered on 2050 and 2080 at different locations on the Nooksack. The values we are interested in are the North Cedarville for the 20-year, 50-year, and 100-year flood. The 2050 and 2080 normals are differenced with the 1990 normal to get the percent change. 
+*Figure 1. Table 11 from Evan Paul's masters thesis. These are the predicted change in peak flow magnitudes for 30 year normals centered on 2050 and 2080 at different locations on the Nooksack. The values we are interested in are the North Cedarville for the 20-year, 50-year, and 100-year flood. The 2050 and 2080 normals are differenced with the 1990 normal to get the percent change.*
 
+As seen in Figure 1, the 500-year event was not analyzed, so I revised my original plan to have a 500-year flood and added on an event with four 20-year floods to the matrix. 
+
+**Question**: Do we want a 500-year event in our model?
 
 <img width="787" height="741" alt="Screenshot 2026-03-19 at 12 21 35 AM" src="https://github.com/user-attachments/assets/bdb5acb8-ef02-4282-8448-7809703f23fc" />
 
+*Figure 2. Streamstats report for the basin above North Cedarville.*
+
 <img width="687" alt="Screenshot 2026-03-18 at 10 51 46 PM" src="https://github.com/user-attachments/assets/97d36185-f51b-476b-8ae0-bf6d0a7cf421" />
+
+*Figure 3. Updated hydrograph matrix with duration, peak magnitude, and number of peaks varied.*
+
+## Morpho On Model
 
