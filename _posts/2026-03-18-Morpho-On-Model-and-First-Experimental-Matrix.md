@@ -4,11 +4,11 @@ This week I ran my first first model with morphology turned on (morpho on) and c
 
 ## Hydrograph Tests Matrix
 
-To create this matrix, I obtained projected changes in the peak magnitude of the 20-year, 50-year, and 100-year peak flows from Evan Paul's 2023 masters thesis, "Modeling 21st century peak flows in the Nooksack River Basin in northwestern Washington State using dynamically-downscaled global climate model projections" (Figure 1). I then used the 1%, 2%, and 5% Annual Exceedance Probabilities (AEPs) from the USGS Streamstats tool for a delineated basin with North Cedarville at the outlet (Figure 2). The 1% AEP corresponds to the 100-year flood, the 2% AEP to the 50-year flood, etc. Evan Paul's percent changes in peak magnitude can be applied to these values. 
+To create this matrix, I obtained projected changes in the peak magnitude of the 20-year, 50-year, and 100-year peak flows from Evan Paul's 2023 masters thesis, "Modeling 21st century peak flows in the Nooksack River Basin in northwestern Washington State using dynamically-downscaled global climate model projections" (Figure 1). I then used the 1%, 2%, and 10% Annual Exceedance Probabilities (AEPs) from the USGS Streamstats tool for a delineated basin with North Cedarville at the outlet (Figure 2). The 1% AEP corresponds to the 100-year flood, the 2% AEP to the 50-year flood, etc. Evan Paul's percent changes in peak magnitude can be applied to these values. 
 
 <img width="588" alt="Screenshot 2026-03-19 at 12 28 22 AM" src="https://github.com/user-attachments/assets/dc7a5fe6-74d1-44d3-8fe9-00ed49eecf0c" />
 
-*Figure 1. Table 11 from Evan Paul's masters thesis. These are the predicted change in peak flow magnitudes for 30 year normals centered on 2050 and 2080 at different locations on the Nooksack. The values we are interested in are the North Cedarville for the 20-year, 50-year, and 100-year flood. The 2050 and 2080 normals are differenced with the 1990 normal to get the percent change.*
+*Figure 1. Table 11 from Evan Paul's masters thesis. These are the predicted change in peak flow magnitudes for 30 year normals centered on 2050 and 2080 at different locations on the Nooksack. The values we are interested in are the North Cedarville for the 10-year, 50-year, and 100-year flood. The 2050 and 2080 normals are differenced with the 1990 normal to get the percent change.*
 
 As seen in Figure 1, the 500-year event was not analyzed, so I revised my original plan to have a 500-year flood and added on an event with four 20-year floods to the matrix. 
 
