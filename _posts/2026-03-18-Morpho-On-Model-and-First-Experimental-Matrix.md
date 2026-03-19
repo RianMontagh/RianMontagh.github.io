@@ -30,7 +30,7 @@ I ran my first model with sediment transport and bed level change turned on! Thi
 
 I only had time to plot the bed level change at the last time step relative to the first time step.
 
-<img width="700" alt="image" src="https://github.com/user-attachments/assets/18436234-a9fb-4873-a634-1e98f58f0d5f" />
+<img width="900" alt="image" src="https://github.com/user-attachments/assets/18436234-a9fb-4873-a634-1e98f58f0d5f" />
 
 *Figure 4. Bed level change from the start of the model run to the end of the model run.*
 
