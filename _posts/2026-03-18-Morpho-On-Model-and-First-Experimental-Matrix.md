@@ -20,6 +20,8 @@ As seen in Figure 1, the 500-year event was not analyzed, so I revised my origin
 
 <img width="687" alt="Screenshot 2026-03-18 at 10 51 46 PM" src="https://github.com/user-attachments/assets/97d36185-f51b-476b-8ae0-bf6d0a7cf421" />
 
+**Question: Do we need different peak magnitudes for each duration?**
+
 *Figure 3. Updated hydrograph matrix with duration, peak magnitude, and number of peaks varied.*
 
 ## Morpho On Model
