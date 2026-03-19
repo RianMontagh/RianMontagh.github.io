@@ -29,6 +29,7 @@ I ran my first model with sediment transport and bed level change turned on!
 I only had time to plot the bed level change at the last time step relative to the first time step.
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/18436234-a9fb-4873-a634-1e98f58f0d5f" />
+
 *Figure 4. Bed level change from the start of the model run to the end of the model run.*
 
 I need more time to think about these results, but first reaction is that there is not nearly as much change as I am used to seeing in Wuming's plots. There is a lot of white space within the borders of the channel. 
