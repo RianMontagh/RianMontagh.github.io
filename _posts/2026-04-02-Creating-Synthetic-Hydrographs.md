@@ -96,7 +96,7 @@ The hydrographs above only include the direct runoff, but in our model we will w
 
 ## Assumptions Made
 
-1. The AEPs (annual exceedance probability) from StreamStats, which are an instantaneous discharges, can be used compatibly with the percent increases in peak flow from Paul's thesis, which are derived from 1-day, 3-day, and 7-day annual mean peak discharge averages.
+1. The AEPs (annual exceedance probability) from StreamStats, which are an instantaneous discharges, can be used compatibly with the percent increases in peak flow from Paul's thesis, which are derived from 1-day, 3-day, and 7-day annual maximum peak discharge averages (hourly data averaged over the flow duration).
 2. The flow durations from Paul's thesis can be applied as hydrograph duration, although the flow durations are lengths of averaging, not hydrograph duration.
 3. The shape of the hydrograph is consistent with the assumed partitioning of volume from the NEH. That means that 37.5% of the flow volume occurs in the rising limb of the hydrograph, which is the assumption that dictates where the time-to-peak falls.
 
