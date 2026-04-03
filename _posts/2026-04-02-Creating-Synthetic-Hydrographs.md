@@ -86,7 +86,7 @@ See my code, below:
 
 <img width="1704" alt="image" src="https://github.com/user-attachments/assets/6c60e7b4-c062-4577-839a-ec5e5f04df52" />
 
-*Figure 1. Synthetic hydrographs for 10-year, 50-year, and 100-year peak flows with percent increases applied as predicted for 2080 by Evan Paul. The hydrographs also vary in duration (24 hours, 72 hours, or 168 hour).  
+*Figure 1. Synthetic hydrographs for 10-year, 50-year, and 100-year peak flows with percent increases applied as predicted for 2080 by Evan Paul. The hydrographs also vary in duration (24 hours, 72 hours, or 168 hour).*
 
 ### Applying a Winter Base Flow
 
