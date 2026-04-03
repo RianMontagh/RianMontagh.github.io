@@ -88,16 +88,17 @@ See my code, below:
 
 *Figure 1. Synthetic hydrographs for 10-year, 50-year, and 100-year peak flows with percent increases applied as predicted for 2080 by Evan Paul. The hydrographs also vary in duration (24 hours, 72 hours, or 168 hour).*
 
-### Applying a Winter Base Flow
+### Applying a Winter Base Flow and Ramp Up Time
 
-The hydrographs above only include the direct runoff, but in our model we will want to include the base flow. Basically, the upstream boundary condition should start with some average or base flow that is not influenced by precipitation. I apply a value based on the 2025 flood of 2000 cfs, which is the discharge measured before the North Cedarville gage began increasing due to the atmospheric river. I may want to change this to a winter low flow or average flow value in the future. 
+The hydrographs above only include the direct runoff, but in our model we will want to include the base flow. Basically, the upstream boundary condition should start with some average or base flow that is not influenced by precipitation. I apply a value based on the 2025 flood of 2000 cfs, which is the discharge measured before the North Cedarville gage began increasing due to the atmospheric river. I may want to change this to a winter low flow or average flow value in the future. I also added a period of three days where the model will experience just this 2000 cfs base flow. 
+
+<img width="1704" alt="image" src="https://github.com/user-attachments/assets/ab4dc431-78a4-4ea8-997a-44d5557d75c2" />
 
 ## Assumptions Made
 
 1. The AEPs (annual exceedance probability) from StreamStats, which are an instantaneous discharges, can be used compatibly with the percent increases in peak flow from Paul's thesis, which are derived from 1-day, 3-day, and 7-day annual mean peak discharge averages.
 2. The flow durations from Paul's thesis can be applied as hydrograph duration, although the flow durations are lengths of averaging, not hydrograph duration.
 3. The shape of the hydrograph is consistent with the assumed partitioning of volume from the NEH. That means that 37.5% of the flow volume occurs in the rising limb of the hydrograph, which is the assumption that dictates where the time-to-peak falls.
-4. 
 
 
 
