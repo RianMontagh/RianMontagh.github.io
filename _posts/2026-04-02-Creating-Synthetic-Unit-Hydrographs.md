@@ -86,9 +86,10 @@ See my code, below:
 
 
 
+## Assumptions Made
 
-
-
+1. The AEP from StreamStats, which is an instantaneas discharge, can be used with the percent increases from Paul's thesis, which are derived from 1-day, 3-day, and 7-day annual mean peak discharge averages.
+2. The flow durations from Paul's thesis can be applied as hydrograph duration, although 
 
 
 <img width="1704" alt="image" src="https://github.com/user-attachments/assets/6c60e7b4-c062-4577-839a-ec5e5f04df52" />
