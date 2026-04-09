@@ -29,7 +29,45 @@ This week, I made sediment fractions that work with the 2024 NLCD data and 2024 
             continue
         end
 
-        sigma = (log10(D84) - log10(D16)) / (z84 - z16); %the spread of the distribution over the spread in standard normal distribution - see equation for sigma using two known percentile points 
+        sigma = (log10(D84) - log10(D16)) / (z84 - z16); %see equation for sigma using two known percentile points - based on plugging in know values to z = (x-mu)/sigma and solving for sigma, mu cancels
         mu = log10(D50) %for a lognormal distribution, the mean mu (center of distribution) is the log of the median 
+
+        for j = 1:n_bin
+            lower edge for bin j 
+            upper edge for bin j
+            bin_frac_valid(i, j) = normcdf(upper, mu, sigma) - normcdf(lower, mu, sigma); %get percentile in each bin - use normal distribution stats bc lognormal distribution is normal when in log space 
+        end
+
+        normalize bin fractions so they sum to 1
+    end 
+
+## Adding 20% Sand Pseudo Code
+
+This is the code I developed independently:
+
+    SET fine_sand_fraction   = 0.05   (5%)
+    SET coarse_sand_fraction = 0.10   (10%)
+    SET sand_gravel_fraction = 0.05   (5%)
+    SET total_sand_to_add    = fine_sand_fraction + coarse_sand_fraction + sand_gravel_fraction  (20%)
+    
+    SCALE DOWN all existing bin fractions by (1 - total_sand_to_add)
+        → this makes room for the sand while keeping all fractions summing to 1
+    
+    ADD fine_sand_fraction   to bin 1 (fine sand)    for all channel cells
+    ADD coarse_sand_fraction to bin 2 (coarse sand)  for all channel cells
+    ADD sand_gravel_fraction to bin 3 (sand gravel)  for all channel cells
+    
+    PRINT the maximum total sand fraction across all channel cells
+        → should be close to 0.20 (20%) for all cells
+
+## Results from the Sedimemt Fraction Calculations 
+
+The rest of the code involves building the floodplain grain size distributions from a fixed distribution, such that the entire floodplain has the same sediment fractions. The channel and floodplain distributions are then added into bin_frac_all. I then plotted the results. 
+
+<img width="1393" alt="image" src="https://github.com/user-attachments/assets/46817164-8eab-4bfa-ba3c-46808e969720" />
+
+*Figure 1. Spatial variation of the sediment fractions and their percent content at each cell in the overflow reach at Everson.*
+
+This figure helps confirm that the sand content was added to the channel correctly. For fine sand, coarse sand, and sand gravel, there is a uniform value throughout the channel. 
 
     
