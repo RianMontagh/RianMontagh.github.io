@@ -60,6 +60,8 @@ This is the code I developed independently:
     PRINT the maximum total sand fraction across all channel cells
         → should be close to 0.20 (20%) for all cells
 
+The printed line at the end of this code tells me that `maximum sand fraction sum in the channel = 0.2491`. So there was not much sand pre-existing the addition of the 20% sand. 
+
 ## Results from the Sedimemt Fraction Calculations 
 
 The rest of the code involves building the floodplain grain size distributions from a fixed distribution, such that the entire floodplain has the same sediment fractions. The channel and floodplain distributions are then added into bin_frac_all. I then plotted the results. 
@@ -68,6 +70,15 @@ The rest of the code involves building the floodplain grain size distributions f
 
 *Figure 1. Spatial variation of the sediment fractions and their percent content at each cell in the overflow reach at Everson.*
 
-This figure helps confirm that the sand content was added to the channel correctly. For fine sand, coarse sand, and sand gravel, there is a uniform value throughout the channel. 
+This figure helps confirm that the sand content was added to the channel correctly. For fine sand, coarse sand, and sand gravel, there is a uniform value throughout the channel. The fine sand and sand gravel are both around 0.05 in the channel, although there is a bit more sand gravel because before I added 5% sand gravel, there was already some existing content in the channel. 
+
+It is also clear from Figure 1 that the floodplain has a spatially-fixed grain size distribution. 
+
+Finally, we can see some patterns in the gravel fraction spatial distributions. Fine gravel appears more abundantely on the edge of the channel. Coarse gravel is the most common sediment class to find in the middle of the channel. Cobble has less uniform patterns, and seems to dominate at the meander near Everson Bridge. 
+
+**Next Step: Compare with Wuming's sediment fractions and add in non-erodible areas (set sediment fractions to 0) at forested bars and developed areas.**
+
+## Hydrograph Report 
+
 
     
