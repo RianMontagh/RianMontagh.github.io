@@ -4,7 +4,7 @@ This week, I made sediment fractions that work with the 2024 NLCD data and 2024 
 
 ## Sediment Fraction Calculation Pseudo Code
 
-    D50 = Shields criterion with shear stress from last mannings iteration. set values less than 0.008 m to 0
+    D50 = Shields criterion with shear stress from last mannings iteration. set values less than 0.008 m to 0. This is to eliminate overbank cells that got a D50 assigned to them, because these do not represent the shear stress that would results from a bankfull flow. 
     mask = all non-zero D50
 
     D50_valid = D50(mask)*1000 %apply the mask
@@ -18,6 +18,18 @@ This week, I made sediment fractions that work with the 2024 NLCD data and 2024 
     edges = row vector of the edge values of the bins (mm) 
     bin_frac_valid = row of n_bin zeros %initialize where we will store our fractions for each bin
     D_center = row vector of the geometric center between each bin edge 
-    
+
+    for i = 1:n_valid %loop over each cell with non-zero D50
+        D50 = D50_valid(i);
+        D16 = apply power law for D16 from Jacob's work to the D50 
+        D84 = apply power law for D84 from Jacob's work to the D50 
+
+        if (D16, D50, or D84 is negative or if (D16 < D50 < D84) does not hold)
+            bin_frac_valid(i, :) = zeros(1, n_bin);
+            continue
+        end
+
+        sigma = (log10(D84) - log10(D16)) / (z84 - z16); %the spread of the distribution over the spread in standard normal distribution - see equation for sigma using two known percentile points 
+        mu = log10(D50) %for a lognormal distribution, the mean mu (center of distribution) is the log of the median 
 
     
