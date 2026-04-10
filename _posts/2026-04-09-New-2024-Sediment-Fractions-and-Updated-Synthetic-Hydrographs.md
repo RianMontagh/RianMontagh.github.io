@@ -82,4 +82,58 @@ Finally, we can see some patterns in the gravel fraction spatial distributions. 
 ## Hydrograph Report 
 
 I looked through a 2008 report that Paula sent me about the trouble-shooting of the retired Deming gage and the development of the 100-year design hydrograph at Deming. This was helpful to get another number for the 100-year peak flow to compare my StreamStats number to. The Deming value is about 75,000 cfs for the 100-year peak, which is smaller than the North Cedarville StreamStats value of about 85,000 cfs. I am not sure if we would expect North Cedarville peak flow to be much larger than the Deming peak flow, because even though North Cedarville is at least 5 miles downstream from Deming, there is no extra flow entering the channel other than rainfall. 
+
+## Importing Hydrograph to delft3D
+
+I developed a function to write a .BC function in Matlab for use in Delft3D. I am currently having issues getting the time series to show up in the Delft3D GUI. 
+
+```matlab
+filename = 'C:\Users\rmontagh\Documents\Nooksack Modeling\NKS_2025flood\dflowfm\SCS_Synthetic_Hydrograph_100yr_3day.bc';
+boundaryName = 'North Cedarville0001';
+refDateStr = '2001-01-01 00:00:00';
+time_elapsed = seconds(datetime('2025-12-04 00:00:00') - datetime(refDateStr)); %time elapsed in seconds from reference time to start of timeseries
+timeSeconds = round((t_long{2}.*60.*60 + time_elapsed), 0); %add time elapsed to the time vector from above, converting hours to seconds
+discharge = q100_long{2}.*0.028316847; %100year, 3day discharge, convert cfs to m3/s
+
+write_discharge_bc(filename, boundaryName, refDateStr, timeSeconds, discharge)
+```
+
+Here is the function for writing the file:
+
+```matlab
+function write_discharge_bc(filename, boundaryName, refDateStr, timeSeconds, discharge)
+% WRITE_DISCHARGE_BC  Write a Delft3D FM discharge boundary condition file
+%
+% Inputs:
+%   filename      - output file path, e.g. 'discharge.bc'
+%   boundaryName  - name of the boundary, e.g. 'North Cedarville_0001'
+%       -I have been using polyline point
+%   refDateStr    - reference date string, e.g. '2020-01-01 00:00:00'
+%   timeSeconds   - vector of time values in seconds since refDate
+%   discharge     - vector of discharge values (m3/s), same length as timeSeconds
+
+    fid = fopen(filename, 'w');
+    if fid == -1
+        error('Could not open file: %s', filename);
+    end
+
+    % Write header block
+    fprintf(fid, '[forcing]\n');
+    fprintf(fid, 'name                            = %s\n', boundaryName);
+    fprintf(fid, 'function                        = timeseries\n');
+    fprintf(fid, 'timeInterpolation               = linear\n');
+    fprintf(fid, 'quantity                        = time\n');
+    fprintf(fid, 'unit                            = seconds since %s\n', refDateStr);
+    fprintf(fid, 'quantity                        = dischargebnd\n');
+    fprintf(fid, 'unit                            = m3/s\n');
+
+    % Write time-discharge data
+    for i = 1:length(timeSeconds)
+        fprintf(fid, '%-16.0f %.4f\n', timeSeconds(i), discharge(i));
+    end
+
+    fclose(fid);
+    fprintf('Written: %s\n', filename);
+end
+```
     
