@@ -43,6 +43,11 @@ I made two simple updates to the synthetic hydrographs &emdash; I lowered the pe
 
 I also added a 3-day post-flood baseflow extension to all of the synthetic hydrographs. This allows us to see how long an avulsion in the model would last past the flood peak. See Figure 2 below. 
 
+<img width="927" alt="image" src="https://github.com/user-attachments/assets/1f28c42f-da39-465a-80c5-2e3b0c3cf4ec" />
+
+*Figure 2. Synthetic Hydrographs with updated peaks and post-flood duration.*
+
+
 ## Personal Developement
 
 I have also seen two opportunities that sound interesting to me but I am not sure if the time sink to apply and odds of getting accepted make sense to apply. 
