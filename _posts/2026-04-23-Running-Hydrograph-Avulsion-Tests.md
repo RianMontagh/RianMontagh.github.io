@@ -17,21 +17,30 @@ The land types that were set to nonerodible are:
 | Nonerodible | Erodible |
 | ------------ | --------|
 | Developed, open space | Open Water | 
-| developed, low intensity | Shrubland | 
-| developed, medium intensity| Grassland | 
-| developed, high intensity | Pasture
-| Barren land (rock/sand/clay) | Crops | 
-| Deciduous Forest | Herbaceous Wetlands |
+| developed, low intensity | Shrub/Scrub | 
+| developed, medium intensity| Grassland/Herbaceous | 
+| developed, high intensity | Pasture/Hay |
+| Barren land (rock/sand/clay) | Cultivated Crops | 
+| Deciduous Forest | Emergent Herbaceous Wetlands |
 | Evergreen Forest
 | Mixed Forest
 | Woody Wetlands
 
 **Question: Why are we using 1m thickness on the floodplain and 10m in the channel?** 
-**Question: What 
+**Question: How did we determine the nonerodible types for the 2021 flood and what does that mean for our avulsion testing that forests cannot erode?**
 
 <img width="1396" alt="image" src="https://github.com/user-attachments/assets/d5a026d4-5528-4294-9750-47eb66f93a37" />
 
 *Figure 1. Spatially varying sediment fractions for fine sand, coarse sand, gravel sand, fine gravel, coarse gravel, and cobble.*
+
+In Figure 1, we can see that the sediment fractions are uniform other than the distinction between erodible and nonerodible areas. The large blob of dark blue to the east of the Everson corridor represents the developed area of the Everson downtown, and the line that extends southward from it is Emerson Road. It makes sense that these should not erode as they are paved surfaces. If anything they would fail suddenly rather than slowly erode. We can also see that the floodplain contains much finer sediment than the sediment in the channel, which makes sense because typically rivers convey coarse sediment in the channel and deposit finer material on the floodplain. 
+
+## New Hydrographs
+
+I made two simple updates to the synthetic hydrographs &emdash; I lowered the peak values to match a report that Paula had sent about the 100-year hydrograph at Deming, which should be about the same as the value at North Cedarville. I previously had a value of about 85,000 cfs from StreamStats, but I knew that this value could have some error in it, especially due to the large size of the watershed that StreamStats was using for its statistical calculations. Paula's Deming value was around 75,000 cfs, so I subtracted 10,000 cfs from all of my StreamStats peak values. 
+
+**Question (maybe for Jessica): Does the 10,000 cfs difference in the 100-year peak flow apply linearly to other return periods?**
+
 
 
 
