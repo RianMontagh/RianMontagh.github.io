@@ -41,6 +41,17 @@ I made two simple updates to the synthetic hydrographs &emdash; I lowered the pe
 
 **Question (maybe for Jessica): Does the 10,000 cfs difference in the 100-year peak flow apply linearly to other return periods?**
 
+I also added a 3-day post-flood baseflow extension to all of the synthetic hydrographs. This allows us to see how long an avulsion in the model would last past the flood peak. See Figure 2 below. 
+
+## Personal Developement
+
+I have also seen two opportunities that sound interesting to me but I am not sure if the time sink to apply and odds of getting accepted make sense to apply. 
+
+1. [UW Hebold Fellowship](https://www.engr.washington.edu/current/deans_scholarships)
+- not sure if I have enough Data Science emphasis, and might need to consider taking more classes in it next year. 
+2. [NextProf Pathfinding](https://nextprof.engin.umich.edu/nextprof-pathfinder/)
+- would love to learn more about how to get set up for a faculty job! 
+
 
 
 
