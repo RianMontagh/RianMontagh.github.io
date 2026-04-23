@@ -33,7 +33,11 @@ The land types that were set to nonerodible are:
 
 *Figure 1. Spatially varying sediment fractions for fine sand, coarse sand, gravel sand, fine gravel, coarse gravel, and cobble.*
 
-In Figure 1, we can see that the sediment fractions are uniform other than the distinction between erodible and nonerodible areas. The large blob of dark blue to the east of the Everson corridor represents the developed area of the Everson downtown, and the line that extends southward from it is Emerson Road. It makes sense that these should not erode as they are paved surfaces. If anything they would fail suddenly rather than slowly erode. We can also see that the floodplain contains much finer sediment than the sediment in the channel, which makes sense because typically rivers convey coarse sediment in the channel and deposit finer material on the floodplain. 
+In Figure 1, we can see that the sediment fractions are uniform other than the distinction between erodible and nonerodible areas. The large blob of dark blue to the east of the Everson corridor represents the developed area of the Everson downtown, and the line that extends southward from it is Emerson Road. It makes sense that these should not erode as they are paved surfaces. If anything they would fail suddenly rather than slowly erode. We can also see that the floodplain contains much finer sediment than the sediment in the channel, which makes sense because typically rivers convey coarse sediment in the channel and deposit finer material on the floodplain. See Figure 2 below for a comparison to the previous sediment fraction that did not have nonerodible areas. 
+
+<img width="1397" alt="image" src="https://github.com/user-attachments/assets/b0c2ccc4-c5ca-437d-b159-edf28c1311df" />
+
+*Figure 2. Sediment fractions before adding nonerodible areas.*
 
 ## New Hydrographs
 
