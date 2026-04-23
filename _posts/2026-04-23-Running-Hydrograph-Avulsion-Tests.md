@@ -55,7 +55,11 @@ I have also seen two opportunities that sound interesting to me but I am not sur
 1. [UW Hebold Fellowship](https://www.engr.washington.edu/current/deans_scholarships)
 - not sure if I have enough Data Science emphasis, and might need to consider taking more classes in it next year. 
 2. [NextProf Pathfinding](https://nextprof.engin.umich.edu/nextprof-pathfinder/)
-- would love to learn more about how to get set up for a faculty job! 
+- would love to learn more about how to get set up for a faculty job!
+
+## Thoughts on Backing Up Research Files
+
+This week I also started experimenting with OneDrive as a way to backup my files to a cloud environment. I have been noticing some slower processing times in Matlab and slower download speeds from Hyak to my , but need to do a systematic check to make sure that's the case. Wuming and Shelby use hard drives, but I wonder if that is as safe as using a cloud environment or similar. Ryan uses Christie's Kopah storage which is a paid service.  
 
 
 
