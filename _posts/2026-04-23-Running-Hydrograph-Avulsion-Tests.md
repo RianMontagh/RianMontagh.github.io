@@ -45,11 +45,26 @@ I made two simple updates to the synthetic hydrographs &emdash; I lowered the pe
 
 **Question (maybe for Jessica): Does the 10,000 cfs difference in the 100-year peak flow apply linearly to other return periods?**
 
-I also added a 3-day post-flood baseflow extension to all of the synthetic hydrographs. This allows us to see how long an avulsion in the model would last past the flood peak. See Figure 2 below. 
+I also added a 3-day post-flood baseflow extension to all of the synthetic hydrographs. This allows us to see how long an avulsion in the model would last past the flood peak. See Figure 3 below. 
 
 <img width="927" alt="image" src="https://github.com/user-attachments/assets/1f28c42f-da39-465a-80c5-2e3b0c3cf4ec" />
 
-*Figure 2. Synthetic Hydrographs with updated peaks and post-flood duration.*
+*Figure 3. Synthetic Hydrographs with updated peaks and post-flood duration.*
+
+## Results from 100-year Hydrograph runs: 3-day and 7-day Duration, Erodible and Non-Erodible
+
+I ran four models this week:
+
+1. 100-year, 3-day flood with uniform floodplain grain size distribution
+2. 100-year, 3-day flood with uniform floodplain grain size distribution other than the nonerodible land cover
+3. 100-year, 7-day flood with uniform floodplain grain size distribution
+4. 100-year, 7-day flood with uniform floodplain grain size distribution other than the nonerodible land cover
+
+I was specifically interested in the presence of flow and erosion patterns in the Everson Overflow. Prolonged flow or incision in the overflow zone indicate avulsive processes. The following four figures show bed level change from the start to the end of the model run time. 
+
+<img width="1262" alt="image" src="https://github.com/user-attachments/assets/c311ad8a-786c-4673-b591-f184141b6f15" />
+
+*Figure 4. Bed level change in overflow after 100 year, 3-day flood with nonerodible areas.*
 
 
 ## Personal Developement
