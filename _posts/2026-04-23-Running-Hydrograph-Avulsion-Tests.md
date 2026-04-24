@@ -6,7 +6,7 @@ This week I:
 
 1. Created floodplain sediment fraction XYZ files with nonerodible areas based on the 2024 NLCD landcover data and the four vegetated bars identified by Wuming.
 2. Created new test hydrographs with a lower peak based on the Whatcom County 100 year flood being 10,000 cfs smalled than the value from StreamStats. I also added a 3-day period of baseflow after the flood hydrograph to look for extensive flow in the channel.
-3. Ran the 100-year peak flood at a 3-day duration with the original sediment fractions and the sediment fractions with nonerodible areas.
+3. Ran the 100-year peak flood at a 3-day and 7-day durations with the original sediment fractions and the sediment fractions with nonerodible areas.
 
 ## New Sediment Fractions 
 
