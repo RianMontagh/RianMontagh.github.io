@@ -82,7 +82,7 @@ Figure 6 below shows the bed change after the 100-year, 7-day duration flood, in
 
 *Figure 7. Bed level change in overflow after 100 year, 7-day flood without nonerodible areas.*
 
-One interesting result is shown in the following figure: the incision and erosion caused by the large, long flood is not attenuated by the following three days of lower flow. Basically, the bed change right after the maximum discharge is relatively unchanged by the end of the model run. 
+One interesting result is shown in the following figure: the incision and erosion caused by the large, long flood is not attenuated by the following three days of lower flow. Basically, the bed change right after the maximum discharge is relatively unchanged by the end of the model run. Comparre Figure 8 with Figure 7 above, and they are almost identical. 
 
 <img width="1216" alt="image" src="https://github.com/user-attachments/assets/fad003de-bc20-48ea-88da-6bcca041705d" />
 
@@ -91,6 +91,17 @@ One interesting result is shown in the following figure: the incision and erosio
 <img width="738" alt="image" src="https://github.com/user-attachments/assets/85fe8ca2-5c58-4ce4-b61f-fd86bb664214" />
 
 *Figure 9. 100-year, 7-day Hydrograph with modeled dates.*
+
+Let's take a look at the flow rates in the overflow cross section for each of the model runs. 
+
+<img width="951" height="618" alt="image" src="https://github.com/user-attachments/assets/db07c043-6ff0-497b-8576-58f58e167388" />
+
+*Figure 10. Discharge in the Overflow cross section for the 3-day duration, 100-year flood.*
+
+<img width="960" alt="image" src="https://github.com/user-attachments/assets/c5f94e28-0831-41a0-9694-a41dc470ea79" />
+
+*Figure 10. Discharge in the Overflow cross section for the 7-day duration, 100-year flood.*
+
 
 
 
