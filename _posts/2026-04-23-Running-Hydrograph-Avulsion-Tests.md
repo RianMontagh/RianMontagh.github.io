@@ -79,7 +79,7 @@ I was specifically interested in the presence of flow and erosion patterns in th
 
 I have also seen two opportunities that sound interesting to me but I am not sure if the time sink to apply and odds of getting accepted make sense to apply. 
 
-1. [UW Hebold Fellowship](https://www.engr.washington.edu/current/deans_scholarships)
+1. [UW Herbold Fellowship](https://www.engr.washington.edu/current/deans_scholarships)
 - not sure if I have enough Data Science emphasis, and might need to consider taking more classes in it next year. 
 2. [NextProf Pathfinding](https://nextprof.engin.umich.edu/nextprof-pathfinder/)
 - would love to learn more about how to get set up for a faculty job!
