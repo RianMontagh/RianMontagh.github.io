@@ -102,8 +102,13 @@ Let's take a look at the flow rates in the overflow cross section for each of th
 
 *Figure 10. Discharge in the Overflow cross section for the 7-day duration, 100-year flood.*
 
+## Conclusions
 
-
+1. Areas of erosion and incision cluster around one of the levees (?) that is not modeled as a fixed weir.
+2. There is one persistent area of bed change in all model runs the right overbank where sediment was observed in the farmer's field.
+3. Adding the non-erodible areas decreases but does not eliminate the bed change in the right overbank. It also causes an increase in erosion downstream from the levee.
+4. Adding the non-erodible areas decreases the peak amount and duration of flow throught the Overflow cross section.
+5. Increasing the duration of the flood from 3 days to 7 days causes slightly more intense erosion and deposition in the similar spatial patterns. 
 
 ## Personal Developement
 
