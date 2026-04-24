@@ -108,7 +108,9 @@ Let's take a look at the flow rates in the overflow cross section for each of th
 2. There is one persistent area of bed change in all model runs the right overbank where sediment was observed in the farmer's field.
 3. Adding the non-erodible areas decreases but does not eliminate the bed change in the right overbank. It also causes an increase in erosion downstream from the levee.
 4. Adding the non-erodible areas decreases the peak amount and duration of flow throught the Overflow cross section.
-5. Increasing the duration of the flood from 3 days to 7 days causes slightly more intense erosion and deposition in the similar spatial patterns. 
+5. Increasing the duration of the flood from 3 days to 7 days causes slightly more intense erosion and deposition in the similar spatial patterns.
+
+I am currently working on comparing the discharges in the main channel, and predict that the runs with the nonerodible areas will have more discharge, because there is less discharge in the overflow for those same model runs. 
 
 ## Personal Developement
 
