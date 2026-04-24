@@ -66,6 +66,8 @@ I was specifically interested in the presence of flow and erosion patterns in th
 
 *Figure 4. Bed level change in overflow after 100 year, 3-day flood with nonerodible areas.*
 
+<img width="1235" alt="image" src="https://github.com/user-attachments/assets/a74a21b9-7d2e-4ba5-ab4a-c45c2c3d8bff" />
+
 *Figure 5. Bed level change in overflow after 100 year, 3-day flood without nonerodible areas.*
 
 *Figure 6. Bed level change in overflow after 100 year, 7-day flood without nonerodible areas.*
