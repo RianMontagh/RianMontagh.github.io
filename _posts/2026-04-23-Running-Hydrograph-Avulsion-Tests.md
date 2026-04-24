@@ -70,9 +70,28 @@ I was specifically interested in the presence of flow and erosion patterns in th
 
 *Figure 5. Bed level change in overflow after 100 year, 3-day flood without nonerodible areas.*
 
-*Figure 6. Bed level change in overflow after 100 year, 7-day flood without nonerodible areas.*
+### The 7-Day Duration
+
+Figure 6 below shows the bed change after the 100-year, 7-day duration flood, including the addition 3 days of winter low flow. Figure 7 shows the same result but for the model without the nonerodible areas added. 
+
+<img width="1253" alt="image" src="https://github.com/user-attachments/assets/f90c1542-0d84-465c-9f6e-72964ea2e171" />
+
+*Figure 6. Bed level change in overflow after 100 year, 7-day flood with nonerodible areas.*
+
+<img width="1230" alt="image" src="https://github.com/user-attachments/assets/df23269c-0b12-4e05-89d9-f9b07e1479ee" />
 
 *Figure 7. Bed level change in overflow after 100 year, 7-day flood without nonerodible areas.*
+
+One interesting result is shown in the following figure: the incision and erosion caused by the large, long flood is not attenuated by the following three days of lower flow. Basically, the bed change right after the maximum discharge is relatively unchanged by the end of the model run. 
+
+<img width="1216" alt="image" src="https://github.com/user-attachments/assets/fad003de-bc20-48ea-88da-6bcca041705d" />
+
+*Figure 8. Bed level change in overflow close to the time of the 100 year, 7-day flood peak without nonerodible areas.*
+
+<img width="738" alt="image" src="https://github.com/user-attachments/assets/85fe8ca2-5c58-4ce4-b61f-fd86bb664214" />
+
+*Figure 9. 100-year, 7-day Hydrograph with modeled dates.*
+
 
 
 ## Personal Developement
