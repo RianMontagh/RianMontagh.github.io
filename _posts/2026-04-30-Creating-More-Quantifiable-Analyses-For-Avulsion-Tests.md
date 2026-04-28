@@ -2,19 +2,47 @@
 
 Last week, I generated different plots to try and get at the differences in bed change between the different avulsion sensitivity runs. This week my goal was to challenge myself to be more quantitative in my analysis. In addition to writing more scripts for model output analysis, I also ran the 100-year, 1-day synthetic hydrograph to complement my 3-day and 7-day duration runs. 
 
-## Ratio of Q_channel to Q_overflow
+## Looking Deeper at the Overflow Discharge
 
-One metric we can use to get a sense of how the system might be tending toward avulsion is the ratio of the discharge in the overflow channel to the discharge in the main channel. If we compare these ratios over time, we might see that one set of conditions leads to the ratio being elevated for a longer time period. Based on my plots of the overflow last week, I predicted that the runs without the erodible areas would have a higher $Q_{overflow}/Q_{main channel}$ ratio because they have more flow in the overflow corridor. See Figures 1 and 2 below for the location of the overflow and main channel cross sections and the discharges through the overflow cross section. I tested out using two different cross sections to define the overflow: one is the cross section at the boundary condition that is wider and defines the point where flow escapes to Sumas, the other is the cross section at Main Street overflow gage. The first option captures a larger fraction of the flow, but might double-count some if the flow in the main channel. 
+One metric we can use to get a sense of how the system might be tending toward avulsion is the ratio of the discharge in the overflow channel to the discharge in the main channel. If we compare these ratios over time, we might see that one set of conditions leads to the ratio being elevated for a longer time period. Based on my plots of the overflow last week, I predicted that the runs without the erodible areas would have a higher $Q_{overflow}/Q_{main channel}$ ratio because they have more flow in the overflow corridor. See Figures 1, 2,and 3 below for the location of the overflow and main channel cross sections and the discharges through the overflow cross sections. I tested out using two different cross sections to define the overflow: one is the cross section at the boundary condition that is wider and defines the point where flow escapes to Sumas, the other is the cross section at Main Street overflow gage. The first option captures a larger fraction of the flow, but might double-count some if the flow in the main channel. 
 
 <img width="759" alt="image" src="https://github.com/user-attachments/assets/0c75880f-8f48-4b4b-ba0a-b9e7fd52a045" />
 
 *Figure 1. Location of the Main Channel and Two Overflow Cross Sections used for this analysis (highlighted in orange).*
 
-*Figure 2. Discharge through the Overflow Corridor Cross Section for different flood durations and erodibilities.*
+<img width="1024" alt="image" src="https://github.com/user-attachments/assets/80f90bf9-1691-4de5-8f50-a45707987a73" />
+
+*Figure 2. Discharge through the Overflow to Sumas Cross Section for different flood durations and erodibilities.*
+
+<img width="1017" alt="image" src="https://github.com/user-attachments/assets/4fb62376-b4f2-49bd-b3e2-4cfddd9d03ee" />
+
+*Figure 3. Discharge through the Overflow at Main St. Cross Section for different flood durations and erodibilities.*
+
+There are several things to notice here:
+
+1. The model runs without the nonerodible areas have consistently high discharge in the overflow corridor regardless of flood duration or cross section used.
+2. The difference between peak flow of the with/without erodible runs increases as flood duration increases regardless of cross section used. Could this be related to the fact that discharge is increasing more slowly on the rising limb for the longer durations, giving more time for morphologic change?
+3. The two overflow cross sections seem to have similar-looking results, but the Main St. cross section has less discharge (due to it being a shorter section) and the magnitude of changes from subplot to subplot is smaller.
+
+I also created a table of the maximum discharge in the overflow channel for each run. 
+
+*Table 1. Maximum Discharge in the Overflow at Main St. Cross Section* ($m^3/s$)
+
+|                               | 1-day   | 3-day  | 7-day  |
+| ----------------------------- | ------- | ------ | ------ |
+| **Without Nonerodible Areas** |  893.09 | 934.38 | 936.18 |
+| **With Erodible Areas**       |  877.85 | 887.34 | 871.05 |
+
+ 
 
 ### Comparing Max Q ratios 
 
 It is hard to tell from the graphs how the values of the discharge ratios compare from the plots above, so I pulled out the maximum values for each run to compare them. 
+
+|          | 1-day | 3-day | 7-day |
+| ------------ | --------| ------ | ---- |
+| **Without Nonerodible Areas** |  | 
+| **With Erodible Areas** |  |  | 
 
 
 
