@@ -2,9 +2,11 @@
 
 Last week, I generated different plots to try and get at the differences in bed change between the different avulsion sensitivity runs. This week my goal was to challenge myself to be more quantitative in my analysis. In addition to writing more scripts for model output analysis, I also ran the 100-year, 1-day synthetic hydrograph to complement my 3-day and 7-day duration runs. 
 
-# Ratio of Q_channel to Q_overflow
+## Ratio of Q_channel to Q_overflow
 
-One metric we can use to get a sense of how the system might be tending toward avulsion is the ratio of the discharge in the overflow channel to the discharge in the main channel. If we compare these ratios over time, we might see that one set of conditions leads to the ratio being elevated for a longer time period. 
+One metric we can use to get a sense of how the system might be tending toward avulsion is the ratio of the discharge in the overflow channel to the discharge in the main channel. If we compare these ratios over time, we might see that one set of conditions leads to the ratio being elevated for a longer time period. Based on my plots of the overflow last week, I predicted that the runs without the erodible areas would have a higher $Q_{overflow}/Q_{main channel}$ ratio because they have more flow in the overflow corridor. See figures 1 and 2, below, for the 7-day duration. 
+
+
 
 
 
