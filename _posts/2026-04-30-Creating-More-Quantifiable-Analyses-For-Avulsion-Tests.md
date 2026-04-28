@@ -50,7 +50,37 @@ The trends are a little easier to see in the table and the plot below &emdash; T
 
 *Figure 5. Maximum Disharge at Main St. vs. Flood Duration.*
 
-### Comparing Max Q ratios 
+## Analyzing the $Q_{overflow}/Q_{main channel}$ (or Q ratio)
+
+So, based on the plots from the above section, we know that the model runs without the nonerodible areas have more discharge in the overflow corridor. This means that we would expect our $Q_{overflow}/Q_{main channel}$ to also be higher for the 'without nonerodible areas' models. This ends up being the case (see below). 
+
+<img width="1021" alt="image" src="https://github.com/user-attachments/assets/be50d8f7-778e-4e85-891b-1639f308ebc5" />
+
+*Figure 6. Q ratio at Everson for the Overflow to Sumas Cross Section.*
+
+Again, here are the tables and plots for the maximum values of the Q ratio. 
+
+*Table 3. Maximum Q Ratio in the Overflow to Sumas Cross Section* 
+|                               | 1-day    | 3-day   | 7-day   |
+| ----------------------------- | -------- | ------- | ------- |
+| **Without Nonerodible Areas** |  0.84032 | 0.90272 | 0.94263 |
+| **With Erodible Areas**       |  0.78276 | 0.79005 | 0.78278 |
+
+*Table 4. Maximum Q Ratio in the Main St. Cross Section* 
+|                               | 1-day    | 3-day   | 7-day   |
+| ----------------------------- | -------- | ------- | ------- |
+| **Without Nonerodible Areas** | 
+| **With Erodible Areas**       | 
+
+For the rest of the analysis, I decided to focus in on the overflow to Sumas, as this defines what flow is actually sent north in the potential avulsion pathway. 
+
+<img width="911" alt="image" src="https://github.com/user-attachments/assets/1e0951b5-1316-47cd-b741-5dca57aae03a" />
+
+*Figure 8. Maximum Q Ratio at Overflow to Sumas vs. Flood Duration.*
+
+
+
+
 
 It is hard to tell from the graphs how the values of the discharge ratios compare from the plots above, so I pulled out the maximum values for each run to compare them. 
 
