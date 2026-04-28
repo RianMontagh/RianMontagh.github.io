@@ -26,14 +26,29 @@ There are several things to notice here:
 
 I also created a table of the maximum discharge in the overflow channel for each run. 
 
-*Table 1. Maximum Discharge in the Overflow at Main St. Cross Section* ($m^3/s$)
+*Table 1. Maximum Discharge in the Overflow to Sumas Cross Section* ($m^3/s$)
+
+|                               | 1-day   | 3-day  | 7-day  |
+| ----------------------------- | ------- | ------ | ------ |
+| **Without Nonerodible Areas** | 1432.7  | 1510.6 | 1499.8 |
+| **With Erodible Areas**       | 1393    | 1398.4 | 1359.2 |
+
+*Table 2. Maximum Discharge in the Overflow at Main St. Cross Section* ($m^3/s$)
 
 |                               | 1-day   | 3-day  | 7-day  |
 | ----------------------------- | ------- | ------ | ------ |
 | **Without Nonerodible Areas** |  893.09 | 934.38 | 936.18 |
 | **With Erodible Areas**       |  877.85 | 887.34 | 871.05 |
 
- 
+The trends are a little easier to see in the table and the plot below &emdash; There is a more dramatic increase in overflow discharge from the 1-day to the 3-day duration, which decreases or stays about the same from the 3-day to the 7-day duration. 
+
+<img width="919" alt="image" src="https://github.com/user-attachments/assets/b69a32b0-0843-4c1e-80c7-68ea6c9c935a" />
+
+*Figure 4. Maximum Disharge at Overflow to Sumas. vs. Flood Duration.*
+
+<img width="922" alt="image" src="https://github.com/user-attachments/assets/b126d74d-395a-40a7-ba71-c721b0b9db37" />
+
+*Figure 5. Maximum Disharge at Main St. vs. Flood Duration.*
 
 ### Comparing Max Q ratios 
 
