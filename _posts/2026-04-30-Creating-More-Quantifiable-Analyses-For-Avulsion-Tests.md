@@ -12,6 +12,10 @@ One metric we can use to get a sense of how the system might be tending toward a
 
 *Figure 2. Discharge through the Overflow Corridor Cross Section for different flood durations and erodibilities.*
 
+### Comparing Max Q ratios 
+
+It is hard to tell from the graphs how the values of the discharge ratios compare from the plots above, so I pulled out the maximum values for each run to compare them. 
+
 
 
 
