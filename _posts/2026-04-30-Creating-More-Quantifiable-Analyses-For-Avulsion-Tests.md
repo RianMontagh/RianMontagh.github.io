@@ -57,7 +57,7 @@ What this might mean is that at this event-scale, we are not seeing the feedback
 
 ## Analyzing the $Q_{overflow}/Q_{main channel}$ (or Q ratio)
 
-So, based on the plots from the above section, we know that the model runs without the nonerodible areas have more discharge in the overflow corridor. This means that we would expect our $Q_{overflow}/Q_{main channel}$ to also be higher for the 'without nonerodible areas' models. This ends up being the case (see below). For the rest of the analysis, I decided to focus in on the overflow to Sumas, as this defines what flow is actually sent north in the potential avulsion pathway. 
+So, based on the plots from the above section, we know that the model runs without the nonerodible areas have more discharge in the overflow corridor. This means that we would expect our $Q_{overflow}/Q_{main channel}$ to also be higher for the 'without nonerodible areas' models. This ends up being the case (see below). For the rest of the analysis, I decided to focus in on the overflow to Sumas, as this defines what flow is actually sent north in the potential avulsion pathway. I would expect the results to somewhat match the results from just looking at the overflow discharge, because higher overflow discharge = higher Q ratio, but this requires that the flow in the main channel decreases or stays about the same when the amount of flow routed to the overflow increases. 
 
 <img width="1021" alt="image" src="https://github.com/user-attachments/assets/be50d8f7-778e-4e85-891b-1639f308ebc5" />
 
@@ -74,11 +74,11 @@ Again, here are the tables and plots for the maximum values of the Q ratio.
 
 <img width="911" alt="image" src="https://github.com/user-attachments/assets/1e0951b5-1316-47cd-b741-5dca57aae03a" />
 
-*Figure 7. Maximum Q Ratio at Overflow to Sumas vs. Flood Duration.*
+*Figure 7. Maximum Q Ratio at Overflow to Sumas vs. Flood Duration.* 
 
 ### Conclusions and Observations based on Q Ratio
 
-1. 
+The Q_ration plots have similar trends to the overflow discharge, with some exceptions. The first one that jumped out to me is that instead of decreasing from the 3-day to the 7-day duration as I would have predicted based on the overflow discharges, we instead see an increase or very slight decrease in Q ratio. 
 
 
 
