@@ -18,7 +18,7 @@ One metric we can use to get a sense of how the system might be tending toward a
 
 *Figure 3. Discharge through the Overflow at Main St. Cross Section for different flood durations and erodibilities.*
 
-There are several things to notice here:
+### There are several things to notice here:
 
 1. The model runs without the nonerodible areas have consistently high discharge in the overflow corridor regardless of flood duration or cross section used.
 2. The difference between peak flow of the with/without erodible runs increases as flood duration increases regardless of cross section used. Could this be related to the fact that discharge is increasing more slowly on the rising limb for the longer durations, giving more time for morphologic change?
@@ -42,7 +42,7 @@ I also created a table of the maximum discharge in the overflow channel for each
 
 The trends are a little easier to see in the table and the plot below &emdash; There is a more dramatic increase in overflow discharge from the 1-day to the 3-day duration, which decreases or stays about the same from the 3-day to the 7-day duration. 
 
-<img width="919" alt="image" src="https://github.com/user-attachments/assets/b69a32b0-0843-4c1e-80c7-68ea6c9c935a" />
+<img width="915" alt="image" src="https://github.com/user-attachments/assets/27ab67aa-394a-4b3d-b19b-a4acf6543307" />
 
 *Figure 4. Maximum Disharge at Overflow to Sumas. vs. Flood Duration.*
 
@@ -50,9 +50,14 @@ The trends are a little easier to see in the table and the plot below &emdash; T
 
 *Figure 5. Maximum Disharge at Main St. vs. Flood Duration.*
 
+### Conclusions and Observations Based on Maximum Discharge Overflow
+
+The plot of maximum values of discharge is surprising to me because the longest duration did not have the most discharge in the overflow channel. One explanation could be that even though the discharge is elevated for a longer period of time for the 7-day duration flood, it is not necesarily instantaneously higher. The only difference that duration does is scale the shape of the hydrograph so that the width of the hydrograph base matches the prescribed duration. However, I thought that longer time periods at an elevated level might lead to more morphodynamic feedback looping between bed aggradation in the channel and potential incision in the overflow path.  
+What this might mean is that at this event-scale, we are not seeing the feedback loop due to longer periods of elevated discharge at the upstream boundary condition. There might be a sweet spot between the duration of flow and the rapid increase of discharge on the rising limb of the North Cedarville hydrograph. The plots show that the 1-day flood duration had the least amount of discharge in the overflow channel, even though it has the most extreme rate of change in discharge vs. time. These results need to be complemented with bed change analysis to see why the 3-day discharge seems to be the more avulsive condition, based on the flow rate in the overflow corridor. 
+
 ## Analyzing the $Q_{overflow}/Q_{main channel}$ (or Q ratio)
 
-So, based on the plots from the above section, we know that the model runs without the nonerodible areas have more discharge in the overflow corridor. This means that we would expect our $Q_{overflow}/Q_{main channel}$ to also be higher for the 'without nonerodible areas' models. This ends up being the case (see below). 
+So, based on the plots from the above section, we know that the model runs without the nonerodible areas have more discharge in the overflow corridor. This means that we would expect our $Q_{overflow}/Q_{main channel}$ to also be higher for the 'without nonerodible areas' models. This ends up being the case (see below). For the rest of the analysis, I decided to focus in on the overflow to Sumas, as this defines what flow is actually sent north in the potential avulsion pathway. 
 
 <img width="1021" alt="image" src="https://github.com/user-attachments/assets/be50d8f7-778e-4e85-891b-1639f308ebc5" />
 
@@ -66,29 +71,14 @@ Again, here are the tables and plots for the maximum values of the Q ratio.
 | **Without Nonerodible Areas** |  0.84032 | 0.90272 | 0.94263 |
 | **With Erodible Areas**       |  0.78276 | 0.79005 | 0.78278 |
 
-*Table 4. Maximum Q Ratio in the Main St. Cross Section* 
-|                               | 1-day    | 3-day   | 7-day   |
-| ----------------------------- | -------- | ------- | ------- |
-| **Without Nonerodible Areas** | 
-| **With Erodible Areas**       | 
-
-For the rest of the analysis, I decided to focus in on the overflow to Sumas, as this defines what flow is actually sent north in the potential avulsion pathway. 
 
 <img width="911" alt="image" src="https://github.com/user-attachments/assets/1e0951b5-1316-47cd-b741-5dca57aae03a" />
 
-*Figure 8. Maximum Q Ratio at Overflow to Sumas vs. Flood Duration.*
+*Figure 7. Maximum Q Ratio at Overflow to Sumas vs. Flood Duration.*
 
+### Conclusions and Observations based on Q Ratio
 
-
-
-
-It is hard to tell from the graphs how the values of the discharge ratios compare from the plots above, so I pulled out the maximum values for each run to compare them. 
-
-|          | 1-day | 3-day | 7-day |
-| ------------ | --------| ------ | ---- |
-| **Without Nonerodible Areas** |  | 
-| **With Erodible Areas** |  |  | 
-
+1. 
 
 
 
