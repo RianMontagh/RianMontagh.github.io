@@ -78,7 +78,7 @@ Again, here are the tables and plots for the maximum values of the Q ratio.
 
 ### Conclusions and Observations based on Q Ratio
 
-The Q_ration plots have similar trends to the overflow discharge, with some exceptions. The first one that jumped out to me is that instead of decreasing from the 3-day to the 7-day duration as I would have predicted based on the overflow discharges, we instead see an increase or very slight decrease in Q ratio. 
+The Q_ration plots have similar trends to the overflow discharge, with some exceptions. The first one that jumped out to me is that instead of decreasing from the 3-day to the 7-day duration as I would have predicted based on the overflow discharges, we instead see an increase or very slight decrease in Q ratio. This made me wonder what exactly the discharge in the main channel is doing. I wondered if maybe there could be an effect such as the main channel cross section not capturing all of the flow in the 7-day model run. I plotted main channel discharge below: 
 
 
 
