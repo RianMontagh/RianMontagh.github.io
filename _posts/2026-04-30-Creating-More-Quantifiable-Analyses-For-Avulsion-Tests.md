@@ -81,5 +81,16 @@ Again, here are the tables and plots for the maximum values of the Q ratio.
 The Q_ration plots have similar trends to the overflow discharge, with some exceptions. The first one that jumped out to me is that instead of decreasing from the 3-day to the 7-day duration as I would have predicted based on the overflow discharges, we instead see an increase or very slight decrease in Q ratio. This made me wonder what exactly the discharge in the main channel is doing. I wondered if maybe there could be an effect such as the main channel cross section not capturing all of the flow in the 7-day model run. I plotted main channel discharge below: 
 
 
+<img width="916" alt="image" src="https://github.com/user-attachments/assets/761c2701-d3a4-4358-afef-79f8f6c0b49c" />
+
+*Figure 8. Maximum Main Channel Discharge at Everson*
+
+For the model without nonerodible areas, the increase in Q ratio from the 3-day to 7-day duration is caused by the decrease in main channel flow rather than an increase in overflow. This made me wonder if not all of the flow is captured between the overflow and the main channel cross sections. In addition, I noticed that the timing of the peak in the main channel and peak in the overflow cross section occur at different times (7 hour difference in one case), pointing to the distance and therefore time lag between them. This means that comparing the discharges at the same time does not mean that the peak values are matched up. 
+
+Solution 1: Calculate the overall volume that travels through the main channel versus the overflow channel by the end of the model run. This would get rid of the lag problem, but would eliminate the time-varying aspect of the Q ratio. 
+
+Solution 2: Compare the discharge in the overflow right next to the channel to the total discharge just upstream of the flow split. This would conserve the time-dependency of the Q ratio and limit the lag between the discharge because the sections would be closer together. See below for the sections I have in mind. 
+
+
 
 
