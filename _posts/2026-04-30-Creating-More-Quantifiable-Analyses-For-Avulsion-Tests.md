@@ -98,9 +98,11 @@ Solution 2: Compare the discharge in the overflow right next to the channel to t
 
 ## Bed Change at Observation Points Along the Everson Corridor and Overflow Corridor
 
-I generated a plot of the total bed change at different observation points that are evenly spaced in the main channel, with point #1 being at the river outlet and #152 being upstream from the Twin View Levee. 
+I generated a plot of the total bed change at different observation points that are approximately evenly spaced in the main channel, with point #1 being at the river outlet and #152 being upstream from the Twin View Levee. The number of the observation point is being used as a proxy for river station, which would be the ideal way to plot this data. The Everson bridge is near observation point #127, which is plotted for reference. 
 
 <img width="1268" height="674" alt="image" src="https://github.com/user-attachments/assets/3fbec636-a5eb-40f2-b568-99345c0364ae" />
+
+*Figure 10. Total bed change in the models without the nonerodible areas at 152 observation points in the main channel. Plotted from downstream to upstream, left to right.*
 
 
 
