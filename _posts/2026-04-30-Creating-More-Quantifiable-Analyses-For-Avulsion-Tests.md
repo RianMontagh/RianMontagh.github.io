@@ -21,7 +21,7 @@ One metric we can use to get a sense of how the system might be tending toward a
 ### There are several things to notice here:
 
 1. The model runs without the nonerodible areas have consistently high discharge in the overflow corridor regardless of flood duration or cross section used.
-2. The difference between peak flow of the with/without erodible runs increases as flood duration increases regardless of cross section used. Could this be related to the fact that discharge is increasing more slowly on the rising limb for the longer durations, giving more time for morphologic change?
+2. The difference between the max peak flow of the "with/without erodible areas" runs increases as flood duration increases regardless of cross section used. Could this be related to the fact that discharge is increasing more slowly on the rising limb for the longer durations, giving more time for morphologic change?
 3. The two overflow cross sections seem to have similar-looking results, but the Main St. cross section has less discharge (due to it being a shorter section) and the magnitude of changes from subplot to subplot is smaller.
 
 I also created a table of the maximum discharge in the overflow channel for each run. 
