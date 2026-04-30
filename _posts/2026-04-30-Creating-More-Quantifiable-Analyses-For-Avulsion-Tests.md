@@ -102,7 +102,18 @@ I generated a plot of the total bed change at different observation points that 
 
 <img width="1268" height="674" alt="image" src="https://github.com/user-attachments/assets/3fbec636-a5eb-40f2-b568-99345c0364ae" />
 
-*Figure 10. Total bed change in the models without the nonerodible areas at 152 observation points in the main channel. Plotted from downstream to upstream, left to right.*
+*Figure 10. Total bed change in the models WITHOUT the nonerodible areas at 152 observation points in the main channel. Plotted from downstream to upstream, left to right.*
+
+<img width="1738" alt="image" src="https://github.com/user-attachments/assets/baad19fa-77e9-4e6f-ba6a-2f43093720d4" />
+
+*Figure 11. Total bed change in the models WITH the nonerodible areas at 152 observation points in the main channel. Plotted from downstream to upstream, left to right.*
+
+Notes:
+
+1. Some observation points are missing data - I will investigate this next week.
+2. Adding the nonerodible areas seems to reduce channel bed change much more than I would have expected, especially because these areas are not in the main channel.
+3. The nonerodible areas decrease the amount of aggradation that the Everson corridor experiences, and eliminates some unrealistic erosion that occurs further downstream at observation point #
+
 
 
 
