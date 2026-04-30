@@ -110,9 +110,13 @@ I generated a plot of the total bed change at different observation points that 
 
 Notes:
 
-1. Some observation points are missing data - I will investigate this next week.
+1. Some observation points are missing data from the 3-day model runs for both with and without nonerodible areas - I will investigate this next week.
 2. Adding the nonerodible areas seems to reduce channel bed change much more than I would have expected, especially because these areas are not in the main channel.
-3. The nonerodible areas decrease the amount of aggradation that the Everson corridor experiences, and eliminates some unrealistic erosion that occurs further downstream at observation point #
+3. The nonerodible areas decrease the amount of aggradation that the Everson corridor experiences, and eliminates some unrealistic erosion that occurs further downstream at observation point #35. This makes sense after I found that this observation point was placed directly where the Main Street bridge crosses the Nooksack, so would have been made nonerodible. I am not sure why it would be experiencing such extreme erosion, however.
+
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/70a6e987-310b-4faa-8f66-f1bcdbd6be97" />
+
+
 
 
 
