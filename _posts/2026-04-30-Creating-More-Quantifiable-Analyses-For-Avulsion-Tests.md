@@ -67,6 +67,7 @@ So, based on the plots from the above section, we know that the model runs witho
 Again, here are the tables and plots for the maximum values of the Q ratio. 
 
 *Table 3. Maximum Q Ratio in the Overflow to Sumas Cross Section* 
+
 |                               | 1-day    | 3-day   | 7-day   |
 | ----------------------------- | -------- | ------- | ------- |
 | **Without Nonerodible Areas** |  0.84032 | 0.90272 | 0.94263 |
