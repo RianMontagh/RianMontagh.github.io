@@ -96,7 +96,7 @@ Solution 2: Compare the discharge in the overflow right next to the channel to t
 
 <img width="691" alt="image" src="https://github.com/user-attachments/assets/33be454f-dec1-4b8e-9c15-7288e15b226d" />
 
-*Figure 9. Potential cross sections to use for a ratio of* $Q_{overflow}/Q_{total}$
+*Figure 9. Potential cross sections to use for a ratio of* $Q_{overflow}/Q_{total}$ *in purple.*
 
 ## Bed Change at Observation Points Along the Everson Corridor and Overflow Corridor
 
