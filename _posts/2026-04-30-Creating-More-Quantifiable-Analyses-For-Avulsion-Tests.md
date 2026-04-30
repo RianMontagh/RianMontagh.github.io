@@ -92,5 +92,15 @@ Solution 1: Calculate the overall volume that travels through the main channel v
 Solution 2: Compare the discharge in the overflow right next to the channel to the total discharge just upstream of the flow split. This would conserve the time-dependency of the Q ratio and limit the lag between the discharge because the sections would be closer together. See below for the sections I have in mind. 
 
 
+<img width="691" alt="image" src="https://github.com/user-attachments/assets/33be454f-dec1-4b8e-9c15-7288e15b226d" />
+
+*Figure 9. Potential cross sections to use for a ratio of* $Q_{overflow}/Q_{total}$
+
+## Bed Change at Observation Points Along the Everson Corridor and Overflow Corridor
+
+I generated a plot of the total bed change at different observation points that are evenly spaced in the main channel, with point #1 being at the river outlet and #152 being upstream from the Twin View Levee. 
+
+<img width="1268" height="674" alt="image" src="https://github.com/user-attachments/assets/3fbec636-a5eb-40f2-b568-99345c0364ae" />
+
 
 
