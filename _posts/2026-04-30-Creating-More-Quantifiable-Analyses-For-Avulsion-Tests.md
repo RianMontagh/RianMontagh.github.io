@@ -40,7 +40,7 @@ I also created a table of the maximum discharge in the overflow channel for each
 | **Without Nonerodible Areas** |  893.09 | 934.38 | 936.18 |
 | **With Erodible Areas**       |  877.85 | 887.34 | 871.05 |
 
-The trends are a little easier to see in the table and the plot below &emdash; There is a more dramatic increase in overflow discharge from the 1-day to the 3-day duration, which decreases or stays about the same from the 3-day to the 7-day duration. 
+The trends are a little easier to see in the table and the plot below &mdash; There is a more dramatic increase in overflow discharge from the 1-day to the 3-day duration, which decreases or stays about the same from the 3-day to the 7-day duration. 
 
 <img width="915" alt="image" src="https://github.com/user-attachments/assets/27ab67aa-394a-4b3d-b19b-a4acf6543307" />
 
