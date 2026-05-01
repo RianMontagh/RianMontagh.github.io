@@ -119,6 +119,10 @@ Notes:
 
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/70a6e987-310b-4faa-8f66-f1bcdbd6be97" />
 
+## Questions
+1. I am currently developing back-to-back floods to test in our model, but I need to decide on the recovery time between the two floods. One starting point is the ArkStorm, which is a megastorm consisting of two consecutie atmospheric rivers with four days between them.
+2. I want to figure out the best way to make a spatially-averaged bed change vs. time line plot. 
+
 
 
 
