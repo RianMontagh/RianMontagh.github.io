@@ -113,8 +113,9 @@ I generated a plot of the total bed change at different observation points that 
 Notes:
 
 1. Some observation points are missing data from the 3-day model runs for both with and without nonerodible areas - I will investigate this next week.
-2. Adding the nonerodible areas seems to reduce channel bed change much more than I would have expected, especially because these areas are not in the main channel.
-3. The nonerodible areas decrease the amount of aggradation that the Everson corridor experiences, and eliminates some unrealistic erosion that occurs further downstream at observation point #35. This makes sense after I found that this observation point was placed directly where the Main Street bridge crosses the Nooksack, so would have been made nonerodible. I am not sure why it would be experiencing such extreme erosion, however.
+2. Adding the nonerodible areas seems to reduce channel bed change much more than I would have expected, especially because these areas are not in the main channel (except for at bridges). 
+3. The nonerodible areas decrease the amount of aggradation that the Everson corridor experiences, and eliminates some unrealistic erosion that occurs further downstream at observation point #35. This makes sense after I found that this observation point was placed directly where the Main Street bridge crosses the Nooksack, so would have been made nonerodible. I am not sure why it would be experiencing such extreme erosion, however. This points to a step that should probably be taken next, which is to be more careful about what areas are made non-erodible. Bridges should still be allowed to 'erode' because the water flows underneath the bridge, so even though it is a developed land type, it should still be classified as open channel. This also has big implications for the Everson reach, which has nonerodible areas at the Everson bridge. To-do: Ask Wuming if he addressed this issue in his sediment thickness files. 
+4. The different durations generally have the same trends in bed change. For example, if there is erosion in the 1-day duration, there is also erosion in the 7-day duration, just more of it. 
 
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/70a6e987-310b-4faa-8f66-f1bcdbd6be97" />
 
