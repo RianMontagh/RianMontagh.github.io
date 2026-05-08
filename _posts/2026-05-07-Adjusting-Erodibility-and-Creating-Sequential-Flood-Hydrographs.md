@@ -26,6 +26,10 @@ With some ArcGIS Pro work, I was able to edit the pixels in the original NLCD ra
 
 Addition model runs for morpho off and no bridges have been run!
 
+Here are the updated plots (same plots as last week but with the morpho off runs and the nonerodible area runs have no bridges).
+
+
+
 # Adjusting Erodibility
 
 ### Thoughts on Developed, Open Space
@@ -58,6 +62,18 @@ I decided to test five different floodplain grain size distribution: 0.5, 0.75, 
 
 I then built the sediment thickness files based on the four new distributions (not including the fining factor = 1, which is just the original floodplain distribution). 
 
+Started running these models, but ran into an error which I thought I had previously fixed.
+
+Question for Wuming: Have you ever gotten this error?
+
+    ** ERROR  : reduce_kobs: non-unique observation station(s)
+    Abort(201920005) on node 2 (rank 2 in comm 0): Fatal error in PMPI_Abort: Invalid communicator, error stack:
+    PMPI_Abort(154): MPI_Abort(comm=0x0, errorcode=1) failed
+    PMPI_Abort(91).: Invalid communicator
+    ** ERROR  : reduce_kobs: non-unique observation station(s)
+    Abort(201920005) on node 6 (rank 6 in comm 0): Fatal error in PMPI_Abort: Invalid communicator, error stack:
+    PMPI_Abort(154): MPI_Abort(comm=0x0, errorcode=1) failed
+    PMPI_Abort(91).: Invalid communicator
 
 
 
