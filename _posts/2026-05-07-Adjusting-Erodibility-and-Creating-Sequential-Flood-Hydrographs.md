@@ -24,9 +24,11 @@ With some ArcGIS Pro work, I was able to edit the pixels in the original NLCD ra
 
 # Additional Model Runs
 
+Addition model runs for morpho off and no bridges have been run!
+
 # Adjusting Erodibility
 
-## Thoughts on Developed, Open Space
+### Thoughts on Developed, Open Space
 
 I started this task by reviewing the [NLCD land cover class descriptions](https://www.mrlc.gov/data/legends/national-land-cover-database-class-legend-and-description#:~:text=Developed%2C%20Open%20Space%2D%20areas%20with,erosion%20control%2C%20or%20aesthetic%20purposes.) especially for the Developed, Open Space category. This is a confusing category because it seems to cover the smaller, rural roads (still paved, not dirt or gravel) and vegetated areas like golf courses, backyards, fields next to developement, and creek corridors through small towns. If we set this land type to nonerodible, which is what we have been doing, we are overestimating the amount of nonerodible area. 
 
@@ -44,7 +46,7 @@ This description reflects what I opserved of the open space type in the raster. 
 
 *Figure 5. Aerial Imagery of the Same Area Shown in Figure 4.*
 
-## Floodplain Sediment Fractions
+### Floodplain Sediment Fractions
 
 The next metric I wanted to look at is the floodplain sediment fractions for the areas left as erodible. In my research plan, I envisioned globally increasing or decreasing the sediment sizes on the floodplain, which would increase or decrease the critical shear stress required to move the sediment. This idea was somewhat based on a paper I had read by [Hajek and Edmonds, 2014](https://watermark02.silverchair.com/199.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAAzYwggMyBgkqhkiG9w0BBwagggMjMIIDHwIBADCCAxgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMiGcdT6IGaf4xbtLjAgEQgIIC6SGfSweq3GxirQ-u_5VwQbCo4HvbEcDcTFdtLWmrQrePjdmAGHjuhYtbCC49vPLRtFnUmhaXXzK1Q1mVKH6HaQgA5UvepeyCiEQiwTYvSaSCPHUqM-dS_DxNEJZk4BcmASzBkhbVRg45jtYjw356Zzd9NpY5WqavclXVVJQm0xTQkiJVKkqoKV4__FjcelVDspRy88Fu67pjXxGCXvDFp6HPfD7H7mOyhvQnj_hy5Kpd5Pjqg_6kSelwO4IPQDAsM6vhobtFuEx79_mI1KwGs-KsC59YV-IjlMGETvXBxlRz0nyKxAt5sROnv7AIJTO3ZdbDCI8SBujnJaIKDVoNNIc-0PnAmW9mk-HCyjzhV_nxIoXpvQsFrtS1x8bVxR6rNVU9ORVD4E-ndtkI3VWq2P6p5QO842KZNBHbVbq4G8vZZ3oxEqmX6Cz29J4i44obPwbC8OVErY3aemTQGACYgD3_dUBsY57iF3xCnfV3qX-5zCNzT2pqC7xRbIxR8irg4jNKAfWLTmYwY6Fq_4iwc_v6iiVw4dE2xSrTjq9JQY5aTPYag7lufi0_GPyamjqJ2BFdwvby9AxPA4pz_SQAjB-2ArS7tOUSk7LI9pDTRLoGWV_PRa3H1b-TBHQVG4BWBJGrXaGJe96oTsbiA0qdmTEEPksIMLes_XUVtfl_Cfh1V3_yfEhIkel3y-jTLs-x5nGk4rJ6Nul0zWywiLEk8kKr5_JD_xyI4vDnhyh8X9x3clBeBM030_ea7h0Eyyd1GXbbOCXjln4nRKQ7VrHsJ1Ahl0ZmDPJozMVrJ_9-w65MGQgNpsNUQ7Kx52gU3Z4I2sQoG_1QjZIWHiFMqC8pGZThD53w5srpCADUkjn90haTScAM02jNK_2uDv31r3yMxOXJ0JrTodsAEJgYn-5DSKrfHZyjFNOVMh3Dtlo56PuGnsTIQpd1puDkZlHhno5t7nEaw0JsRbA84m98W7zDCWnq9jAUlXZKQG4). One of the things the authors did was vary floodplain characteristics in Delft3D to see if the style of avulsion changed, and one of the floodplain characteristics thewy changed was the critical shear stress. As I looked into their methods, I realized that because they used cohesive sediment on their floodplain, they could directly change the user-defined $/tau_c$, but because our floodplain is noncohesive (gravel and sand, no clay) we can only indirectly change the $/tau_c$ by changing the sediment size. Specifically, in Wilcock-Crowe formulation, the reference shear stress represents the critical shear stress, and is dependent on the grain sizes in the bed. A smaller median grain size would not only make particles easier to move, but making the distribution sandier might make gravel easier to move (up to a point) due to the hiding function in Wilcock-Crowe. 
 
