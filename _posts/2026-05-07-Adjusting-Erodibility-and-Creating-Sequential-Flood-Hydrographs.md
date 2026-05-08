@@ -28,7 +28,25 @@ Addition model runs for morpho off and no bridges have been run!
 
 Here are the updated plots (same plots as last week but with the morpho off runs and the nonerodible area runs have no bridges).
 
+<img width="1020" alt="image" src="https://github.com/user-attachments/assets/f22bfe76-4e23-4cb4-b34a-aaafd672ed53" />
 
+*Figure 3. Discharge through the Overflow to Sumas Cross Section for different flood durations and erodibilities.*
+
+<img width="1013" height="635" alt="image" src="https://github.com/user-attachments/assets/05f30c24-95a3-4fbe-abcb-196842dbddfa" />
+
+*Figure 4. Q ratio at Everson for the Overflow to Sumas Cross Section.*
+
+<img width="945" alt="image" src="https://github.com/user-attachments/assets/592ab64d-f44d-4370-82d3-484615ef23c6" />
+
+*Figure 5. Maximum Disharge at Overflow to Sumas. vs. Flood Duration.*
+
+<img width="965" alt="image" src="https://github.com/user-attachments/assets/ce9a4e95-ad20-41cb-a0a6-affe253e30a8" />
+
+*Figure 6. Maximum Q Ratio at Overflow to Sumas vs. Flood Duration.*
+
+<img width="1030" height="569" alt="image" src="https://github.com/user-attachments/assets/595e7876-b502-4380-ac4d-81f25feea116" />
+
+*Figure 7. Total bed change in the models with the nonerodible areas at 152 observation points in the main channel. Plotted from downstream to upstream, left to right.*
 
 # Adjusting Erodibility
 
