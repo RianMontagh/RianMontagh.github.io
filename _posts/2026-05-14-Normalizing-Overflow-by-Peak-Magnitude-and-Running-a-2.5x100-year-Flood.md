@@ -4,7 +4,8 @@ Last week, I realized that some of the results I was getting from running my dif
 
 <img width="557" alt="image" src="https://github.com/user-attachments/assets/07264ac1-e931-4490-8787-f7f3de24aeb8" />
 
+Figure 1. Table 11 from Evan Paul's thesis, "Modeling 21st Century Peak Flows in the Nooksack River Basin in Northwestern Washington State Using Dynamically-Downscaled Global Climate Model Projections"
 
-However, I didn't have a chance to run models with these new hydrographs, so I 
+However, I didn't have a chance to run models with new hydrographs this week, so I instead went the normalizing route. 
 
 
