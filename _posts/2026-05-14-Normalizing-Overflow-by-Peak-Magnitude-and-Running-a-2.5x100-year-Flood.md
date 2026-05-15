@@ -4,8 +4,22 @@ Last week, I realized that some of the results I was getting from running my dif
 
 <img width="557" alt="image" src="https://github.com/user-attachments/assets/07264ac1-e931-4490-8787-f7f3de24aeb8" />
 
-Figure 1. Table 11 from Evan Paul's thesis, "Modeling 21st Century Peak Flows in the Nooksack River Basin in Northwestern Washington State Using Dynamically-Downscaled Global Climate Model Projections"
+*Figure 1. Table 11 from Evan Paul's thesis, "Modeling 21st Century Peak Flows in the Nooksack River Basin in Northwestern Washington State Using Dynamically-Downscaled Global Climate Model Projections"*
 
 However, I didn't have a chance to run models with new hydrographs this week, so I instead went the normalizing route. 
 
+<img width="1378" alt="Max_normalized_overflow_alldurations" src="https://github.com/user-attachments/assets/10d122db-a555-4918-822e-0b1916e44eb9" />
 
+*Figure 2. Max overflow disharge to Sumas divided by the peak discharge magnitude as the upstream boundary (different for each duration).*
+
+Here we are not seeing any significant difference between the proportion of the peak discharge that makes it into the overflow. Also, Wuming was wondering if these values are accurate because 45% of the flow making it to the overflow is much higher than values he has gotten in the past. I have also changed a lot in the model since running the 2025 flood, so I think it would be a good idea to do that again to make sure that everything is working properly by rerunning the 2025 flood and checking the USGS observations against the model. 
+
+# 2.5*100-year Flood
+
+I also aplied a 2.5 multiplier to the 100-year flood and chose to run the 3-day duration. I plotted the spatially-varying bed change which is shown below alongside the 7-day duration of the 1.4*100-year flood. 
+
+1.4*100-year             |  2.5*100-year
+:-------------------------:|:-------------------------:
+![](https://github.com/user-attachments/assets/e2eb97f4-89c3-479f-97dc-56cd59567ed9)  |  ![](https://github.com/user-attachments/assets/b146e2ab-6c0d-4cc8-9120-6112865c3c06)
+
+The floodplain erosion seems to be controlled strongly by Main Street and the small creek that runs through the culvert under Main Street. The pattern of erosion that extends further to the south in the 2.5* flood is very interesting because I can imagine that erosion creeping up to the main channel and breaching the bank to river-right. That seems to be the scenario that would be required to allow flow to leave the channel once high stages attentuate. 
