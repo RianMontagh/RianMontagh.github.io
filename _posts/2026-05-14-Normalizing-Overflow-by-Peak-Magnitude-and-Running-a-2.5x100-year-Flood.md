@@ -6,6 +6,12 @@ Last week, I realized that some of the results I was getting from running my dif
 
 *Figure 1. Table 11 from Evan Paul's thesis, "Modeling 21st Century Peak Flows in the Nooksack River Basin in Northwestern Washington State Using Dynamically-Downscaled Global Climate Model Projections"*
 
+Side note: I also found the Deming peak flows for other return periods to replace my StreamStats values in a 2005 report. 
+
+<img width="459" alt="image" src="https://github.com/user-attachments/assets/e4fc9d5a-6323-4d1e-8a56-84dbc84db2d1" />
+
+*Figure 1.2. Table of Peak Values from "FLOOD FREQUENCY ANALYSIS AT DEMING, FERNDALE, AND EVERSON" (2005)*
+
 However, I didn't have a chance to run models with new hydrographs this week, so I instead went the normalizing route. 
 
 <img width="700" alt="Max_normalized_overflow_alldurations" src="https://github.com/user-attachments/assets/10d122db-a555-4918-822e-0b1916e44eb9" />
