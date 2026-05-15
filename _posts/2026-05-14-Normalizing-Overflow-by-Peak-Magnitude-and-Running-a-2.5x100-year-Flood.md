@@ -8,7 +8,7 @@ Last week, I realized that some of the results I was getting from running my dif
 
 However, I didn't have a chance to run models with new hydrographs this week, so I instead went the normalizing route. 
 
-<img width="1378" alt="Max_normalized_overflow_alldurations" src="https://github.com/user-attachments/assets/10d122db-a555-4918-822e-0b1916e44eb9" />
+<img width="700" alt="Max_normalized_overflow_alldurations" src="https://github.com/user-attachments/assets/10d122db-a555-4918-822e-0b1916e44eb9" />
 
 *Figure 2. Max overflow disharge to Sumas divided by the peak discharge magnitude as the upstream boundary (different for each duration).*
 
