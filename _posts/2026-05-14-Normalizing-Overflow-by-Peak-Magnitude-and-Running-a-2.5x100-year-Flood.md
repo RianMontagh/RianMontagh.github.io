@@ -23,3 +23,12 @@ I also aplied a 2.5 multiplier to the 100-year flood and chose to run the 3-day 
 ![](https://github.com/user-attachments/assets/e2eb97f4-89c3-479f-97dc-56cd59567ed9)  |  ![](https://github.com/user-attachments/assets/b146e2ab-6c0d-4cc8-9120-6112865c3c06)
 
 The floodplain erosion seems to be controlled strongly by Main Street and the small creek that runs through the culvert under Main Street. The pattern of erosion that extends further to the south in the 2.5* flood is very interesting because I can imagine that erosion creeping up to the main channel and breaching the bank to river-right. That seems to be the scenario that would be required to allow flow to leave the channel once high stages attentuate. 
+
+## Next Steps
+
+1. Rerun all the floods with consistent percent increase.
+2. Run other durations for the 2.5* flood.
+3. Look at hydrograph shape from Whatcom County.
+4. Look at Shelby's 'avulsion' model run.
+5. Plot channel conveyance change.
+6. Plot channel bed change vs. river station. 
