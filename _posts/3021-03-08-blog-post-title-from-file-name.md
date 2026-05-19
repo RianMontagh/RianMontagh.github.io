@@ -30,3 +30,9 @@ ForEach ($thing in $things) {
     Write-Output "It highlights it using the GitHub style"
 }
 ```
+
+#### Adding figures in a row
+
+1.4*100-year             |  2.5*100-year
+:-------------------------:|:-------------------------:
+![](https://github.com/user-attachments/assets/e2eb97f4-89c3-479f-97dc-56cd59567ed9)  |  ![](https://github.com/user-attachments/assets/b146e2ab-6c0d-4cc8-9120-6112865c3c06)
