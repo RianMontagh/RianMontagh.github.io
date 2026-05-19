@@ -24,3 +24,13 @@ Steps for Ferndale and Everson Overflow Flood Frequency Analysis
 <img width="779" alt="image" src="https://github.com/user-attachments/assets/55a794aa-0df5-4c6f-b675-dbe94aacee90" />
 
 Takeaway: Uncertainty is high for the larger return periods. Should round to at most two significant figures. 
+
+## Comparing Results of the New Model with 2025 Flood Hydrograph
+
+After making so many changes to my model, I realized that I needed to make sure that the 2025 hydrograph was looking okay in comparison to the USGS observations to gain some confidence in the results from my synthetic hydrograph runs. I used a few runs that I had done in earlier model versions and some new model runs with the current configuration. 
+
+Starting with water surface elevation at Everson, Ferndale, and the Main St. gage:
+
+
+
+
