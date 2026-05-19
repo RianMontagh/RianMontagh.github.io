@@ -11,7 +11,7 @@ Steps for Deming Return Periods
 3. Apply this relationship to the full period of record of Ferndale (stable) (n=57) to get 57 Deming peak flow points.
 4. Run a Log-Pearson Type III analysis on the 57 constructed Deming flows to get the return periods. 
 
-<img width="543" alt="image" src="https://github.com/user-attachments/assets/96a9f347-0e62-4c66-9a0c-4e75e4a17f61" />
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/96a9f347-0e62-4c66-9a0c-4e75e4a17f61" />
 
 *Figure 1. Flood Return Periods at Deming*
 
@@ -21,7 +21,7 @@ Steps for Ferndale and Everson Overflow Flood Frequency Analysis
 2. Get a statistical relationships that allow you to go from Deming flows to Ferndale flows and Deming flows to Everson overflow flows.
 3. Apply these relationships to the flood frequency results for Deming to get flood frequency results for Ferndale and Everson overflow. 
 
-<img width="779" alt="image" src="https://github.com/user-attachments/assets/55a794aa-0df5-4c6f-b675-dbe94aacee90" />
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/55a794aa-0df5-4c6f-b675-dbe94aacee90" />
 
 Takeaway: Uncertainty is high for the larger return periods. Should round to at most two significant figures. 
 
@@ -31,6 +31,10 @@ After making so many changes to my model, I realized that I needed to make sure 
 
 Starting with water surface elevation at Everson, Ferndale, and the Main St. gage:
 
+Everson           |  Ferndale
+:-------------------------:|:-------------------------:
+![](https://github.com/user-attachments/assets/7c03bac6-8b8a-42cd-ab8e-1e0be7161f1a)  |  ![](https://github.com/user-attachments/assets/309ca5fa-c70c-4e97-85dd-775ddc5e326f)
 
+<img width="500" alt="MainSt" src="https://github.com/user-attachments/assets/dc5a9eed-9ddb-408b-a42a-b6034ece56f7" />
 
 
