@@ -11,7 +11,7 @@ Steps for Deming Return Periods
 3. Apply this relationship to the full period of record of Ferndale (stable) (n=57) to get 57 Deming peak flow points.
 4. Run a Log-Pearson Type III analysis on the 57 constructed Deming flows to get the return periods. 
 
-<img width="300" alt="image" src="https://github.com/user-attachments/assets/96a9f347-0e62-4c66-9a0c-4e75e4a17f61" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/96a9f347-0e62-4c66-9a0c-4e75e4a17f61" />
 
 *Figure 1. Flood Return Periods at Deming*
 
@@ -21,7 +21,7 @@ Steps for Ferndale and Everson Overflow Flood Frequency Analysis
 2. Get a statistical relationships that allow you to go from Deming flows to Ferndale flows and Deming flows to Everson overflow flows.
 3. Apply these relationships to the flood frequency results for Deming to get flood frequency results for Ferndale and Everson overflow. 
 
-<img width="300" alt="image" src="https://github.com/user-attachments/assets/55a794aa-0df5-4c6f-b675-dbe94aacee90" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/55a794aa-0df5-4c6f-b675-dbe94aacee90" />
 
 *Figure 2. Flood Return Periods at Everson Overflow (Main St) and Ferndale*
 
