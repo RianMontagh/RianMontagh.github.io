@@ -23,6 +23,8 @@ Steps for Ferndale and Everson Overflow Flood Frequency Analysis
 
 <img width="300" alt="image" src="https://github.com/user-attachments/assets/55a794aa-0df5-4c6f-b675-dbe94aacee90" />
 
+*Figure 2. Flood Return Periods at Everson Overflow (Main St) and Ferndale*
+
 Takeaway: Uncertainty is high for the larger return periods. Should round to at most two significant figures. 
 
 ## Comparing Results of the New Model with 2025 Flood Hydrograph
@@ -31,12 +33,21 @@ After making so many changes to my model, I realized that I needed to make sure 
 
 Starting with water surface elevation at Everson, Ferndale, and the Main St. gage:
 
-Everson           |  Ferndale
+Everson WSE Comparison          |  Ferndale WSE Comparison
 :-------------------------:|:-------------------------:
 ![](https://github.com/user-attachments/assets/7c03bac6-8b8a-42cd-ab8e-1e0be7161f1a)  |  ![](https://github.com/user-attachments/assets/309ca5fa-c70c-4e97-85dd-775ddc5e326f)
 
-Overflow           |
+Overflow WSE Comparison          |
 :-------------------------:|
 <img width="500" alt="MainSt" src="https://github.com/user-attachments/assets/dc5a9eed-9ddb-408b-a42a-b6034ece56f7" /> |
+
+*Figure 3. Comparisons of the WSE at Everson, Ferndale, and the Overflow gage to USGS measurements for a variety of model runs and configurations.*
+
+## Along Channel, Cross-Section Averaged Bed and Water Surface Elevations
+
+<img width="1373" alt="BedandWaterElevation" src="https://github.com/user-attachments/assets/3e145fc1-e189-4e14-a4a2-4228048d70bc" />
+
+*Figure 4. Along Channel, cross-section averaged bed level and water surface elevations for 2025 Flood with Non-Erodible Areas. Sediment fractions and mannings n are current from the 2024 mannings iterations.*
+
 
 
