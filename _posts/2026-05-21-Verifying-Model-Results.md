@@ -41,6 +41,8 @@ Overflow WSE Comparison          |
 :-------------------------:|
 <img width="500" alt="MainSt" src="https://github.com/user-attachments/assets/dc5a9eed-9ddb-408b-a42a-b6034ece56f7" /> |
 
+<img width="500" height="907" alt="Everson" src="https://github.com/user-attachments/assets/259233ee-bb80-4de1-a95e-099a995e7ae3" />
+
 *Figure 3. Comparisons of the WSE at Everson, Ferndale, and the Overflow gage to USGS measurements for a variety of model runs and configurations.*
 
 ## Along Channel, Cross-Section Averaged Bed and Water Surface Elevations
