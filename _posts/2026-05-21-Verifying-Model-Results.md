@@ -39,7 +39,6 @@ Everson WSE Comparison          |  Ferndale WSE Comparison
 
 Overflow WSE Comparison          |
 :-------------------------:|
-
 <img width="800" alt="MainSt" src="https://github.com/user-attachments/assets/888a66d9-8875-4e1d-bb7c-3749eb77ddf5" /> |
 
 *Figure 3. Comparisons of the WSE at Everson, Ferndale, and the Overflow gage to USGS measurements for a variety of model runs and configurations.*
