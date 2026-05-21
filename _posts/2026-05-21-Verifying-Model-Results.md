@@ -35,13 +35,12 @@ Starting with water surface elevation at Everson, Ferndale, and the Main St. gag
 
 Everson WSE Comparison          |  Ferndale WSE Comparison
 :-------------------------:|:-------------------------:
-![](https://github.com/user-attachments/assets/7c03bac6-8b8a-42cd-ab8e-1e0be7161f1a)  |  ![](https://github.com/user-attachments/assets/309ca5fa-c70c-4e97-85dd-775ddc5e326f)
+![](https://github.com/user-attachments/assets/f7ce2eaa-7e20-4b71-8444-b3fed0be5237)  |  ![](https://github.com/user-attachments/assets/36ec5a6d-fb79-4fdf-bcde-33fc26d81969)
 
 Overflow WSE Comparison          |
 :-------------------------:|
-<img width="500" alt="MainSt" src="https://github.com/user-attachments/assets/dc5a9eed-9ddb-408b-a42a-b6034ece56f7" /> |
 
-<img width="500" height="907" alt="Everson" src="https://github.com/user-attachments/assets/259233ee-bb80-4de1-a95e-099a995e7ae3" />
+<img width="500" alt="MainSt" src="https://github.com/user-attachments/assets/888a66d9-8875-4e1d-bb7c-3749eb77ddf5" /> |
 
 *Figure 3. Comparisons of the WSE at Everson, Ferndale, and the Overflow gage to USGS measurements for a variety of model runs and configurations.*
 
@@ -50,6 +49,9 @@ Overflow WSE Comparison          |
 <img width="1373" alt="BedandWaterElevation" src="https://github.com/user-attachments/assets/3e145fc1-e189-4e14-a4a2-4228048d70bc" />
 
 *Figure 4. Along Channel, cross-section averaged bed level and water surface elevations for 2025 Flood with Non-Erodible Areas. Sediment fractions and mannings n are current from the 2024 mannings iterations.*
+
+
+
 
 
 
