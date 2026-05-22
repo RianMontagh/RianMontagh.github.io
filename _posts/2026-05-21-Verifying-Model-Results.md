@@ -43,6 +43,12 @@ Overflow WSE Comparison          |
 
 *Figure 3. Comparisons of the WSE at Everson, Ferndale, and the Overflow gage to USGS measurements for a variety of model runs and configurations.*
 
+From these figures, we can conclude that for the most part nothing super out of the ordinary is going on in the models, which makes me able to trust the results from the synthetic hydrograph runs a little more. 
+
+Looking at the differences between the models is a bit more confusing. Some patterns I notice:
+
+1. The two morpho on models tend to 
+
 ## Along Channel, Cross-Section Averaged Bed and Water Surface Elevations
 
 With Wuming's help, I was able to average variables across cross sections in the Everson reach and plot them vs. distance along the main channel. One question that I had when making this is about how we define the extents of the channel. For this analysis, we use a low-flow channel, but I think that updating this to be a bankfull channel makes more sense if we are using this as a proxy for conveyance change. For instance, if along the cross section the bed on average aggraded, we might assume that conveyance has been lost. We would want that cross section to cover the entire channel. 
@@ -57,6 +63,9 @@ With Wuming's help, I was able to average variables across cross sections in the
 
 ## Looking at the Spatial Distribution of Water for the Synthetic Hydrographs.
 
+1-Day Duration              |  3-Day Duration          |  7-Day Duration
+:-------------------------:|:-------------------------:|:-------------------------:
+  |  ![](https://github.com/user-attachments/assets/77357114-d64e-4757-a7e2-78fb87025739)  |  ![](https://github.com/user-attachments/assets/5214735a-45e8-46ee-a08c-7c35b221c4be)
 
 
 
