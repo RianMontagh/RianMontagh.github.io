@@ -76,7 +76,7 @@ Takeaway - most of the bed aggraded! Water surface elevation after the first pea
 
 The distribution of water at the maximum water surface elevations are relatively similar between durations. The 7-day duration does have more inundation to river right but river left looks very similar to the 3-day duration. Is it possible that the longer duration just causes the water to spread out more but not necessarily push more through the overflow pathway?
 
-Question: Does the length of our outflow boundary condition matter? Right now it does not span the entire width of the slug of water moving north. 
+Question: Does the length of our outflow boundary condition matter? Right now it does not span the entire width of the slug of water moving north.  
 Question: Is there a way to plot arrows pointing which direction the velocity of the water in each cell is?
 
 
