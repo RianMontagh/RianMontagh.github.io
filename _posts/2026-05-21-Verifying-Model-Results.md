@@ -54,7 +54,7 @@ Looking at the differences between the models is a bit more confusing. Some patt
 
 With Wuming's help, I was able to average variables across cross sections in the Everson reach and plot them vs. distance along the main channel. One question that I had when making this is about how we define the extents of the channel. For this analysis, we use a low-flow channel, but I think that updating this to be a bankfull channel makes more sense if we are using this as a proxy for conveyance change. For instance, if along the cross section the bed on average aggraded, we might assume that conveyance has been lost. We would want that cross section to cover the entire channel. 
 
-<img width="700" height="912" alt="CrossSections_onAerial" src="https://github.com/user-attachments/assets/efe1fcf6-3250-4f88-b9a8-cbe06588d119" />
+<img width="700" alt="CrossSections_onAerial" src="https://github.com/user-attachments/assets/efe1fcf6-3250-4f88-b9a8-cbe06588d119" />
 
 *Figure 4. Visualization of the cross sections used for the averaging. Notice how they don't cover many of the gravel bars.*
 
