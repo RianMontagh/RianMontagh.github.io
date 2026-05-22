@@ -47,7 +47,8 @@ From these figures, we can conclude that for the most part nothing super out of 
 
 Looking at the differences between the models is a bit more confusing. Some patterns I notice:
 
-1. The two morpho on models tend to 
+1. The two morpho on models generally have higher WSE.
+2. Updating the Mannings n increases WSE for Everson and the Overflow but not Ferndale. 
 
 ## Along Channel, Cross-Section Averaged Bed and Water Surface Elevations
 
@@ -66,6 +67,11 @@ With Wuming's help, I was able to average variables across cross sections in the
 1-Day Duration              |  3-Day Duration          |  7-Day Duration
 :-------------------------:|:-------------------------:|:-------------------------:
   |  ![](https://github.com/user-attachments/assets/77357114-d64e-4757-a7e2-78fb87025739)  |  ![](https://github.com/user-attachments/assets/5214735a-45e8-46ee-a08c-7c35b221c4be)
+
+The distribution of water at the maximum water surface elevations are relatively similar between durations. The 7-day duration does have more inundation to river right but river left looks very similar to the 3-day duration. Is it possible that the longer duration just causes the water to spread out more but not necessarily push more through the overflow pathway?
+
+Question: Does the length of our outflow boundary condition matter? Right now it does not span the entire width of the slug of water moving north. 
+Question: Is there a way to plot arrows pointing which direction the velocity of the water in each cell is?
 
 
 
