@@ -31,4 +31,47 @@ After the nesting and coincidence assumption was confirmed for two of the larges
 
 *Figure 1. Final 100-Year Design Hydrograph at Deming (red)*
 
+One thing I notice from this hydrograph is that the large first peak has as base time of about 3 days, which is on par with the durations that I have been doing, where I have been thinking of 3-days as a reasonable duration, 1-day as short on average, and 7-day as long on average. This hydrograph also includes two smaller peaks after the main flood, which looks like the 2021 flood. Maybe this is a scenario I could consider testing.
+
+A shorter supplemental memo describes how they made hydrographs for other return periods. They used a simpler method of scaling observed hydrographs that had similar peak flows to the calculated peak flows. 
+
+## Quiver Plots 
+
+After plotting the inundation area in the overflow corridor for different flood durations, I wanted to determine the direction of flow rather than just the location. So I made some quiver plots!
+
+The first plot below is an example plot at peak disharge through Everson for the 1-day duration 100-year hydrograph. 
+
+<img width="726" alt="image" src="https://github.com/user-attachments/assets/f54f3388-4903-4fae-b580-6f22602bbb16" />
+
+*Figure 2. Test Quiver Plot of Velocity at Everson*
+
+It looks like it is working to me, so then I looked at the overflow section, and was specifically interested in the direction of flow at the boundary. I have a theory that because the boundary condition does not extend to accept all the flow going through the corridor, some is being reflected back and is causing a choke, where water level builds up or spreads out, which would decrease the velocity and thus the discharge through the overflow cross section. 
+
+Here is the 1-day duration, 100-year duration quiver plot of velocity at the boundary when discharge is peaking in the main channel at Everson.
+
+<img width="828" alt="image" src="https://github.com/user-attachments/assets/4d886edc-7b3d-4331-830d-213d98ef56c4" />
+
+*Figure 3. Quiver Plot of Velocity at Oveflow Boundary During Peak Main Channel Discharge*
+
+This plot shows the flow exiting the domain properly. I then wanted to check at times after the peak flow. The next plot is 6 hours later.
+
+<img width="833" alt="image" src="https://github.com/user-attachments/assets/cce2d422-2248-45e6-a12b-2964f4290109" />
+
+*Figure 4. Quiver Plot of Velocity at Oveflow Boundary 6 Hours After Peak Main Channel Discharge*
+
+And 12 hours later:
+
+<img width="839" alt="image" src="https://github.com/user-attachments/assets/a3d31654-9f0a-4229-8993-b3724af0bb7c" />
+
+*Figure 4. Quiver Plot of Velocity at Oveflow Boundary 12 Hours After Peak Main Channel Discharge*
+
+These plots show the velocity vectors pointing in the correct direction, which is not what I was expecting. 
+
+Questions: 
+1. Is it worth rerunning with a longer outlet boundary and cross section?
+2. Why do some cells have two velocity vectors? Is that at the model partition boundary?
+
+
+
+
 
