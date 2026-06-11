@@ -1,4 +1,4 @@
-# Small Peak Magnitude Coreection and Floodplain Erodibilty
+# Small Peak Magnitude Correction and Floodplain Erodibilty
 
 ## Reflection on Avulsion Sensitivity Progress Presentation
 
