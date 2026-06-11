@@ -33,6 +33,38 @@ Last week, I wanted to show the group results of the using a fining factor on th
 
 Attempts:
 1. Find any negative sediment fractions. This showed that all fractions were equal to or greater than zero.
-2. I found out that a lot of Matlab functions treat -0 the same as 0 (like `-0==0` would be true and `-0<0` would be false). To differentiate between them, I instead tested if `1/frac`, where frac is the sediment fractions, returned an `-Inf` values. $/frac{1}{-0}=-Inf$ while $/frac{1}{0}=Inf$. 
+2. I found out that a lot of Matlab functions treat -0 the same as 0 (like `-0==0` would be true and `-0<0` would be false). To differentiate between them, I instead tested if `1/frac`, where frac is the sediment fractions, returned an `-Inf` values.
+
+    $\frac{1}{-0}=-Inf$ while $\frac{1}{0}=Inf$.
+
+   However, I did not find any $-Inf$ values.
+
+3. Next I decided to look through all the .XYZ files to locate the exact coordinates specified in the error message and see what value was in my file.
+
+        ** ERROR  : Negative sediment thickness for fraction  4:           -0.00 in file sediment thickness/sediment_thickness_nonerodible_nobridges_v2_f0.75/sand_gravel_IniSedThick.xyz at nm=683 (x, y =       530777.51     5413392.12)
+
+   All of the thickness values in the files at the location were 0.0000.
+4. Next, I plotted exactly where the error was occuring.
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/4aaaa7d9-9314-481a-9c0e-bf1f0d1dab7d" />
+
+Interestingly, the error is at a nonerodible cell on the edge of the domain. 
+5. I found a cryptic message on an old Delft3D [forum] (https://oss.deltares.nl/web/riverlab-models/forum/-/message_boards/message/5065111#_com_liferay_message_boards_web_portlet_MBPortlet_message_5079141} that said the following:
+>It is unfortunate that you encoutner the problem of negative thickness. The problem may be with interpolation of the data. The data provided at a point x-y is interpolated to the cell nodes and it may be that it is negative. That is something to try to solve, indeed. Setting it to a very small value seems a good workaround that I would have also used.
+
+This fix worked! I replaced all zero sediment thickness with 1e^-6 and the models ran without crashing. I think it must be an error of interpolation by the model, perhaps exacerbated by being on the edge of the domain. 
+
+Question: Will replacing our nonerodible areas with very small values have any weird effects on bed change?
+
+## New Plots with Fining Factors 
+
+
+
+
+
+
+
+
+
 
 
