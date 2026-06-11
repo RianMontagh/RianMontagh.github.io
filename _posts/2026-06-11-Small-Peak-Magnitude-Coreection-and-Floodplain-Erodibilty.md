@@ -31,4 +31,8 @@ In this method, the Qp that the nondimensional SCS hydrograph is redimensionaliz
 
 Last week, I wanted to show the group results of the using a fining factor on the floodplain. However, my model would crash in the first minute with the error message that I had a negative sediment thickness of -0.00 somewhere in my floodplain, but I could not find it anywhere. This week I had more time to figure out the error. 
 
+Attempts:
+1. Find any negative sediment fractions. This showed that all fractions were equal to or greater than zero.
+2. I found out that a lot of Matlab functions treat -0 the same as 0 (like `-0==0` would be true and `-0<0` would be false). To differentiate between them, I instead tested if `1/frac`, where frac is the sediment fractions, returned an `-Inf` values. $/frac{1}{-0}=-Inf$ while $/frac{1}{0}=Inf$. 
+
 
