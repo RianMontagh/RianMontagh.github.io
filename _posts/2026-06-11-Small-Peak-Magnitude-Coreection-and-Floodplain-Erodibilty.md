@@ -60,19 +60,23 @@ Question: Will replacing our nonerodible areas with very small values have any w
 
 I ran models with my fining factors with the corrected hydrograph peak value for the 50-year, 3-day floods. The plots below show the overflow values and bed change difference between the different fining factors, with the exception of f = 0.50 and f = 1.50, which is currently being reran with the correct peak. 
 
-<img width="1423" alt="image" src="https://github.com/user-attachments/assets/8467fbba-2d7a-410f-a2bf-d02f1e435e4c" />
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/8467fbba-2d7a-410f-a2bf-d02f1e435e4c" />
 
 *Figure 2: Overflow to Sumas Discharge for the 50-year, 3-day Flood*
 
 Surprisingly, the difference between the amount of overflow is nearly nothing. Zooming in on the peak overflow, we get Figure 3 below. 
 
-<img width="1391" alt="image" src="https://github.com/user-attachments/assets/cd35d5ce-3b9b-48e6-bee2-86d103766701" />
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/cd35d5ce-3b9b-48e6-bee2-86d103766701" />
 
 *Figure 3: Zoomed to Peak: Overflow to Sumas Discharge for the 50-year, 3-day Flood*
 
-There is minor difference shown here, and we do see a pattern where finer floodplains have more discharge to Sumas. 
+There is minor difference shown here, and we do see a pattern where finer floodplains have more discharge to Sumas. Peak values are:
+
+f = 0.75 | f = 1.00 | f = 1.25 |
+
 
 Next, I wanted to look at the floodplain erosion and deposition patterns to get a sense of increased incision with finer material. 
+
 
 
 
