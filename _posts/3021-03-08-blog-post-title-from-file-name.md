@@ -36,3 +36,17 @@ ForEach ($thing in $things) {
 1.4*100-year             |  2.5*100-year
 :-------------------------:|:-------------------------:
 ![](https://github.com/user-attachments/assets/e2eb97f4-89c3-479f-97dc-56cd59567ed9)  |  ![](https://github.com/user-attachments/assets/b146e2ab-6c0d-4cc8-9120-6112865c3c06)
+
+#### Tables
+
+| Nonerodible | Erodible |
+| ------------ | --------|
+| Developed, open space | Open Water | 
+| developed, low intensity | Shrub/Scrub | 
+| developed, medium intensity| Grassland/Herbaceous | 
+| developed, high intensity | Pasture/Hay |
+| Barren land (rock/sand/clay) | Cultivated Crops | 
+| Deciduous Forest | Emergent Herbaceous Wetlands |
+| Evergreen Forest
+| Mixed Forest
+| Woody Wetlands
