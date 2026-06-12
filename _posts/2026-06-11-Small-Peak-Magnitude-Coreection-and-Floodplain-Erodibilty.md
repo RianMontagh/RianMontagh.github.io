@@ -72,8 +72,9 @@ Surprisingly, the difference between the amount of overflow is nearly nothing. Z
 
 There is minor difference shown here, and we do see a pattern where finer floodplains have more discharge to Sumas. Peak values are:
 
-f = 0.75 | f = 1.00 | f = 1.25 |
-
+| f = 0.75 | f = 1.00 | f = 1.25 |
+| -------- | -------- | -------- |
+| 1124.47 m^3/s |  1124.07 m^3/s  |  1121.78 m^3/s |
 
 Next, I wanted to look at the floodplain erosion and deposition patterns to get a sense of increased incision with finer material. 
 
