@@ -24,6 +24,8 @@ This [site](https://ugrid-conventions.github.io/ugrid-conventions/#2d-triangular
 
 Wumings `cleanGridData.m` function removes duplicate cells created by the overlapping ghost nodes. It is interesting to me that the Open Earth Tools functions for processing partitioned data don't already do this. I made an edit to the `cleanGridData.m` function so that is also outputs a `clean_NetElemNode` along with the `clean_X` and `clean_Y`, which are the x and y coordinates of the cell faces. The NetElemNode is the array of the variable `mesh2d_face_nodes`, which stores all the nodes (cell corners) that correspond with each cell face (cell center). I feel a lot better now that I understand this better. This means that I can now plot the clean data with duplicate ghost cells removed using the `patch()` function, which needs the NetElemNode information. The patch function is that it takes the vertices of your grid, your information at the cell face, and then fills in the cell based on the information at the face and the nodes that go with that face. 
 
+When I checked the number of faces in my unpartitioned grid and the number of faces in my merged grid from `dflowfm_readNetPartitioned.m` they did not match, and the merged grid has more faces. After running my `cleanGridData` function they do match. Similarly, the dimensions of variables from `readDFMPArtitioned.m` are different and running the `cleanGridData.m` brings the number of faces down to match the number in the unpartitioned grid. 
+
 ## Updating Plots with f = 0.50 and 1.50
 
 I added results to my not-so-interesting comparison of discharge to Sumas for the different floodplain erodibilities. These new results are for f = 0.50 and 1.50.
