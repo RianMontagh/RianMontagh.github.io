@@ -22,5 +22,21 @@ This [site](https://ugrid-conventions.github.io/ugrid-conventions/#2d-triangular
 
 <img width="229" alt="image" src="https://github.com/user-attachments/assets/7c1e1e96-7dbe-413e-af55-6e030a764a1a" />
 
-Wumings `cleanGridData.m` function removes duplicate cells created by the overlapping ghost nodes. It is interesting to me that the Open Earth Tools functions for processing partitioned data don't already do this. I made an edit to the `cleanGridData.m` function so that is also outputs a `clean_NetElemNode` along with the `clean_X` and `clean_Y`, which are the x and y coordinates of the cell faces. The NetElemNode is the array of the variable `mesh2d_face_nodes`, which stores all the nodes (cell corners) that correspond with each cell face (cell center). I feel a lot better now that I understand this better. This means that I can now plot the clean data with duplicate ghost cells removed using the `patch()` function, which needs the NetElemNode information. My understanding of the patch function is that it takes the vertices of your grid, your information at the cell face, and then fills in the cell based on the information at the face and the nodes that go with that face. 
+Wumings `cleanGridData.m` function removes duplicate cells created by the overlapping ghost nodes. It is interesting to me that the Open Earth Tools functions for processing partitioned data don't already do this. I made an edit to the `cleanGridData.m` function so that is also outputs a `clean_NetElemNode` along with the `clean_X` and `clean_Y`, which are the x and y coordinates of the cell faces. The NetElemNode is the array of the variable `mesh2d_face_nodes`, which stores all the nodes (cell corners) that correspond with each cell face (cell center). I feel a lot better now that I understand this better. This means that I can now plot the clean data with duplicate ghost cells removed using the `patch()` function, which needs the NetElemNode information. The patch function is that it takes the vertices of your grid, your information at the cell face, and then fills in the cell based on the information at the face and the nodes that go with that face. 
+
+## Updating Plots with f = 0.50 and 1.50
+
+I added results to my not-so-interesting comparison of discharge to Sumas for the different floodplain erodibilities. These new results are for f = 0.50 and 1.50.
+
+<img width="1423" height="933" alt="image" src="https://github.com/user-attachments/assets/d0579349-a400-4429-864c-98774f385509" />
+
+*Figure 2. Plots of the overflow to Sumas for all five fining factors.*
+
+Zooming in: 
+
+<img width="1444" alt="image" src="https://github.com/user-attachments/assets/d23ad158-47a8-4bfa-953d-d6777ca470d4" />
+
+*Figure 2. Zoomed in plots of the overflow to Sumas for all five fining factors.*
+
+I was wondering if we might see some bigger differences with the f = 0.50 and 1.50 runs, but the same pattern holds where differences in the overflow are very small. The more erodible runs have more overflow than the less erodible runs. The only exception is that the overflow for the f = 1.50 run plots slightly above f = 1.25. 
 
