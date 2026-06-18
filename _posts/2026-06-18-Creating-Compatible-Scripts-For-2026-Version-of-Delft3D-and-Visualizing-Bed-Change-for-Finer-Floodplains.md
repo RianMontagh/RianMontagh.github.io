@@ -10,11 +10,11 @@ Lastly, I started running requential flood runs.
 
 The figure below shows bed change for three model runs with different fining factors. I updated my bed change plots with satellite imagery so that we can now see where the erosion and deposition is occuring. 
 
-<img width="1000" alt="image" src="https://github.com/user-attachments/assets/421b71fe-ebe8-47bc-9bf5-a611965c65f6" />
+<img width="3120" alt="image" src="https://github.com/user-attachments/assets/7c9684de-608d-4835-ab63-81fd37c55a27" />
 
-*Figure 1. Plots of the bed level change for f = 0.75, 1.00, and 1.25.*
+*Figure 1. Plots of the bed level change for f = 0.50, 0.75, 1.00, 1.25, and 1.50.*
 
-These plots are almost identical, which makes sense with the almost identical amounts of overflow to Sumas I saw last week. I also am curious what my results look like for f = 0.50 and 1.50. I also want to be able to visualize the change between the two plots, so I made comparison plots between the finer and coarser floodplains compared to the f = 1.00 floodplain. 
+These plots are almost identical (and too small to see clearly), which makes sense with the almost identical amounts of overflow to Sumas I saw last week. I also want to be able to visualize the change between the two plots, so I made comparison plots between the finer and coarser floodplains compared to the f = 1.00 floodplain. 
 
 
 
@@ -55,7 +55,5 @@ I was wondering if we might see some bigger differences with the f = 0.50 and 1.
 
 ## Sequential Flood Runs
 
-I made new hydrographs to run at North Cedarville to test what a sequential flood would do in relation to the amount of flow sent north to Sumas. I decided to start with a 100-year, climate-scale, 3-day flood followed by a 10-year, 50-year, or 100-year climate-scaled, 3-day flood. 
-
-These are the hydrographs plotted below. 
+I made new hydrographs to run at North Cedarville to test what a sequential flood would do in relation to the amount of flow sent north to Sumas. I decided to start with a 100-year, climate-scale, 3-day flood followed by a 10-year, 50-year, or 100-year climate-scaled, 3-day flood. These are in progress and hoping to run them tomorrow. 
 
