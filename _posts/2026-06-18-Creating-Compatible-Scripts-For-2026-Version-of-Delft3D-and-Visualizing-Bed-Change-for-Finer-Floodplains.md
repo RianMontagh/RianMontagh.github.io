@@ -40,3 +40,8 @@ Zooming in:
 
 I was wondering if we might see some bigger differences with the f = 0.50 and 1.50 runs, but the same pattern holds where differences in the overflow are very small. The more erodible runs have more overflow than the less erodible runs. The only exception is that the overflow for the f = 1.50 run plots slightly above f = 1.25. 
 
+f = 0.50      |      f = 0.75   |     f = 1.00 |   f = 1.25  |  f = 1.50
+________________    ________________    ________    ________    ________
+
+    1125.36218261719    1124.47119140625    1124.07     1121.784    1121.821
+
