@@ -28,13 +28,13 @@ Wumings `cleanGridData.m` function removes duplicate cells created by the overla
 
 I added results to my not-so-interesting comparison of discharge to Sumas for the different floodplain erodibilities. These new results are for f = 0.50 and 1.50.
 
-<img width="1423" height="933" alt="image" src="https://github.com/user-attachments/assets/d0579349-a400-4429-864c-98774f385509" />
+<img width="700" height="933" alt="image" src="https://github.com/user-attachments/assets/d0579349-a400-4429-864c-98774f385509" />
 
 *Figure 2. Plots of the overflow to Sumas for all five fining factors.*
 
 Zooming in: 
 
-<img width="1444" alt="image" src="https://github.com/user-attachments/assets/d23ad158-47a8-4bfa-953d-d6777ca470d4" />
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/d23ad158-47a8-4bfa-953d-d6777ca470d4" />
 
 *Figure 2. Zoomed in plots of the overflow to Sumas for all five fining factors.*
 
