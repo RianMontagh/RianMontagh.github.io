@@ -57,6 +57,7 @@ Zooming in:
 I was wondering if we might see some bigger differences with the f = 0.50 and 1.50 runs, but the same pattern holds where differences in the overflow are very small. The more erodible runs have more overflow than the less erodible runs. The only exception is that the overflow for the f = 1.50 run plots slightly above f = 1.25. 
 
 *Table 1: Max Overflow to Sumas (cms)*
+
 | f = 0.50      |      f = 0.75   |     f = 1.00 |   f = 1.25  |  f = 1.50 |
 | ------------- | --------------- | ------------ | ----------- | --------- |
 | 1125.36       |    1124.47      | 1124.07      | 1121.78     | 1121.82   |
