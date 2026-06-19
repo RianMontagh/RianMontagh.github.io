@@ -26,6 +26,14 @@ I also want to be able to visualize the change between the two plots, so I start
 
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/a5139d19-7209-455c-a046-0d14cc3f3213" />
 
+Update 6/19:
+
+I thought I was able to fix the issue with comparing the other model runs and got a confusing result.
+
+<img width="2871" alt="image" src="https://github.com/user-attachments/assets/a35ff00b-b655-4a56-b7c1-f29adda28b0c" />
+
+These differenced plots make sense for the f = 1.00, where we see zero difference, and f = 1.25, where we see some slight difference, but for the rest the plots look strangely similar. I checked my file paths and they are the same that I used for the overflow to Sumas amounts, which do make some sense to me. I was expecting the floodplain to be more blue for the f = 0.50 and 0.75 as these floodplains are more erodible, and the f = 1.25 and 1.50 to be more red as these are less erodible floodplains. I think this is also caused by the increased number of partitions from 62 to 64, which causes the cells to be sorted differently and not directly comparable when extracting them as arrays from the model results. 
+
 ## Side Quest to Understand Terminology from Open Earth Tools Scripts
 
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/ea21d9bf-901a-444e-ad05-b98a7bf23f32" />
