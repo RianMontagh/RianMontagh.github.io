@@ -14,9 +14,17 @@ The figure below shows bed change for three model runs with different fining fac
 
 *Figure 1. Plots of the bed level change for f = 0.50, 0.75, 1.00, 1.25, and 1.50.*
 
-These plots are almost identical (and too small to see clearly), which makes sense with the almost identical amounts of overflow to Sumas I saw last week. I also want to be able to visualize the change between the two plots, so I made comparison plots between the finer and coarser floodplains compared to the f = 1.00 floodplain. 
+These plots are almost identical (and too small to see clearly), which makes sense with the almost identical amounts of overflow to Sumas I saw last week. 
 
+Here is a full plot of just the f = 1.00 bed change with the aerial imagery. It is interesting to me that the hotspot of bed change on the floodplain is not actually on Main St like I thought but on a smaller farm road. 
 
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/d85a6f39-44f1-4bdf-805d-1566286dea8b" />
+
+*Figure 2. Plot of the bed level change for f = 1.00.*
+
+I also want to be able to visualize the change between the two plots, so I started making comparison plots between the finer and coarser floodplains compared to the f = 1.00 floodplain. Unfortunately I ran into another bug with different grid partitioning with the 2026 model runs, so only the f = 1.25 run is compatible with this differencing. I noticed that in some places this model, which has coarser floodplain sediment, actually eroded more than the f = 1.00 model. 
+
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/a5139d19-7209-455c-a046-0d14cc3f3213" />
 
 ## Side Quest to Understand Terminology from Open Earth Tools Scripts
 
