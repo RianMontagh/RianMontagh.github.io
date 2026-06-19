@@ -76,7 +76,7 @@ I made new hydrographs to run at North Cedarville to test what a sequential floo
 
 Update 6/19
 
-Here is my sequential hydrograph example for a 100=year and 10-year flood. I plan to run these and look at how overflow amounts change in the second flood. 
+Here is my sequential hydrograph example for a 100-year and 10-year flood. I plan to run these and look at how overflow amounts change in the second flood. 
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/430f4f1c-2690-4a1e-a966-19361373c781" />
 
