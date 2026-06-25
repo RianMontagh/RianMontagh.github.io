@@ -8,7 +8,7 @@ This week I ran sequential hydrographs to see how overflow in the second flood c
 
 First, here is the timeseries of discharge through the overflow to Sumas cross section. From the 100-year + 100-year flood run, there isn't an obvious difference in the discharge peaks. 
 
-<img width="700" alt="image" src="https://github.com/user-attachments/assets/142de4b2-1442-4d45-916c-95c87ee18836" />
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/fe2c5c9f-a1db-4514-90e8-56e95a9f29d1" />
 
 *Figure 2. Timeseries of Discharge through the Overflow to Sumas Cross Section*
 
