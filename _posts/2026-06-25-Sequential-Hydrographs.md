@@ -16,3 +16,7 @@ This week I ran sequential hydrographs to see how overflow in the second flood c
 <img width="2871" alt="image" src="https://github.com/user-attachments/assets/363f3f9c-8db1-490a-bbc7-59e84c029b0f" />
 
 *Figure 3. Bed Change Differenced from f = 1.00*
+
+# Learning Delft3D
+
+I learned how to analyze some of the 3D variables in my MATLAB scripts. I had to edit some of the Open Earth Tools to make this work, becuase the ordering of dimensions for a 2D (cell faces and time) and for a 3D variable (
