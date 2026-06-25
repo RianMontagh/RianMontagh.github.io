@@ -6,21 +6,19 @@ This week I ran sequential hydrographs to see how overflow in the second flood c
 
 *Figure 1. Sequential Hydrographs at North Cedarville*
 
-I looked at the overflow to Sumas in the second flood compared to single floods of the same magnitude. 
-
-First, here is the standard timeseries of discharge through the overflow to Sumas cross section. From the two sequential 100-year flood run, it looks like there is not a big difference in overflow amount to Sumas. 
+First, here is the timeseries of discharge through the overflow to Sumas cross section. From the 100-year + 100-year flood run, there isn't an obvious difference in the discharge peaks. 
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/142de4b2-1442-4d45-916c-95c87ee18836" />
 
 *Figure 2. Timeseries of Discharge through the Overflow to Sumas Cross Section*
 
-I then plotted the results from the single 10-, 50-, and 100-year floods alongside the sequential floods to see how different they are. The non-sequential 10-year flood will be ready Friday morning!
+I then plotted the maximum discharge results from the single 10-, 50-, and 100-year floods alongside the sequential floods to see how different they are. The non-sequential 10-year flood will be ready Friday morning!
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/91c1c133-f090-4427-921b-702e1a0a9aee" />
 
 *Figure 3. Comparison of Maximum Overflow to Sumas Values for different Floods*
 
-This figure confirms what we expected, where there is a feedback that causes overflow to increase after a large flood. We think that this would be because of feedback looping from deposition and bank overtopping n the Everson Corridor. Another explanation could be that the floodplain is saturated after a flood, which would limit potential for infiltration and increase runoff. But I am not sure if the distance from the river to the overflow cross section is large enough for that to be a factor. In the model, there is no groundwater or infiltration, so water tends to pond on the floodplain and that could add to the amount of overflow in a subsequent flood. 
+This figure confirms what we expected, where we suspect there is a mechanism that causes overflow to increase after a large flood. We think that this would be because of feedback looping from deposition and bank overtopping in the Everson Corridor. Another explanation could be that the floodplain is saturated after a flood, which would limit potential for infiltration and increase runoff. I am not sure if the distance from the river to the overflow cross section is large enough for that to be a factor. In the model, there is no groundwater or infiltration, so water tends to pond on the floodplain and that could add to the amount of overflow in a subsequent flood. 
 
 We have also talked about capacity in the channel changing and affecting the threshold for overtopping the banks. However, this seems like a morphodynamic feature that would be interesting to know about, but might not tell us anything directly about avulsion hazard. On the other hand, it would be good to confirm what is causing the increase in overflow to Sumas so that we have an understanding of how channel changes impact flow to the north. 
 
