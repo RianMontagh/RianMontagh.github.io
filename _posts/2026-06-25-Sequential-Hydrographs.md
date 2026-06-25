@@ -24,19 +24,33 @@ We have also talked about capacity in the channel changing and affecting the thr
 
 ## Looking at Erodibility Patterns 
 
+I also completed my bed change differencing plots to see how erosion and deposition patterns change due to the floodplain fining factors. Below, for reference, is the bed change for a 50-year, 3-day flood with no change to the floodplain sediment fraction, which is what I compared my floodplain erodibiltiy runs to. 
+
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/619b9ed7-db9a-47b8-8548-904ca27875ce" />
 
-*Figure 2. Bed Change for No Change in Floodplain Sediment Fraction/Erodibility (f = 1.00)*
+*Figure 4. Bed Change for No Change in Floodplain Sediment Fraction/Erodibility (f = 1.00)*
 
+Next, I plotted the bed change of each floodplain erodibility run differenced from the bed change shown in Figure 4. 
 
 <img width="2871" alt="image" src="https://github.com/user-attachments/assets/363f3f9c-8db1-490a-bbc7-59e84c029b0f" />
 
-*Figure 3. Bed Change Differenced from f = 1.00*
+*Figure 5. Bed Change Differenced from f = 1.00*
+
+This figure is interesting to be because it shows that when the floodplain is finer, the existing pattern of erosion and deposition is amplified. For example, if before making the floodplain finer a cell eroded, then making the floodplain finer causes more erosion to happen at that cell. The same goes for deposition. The opposite seems to be true when the floodplain gets coarser. To investigate this further, I started playing around with the 3D variales that give information about each sediment class in the model. I was interested to see if fine sediment was getting deposited from the floodplain into the channel. 
 
 ## Learning How to Use the 3D Morphologic Variables in Delft3D
 
 I learned how to analyze some of the 3D variables in my MATLAB scripts. I had to edit some of the Open Earth Tools to make this work, because the ordering of dimensions for a 2D (cell faces and time) and for a 3D variable (cell faces, time, and sediment classes) is different, and this affects how the variables are concatenated. I first tested this with the equilibrium concentration, which is the equilibrium transport rate where the same amount of suspended sediment is desposited as is uplifted. However, I quickly realized that all of our suspended transport is equal to zero because Wilcock and Crowe only takes bedload into account. In map variables, the only bedload variables are the x and y variables, and I tested out my new code on the x component of bedload transport and had sucess! However I am not showing the plots here because I think it is much easier to compare the bedload transport rates at specific cross sections. 
 
 ## Investigating Sediment Transport of Different Floodplain Grain Size Distributions
+
+Hoping to have this section tomorrow! 
+
+## Goals for Next Week
+
+1. Perturb the forested bar that might be a control on the ability of a flood to form an avulsive channel on the floodplain to river right.
+2. Reach out to Shelby again about along-channel profile plots.
+3. Create transects of bed change on the floodplain.
+4. Make a more comprehensive summer goals plan to keep myself on track. 
 
 
