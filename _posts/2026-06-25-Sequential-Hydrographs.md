@@ -36,7 +36,7 @@ Next, I plotted the bed change of each floodplain erodibility run differenced fr
 
 *Figure 5. Bed Change Differenced from f = 1.00*
 
-This figure is interesting to be because it shows that when the floodplain is finer, the existing pattern of erosion and deposition is amplified. For example, if before making the floodplain finer a cell eroded, then making the floodplain finer causes more erosion to happen at that cell. The same goes for deposition. The opposite seems to be true when the floodplain gets coarser. To investigate this further, I started playing around with the 3D variales that give information about each sediment class in the model. I was interested to see if fine sediment was getting deposited from the floodplain into the channel. 
+This figure is interesting to be because it shows that when the floodplain is finer, the existing pattern of erosion and deposition is amplified. For example, if in the f=1.00 run a cell experiences erosion, then making the floodplain finer increases the amount of erosion that occurs at that cell. The same goes for deposition. The opposite seems to be true when the floodplain gets coarser. To investigate this further, I started playing around with the 3D variables that give information about each sediment class in the model. I was interested to see if fine sediment was getting deposited from the floodplain into the channel. 
 
 ## Learning How to Use the 3D Morphologic Variables in Delft3D
 
