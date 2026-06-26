@@ -12,9 +12,9 @@ First, here is the timeseries of discharge through the overflow to Sumas cross s
 
 *Figure 2. Timeseries of Discharge through the Overflow to Sumas Cross Section*
 
-I then plotted the maximum discharge results from the single 10-, 50-, and 100-year floods alongside the sequential floods to see how different they are. The non-sequential 10-year flood will be ready Friday morning!
+I then plotted the maximum discharge results from the single 10-, 50-, and 100-year floods alongside the sequential floods to see how different they are. 
 
-<img width="700" alt="image" src="https://github.com/user-attachments/assets/91c1c133-f090-4427-921b-702e1a0a9aee" />
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/a323bd2f-d766-42ad-a84d-18e826d18b10" />
 
 *Figure 3. Comparison of Maximum Overflow to Sumas Values for different Floods*
 
