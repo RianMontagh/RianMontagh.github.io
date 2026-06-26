@@ -48,9 +48,7 @@ I learned how to analyze some of the 3D variables in my MATLAB scripts. I had to
 
 *Figure 6. Bedload Transport Rates for the Six Sediment Classes during Different Floodplain ERodibility Runs*
 
-Above I plotted the sediemnt transport rates at the Everson cross section. The ordering of the transport is consistent throughout, with the more erodible floodplains producing higher rates of sediment transport across all the six sediment classes.There are a few things that I don't understand in this plot. First, I expected transport to have a peak and then a drop off after the flood peak passes through, but this shows transport rates reaching a constant value. Second, I notice that the smaller grain sizes have a higher spread in the transport rates. 
-
-
+Above I plotted the sediemnt transport rates at the Everson cross section. The ordering of the transport is consistent throughout, with the more erodible floodplains producing higher rates of sediment transport across all the six sediment classes.There are a few things that I don't understand in this plot. First, I expected transport to have a peak and then a drop off after the flood peak passes through, but this shows transport rates reaching a constant value. Second, I notice that the smaller grain sizes have a higher spread in the ending values than the coarser grains. It seems like they are more sensitive to changes to the floodplain.  
 
 ## Goals for Next Week
 
