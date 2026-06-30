@@ -23,5 +23,11 @@ To calculate cross-sectionally averaged longitudinal profile for my model based 
 2. Calculate average parameters at 2km transects, sapced 15 m in the streamwise direction
 3. Define the main channel as the cells that have at least 1.5 m depth at bankfull flow (700 m^3/s).
     - upstream of Everson Overflow, where channel is braided: average the wetted channed for all occurrances of bankfull flow in the 2025 flood
-    - downstream fo the Everson Overflow, use the first occurrence of bankfull flow to prevent effects of ponded water on floodplain
+    - downstream of the Everson Overflow, use the first occurrence of bankfull flow to prevent effects of ponded water on floodplain
+  
+**My Implementation**
+
+I decided to run a bankfull, steady hydrograph model to get the limits of the main bankfull channel. Because I want to use this analysis for the entire lower Nooksack, I want flow to be at 600 cms at all times so that the flow is consistent throughout our reach. To my understanding, Shelby used times when the input hydrograph was at bankfull to get the main channel limits, but to me it seems like this would not take into account the lag time from North Cedarville to the rest of the model domain. 
+
+
 
