@@ -31,6 +31,18 @@ I decided to run a bankfull, steady hydrograph model to get the limits of the ma
 
 Below are plots of discharge and water depth for the model run with a constant bankfull depth for three days. I used 600 cms because that is what we used for the bankfull discharge for our Manning n iterations. 
 
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/6cebd160-3730-48e2-8d0a-8b6563d18812" />
+
+*Figure 1: Discharge through Everson and Ferndale cross sections.*
+
+<img width="1525" alt="image" src="https://github.com/user-attachments/assets/27b469e4-3004-46bb-8d93-77292350160c" />
+
+*Figure 2: Water depth during bankfull conditions.*
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/ecd97f53-437e-4d4a-8ffa-4b1afd3193e7" />
+
+*Figure 3: Mask used to define the main channel based on bankfull flow.*
+
 
 
 
