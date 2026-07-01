@@ -29,5 +29,9 @@ To calculate cross-sectionally averaged longitudinal profile for my model based 
 
 I decided to run a bankfull, steady hydrograph model to get the limits of the main bankfull channel. Because I want to use this analysis for the entire lower Nooksack, I want flow to be at 600 cms at all times so that the flow is consistent throughout our reach. To my understanding, Shelby used times when the input hydrograph was at bankfull to get the main channel limits, but to me it seems like this would not take into account the lag time from North Cedarville to the rest of the model domain. 
 
+Below are plots of discharge and water depth for the model run with a constant bankfull depth for three days. I used 600 cms because that is what we used for the bankfull discharge for our Manning n iterations. 
+
+
+
 
 
