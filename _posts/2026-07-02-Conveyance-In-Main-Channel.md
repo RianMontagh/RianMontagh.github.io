@@ -43,7 +43,7 @@ Below are plots of discharge and water depth for the model run with a constant b
 
 *Figure 3: Mask used to define the main channel based on bankfull flow.*
 
-
+One issue with the mask is that there is still some overbank flow that is showing up as part of the main channel. I tried to limit the overbank flow by choosing an earlier time in the model run, but it did not work completely. 
 
 
 
