@@ -45,5 +45,6 @@ Below are plots of discharge and water depth for the model run with a constant b
 
 One issue with the mask is that there is still some overbank flow that is showing up as part of the main channel. I tried to limit the overbank flow by choosing an earlier time in the model run, but it did not work completely. 
 
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/021c9027-f14e-4fd6-afc7-de82208aa44a" />
 
-
+*Figure 4: Main channel boundary for the braided section*
