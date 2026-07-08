@@ -15,6 +15,8 @@ For the summer quarter, I want to zoom out to the wider project goals to help me
 1. Remove the forested bar that may be preventing an avulsion channel from incising into the floodplain.
 2. Investigate the cause of Shleby's avulsion.
 3. Finish quantifying conveyance changes in the main channel.
+4. Run several floods in a row instead of just two. Maybe avulsions need constant repeated flooding in order to form.
+5. 
 
 
 
