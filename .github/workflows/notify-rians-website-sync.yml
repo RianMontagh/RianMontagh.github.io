@@ -3,6 +3,8 @@ name: Notify Rian's Website to Sync
 on:
   push:
     branches: [main]
+    paths:
+      - "_posts/**"
 
 jobs:
   notify:
