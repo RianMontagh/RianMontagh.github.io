@@ -39,7 +39,7 @@ I ran the old version of the model that exhibited incision of new channels into 
 
 *Bed Change at different times in the old model*
 
-<img width="700" alt="image" src="https://github.com/user-attachments/assets/6072c080-f751-4935-9580-130dffb72b62" />
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/49369603-e8c7-46a3-a894-fe4a343af53c" />
 
 *Zooming in to the bed change at the last timestep*
 
