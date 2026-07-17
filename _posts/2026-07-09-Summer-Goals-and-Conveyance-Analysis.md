@@ -43,6 +43,11 @@ I ran the old version of the model that exhibited incision of new channels into 
 
 *Zooming in to the bed change at the last timestep*
 
+<img width="785" alt="image" src="https://github.com/user-attachments/assets/11e3cda9-72f2-4426-a2af-a6d8cd4916c5" />
+
+*Shelby's avulsion findings for reference*
+
+
 
 
 
