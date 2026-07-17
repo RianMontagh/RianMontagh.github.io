@@ -35,6 +35,12 @@ For the summer quarter, I want to zoom out to the wider project goals to help me
 
 I ran the old version of the model that exhibited incision of new channels into the river right floodplain. Interestingly, the model run ran out of disk space and some of the partitions did not fully write the last timestep. I am curious to know what caused that because the output interval for the map files is the same as the one I am currently using (7200 seconds = 2 hrs). Total runtime is 38 days, which is longer but not too different than my 7-day floods which are about 20 days.
 
+<img width="2544" alt="image" src="https://github.com/user-attachments/assets/5ac71388-32c6-418b-b09b-319c973189f6" />
+
+*Bed Change at different times in the old model*
+
+
+
 
 
 
