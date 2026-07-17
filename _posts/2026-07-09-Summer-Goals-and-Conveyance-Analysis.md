@@ -47,6 +47,11 @@ I ran the old version of the model that exhibited incision of new channels into 
 
 *Shelby's avulsion findings for reference*
 
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/91212aa1-1ca4-4dda-842f-904d2b4450a3" />
+
+*Elevation plot of the final time in the old model run. Attempting to recreate Shelby's plots*
+
+
 
 
 
