@@ -16,7 +16,13 @@ For the summer quarter, I want to zoom out to the wider project goals to help me
 2. Investigate the cause of Shleby's avulsion.
 3. Finish quantifying conveyance changes in the main channel.
 4. Run several floods in a row instead of just two. Maybe avulsions need constant repeated flooding in order to form.
-5. 
+
+# Making New Cross Sections
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/cfd65c1b-66b5-47aa-bfd9-8032aa796fc8" />
+
+*Bankfull Width Cross Sections Spanning the Braided Reach of the Nooksack.*
+
 
 
 
