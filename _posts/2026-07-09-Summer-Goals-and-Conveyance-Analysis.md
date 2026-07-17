@@ -23,6 +23,17 @@ For the summer quarter, I want to zoom out to the wider project goals to help me
 
 *Bankfull Width Cross Sections Spanning the Braided Reach of the Nooksack.*
 
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/2b83f93d-447e-4cd0-907f-3b2ca6cd4bf9" />
+
+*Selecting Times Based off of the North Cedarville Hydrograph to analyze the Conveyance During*
+
+
+
+
+## Running the Avulsion-Creating Model
+
+I ran the old version of the model that exhibiting incision of new channels into the river right floodplain 
+
 
 
 
