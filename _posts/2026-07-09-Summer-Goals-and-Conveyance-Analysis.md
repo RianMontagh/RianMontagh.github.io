@@ -27,7 +27,7 @@ For the summer quarter, I want to zoom out to the wider project goals to help me
 
 *Selecting Times Based off of the North Cedarville Hydrograph to analyze the Conveyance During*
 
-<img width="100" height="990" alt="image" src="https://github.com/user-attachments/assets/05828e6f-4331-4aba-b390-cb012e34251b" />
+<img width="100" alt="image" src="https://github.com/user-attachments/assets/05828e6f-4331-4aba-b390-cb012e34251b" />
 
 *Plot of Discharge through bankfull cross sections. Plots on the left are the three red dots on the first peak, and the plots on the right are from the second peak.*
 
