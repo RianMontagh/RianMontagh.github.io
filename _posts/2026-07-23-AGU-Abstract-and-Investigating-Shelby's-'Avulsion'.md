@@ -6,7 +6,7 @@ I wrote a first draft of my abstract for AGU. My overall thoughts are that I had
 
 > A river avulsion is the natural process during which a river channel suddenly changes course. In the past several thousand years, the Nooksack River in northwest Washington State avulsed from a north-flowing channel to its present westward course. During large floods, the topographic low of the historic north-flowing Nooksack River valley becomes inundated, placing communities at risk of loss of life and causing substantial economic damage. This study uses a two-dimensional morphodynamic Delft3D-FM model forced with climate-projected future flood hydrographs to evaluate the mechanisms and likelihood of the Nooksack permanently avulsing back to its historic course on an event timescale. Model parameters such as floodplain roughness and sediment coarseness as well as flood peak magnitude, flood duration, and number of flood events were perturbed to investigate their effects on avulsion. We hypothesize that floodplain roughness and sediment sizes exert strong controls on the initiation of avulsion during extreme floods. Results from this study will improve understanding of event-scale avulsion processes for similar watersheds and inform floodplain management strategies aimed at reducing avulsion risk in the Nooksack River.
 
-# Potential Sessions
+## Potential Sessions
 
 - **[EP009](https://agu.confex.com/agu/agu26/prelim.cgi/Session/282227) - Cross-Scale Sediment Modeling and Prediction: Integrating Physics-Based, Data-Driven, and Hybrid Modeling**
 - **[EP010](https://agu.confex.com/agu/agu26/prelim.cgi/Session/283485) - Earth and Planetary Surface Processes General Contributions**
@@ -54,3 +54,12 @@ MOR File
     BedLayerVolumeFractions= false
     BedLayerPorosity      = false
     TranspType            = 1
+
+**Next steps**
+1. Make comparison plots between the old model sediment fraction and current sediment fraction (should be the same on the floodplain).
+2. Make elevation plots for my climate-projected floods to see if they also have incised channels.
+3. Connect with Shelby next week.
+
+## Fluvial Geomorphology Class with Allison
+
+I messaged Allison about taking her class at WWU, and she said it would be possible. She teaches in the spring and has some old recordings from the pandemic that I could watch. However, she thinks it would be good if I come up on Wednesdays for their field trips. The only problem with this is that I believe sediment transport is being taught in the spring as well. I might have to choose between the two classes depending on scheduling. 
