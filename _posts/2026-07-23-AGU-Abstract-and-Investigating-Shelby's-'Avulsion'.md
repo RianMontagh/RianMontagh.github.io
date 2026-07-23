@@ -57,17 +57,13 @@ MOR File
 
 My merge.slurm script worked well and I got results for the entire model run.
 
-Here is my elevation plot at the end of the old model now.
-
-<img width="803" alt="image" src="https://github.com/user-attachments/assets/a6a755c7-e5e9-457d-822c-994adfcaabb2" />
-
 <img width="785" alt="image" src="https://github.com/user-attachments/assets/11e3cda9-72f2-4426-a2af-a6d8cd4916c5" />
 
 *Shelby's avulsion findings for reference*
 
-<img width="700" alt="image" src="https://github.com/user-attachments/assets/91212aa1-1ca4-4dda-842f-904d2b4450a3" />
-
-*Elevation plot of the final time in the old model run. Attempting to recreate Shelby's plots*
+Previous Run that Cut Short      |  Current Run
+:-------------------------:|:-------------------------:
+![](https://github.com/user-attachments/assets/91212aa1-1ca4-4dda-842f-904d2b4450a3)  |  ![](https://github.com/user-attachments/assets/a6a755c7-e5e9-457d-822c-994adfcaabb2)
 
 
 **Next steps**
