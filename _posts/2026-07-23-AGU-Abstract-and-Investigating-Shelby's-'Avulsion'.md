@@ -17,3 +17,40 @@ I wrote a first draft of my abstract for AGU. My overall thoughts are that I had
     - probably not relevant because of the focus on human-impacted
 - **[EP027](https://agu.confex.com/agu/agu26/prelim.cgi/Session/281088) - River and Floodplain Dynamics: Linking Geomorphic Processes in Pristine and Recovered Systems**
     - **This session invites contributions that advance understanding of river floodplain dynamics across natural and managed systems. Topics may include sediment and wood dynamics, floodplain evolution, system responses to restoration activities such as dam removal, levee setbacks, and channel remeandering, and linkages between physical recovery and ecological or biogeochemical function.**
+ 
+## Rerunning the Old Model
+
+I reran what I am calling 'old model' where Shelby observed incision of channels into the floodplain. I did this because the original run was extremely large, so I changed several of the settings to make the results more compressed and to make the `merge.slurm` script run faster. See below for the settings that are required to make the output size smaller and merge.slurm script faster:
+
+MDU File
+
+    MapFormat                         = 4                                                                   # Map file format (1: NetCDF, 2: Tecplot, 3: NetCFD and Tecplot)
+    NcFormat                          = 4                                                                   # Format for all NetCDF output files (3: classic, 4:NetCDF4+HDF5).
+    NcMapDataPrecision                = single                                                              # Precision for NetCDF data in map files (double or single).
+    NcHisDataPrecision                = single                                                              # Precision for NetCDF data in his files (double or single).
+    NcCompression                     = 1                                                                   # Whetherornot (1/0) to apply compression to NetCDF output files-NOTE:only works when NcFormat=4.
+    
+MOR File
+
+    TrackMassShortage        = false
+    
+    [Output]
+    Default               = false
+    BedTranspAtFlux       = false
+    BedTranspDueToCurrentsAtZeta= false
+    BedTranspDueToCurrentsAtFlux= false
+    RawTransportsAtZeta   = false
+    SuspTranspAtFlux      = false
+    EquilibriumConcentration= false
+    NearBedRefConcentration= false
+    SettlingVelocity      = false
+    Bedforms              = false
+    Dm                    = false
+    Dg                    = false
+    Frac                  = false
+    MudFrac               = false
+    BedLayerSedimentMass  = false
+    BedLayerDepth         = false
+    BedLayerVolumeFractions= false
+    BedLayerPorosity      = false
+    TranspType            = 1
