@@ -55,6 +55,13 @@ MOR File
     BedLayerPorosity      = false
     TranspType            = 1
 
+My merge.slurm script worked well and I got results for the entire model run.
+
+Here is my elevation plot at the end of the old model now.
+
+<img width="803" alt="image" src="https://github.com/user-attachments/assets/a6a755c7-e5e9-457d-822c-994adfcaabb2" />
+
+
 **Next steps**
 1. Make comparison plots between the old model sediment fraction and current sediment fraction (should be the same on the floodplain).
 2. Make elevation plots for my climate-projected floods to see if they also have incised channels.
