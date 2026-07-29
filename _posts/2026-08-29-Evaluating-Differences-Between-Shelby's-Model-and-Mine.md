@@ -3,3 +3,21 @@
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/7fa81bc3-c94d-468b-9d2f-35332e618bad" />
 
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/d6b2e165-9a7a-404d-ad45-130e71a25be7" />
+
+## Differences Between Shelby's Model and the Current Model
+
+I wanted to document the differences between the old model and the current model to identify things that could be causing the incisional channel formation in the old model but not in the new model. 
+
+1. Sediment names/sizes
+- the old model uses coarse and fine boulder in addition to the six sediment categories used by the current model for a total of eight categories and XYZ files.
+2. Sediment thickness
+- the old model uses a sediment thickness of 10 m everywhere, while our model has a thickness of 1 m on the floodplain.
+3. Nonerodible areas
+- The old model just has thin areas of about a one cell width defining roads and maybe levees. This looks more precisely done than the current model which uses the NLCD land use types instead of hand-tracing the roads. 
+
+A clear next step based on these differences was to try two things
+- Run the current model with a 10 m thickness on the floodplain. This would preserve the channel and floodplain sediment fractions and the nonerodible areas. 
+- Run the current model with the sediment fractions from the current model. This would change the nonerodible areas and the sediment in the channel. 
+
+
+
