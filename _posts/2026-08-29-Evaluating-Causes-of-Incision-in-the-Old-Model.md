@@ -1,4 +1,4 @@
-# Evaluating Causes for Incision on the Floodplain in the Old Model
+# Evaluating Causes of Incision on the Floodplain in the Old Model
 
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/7fa81bc3-c94d-468b-9d2f-35332e618bad" />
 
@@ -18,7 +18,8 @@ I wanted to document the differences between the old model and the current model
 - Old model uses Acal = 4, current model uses Acal = 1
 5. SED file Setting
   
-      [SedimentOverall]
+      SedimentOverall]
+        
       Cref                  = 1600                   [kg/m3]   Reference density for hindered settling calculations
 
 A clear next step based on these differences was to try two things
