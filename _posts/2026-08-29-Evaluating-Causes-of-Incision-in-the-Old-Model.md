@@ -16,15 +16,42 @@ I wanted to document the differences between the old model and the current model
 - The old model just has thin areas of about a one cell width defining roads and maybe levees. This looks more precisely done than the current model which uses the NLCD land use types instead of hand-tracing the roads.
 4. Acal
 - Old model uses Acal = 4, current model uses Acal = 1
-5. SED file Setting
-  
-      SedimentOverall]
-        
-      Cref                  = 1600                   [kg/m3]   Reference density for hindered settling calculations
+5. SED file Setting - this setting is missing in the new model
+
+   ```text
+   [SedimentOverall]
+
+   Cref                  = 1600                   [kg/m3]   Reference density for hindered settling calculations
+   ```
+6. Dry bed density
+The dry bed density `CDryB` is 1600 kg/m3 for all the sizes in the old model, whereas in the current model the `CDryB` is 1600, 1800, or 2000 kg/m3 depending on grain size.
+ 
 
 A clear next step based on these differences was to try two things
 - Run the current model with a 10 m thickness on the floodplain. This would preserve the channel and floodplain sediment fractions and the nonerodible areas. 
-- Run the current model with the sediment fractions from the current model. This would change the nonerodible areas and the sediment in the channel. 
+- Run the current model with the sediment fractions from the current model. This would change the nonerodible areas and the sediment in the channel.
+
+## Visualizing the Sediment Differences
+
+<img width="2025" alt="image" src="https://github.com/user-attachments/assets/f1f8f42c-547c-4d72-a8c6-f19195d7ed3a" />
+
+<img width="2159" alt="image" src="https://github.com/user-attachments/assets/6ac2eebe-a9f1-4ede-84eb-b9773ac58919" />
+
+<img width="1207" alt="image" src="https://github.com/user-attachments/assets/a9e0a6a8-3b21-4bfe-aee5-53a75cae2514" />
+
+<img width="1207" alt="image" src="https://github.com/user-attachments/assets/b4e94048-a019-4db9-acf0-b9c6490c38b9" />
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
