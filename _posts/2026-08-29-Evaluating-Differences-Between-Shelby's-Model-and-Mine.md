@@ -13,7 +13,13 @@ I wanted to document the differences between the old model and the current model
 2. Sediment thickness
 - the old model uses a sediment thickness of 10 m everywhere, while our model has a thickness of 1 m on the floodplain.
 3. Nonerodible areas
-- The old model just has thin areas of about a one cell width defining roads and maybe levees. This looks more precisely done than the current model which uses the NLCD land use types instead of hand-tracing the roads. 
+- The old model just has thin areas of about a one cell width defining roads and maybe levees. This looks more precisely done than the current model which uses the NLCD land use types instead of hand-tracing the roads.
+4. Acal
+- Old model uses Acal = 4, current model uses Acal = 1
+5. SED file Setting
+  
+      [SedimentOverall]
+      Cref                  = 1600                   [kg/m3]   Reference density for hindered settling calculations
 
 A clear next step based on these differences was to try two things
 - Run the current model with a 10 m thickness on the floodplain. This would preserve the channel and floodplain sediment fractions and the nonerodible areas. 
