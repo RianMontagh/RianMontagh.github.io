@@ -47,9 +47,9 @@ A clear next step based on these differences was to try two things
 
 *Sediment fractions for the old model. Darkest blue is the nonerodible areas (thickness = 0)*
 
-<img width="1207" alt="image" src="https://github.com/user-attachments/assets/a9e0a6a8-3b21-4bfe-aee5-53a75cae2514" />
-
-<img width="1207" alt="image" src="https://github.com/user-attachments/assets/b4e94048-a019-4db9-acf0-b9c6490c38b9" />
+Current Model Total Thickness    |  Old Model Total Thickness
+:-------------------------:|:-------------------------:
+![](https://github.com/user-attachments/assets/a9e0a6a8-3b21-4bfe-aee5-53a75cae2514)  |  ![](https://github.com/user-attachments/assets/b4e94048-a019-4db9-acf0-b9c6490c38b9)
 
 ## Trials with Parts of the Old Model
 
