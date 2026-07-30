@@ -1,6 +1,6 @@
 # Evaluating Causes of Incision on the Floodplain in the Old Model
 
-I looked more into my own models bed elevation after the flood and found that my models do not form the same incisional channels as the old model. 
+I looked more into my own models' bed elevation after the flood and found that my models do not form the same incisional channels as the old model. 
 
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/7fa81bc3-c94d-468b-9d2f-35332e618bad" />
 
