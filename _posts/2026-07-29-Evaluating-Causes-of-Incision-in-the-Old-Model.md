@@ -59,6 +59,12 @@ Current Model Total Thickness    |  Old Model Total Thickness
 
 Changing the sediment fractions to the old model sediment fractions did not make a difference, which is really strange to me! I was expecting the nonerodible areas to be the thing limiting incision. I need to do a triple check that the sediment fractions are actually different. If I did everything correctly, then I am guessing there is a setting in the MOR file that is causing increased morphologic change. 
 
+<img width="2445" alt="image" src="https://github.com/user-attachments/assets/f0be0ba1-9244-4365-bd81-14f8436f3bb7" />
+
+*Results from changing the floodplain of the current model to have a total thickness of 10 m instead of 1 m*
+
+This result for the current model run with the current sediment fractions and the current SED file settings is more expected to me. The only change here is that there is potential for up to 10 m in erosion instead of just 1 m. However, in the 1 m floodplain thickness version of the model, incisional channels are non existent, so it makes sense that they are also nonexistent in a thicker floodplain. 
+
 
 
 
