@@ -1,8 +1,14 @@
 # Evaluating Causes of Incision on the Floodplain in the Old Model
 
+I looked more into my own models bed elevation after the flood and found that my models do not form the same incisional channels as the old model. 
+
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/7fa81bc3-c94d-468b-9d2f-35332e618bad" />
 
+*Old Model bed elevation before and after the 2021 flood*
+
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/d6b2e165-9a7a-404d-ad45-130e71a25be7" />
+
+*Current Model bed elevation before and after 100-year climate-adjusted, 7-day duration flood.*
 
 ## Differences Between Shelby's Model and the Current Model
 
@@ -35,11 +41,24 @@ A clear next step based on these differences was to try two things
 
 <img width="2025" alt="image" src="https://github.com/user-attachments/assets/f1f8f42c-547c-4d72-a8c6-f19195d7ed3a" />
 
+*Sediment fractions for the current model. Darkest blue is the nonerodible areas (thickness = 0)*
+
 <img width="2159" alt="image" src="https://github.com/user-attachments/assets/6ac2eebe-a9f1-4ede-84eb-b9773ac58919" />
+
+*Sediment fractions for the old model. Darkest blue is the nonerodible areas (thickness = 0)*
 
 <img width="1207" alt="image" src="https://github.com/user-attachments/assets/a9e0a6a8-3b21-4bfe-aee5-53a75cae2514" />
 
 <img width="1207" alt="image" src="https://github.com/user-attachments/assets/b4e94048-a019-4db9-acf0-b9c6490c38b9" />
+
+## Trials with Parts of the Old Model
+
+<img width="1793" alt="image" src="https://github.com/user-attachments/assets/428f4632-2e82-4a18-be70-f5096358b3d2" />
+
+*Results from changing the sediment fractions to the old model and using the old model SED file settings.*
+
+Changing the sediment fractions to the old model sediment fractions did not make a difference, which is really strange to me! I was expecting the nonerodible areas to be the thing limiting incision. 
+
 
 
 
