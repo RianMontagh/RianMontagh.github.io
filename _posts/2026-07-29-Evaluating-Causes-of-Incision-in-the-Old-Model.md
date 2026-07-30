@@ -57,7 +57,7 @@ Current Model Total Thickness    |  Old Model Total Thickness
 
 *Results from changing the sediment fractions to the old model and using the old model SED file settings.*
 
-Changing the sediment fractions to the old model sediment fractions did not make a difference, which is really strange to me! I was expecting the nonerodible areas to be the thing limiting incision. 
+Changing the sediment fractions to the old model sediment fractions did not make a difference, which is really strange to me! I was expecting the nonerodible areas to be the thing limiting incision. I need to do a triple check that the sediment fractions are actually different. If I did everything correctly, then I am guessing there is a setting in the MOR file that is causing increased morphologic change. 
 
 
 
