@@ -35,7 +35,7 @@ I wanted to document the differences between the old model and the current model
 
 A clear next step based on these differences was to try two things
 - Run the current model with a 10 m thickness on the floodplain. This would preserve the channel and floodplain sediment fractions and the nonerodible areas. 
-- Run the current model with the sediment fractions from the current model. This would change the nonerodible areas and the sediment in the channel.
+- Run the current model with the sediment fractions from the old model. This would change the nonerodible areas and the sediment in the channel.
 
 ## Visualizing the Sediment Differences
 
