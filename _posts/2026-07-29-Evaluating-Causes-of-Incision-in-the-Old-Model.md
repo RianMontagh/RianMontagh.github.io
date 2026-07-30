@@ -53,7 +53,7 @@ Current Model Total Thickness    |  Old Model Total Thickness
 
 ## Trials with Parts of the Old Model
 
-<img width="1793" alt="image" src="https://github.com/user-attachments/assets/428f4632-2e82-4a18-be70-f5096358b3d2" />
+<img width="1775" alt="image" src="https://github.com/user-attachments/assets/618abf74-85b5-4347-89df-8cddd3493299" />
 
 *Results from changing the sediment fractions to the old model and using the old model SED file settings.*
 
