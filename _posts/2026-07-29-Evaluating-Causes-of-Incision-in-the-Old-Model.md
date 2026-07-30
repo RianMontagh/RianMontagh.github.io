@@ -30,7 +30,7 @@ I wanted to document the differences between the old model and the current model
    Cref                  = 1600                   [kg/m3]   Reference density for hindered settling calculations
    ```
 6. Dry bed density
-The dry bed density `CDryB` is 1600 kg/m3 for all the sizes in the old model, whereas in the current model the `CDryB` is 1600, 1800, or 2000 kg/m3 depending on grain size.
+- The dry bed density `CDryB` is 1600 kg/m3 for all the sizes in the old model, whereas in the current model the `CDryB` is 1600, 1800, or 2000 kg/m3 depending on grain size.
  
 
 A clear next step based on these differences was to try two things
