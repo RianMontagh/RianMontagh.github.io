@@ -16,7 +16,7 @@ I wrote a first draft of my abstract for AGU. My overall thoughts are that I had
 - **[EP022](https://agu.confex.com/agu/agu26/prelim.cgi/Session/280520) - Morphodynamic Processes in Human-Impacted Fluvio-Lacustrine Environments**
     - probably not relevant because of the focus on human-impacted
 - **[EP027](https://agu.confex.com/agu/agu26/prelim.cgi/Session/281088) - River and Floodplain Dynamics: Linking Geomorphic Processes in Pristine and Recovered Systems**
-    - **This session invites contributions that advance understanding of river floodplain dynamics across natural and managed systems. Topics may include sediment and wood dynamics, floodplain evolution, system responses to restoration activities such as dam removal, levee setbacks, and channel remeandering, and linkages between physical recovery and ecological or biogeochemical function.**
+    - This session invites contributions that advance understanding of river floodplain dynamics across natural and managed systems. Topics may include sediment and wood dynamics, floodplain evolution, system responses to restoration activities such as dam removal, levee setbacks, and channel remeandering, and linkages between physical recovery and ecological or biogeochemical function.
  
 ## Rerunning the Old Model
 
