@@ -8,4 +8,11 @@ After being confused by my tests last week on figuring out why the old model has
 
 As shown in 
 
+<img width="1775" alt="image" src="https://github.com/user-attachments/assets/7dc4fb3f-ac18-477b-a90d-471cac7bec21" />
+
+*Figure 2. Bed Change from the beginning to the end of the current model with Acal = 4*
+
+
+
+
 
