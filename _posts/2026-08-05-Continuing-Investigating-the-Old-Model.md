@@ -12,6 +12,9 @@ As shown in
 
 *Figure 2. Bed Change from the beginning to the end of the current model with Acal = 4*
 
+<img width="1775" alt="image" src="https://github.com/user-attachments/assets/af9060f3-f326-4206-ac6b-fc98b424708a" />
+
+*Figure 3. Bed Change from the beginning to the end of the old model with Acal = 1*
 
 
 
