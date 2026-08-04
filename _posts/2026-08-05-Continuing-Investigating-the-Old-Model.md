@@ -16,6 +16,11 @@ As shown in
 
 *Figure 3. Bed Change from the beginning to the end of the old model with Acal = 1*
 
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/1d51588b-827d-4a45-94fb-cb1b1f21484c" />
+
+*Figure x. Visualization of 100-year Hydrographs*
+
+
 
 
 
