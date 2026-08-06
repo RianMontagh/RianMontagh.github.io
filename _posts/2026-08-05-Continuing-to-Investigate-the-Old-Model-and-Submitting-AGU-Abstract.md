@@ -12,15 +12,15 @@ After being confused by my tests last week on figuring out why the old model has
 
 I tried the opposite experiments in the current model, and got interesting results. Even when running the model with the old sediment settings and fractions, channel formation did not occur. It also did not occur when just increasing the Acal from 1 to 4. That means there must be another factor in the new model that is suppressing the floodplain incision. Next I want to run models with the old 2015 terrain and the .MOR file. 
 
-<img width="1620" alt="image" src="https://github.com/user-attachments/assets/7f5af3d1-814e-4de9-84aa-e6b2f98185ee" />
+<img width="2909" alt="image" src="https://github.com/user-attachments/assets/e8bc4b08-0744-496f-85f9-3802cb5e2482" />
 
 *Figure 2. Current model with different changes to be like the old model*
+
+## Comparing Old and Current Model Upstream Forcing and Overflow to Sumas
 
 I also plotted my hydrographs alongside the 2021 flood to make sure that my understanding of the floods was correct. My 3-day duration floods look similar to the 2021 peak. The non-climate scaled hydrograph matches the 2021 peak well. Since I am running the climate scaled hydrograph for my "current model" runs, I expected to see more incision than with the non-climate scaled 100-year hydrograph. 
 
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/1d51588b-827d-4a45-94fb-cb1b1f21484c" />
-
-## Comparing Old and Current Model Upstream Forcing and Overflow to Sumas
 
 *Figure 3. Visualization of 2021 flood and my 100-year Hydrographs*
 
