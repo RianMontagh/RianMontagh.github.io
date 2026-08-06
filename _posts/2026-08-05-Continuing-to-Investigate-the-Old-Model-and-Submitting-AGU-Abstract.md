@@ -44,6 +44,8 @@ I submitted my AGU abstract, which I am copying here for future reference and do
 
 > Here, we investigate event-scale avulsion triggering on the Nooksack River using a depth-averaged, two-dimensional morphodynamic Delft3D-FM model forced with future climate-projected flood hydrographs. Specifically, we assess whether extreme floods can initiate an avulsion and identify mechanisms controlling avulsion initiation. We hypothesize that the ability of the rerouted flow to incise into the river’s alluvial ridges exerts a strong control on avulsion initiation. To test this, we vary morphodynamic parameters such as floodplain roughness, sediment coarseness, flood peak magnitude, flood duration, and number of flood events. Preliminary results indicate that larger floods and a more erodible floodplain increase flow in the potential avulsion pathway. This study improves understanding of event-scale avulsion triggering, which is understudied relative to longer-term avulsion setup, and will inform floodplain management strategies aimed at reducing avulsion risk in the Nooksack River.  
 
+test
+
 
 
 
