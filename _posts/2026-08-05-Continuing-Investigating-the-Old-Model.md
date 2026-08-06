@@ -16,11 +16,20 @@ I also plotted my hydrographs alongside the 2021 flood to make sure that my unde
 
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/1d51588b-827d-4a45-94fb-cb1b1f21484c" />
 
-*Figure x. Visualization of 2021 flood and my 100-year Hydrographs*
+*Figure 3. Visualization of 2021 flood and my 100-year Hydrographs*
 
 Lastly, I compared the normalized overflow to Sumas for the old model and the current model (this one has 10 m of sediment thickness on the floodplain). Surprisingly, they are almost exactly the same. The peak values are 0.45359 and 0.46039 for the old and current models, respectively. 
 
-<img width="1433" alt="image" src="https://github.com/user-attachments/assets/d5f005e0-fff8-4222-b13f-b52fbecbf797" />
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/d5f005e0-fff8-4222-b13f-b52fbecbf797" />
+
+*Figure 4. Overflow to Sumas, not normalized.*
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/1f7861dc-350e-4007-b5a7-a2fbb6bb6fea" />
+
+*Figure 4. Overflow to Sumas, normalized.*
+
+
+
 
 
 
