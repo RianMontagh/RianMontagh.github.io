@@ -32,7 +32,7 @@ Lastly, I compared the normalized overflow to Sumas for the old model and the cu
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/1f7861dc-350e-4007-b5a7-a2fbb6bb6fea" />
 
-*Figure 4. Overflow to Sumas, normalized.*
+*Figure 5. Overflow to Sumas, normalized.*
 
 ## Submitting AGU Abstract
 
