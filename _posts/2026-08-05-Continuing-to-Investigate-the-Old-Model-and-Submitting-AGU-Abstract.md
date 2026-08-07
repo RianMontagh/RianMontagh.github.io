@@ -46,8 +46,12 @@ I submitted my AGU abstract, which I am copying here for future reference and do
 
 ## Animation of the Old Model Bed Elevation
 
+<video controls width="800">
+  <source src="https://github.com/user-attachments/assets/335858d8-a7ab-4aa7-8f27-c3664c2ac9e9" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
-https://github.com/user-attachments/assets/335858d8-a7ab-4aa7-8f27-c3664c2ac9e9
+
 
 
 
