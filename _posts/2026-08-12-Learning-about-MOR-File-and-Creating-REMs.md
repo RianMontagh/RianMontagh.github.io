@@ -4,7 +4,7 @@
 
 <img width="1612" alt="image" src="https://github.com/user-attachments/assets/09b80b77-6bd3-4dbe-be12-77407b4d76dd" />
 
-<img width="1620" alt="image" src="https://github.com/user-attachments/assets/ba484747-2b18-4ef2-8df2-ee1bb66df905" />
+<img width="1620" alt="image" src="https://github.com/user-attachments/assets/78646005-75e1-4e63-8863-18fa2748bc0e" />
 
 ## Additional Test with the Old Model 
 
