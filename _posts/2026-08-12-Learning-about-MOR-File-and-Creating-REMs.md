@@ -24,7 +24,10 @@ I started combing through the MOR file to see what changes have been made betwee
   - NeuBcSand is true in the current model
 5. ISlope
   - ISlope = 2 in the old model and 3 in the new model
-6. 
+6. IHidExp
+  - IHidExp = 1 in the old model and 3 in the new model
+7. SusW
+  - 
 
 
 
