@@ -2,11 +2,15 @@
 
 ## Additional Test with the Current Model
 
+I had an interesting development in the modeling occur this week! I discovered that the settings in the MOR file seem to be controlling the floodplain incision. See Figure 1, where the old MOR file causes the current model to carve channels into the floodplain. The prime suspect was the setting SedThr, which defines the depth of water required for the model to calculate sediment transport. In the old model, this value is only 0.1 m, while in the current model it is 2 m. It seems to me that sediment transport occurs in cells with less than 2 m of water, so it doesn't seems like a value of 0.1 m for the threshold for computing transport is unrealistic. I tried lowering SedThr in the current model, as shown in Figure 1, but did not see the floodplain activate as much as the model with all the old MOR settings. My next thought was that I wanted to go through the other MOR settings to see what else has been changed. I also wanted to do another run with just the old MOR file so that I could isolate the old MOR effects separate from any effects of the old SED file and sediment fractions. 
+
 <img width="1620" alt="image" src="https://github.com/user-attachments/assets/78646005-75e1-4e63-8863-18fa2748bc0e" />
 
 *Figure 1. The current model alongside the current model with the old MOR file and the current model with SedThr = 0.1 m.*
 
 ## Additional Test with the Old Model 
+
+
 
 <img width="1612" alt="image" src="https://github.com/user-attachments/assets/bf8aef4d-00f9-47e8-b85c-dc475359178b" />
 
