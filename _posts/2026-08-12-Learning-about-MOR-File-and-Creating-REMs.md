@@ -32,22 +32,20 @@ I started combing through the MOR file to see what changes have been made betwee
 | MOR Underlayer Setting | Old Model | Current Model | Units | Default | Description |
 | ---------------------- | --------- | ------------- | ----- | ------- | ----------- |
 | MxNULyr | 50 | 100 | integer 1-3 | 1 | Maximum number of underlayers (excluding transport and base layers) in case IUnderLyr=2. |
-| TTLForm | 1 | 2 | Transport layer thickness formulation in case IUnderLyr=2 (1 integer in the range 1 to 3; default 1) 1 constant user-defined
-2 proportional to water depth
-3 proportional to bedform height
-| ThTrLyr | 0.2 | 0.05 | 
-| TTLAlpha | -- | 0.05 | 
-| TTLMin | -- | 0 | 
-| ThUnLyr | 0.256 | 0.2 | 
+| TTLForm | 1 | 2 | integer 1-3 | 1 | Transport layer thickness formulation in case IUnderLyr=2. 1. constant user-defined. 2. proportional to water depth. 3. proportional to bedform height. |
+| ThTrLyr | 0.2 | 0.05 | uniform value or file name | not listed | thickness of transport layer [m] in case of TTLForm=1 |
+| TTLAlpha | -- | 0.05 | -- | 0.1 | proportionality constant in case of TTLForm=2 or 3 |
+| TTLMin | -- | 0 | [m] | 0 | minimum thickness in case of TTLForm=2 or 3 | 
+| ThUnLyr | 0.256 | 0.2 | [m] | not listed | characteristic maximum thickness [m] of stratigraphy layers in case IUnderLyr=2 | 
  
 I didn't know that we were using the multiple layer option for sediment transport. 
 
-| MOR Numerics Setting | Old Model | Current Model | Description |
-| ----------- | --------- | ------------- | ----------- |
-| UpwindBedload | -- | true | 
-| LaterallyAveragedBedload | -- | false | 
-| MaximumWaterdepth | -- | true | 
-| MaximumWaterdepthFraction | -- | 1 | 
+| MOR Numerics Setting | Old Model | Current Model | Units | Default | Description |
+| -------------------- | --------- | ------------- | ----- | ------- | ----------- |
+| UpwindBedload | -- | true | logical | true | use upwind bedload (true, default) or central bedload (false). The central approach is more accurate but less stable (less damping). | 
+| LaterallyAveragedBedload | -- | false | logical | false | smoothed bedload transport rates |
+| MaximumWaterdepth | -- | true | logical | false | use locally maximum water depth to compute characteristic velocity for sediment transport at cell centre | 
+| MaximumWaterdepthFraction | -- | 1 | real number 0-1 | 1 | fraction of the flow depth at links used in finding the maximum water depth. Only used if MaximumWaterdepth=true.
 
 > The Output settings section also had several differences originally, but in the runs I am analyzing they are the same in order to make the output compatible with the merge.slurm script. This script merges the map partitions into one NetCDF file on Hyak. To my understanding, these settings only affect what is being saved, so they shouldn't change how the model is working. 
 
