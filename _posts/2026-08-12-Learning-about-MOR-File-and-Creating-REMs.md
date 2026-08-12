@@ -35,17 +35,29 @@ I started combing through the MOR file to see what changes have been made betwee
 | UpdInf | -- | false | logical | false | Update bed levels at inflow boundaries |
 | DzMax | -- | 0.05 | [m] | 0.05 | Maximum bed level change per time step expressed as percentage of water depth |
 
+After examining the settings that are different for the morphology section of the MOR file, I identified potential culprits of reducing sediment transport. 
+1. Turning DensIn on lowers the velocity near the bed, which reduces shear stress and therefore sediment transport.
+2. ThetSD was zero in the old model, which means that no bed change is transferred from wet to dry cells in a time step. This could magnify the amount of erosion in the wet cells and explain why there is more channelization in the old model, because the wet cells are eroding much quicker than their surroundings.
+3. The effects of HMaxTH are turned on in the old model and off in the new model. This is because HMaxTH > SedThr in the old model and HMaxTH < SedThr in the current model. I would expect this to make the current model have wet cells that affect the dry cells more than the old model.
+
+Questions:  
+- Why are we applying the A&M hiding and exposure formula? The manual says that no external formula should be applied to W&C because it has its own hiding function.
+- I need to study the bed slope formulations to understand what is changing there.
+- Are SusW and BedW both moot because W&C does not include waves?
 
 | MOR Underlayer Setting | Old Model | Current Model | Units | Default | Description |
 | ---------------------- | --------- | ------------- | ----- | ------- | ----------- |
-| MxNULyr | 50 | 100 | integer 1-3 | 1 | Maximum number of underlayers (excluding transport and base layers) in case IUnderLyr=2. |
-| TTLForm | 1 | 2 | integer 1-3 | 1 | Transport layer thickness formulation in case IUnderLyr=2. 1. constant user-defined. 2. proportional to water depth. 3. proportional to bedform height. |
+| MxNULyr | 50 | 100 | integer | 1 | Maximum number of underlayers (excluding transport and base layers) in case IUnderLyr=2. |
+| TTLForm | 1 | 2 | integer | 1 | Transport layer thickness formulation in case IUnderLyr=2. 1. constant user-defined. 2. proportional to water depth. 3. proportional to bedform height. |
 | ThTrLyr | 0.2 | 0.05 | uniform value or file name | not listed | thickness of transport layer [m] in case of TTLForm=1 |
 | TTLAlpha | -- | 0.05 | -- | 0.1 | proportionality constant in case of TTLForm=2 or 3 |
 | TTLMin | -- | 0 | [m] | 0 | minimum thickness in case of TTLForm=2 or 3 | 
 | ThUnLyr | 0.256 | 0.2 | [m] | not listed | characteristic maximum thickness [m] of stratigraphy layers in case IUnderLyr=2 | 
- 
-I didn't know that we were using the multiple layer option for sediment transport. 
+
+The difference in this section is that the old model uses one uniform active layer while the old model using multiple layers to keep track of the sediment that is deposited or eroded. 
+
+Question:
+- What effect does adding the multi-layer functionality have? It does seem more realistic.
 
 | MOR Numerics Setting | Old Model | Current Model | Units | Default | Description |
 | -------------------- | --------- | ------------- | ----- | ------- | ----------- |
@@ -53,6 +65,8 @@ I didn't know that we were using the multiple layer option for sediment transpor
 | LaterallyAveragedBedload | -- | false | logical | false | smoothed bedload transport rates |
 | MaximumWaterdepth | -- | true | logical | false | use locally maximum water depth to compute characteristic velocity for sediment transport at cell centre | 
 | MaximumWaterdepthFraction | -- | 1 | real number 0-1 | 1 | fraction of the flow depth at links used in finding the maximum water depth. Only used if MaximumWaterdepth=true.
+
+Only real difference in the Numerics section is the MaximumWaterdepth. There is very limited description of this variable, but it seems like turning this on causes the velocity used for sediment transport to be calculated where the water depth (which is at the nodes) is the highest. Is this a stability parameter?
 
 > The Output settings section also had several differences originally, but in the runs I am analyzing they are the same in order to make the output compatible with the merge.slurm script. This script merges the map partitions into one NetCDF file on Hyak. To my understanding, these settings only affect what is being saved, so they shouldn't change how the model is working. 
 
