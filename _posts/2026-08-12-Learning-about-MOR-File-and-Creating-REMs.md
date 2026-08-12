@@ -29,6 +29,7 @@ I started combing through the MOR file to see what changes have been made betwee
 | UpdInf | -- | false | logical | false | Update bed levels at inflow boundaries |
 | DzMax | -- | 0.05 | [m] | 0.05 | Maximum bed level change per time step expressed as percentage of water depth |
 
+
 | MOR Underlayer Setting | Old Model | Current Model | Units | Default | Description |
 | ---------------------- | --------- | ------------- | ----- | ------- | ----------- |
 | MxNULyr | 50 | 100 | integer 1-3 | 1 | Maximum number of underlayers (excluding transport and base layers) in case IUnderLyr=2. |
