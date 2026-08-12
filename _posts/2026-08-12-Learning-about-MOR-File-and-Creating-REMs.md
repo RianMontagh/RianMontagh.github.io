@@ -4,11 +4,13 @@
 
 <img width="1620" alt="image" src="https://github.com/user-attachments/assets/78646005-75e1-4e63-8863-18fa2748bc0e" />
 
-*Figure 1. The current model alongside the current model with the old MOR file and the current model with SedThr = 0.1 m. 
+*Figure 1. The current model alongside the current model with the old MOR file and the current model with SedThr = 0.1 m.*
 
 ## Additional Test with the Old Model 
 
 <img width="1612" alt="image" src="https://github.com/user-attachments/assets/bf8aef4d-00f9-47e8-b85c-dc475359178b" />
+
+*Figure 2. The old model tests with the fourth test of the current synthetic hydrograph added*
 
 ## Examining the MOR File
 
