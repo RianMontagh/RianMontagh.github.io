@@ -27,16 +27,20 @@ I started combing through the MOR file to see what changes have been made betwee
 | ThetSD | 0 | 0.5 | [-] | 0.0 | Global / maximum dry cell erosion factor. In other words, the fraction of the erosion to assign (evenly) to the adjacent cells. If ThetSD equals zero the standard scheme is used, i.e. all erosion occurs at the wet cell. If ThetSD equals 1 all erosion that would occur in the wet cell is assigned to the adjacent dry cells and no erosion occurs in the wet cell. |
 | HMaxTH | 1.5 | 1 | [m] | 1.0 | Maximum depth for variable THETSD. This is the most confusing variable for me so far. My understanding is that when a cell is barely wet (depth is slightly higher than SedThr) then there is not much transport happening there and you might not want the activity in this cell to affect the dry cells at the full ThetSD. In this case, you set your HMaxThr to be greater than SedThr. Then, instead of the model applying the full ThetSD to redistribute bed change to the dry cells, the model uses the theta defined by this equation. <img width="324" alt="Screenshot 2026-08-11 at 3 30 36 PM" src="https://github.com/user-attachments/assets/ad9608d4-4ad6-48cf-83dc-003feabdb3a9" /> The higher you make the HMaxThr, the smaller the new theta is. ThetSD is the maximum that theta can be and is only possible when h > HMaxTH. In other words, HMaxTH is the depth value at which the full ThetSD will be applied to the dry cells.
 | UpdInf | -- | false | logical | false | Update bed levels at inflow boundaries |
-| DzMax | -- | 0.05 | [m] | 0.05 | maximum bed level change per time step expressed as percentage of water depth |
+| DzMax | -- | 0.05 | [m] | 0.05 | Maximum bed level change per time step expressed as percentage of water depth |
 
 | MOR Underlayer Setting | Old Model | Current Model | Units | Default | Description |
 | ---------------------- | --------- | ------------- | ----- | ------- | ----------- |
-| MxNULyr | 50 | 100 |
-| TTLForm | 1 | 2 |
+| MxNULyr | 50 | 100 | integer 1-3 | 1 | Maximum number of underlayers (excluding transport and base layers) in case IUnderLyr=2. |
+| TTLForm | 1 | 2 | Transport layer thickness formulation in case IUnderLyr=2 (1 integer in the range 1 to 3; default 1) 1 constant user-defined
+2 proportional to water depth
+3 proportional to bedform height
 | ThTrLyr | 0.2 | 0.05 | 
-| TTLAlpha | -- | 0.05 |
-| TTLMin | -- | 0 |
+| TTLAlpha | -- | 0.05 | 
+| TTLMin | -- | 0 | 
 | ThUnLyr | 0.256 | 0.2 | 
+ 
+I didn't know that we were using the multiple layer option for sediment transport. 
 
 | MOR Numerics Setting | Old Model | Current Model | Description |
 | ----------- | --------- | ------------- | ----------- |
