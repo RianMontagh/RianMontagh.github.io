@@ -10,7 +10,7 @@ I had an interesting development in the modeling occur this week! I discovered t
 
 ## Additional Test with the Old Model 
 
-
+For the old model, I wanted to confirm that my current hydrograph has the ability to form the same incision on the floodplain as the 2021 flood used in the old model. I confirmed this is the case, as shown in Figure 2. 
 
 <img width="1612" alt="image" src="https://github.com/user-attachments/assets/bf8aef4d-00f9-47e8-b85c-dc475359178b" />
 
