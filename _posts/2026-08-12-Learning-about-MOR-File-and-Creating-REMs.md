@@ -68,7 +68,22 @@ Question:
 
 Only real difference in the Numerics section is the MaximumWaterdepth. There is very limited description of this variable, but it seems like turning this on causes the velocity used for sediment transport to be calculated where the water depth (which is at the nodes) is the highest. Is this a stability parameter?
 
-> The Output settings section also had several differences originally, but in the runs I am analyzing they are the same in order to make the output compatible with the merge.slurm script. This script merges the map partitions into one NetCDF file on Hyak. To my understanding, these settings only affect what is being saved, so they shouldn't change how the model is working. 
+> The Output settings section also had several differences originally, but in the runs I am analyzing they are the same in order to make the output compatible with the merge.slurm script. This script merges the map partitions into one NetCDF file on Hyak. To my understanding, these settings only affect what is being saved, so they shouldn't change how the model is working.
+
+## Creating REMs
+
+I started developing a script to visualize my bed elevation plots as relative elevation compared to the river bed. Brooke kindly sent me a few resources that she followed, which I read through to understand the process. Dan Coe was the person who popularized REMs (relative elevation models) and he also made some GIS tutorials. 
+
+Resources:
+1. [Blog going through Dan Coe's Tutorials](https://medium.com/@edinspace/first-steps-with-relative-elevation-model-visualizations-21fa3c2e024b)
+2. [Open Topography Python Package](https://opentopography.org/blog/new-package-automates-river-relative-elevation-model-rem-generation)
+3. [Simple Python Script Tutorial](https://docs.hyriver.io/examples/notebooks/rem.html)
+4. [Dan Coe's QGIS Tutorial with the IDW Method](https://dancoecarto.com/creating-rems-in-qgis-the-idw-method)
+5. [Dan Coe's QGIS Tutorial with the Cross Section Method](https://dancoecarto.com/creating-rems-in-qgis-the-cross-section-method)
+
+All of these resources for creating REMs have one thing in common &emdash; they all require the starting product to be a DEM. In my case, I have a 
+
+
 
 
 
