@@ -75,13 +75,33 @@ Only real difference in the Numerics section is the MaximumWaterdepth. There is 
 I started developing a script to visualize my bed elevation plots as relative elevation compared to the river bed. Brooke kindly sent me a few resources that she followed, which I read through to understand the process. Dan Coe was the person who popularized REMs (relative elevation models) and he also made some GIS tutorials. 
 
 Resources:
-1. [Blog going through Dan Coe's Tutorials](https://medium.com/@edinspace/first-steps-with-relative-elevation-model-visualizations-21fa3c2e024b)
-2. [Open Topography Python Package](https://opentopography.org/blog/new-package-automates-river-relative-elevation-model-rem-generation)
-3. [Simple Python Script Tutorial](https://docs.hyriver.io/examples/notebooks/rem.html)
-4. [Dan Coe's QGIS Tutorial with the IDW Method](https://dancoecarto.com/creating-rems-in-qgis-the-idw-method)
-5. [Dan Coe's QGIS Tutorial with the Cross Section Method](https://dancoecarto.com/creating-rems-in-qgis-the-cross-section-method)
+- [Blog going through Dan Coe's Tutorials](https://medium.com/@edinspace/first-steps-with-relative-elevation-model-visualizations-21fa3c2e024b)
+- [Open Topography Python Package](https://opentopography.org/blog/new-package-automates-river-relative-elevation-model-rem-generation)
+- [Simple Python Script Tutorial](https://docs.hyriver.io/examples/notebooks/rem.html)
+- [Dan Coe's QGIS Tutorial with the IDW Method](https://dancoecarto.com/creating-rems-in-qgis-the-idw-method)
+- [Dan Coe's QGIS Tutorial with the Cross Section Method](https://dancoecarto.com/creating-rems-in-qgis-the-cross-section-method)
 
-All of these resources for creating REMs have one thing in common &emdash; they all require the starting product to be a DEM. In my case, I have a 
+All of these resources for creating REMs have one thing in common &mdash; they all require the starting product to be a DEM. In my case, I have elevation output from my model in NetCDF format. I think I will need to slightly modify the process to get it to work for my needs. I used the third listed resource as a road map to cover these general steps:
+
+1. Sample elevation values along a river centerline  
+2. Interpolate the sampled river elevations across the DEM extent to get the nearest river elevation at every pixel
+3. Subtract these values from the original DEM. The end result is an REM where a value of 0 corresponds to areas at the same elevation as the nearest portion of the river channel, and positive values representing the local height above the river channel.
+
+### Obtaining Channel Centerline
+
+I used ArcGIS Pro to get a centerline based on the 2024 topobathy TIF file. I felt like this made the most sense because the centerline will be used to detrend the downstream river gradient, so I figured the centerline should be elevation/slope related. The tool I used was [Derive Stream as Line](https://doc.esri.com/en/arcgis-pro/latest/tool-reference/spatial-analyst/derive-stream-as-line.html?tabs=dialog), which combines several tools (flow direction and flow accumulation) into one tool. I set a threshold for the accumulation area such that if the threshold is equal to 20 hectares, only cells with 20 or more hectares of upstream flow will be defined as a stream raster. Which this method, I still got some extra streams in my output, but I removed these in post and then merged the selected segments that make up the Nooksack main channel into one polyline. 
+
+<img width="1028" alt="image" src="https://github.com/user-attachments/assets/e935d493-3fdf-4190-82c8-8ee9f4476ec0" />
+
+*Figure 3. Output from Derive Stream as Line with the accumulation threshold set to 60 hectares.*
+
+<img width="1058" alt="image" src="https://github.com/user-attachments/assets/3c37b868-832a-4246-aa27-c9c572ea859b" />
+
+*Figure 4. Final Centerline.*
+
+
+
+
 
 
 
