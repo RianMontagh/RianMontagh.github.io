@@ -16,7 +16,7 @@ This step involved some smoothing of the original centerline, which reduced some
 
 In IDW, you interpolate by finding the k nearest neighbors of your sample points to your query point. In this case, the sample points are the river bed elevation along the centerline, and the query points are the grid cells. In ESRI's words:
 
->Uses the measured values surrounding the prediction location to predict a value for any unsampled location, based on the assumption that things that are close to one another are more alike than those that are farther apart.
+>In IDW one uses the measured values surrounding the prediction location to predict a value for any unsampled location, based on the assumption that things that are close to one another are more alike than those that are farther apart.
 
 The equation used is:
 
@@ -33,7 +33,7 @@ I used the [`KDTreeSearcher`](https://www.mathworks.com/help/releases/R2025b/sta
 I took `N=300` and `p=2`. I noticed that decreasing N caused the floodplain to get a choppier look, which makes sense as the interpolation relies on few, more local points. As I increased `N`, I saw more smooth, realistic floodplains that did not affect the crispness of the channel and channel meanders. When I increased `p` I noticed that the results got the same choppy or streaky look as the low `N`. This also makes sense because as `p` increases, the more local or shorter distances `d` are weighted more, which means the results will not be as smooth. I chose `p=2` because that is the default `p` for two-dimensional IDW tool in ArcGIS Pro. 
 
 >Note: The [documentation](https://pro.arcgis.com/en/pro-app/3.5/help/analysis/geostatistical-analyst/how-inverse-distance-weighted-interpolation-works.htm) for this ArcGIS tool states, "When p = 2, the method is known as
->the inverse distance squared weighted interpolation. The default value is p = 2, although there is no theoretical justification to >prefer this value over others, and the effect of changing p should be investigated by >previewing the output and examining the cross-validation statistics."
+the inverse distance squared weighted interpolation. The default value is p = 2, although there is no theoretical justification to prefer this value over others, and the effect of changing p should be investigated by previewing the output and examining the cross-validation statistics."
 
 N = 10                                                                                |  N = 300
 :------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------:
