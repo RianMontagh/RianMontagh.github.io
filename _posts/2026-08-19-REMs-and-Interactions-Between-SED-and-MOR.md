@@ -1,4 +1,4 @@
-# REMs
+# REMs and Interactions between the SED and MOR Files
 
 ## Continuing to work on my REMs
 
@@ -55,7 +55,7 @@ I showed this figure last week and re-plotted it this week with my new method fo
 
 *Figure x. My past runs with the old model before implementing the REM method*
 
-## More tests with the Old MOR
+## Interactions Between SED and MOR Files
 
 <img width="1826" alt="image" src="https://github.com/user-attachments/assets/f6043c66-26df-40ae-aa4c-385ebc31a066" />
 
