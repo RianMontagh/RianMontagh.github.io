@@ -39,9 +39,13 @@ N = 10                                                                          
 :------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------:
 ![](https://github.com/user-attachments/assets/c4f969f8-a885-42d2-8afc-58a88edb4a94)  |  ![](https://github.com/user-attachments/assets/e0e4ab78-1593-417d-91ac-04e10a2fac5e)
 
+*Figure 2. Comparison of the effect of N*
+
 p = 1                                                                                 |  p = 10
 :------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------:
 ![](https://github.com/user-attachments/assets/36980e68-4086-4922-bee7-244fd1ce5e41)  |  ![](https://github.com/user-attachments/assets/49ac60da-5e50-49c8-a968-3df21c9c228d)
+
+*Figure 3. Comparison of the effect of p*
 
 ### Re-plotting Past Tests as REMs
 
@@ -49,11 +53,11 @@ I showed this figure last week and re-plotted it this week with my new method fo
 
 <img width="1826" alt="image" src="https://github.com/user-attachments/assets/1b77903f-0133-42f1-a33b-6ce2c329d7ce" />
 
-*Figure x. My past runs with the old model but as REMs*
+*Figure 4. My past runs with the old model but as REMs*
 
 <img width="1612" alt="image" src="https://github.com/user-attachments/assets/bf8aef4d-00f9-47e8-b85c-dc475359178b" />
 
-*Figure x. My past runs with the old model before implementing the REM method*
+*Figure 5. My past runs with the old model before implementing the REM method*
 
 ## Interactions Between SED and MOR Files
 
@@ -61,7 +65,18 @@ Once I got my REM script to my liking, I refocused on exploring the causes and i
 
 <img width="1826" alt="image" src="https://github.com/user-attachments/assets/2e1d0a22-5dc3-4d54-9d76-35471fb7f39d" />
 
-*Figure x. Tests with the old model. See that the MOR file alone does not explain the behavior of the second plot.*
+*Figure 6. Tests with the old model. See that the MOR file alone does not explain the behavior of the second plot.*
+
+This led me to believe that there is a combination of settings between the SED and MOR files that is necessary to cause the sediment movement that Shelby showed in her dissertation. On their own, neither the SED nor the MOR files can recreate it, but together they can. I started by testing the old MOR file plus an elevated Acal. I also tested the old SED and sediment fractions plus a lower SedThr (in progress). 
+
+<img width="1771" alt="image" src="https://github.com/user-attachments/assets/54012ae0-43db-4f89-83a4-ad4ba3b09b2b" />
+
+*Figure 7. All final bed elevations from the tests with the current model. Note that only the Old SED file + old sed frac + Old MOR and the Old MOR + Acal 4 create the extreme patterns of erosion.*
+
+
+
+
+
 
 
 
