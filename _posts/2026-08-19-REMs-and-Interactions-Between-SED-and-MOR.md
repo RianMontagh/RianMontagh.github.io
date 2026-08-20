@@ -57,9 +57,13 @@ I showed this figure last week and re-plotted it this week with my new method fo
 
 ## Interactions Between SED and MOR Files
 
-<img width="1826" alt="image" src="https://github.com/user-attachments/assets/f6043c66-26df-40ae-aa4c-385ebc31a066" />
+Once I got my REM script to my liking, I refocused on exploring the causes and inhibitors of floodplain erosion in the new model. Specifically, I was curious if the MOR file was solely responsible for the channels seen when running the current model with the old SED file, old sediment fractions, and old MOR file. So, I ran the current model just with the old MOR file. Turns out that it does not explain everything. 
+
+<img width="1826" alt="image" src="https://github.com/user-attachments/assets/2e1d0a22-5dc3-4d54-9d76-35471fb7f39d" />
 
 *Figure x. Tests with the old model. See that the MOR file alone does not explain the behavior of the second plot.*
+
+
 
 
 
