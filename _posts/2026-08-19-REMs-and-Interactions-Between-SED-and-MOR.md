@@ -69,7 +69,7 @@ Once I got my REM script to my liking, I refocused on exploring the causes and i
 
 This led me to believe that there is a combination of settings between the SED and MOR files that is necessary to cause the sediment movement that Shelby showed in her dissertation. On their own, neither the SED nor the MOR files can recreate it, but together they can. I started by testing the old MOR file plus an elevated Acal. I also tested the old SED and sediment fractions plus a lower SedThr (in progress). 
 
-<img width="1771" alt="image" src="https://github.com/user-attachments/assets/54012ae0-43db-4f89-83a4-ad4ba3b09b2b" />
+<img width="1771" alt="image" src="https://github.com/user-attachments/assets/27e711f9-79bb-4ae9-a625-d1e902cfca06" />
 
 *Figure 7. All final bed elevations from the tests with the current model. Note that only the Old SED file + old sed frac + Old MOR and the Old MOR + Acal 4 create the extreme patterns of erosion.*
 
