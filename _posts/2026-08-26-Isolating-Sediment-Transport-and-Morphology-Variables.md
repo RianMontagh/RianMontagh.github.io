@@ -48,6 +48,10 @@ Interestingly, the `Acal 4 + SedThr 0.1` and `Old SED + sed frac + SedThr 0.1` r
 
 *Figure 8. Relative elevation testing ThetSD and SedThr*
 
+### Normalized Overflow to Sumas
+
+<img width="1410" alt="image" src="https://github.com/user-attachments/assets/cdf0ab0d-5644-47bb-ab50-4d0f1f2e99c8" />
+
 ### Google Sheet Tracker for my 'Current model' tests
 
 <iframe
