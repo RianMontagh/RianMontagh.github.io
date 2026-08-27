@@ -22,23 +22,31 @@ Interestingly, the `Acal 4 + SedThr 0.1` and `Old SED + sed frac + SedThr 0.1` r
 
 *Figure 2. Bed change testing ThetSD setting*
 
+<img width="1560" alt="image" src="https://github.com/user-attachments/assets/5d19e8c1-85cb-479f-8d6b-26c560b37666" />
+
+*Figure 3. Bed change testing SedThr*
+
 <img width="1546" alt="image" src="https://github.com/user-attachments/assets/cb174928-b0ea-4c23-bac3-041ec5ca9beb" />
 
-*Figure 3. Bed change testing ThetSD and SedThr*
+*Figure 4. Bed change testing ThetSD and SedThr*
 
 ### Relative Elevation Plots
 
 <img width="1543" alt="image" src="https://github.com/user-attachments/assets/fa808e62-ebb0-454a-9ca1-22d4a73927da" />
 
-*Figure 4. Relative elevation for old sediment and morphology settings*
+*Figure 5. Relative elevation for old sediment and morphology settings*
 
 <img width="1543" alt="image" src="https://github.com/user-attachments/assets/edbb43a7-b41d-4946-ad4c-e8e4760165a2" />
 
-*Figure 5. Relative elevation testing ThetSD setting*
+*Figure 6. Relative elevation testing ThetSD setting*
+
+<img width="1543" alt="image" src="https://github.com/user-attachments/assets/ac71ff13-7646-48ab-8220-8c2bd3607597" />
+
+*Figure 7. Relative elevation testing SedThr setting*
 
 <img width="1543" alt="image" src="https://github.com/user-attachments/assets/a09a761c-bda6-4711-9435-f2ac2a9b57fd" />
 
-*Figure 6. Relative elevation testing ThetSD and SedThr*
+*Figure 8. Relative elevation testing ThetSD and SedThr*
 
 ### Google Sheet Tracker for my 'Current model' tests
 
@@ -51,7 +59,9 @@ Interestingly, the `Acal 4 + SedThr 0.1` and `Old SED + sed frac + SedThr 0.1` r
 
 ## Investigating Slow Runtimes with SedThr = 0.1
 
-<img width="1356" height="907" alt="image" src="https://github.com/user-attachments/assets/c9947012-ae8b-403e-a3ca-aeea02a10c66" />
-<img width="1388" height="907" alt="image" src="https://github.com/user-attachments/assets/3694d0ff-7225-4e1b-afe9-4f13871cfcf4" />
+Both of the models that 
 
+--             |  --
+:-------------------------:|:-------------------------:
+![](https://github.com/user-attachments/assets/c9947012-ae8b-403e-a3ca-aeea02a10c66)  |  ![](https://github.com/user-attachments/assets/3694d0ff-7225-4e1b-afe9-4f13871cfcf4)
 
