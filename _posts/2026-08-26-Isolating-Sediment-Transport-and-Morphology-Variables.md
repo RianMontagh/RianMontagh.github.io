@@ -59,9 +59,16 @@ Interestingly, the `Acal 4 + SedThr 0.1` and `Old SED + sed frac + SedThr 0.1` r
 
 ## Investigating Slow Runtimes with SedThr = 0.1
 
-Both of the models that 
+Both of the models that failed have the setting where SedThr = 0.1. I found this interesting because I have run other models where SedThr = 0.1 and the model runs well. It appears that SedThr causes the model to become unstable in scenarios where it is isolated without other settings also being changed. I plotted the timestep of the two failed models and one successful model below. 
 
---             |  --
-:-------------------------:|:-------------------------:
-![](https://github.com/user-attachments/assets/c9947012-ae8b-403e-a3ca-aeea02a10c66)  |  ![](https://github.com/user-attachments/assets/3694d0ff-7225-4e1b-afe9-4f13871cfcf4)
+<img width="1554" alt="image" src="https://github.com/user-attachments/assets/23304175-34fc-4676-94ef-53745d15954f" />
+
+*Figure 9. Timestep comparison; note that Old MOR file ran to completion*
+
+Note that the SedThr = 0.1 model actually completed all the modeled runtime, but still took 24 hours and must have been cut off right at the very end. 
+
+I also plotted the map variable `Numlimdt` which shows the number of times the cells limited the timestep at each output time. The limiting cells are often small cells at the bank of the main channel. See example plot below. 
+
+
+
 
