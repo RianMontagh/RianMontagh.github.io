@@ -1,4 +1,4 @@
-# Isolating Variables
+# Isolating Sediment Transport and Morphology Variables
 
 ## Testing the Effects of Acal, SedThr, and ThetSD
 
