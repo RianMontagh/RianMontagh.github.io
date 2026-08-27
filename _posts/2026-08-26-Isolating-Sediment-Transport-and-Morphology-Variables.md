@@ -67,7 +67,11 @@ Both of the models that failed have the setting where SedThr = 0.1. I found this
 
 Note that the SedThr = 0.1 model actually completed all the modeled runtime, but still took 24 hours and must have been cut off right at the very end. 
 
-I also plotted the map variable `Numlimdt` which shows the number of times the cells limited the timestep at each output time. The limiting cells are often small cells at the bank of the main channel. See example plot below. 
+I also plotted the map variable `Numlimdt` which shows the number of times the cells limited the timestep at each output time. The limiting cells are often small cells at the bank of the main channel. See example plot below for the SedThr = 0.1 and Acal = 4 model. 
+
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/bbc8fc75-891a-499e-a845-b0a53a63b927" />
+
+*Figure 10. Map plot of Numlimdt*
 
 
 
