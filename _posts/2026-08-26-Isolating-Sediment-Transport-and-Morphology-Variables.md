@@ -51,3 +51,7 @@ Interestingly, the `Acal 4 + SedThr 0.1` and `Old SED + sed frac + SedThr 0.1` r
 
 ## Investigating Slow Runtimes with SedThr = 0.1
 
+<img width="1356" height="907" alt="image" src="https://github.com/user-attachments/assets/c9947012-ae8b-403e-a3ca-aeea02a10c66" />
+<img width="1388" height="907" alt="image" src="https://github.com/user-attachments/assets/3694d0ff-7225-4e1b-afe9-4f13871cfcf4" />
+
+
