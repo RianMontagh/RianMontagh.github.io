@@ -20,7 +20,7 @@ Interestingly, the `Acal 4 + SedThr 0.1` and `Old SED + sed frac + SedThr 0.1` r
 
 <img width="1546" alt="image" src="https://github.com/user-attachments/assets/6d1c6d90-57fb-462e-b686-079e3173b963" />
 
-*Figure 2. Bed change testing ThetSD setting*
+*Figure 2. Bed change testing ThetSD setting - NEED TO RERUN*
 
 <img width="1560" alt="image" src="https://github.com/user-attachments/assets/5d19e8c1-85cb-479f-8d6b-26c560b37666" />
 
@@ -38,7 +38,7 @@ Interestingly, the `Acal 4 + SedThr 0.1` and `Old SED + sed frac + SedThr 0.1` r
 
 <img width="1543" alt="image" src="https://github.com/user-attachments/assets/edbb43a7-b41d-4946-ad4c-e8e4760165a2" />
 
-*Figure 6. Relative elevation testing ThetSD setting*
+*Figure 6. Relative elevation testing ThetSD setting - NEED TO RERUN*
 
 <img width="1543" alt="image" src="https://github.com/user-attachments/assets/ac71ff13-7646-48ab-8220-8c2bd3607597" />
 
