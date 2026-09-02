@@ -12,9 +12,11 @@ I updated my overflow to Sumas plot form last week with a few runs that had to b
 
 *Figure 2. Zoomed-in corrected Plot from last week*
 
-There are a few surprising observations from these results.
+There are a few surprising observations from these results which are in the following subsections.
 
-1. As noted last week, there is still a large-ish gap between the `Old SED file + old sed frac + Old MOR` run and the `Old SED file + old sed frac + Old MOR` run. The only difference between these two models are a few other MOR settings, which is why I called this blog "The MOR Mystery". During my study of the MOR file, SedThr and ThetSD seemed to be the only settings capable of making a difference in the floodplain erodibility, but these results indicate there is more going on. The other settings I have not tested yet and that are different between the old and current model are in the tables below.
+### 1. MOR Mystery
+
+As noted last week, there is still a large-ish gap between the `Old SED file + old sed frac + Old MOR` run and the `Old SED file + old sed frac + SedThr 0.1 + ThetSD 0` run. The only difference between these two models are a few other MOR settings, which is why I called this blog "The MOR Mystery". During my study of the MOR file, SedThr and ThetSD seemed to be the only settings capable of making a difference in the floodplain erodibility, but these results indicate there is more going on. The other settings I have not tested yet and that are different between the old and current model are in the tables below.
 
 | MOR Morphology Setting | Old Model | Current Model | Units/class | Default | Description |
 | ---------------------- | --------- | ------------- | ----- | ------- | ----------- |
@@ -44,3 +46,6 @@ The difference in this section is that the old model uses less sediment bookkeep
 
 Only real difference in the Numerics section is the MaximumWaterdepth. There is very limited description of this variable, but it seems like turning this on causes the velocity used for sediment transport to be calculated where the water depth (which is at the nodes) is the highest. Is this a stability parameter? I don't know how this would affect the erodibility exactly. If turning this setting on makes the water depth higher, then I would expect transport to increase. 
 
+### `SedThr 0.1 Acal 4` Underperforming
+
+Once I reran this model with a longer runtime limit, I was able to plot its overflow to Sumas against the other trials. Strangely, it placed last in the 
