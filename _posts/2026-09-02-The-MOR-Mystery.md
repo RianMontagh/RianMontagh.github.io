@@ -60,7 +60,19 @@ I wanted to compare the bed change and bed relative elevation for both of these 
 
 <img width="1546" alt="image" src="https://github.com/user-attachments/assets/cfd1d572-4fcd-4194-8918-deb80721e95f" />
 
-*Figure 3. Bed change for SedThr 0.1 Acal 4*
+*Figure 4. Bed change for SedThr 0.1 Acal 4*
+
+<img width="1543" alt="image" src="https://github.com/user-attachments/assets/2cfbc94f-4962-4a24-b05c-a7f5e288de30" />
+
+*Figure 5. Relative bed elevation for old sediment settings and ThetSD 0*
+
+<img width="1546" alt="image" src="https://github.com/user-attachments/assets/80257bf1-4f01-4442-9792-b776b9903679" />
+
+*Figure 6. Bed change for old sediment settings and ThetSD 0*
+
+
+
+
 
 
 
