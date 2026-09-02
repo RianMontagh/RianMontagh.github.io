@@ -74,14 +74,7 @@ Why do some of my runs have higher bed levels at Masey Road?
 
 *Figure 6. Bed change for old sediment settings and ThetSD 0*
 
-
-
-
-
-
-
-
-
+This result is very baffling to me. How can there be so little floodplain change where the sediment settings and fractions are changed? The only difference is that the ThetSD setting is reduced to zero. I double-checked the hydrograph, MOR settings, and the sediment settings. To confirm that this result is true, I want to run a model that changes ThetSD to 0 only, without touching the sediment settings. If ThetSD truly reduces erosion as seen here, then I would expect there to be less overflow in this model than in the `No change` model. 
 
 ## Additional MOR Setting Tests
 
@@ -92,8 +85,6 @@ I ran three additional models this week:
 - `OldsedfracXYZfiles_OldSEDfile_SedThr0.1_ThetSD0_nohiding`
 
 These models add on the three untested settings that I am hoping make up the gap between `OldsedfracXYZfiles_OldSEDfile_SedThr0.1_ThetSD0` and `Old SED file + old sed frac + Old MOR`. These are currently running. 
-
-## Paper of the Week: 
 
 ## Note on transferring masters credits
 
