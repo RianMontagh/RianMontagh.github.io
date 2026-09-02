@@ -50,7 +50,7 @@ Only real difference in the Numerics section is the MaximumWaterdepth. There is 
 
 Once I reran the `SedThr 0.1 Acal 4` model with a longer runtime limit, I was able to plot its overflow to Sumas against the other trials. Strangely, it had less overflow to Sumas than both `SedThr 0.1` and `Acal 4` alone. The only explanation I had for this was that the combination of the two more erodible settings causes sediment to move in a different way such that overflow routing decreases instead of increases.
 
-The `SED file + old sed frac + ThetSD 0` model. once reran with the correct hydrograph, plots below the `SED file + old sed frac` model. I expected ThetSD = 0 to increase erosion of defined channels because it brings to zero the transfer of bed change from wet cells to dry cells. However, it seems like this term actually increases erosion and channel formation.
+The `SED file + old sed frac + ThetSD 0` model, now that it has the correct hydrograph, plots below the `SED file + old sed frac` model. I expected ThetSD = 0 to increase erosion of defined channels because it brings to zero the transfer of bed change from wet cells to dry cells. However, it seems like this term actually increases erosion and channel formation.
 
 I wanted to compare the bed change and bed relative elevation for both of these runs to get a better idea of what is happening in the model. 
 
