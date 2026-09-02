@@ -46,6 +46,19 @@ The difference in this section is that the old model uses less sediment bookkeep
 
 Only real difference in the Numerics section is the MaximumWaterdepth. There is very limited description of this variable, but it seems like turning this on causes the velocity used for sediment transport to be calculated where the water depth (which is at the nodes) is the highest. Is this a stability parameter? I don't know how this would affect the erodibility exactly. If turning this setting on makes the water depth higher, then I would expect transport to increase. 
 
-### `SedThr 0.1 Acal 4` Underperforming
+### 2. `SedThr 0.1 Acal 4` and `SED file + old sed frac + ThetSD 0` have Low Overflow to Sumas
 
-Once I reran this model with a longer runtime limit, I was able to plot its overflow to Sumas against the other trials. Strangely, it placed last in the 
+Once I reran the `SedThr 0.1 Acal 4` model with a longer runtime limit, I was able to plot its overflow to Sumas against the other trials. Strangely, it had less overflow to Sumas than both `SedThr 0.1` and `Acal 4` alone. The only explanation I had for this was that the combination of the two more erodible settings causes sediment to move in a different way such that overflow routing decreases instead of increases.
+
+The `SED file + old sed frac + ThetSD 0` model. once reran with the correct hydrograph, plots below the `SED file + old sed frac` model. I expected ThetSD = 0 to increase erosion of defined channels because it brings to zero the transfer of bed change from wet cells to dry cells. However, it seems like this term actually increases erosion and channel formation.
+
+I wanted to compare the bed change and bed relative elevation for both of these runs to get a better idea of what is happening in the model. 
+
+
+
+
+## Additional MOR Setting Tests
+
+I ran three additional models this week:
+
+## Paper of the Week: 
