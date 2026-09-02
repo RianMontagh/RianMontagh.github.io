@@ -14,5 +14,33 @@ I updated my overflow to Sumas plot form last week with a few runs that had to b
 
 There are a few surprising observations from these results.
 
-1. As noted last week, there is still a large-ish gap between the `Old SED file + old sed frac + Old MOR` run and the `Old SED file + old sed frac + Old MOR` run. The only difference between these two models are a few other MOR settings, which is why I called this blog "The MOR Mystery". During my study of the MOR file, SedThr and ThetSD seemed to be the only settings capable of making a difference in the floodplain erodibility, but these results indicate there is more going on. The other settings I have not tested yet are:
+1. As noted last week, there is still a large-ish gap between the `Old SED file + old sed frac + Old MOR` run and the `Old SED file + old sed frac + Old MOR` run. The only difference between these two models are a few other MOR settings, which is why I called this blog "The MOR Mystery". During my study of the MOR file, SedThr and ThetSD seemed to be the only settings capable of making a difference in the floodplain erodibility, but these results indicate there is more going on. The other settings I have not tested yet and that are different between the old and current model are in the tables below.
+
+| MOR Morphology Setting | Old Model | Current Model | Units/class | Default | Description |
+| ---------------------- | --------- | ------------- | ----- | ------- | ----------- |
+| DensIn | 0 | 1 | logical | 1 (true) | Include effect of sediment on density gradient and thereby its influence on the turbulence. Remark: a secondary effect of including sediment in the density calculations is a reduction of the flow velocity in the lower computational layers (when compared with a standard logarithmic velocity profile) and a consequent reduction in the computed bed shear stress. | 
+| NeuBcSand | -- | true | logical | false | Zero-gradient Neumann boundary condition for noncohesive suspended sediment concentrations at inflow boundaries. Obsolete in Delft3D FM, only applies for Delft3D FLOW. |
+| ISlope | 2 | 3 | integer | 2 | bed slope formulation. 1. no bed slope 2. Bagnold formulation 3. Koch & Flokstra formulation 4. Parker & Andrews formulation |
+| IHidExp | 1 | 3 | integer | 1 | Hiding and exposure formulation number. 1. no hiding and exposure 2. Egiazaroff formulation 3. Ashida & Michiue formulation 4. Parker et al. formulation 5. Wu, Wang & Jia formulation | 
+| HMaxTH | 1.5 | 1 | [m] | 1.0 | Maximum depth for variable THETSD. This is the most confusing variable for me so far. My understanding is that when a cell is barely wet (depth is slightly higher than SedThr) then there is not much transport happening there and you might not want the activity in this cell to affect the dry cells at the full ThetSD. In this case, you set your HMaxThr to be greater than SedThr. Then, instead of the model applying the full ThetSD to redistribute bed change to the dry cells, the model uses the theta defined by this equation. <img width="324" alt="Screenshot 2026-08-11 at 3 30 36 PM" src="https://github.com/user-attachments/assets/ad9608d4-4ad6-48cf-83dc-003feabdb3a9" /> The higher you make the HMaxThr, the smaller the new theta is. ThetSD is the maximum that theta can be and is only possible when h > HMaxTH. In other words, HMaxTH is the depth value at which the full ThetSD will be applied to the dry cells.
+
+I don't think that DensIn or NeuBcSand should be factors because they seem relevant to models with suspended sediment, which ours does not have. IHidExp should also have no affect on our model because Wilcock and Crowe has its own hiding and exposure formula. That leaves ISlope and HMaxTH as potential settings contributing to floodplain erodibility. 
+
+| MOR Underlayer Setting | Old Model | Current Model | Units | Default | Description |
+| ---------------------- | --------- | ------------- | ----- | ------- | ----------- |
+| MxNULyr | 50 | 100 | integer | 1 | Maximum number of underlayers (excluding transport and base layers) in case IUnderLyr=2. |
+| TTLForm | 1 | 2 | integer | 1 | Transport layer thickness formulation in case IUnderLyr=2. 1. constant user-defined. 2. proportional to water depth. 3. proportional to bedform height. |
+| ThTrLyr | 0.2 | 0.05 | uniform value or file name | not listed | thickness of transport layer [m] in case of TTLForm=1 |
+| TTLAlpha | -- | 0.05 | -- | 0.1 | proportionality constant in case of TTLForm=2 or 3 |
+| TTLMin | -- | 0 | [m] | 0 | minimum thickness in case of TTLForm=2 or 3 | 
+| ThUnLyr | 0.256 | 0.2 | [m] | not listed | characteristic maximum thickness [m] of stratigraphy layers in case IUnderLyr=2 | 
+
+The difference in this section is that the old model uses less sediment bookkeeping layers (50 vs 100) and the thickness of the transport layer is different. In the old model, the transport layer thickness is 0.2 m always, while in the current model it is proportional to the water depth with a maximum thickness of 0.2 m. It's hard to say how this would affect erodibility. Technically, if we consider bed armoring, the old model should be slightly less erodible because its transport layer is thicker so the effect of bed armoring is mixed throughout the entire transport layer. 
+
+| MOR Numerics Setting | Old Model | Current Model | Units | Default | Description |
+| -------------------- | --------- | ------------- | ----- | ------- | ----------- |
+| MaximumWaterdepth | -- | true | logical | false | use locally maximum water depth to compute characteristic velocity for sediment transport at cell centre | 
+| MaximumWaterdepthFraction | -- | 1 | real number 0-1 | 1 | fraction of the flow depth at links used in finding the maximum water depth. Only used if MaximumWaterdepth=true.
+
+Only real difference in the Numerics section is the MaximumWaterdepth. There is very limited description of this variable, but it seems like turning this on causes the velocity used for sediment transport to be calculated where the water depth (which is at the nodes) is the highest. Is this a stability parameter? I don't know how this would affect the erodibility exactly. If turning this setting on makes the water depth higher, then I would expect transport to increase. 
 
