@@ -62,6 +62,10 @@ I wanted to compare the bed change and bed relative elevation for both of these 
 
 *Figure 4. Bed change for SedThr 0.1 Acal 4*
 
+I noticed that the Masey Road area has become very elevated in this run. Perhaps it is limiting the amount of overflow and incision of continuous channels from the main channel to Main St. The elevated Masey Rd feature is not present in the `Old SED file + old sed frac + Old MOR`, which has the most overflow to Sumas of my runs so far. There is still increased erosion after Main St. compared to the current model with no changes. 
+
+Why do some of my runs have higher bed levels at Masey Road? 
+
 <img width="1543" alt="image" src="https://github.com/user-attachments/assets/2cfbc94f-4962-4a24-b05c-a7f5e288de30" />
 
 *Figure 5. Relative bed elevation for old sediment settings and ThetSD 0*
