@@ -54,6 +54,16 @@ The `SED file + old sed frac + ThetSD 0` model. once reran with the correct hydr
 
 I wanted to compare the bed change and bed relative elevation for both of these runs to get a better idea of what is happening in the model. 
 
+<img width="1543" alt="image" src="https://github.com/user-attachments/assets/e80dae7f-b06b-4db3-b611-9507964696b3" />
+
+*Figure 3. Relative bed elevation for SedThr 0.1 Acal 4*
+
+<img width="1546" alt="image" src="https://github.com/user-attachments/assets/cfd1d572-4fcd-4194-8918-deb80721e95f" />
+
+*Figure 3. Bed change for SedThr 0.1 Acal 4*
+
+
+
 
 
 
@@ -61,4 +71,17 @@ I wanted to compare the bed change and bed relative elevation for both of these 
 
 I ran three additional models this week:
 
+- `OldsedfracXYZfiles_OldSEDfile_SedThr0.1_ThetSD0_bsBagnold`
+- `OldsedfracXYZfiles_OldSEDfile_SedThr0.1_ThetSD0_HMaxTH1.5`
+- `OldsedfracXYZfiles_OldSEDfile_SedThr0.1_ThetSD0_nohiding`
+
+These models add on the three untested settings that I am hoping make up the gap between `OldsedfracXYZfiles_OldSEDfile_SedThr0.1_ThetSD0` and `Old SED file + old sed frac + Old MOR`. These are currently running. 
+
 ## Paper of the Week: 
+
+## Note on transferring masters credits
+
+I learned after talking to Anna Egeland that I can't transfer my masters credits from UC Berkeley to UW until I pass my general exam, and that I also need to send official transcripts over to verify my graduation. Once I do that, I get 30 credits in the dissertation units.
+
+From the Graduate School Policy 1.1: Graduate Degree Requirements: 
+>A master’s degree in a relevant field of study from an accredited institution, including UW, may substitute for up to 30 of the required 90 credits. No other transfer credits are allowed for doctoral programs. Transfer credits may not be applied towards the dissertation or culminating experience requirement.
