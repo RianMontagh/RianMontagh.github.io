@@ -88,7 +88,9 @@ These models add on the three untested settings that I am hoping make up the gap
 
 <img width="1265" alt="image" src="https://github.com/user-attachments/assets/60d0d09b-407f-4bd2-9af9-b8e4a2da3f40" />
 
-*Figure 7. OVerflow to Sumas for model runs with and without HMaxTH1.5. 
+*Figure 7. Overflow to Sumas for model runs with and without HMaxTH1.5. 
+
+This makes sense to me and confirms my original thought that HMaxTH should not be a factor. However, I expected at least a small amount of deviation between the results, but after checking the plotted arrays they turn out to be exactly equal. The small differences in bed elevation are not enough to cause any change in overflow to Sumas. 
 
 
 ## Note on transferring masters credits
@@ -97,3 +99,7 @@ I learned after talking to Anna Egeland that I can't transfer my masters credits
 
 From the Graduate School Policy 1.1: Graduate Degree Requirements: 
 >A master’s degree in a relevant field of study from an accredited institution, including UW, may substitute for up to 30 of the required 90 credits. No other transfer credits are allowed for doctoral programs. Transfer credits may not be applied towards the dissertation or culminating experience requirement.
+
+## Note on using checkpoint resources to run models
+
+Checkpoint resources are resources that are paid for by labs but are not currently being used. They are available to everyone but 
