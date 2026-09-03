@@ -56,16 +56,21 @@ I wanted to compare the bed change and bed relative elevation for both of these 
 
 <img width="1543" alt="image" src="https://github.com/user-attachments/assets/e80dae7f-b06b-4db3-b611-9507964696b3" />
 
-<img width="1427" alt="image" src="https://github.com/user-attachments/assets/fe159f70-ee16-4d9c-97cf-8cc0cd75102e" />
-
-
 *Figure 3. Relative bed elevation for SedThr 0.1 Acal 4*
+
+<img width="1441" alt="image" src="https://github.com/user-attachments/assets/d8800a0e-5f9e-45da-913b-0445bdf02d82" />
+
+*Figure 4. REM comparison for SedThr 0.1 Acal 4*
 
 <img width="1546" alt="image" src="https://github.com/user-attachments/assets/cfd1d572-4fcd-4194-8918-deb80721e95f" />
 
-*Figure 4. Bed change for SedThr 0.1 Acal 4*
+*Figure 5. Bed change for SedThr 0.1 Acal 4*
 
-I noticed that the Masey Road area has become very elevated in this run. Perhaps it is limiting the amount of overflow and incision of continuous channels from the main channel to Main St. The elevated Masey Rd feature is not present in the `Old SED file + old sed frac + Old MOR`, which has the most overflow to Sumas of my runs so far. There is still increased erosion after Main St. compared to the current model with no changes. 
+<img width="1441" alt="image" src="https://github.com/user-attachments/assets/755905a3-8602-4dc8-9547-1bf64ea58c43" />
+
+*Figure 6. Bed change comparison for SedThr 0.1 Acal 4*
+
+I noticed that the Masey Road area has become very elevated in this SedThr 0.1 Acal 4 run. Perhaps it is limiting the amount of overflow and incision of continuous channels from the main channel to Main St. The elevated Masey Rd feature is not present in the `Old SED file + old sed frac + Old MOR`, which has the most overflow to Sumas of my runs so far. There is still increased erosion after Main St. compared to the current model with no changes. There is also aggradation between the nonerodible forested bars that could be limiting leakage from the main channel onto the floodplain. 
 
 Why do some of my runs have higher bed levels at Masey Road? 
 
