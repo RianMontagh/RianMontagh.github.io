@@ -50,7 +50,7 @@ Only real difference in the Numerics section is the MaximumWaterdepth. There is 
 
 Once I reran the `SedThr 0.1 Acal 4` model with a longer runtime limit, I was able to plot its overflow to Sumas against the other trials. Strangely, it had less overflow to Sumas than both `SedThr 0.1` and `Acal 4` alone. The only explanation I had for this was that the combination of the two more erodible settings causes sediment to move in a different way such that overflow routing decreases instead of increases.
 
-The `SED file + old sed frac + ThetSD 0` model, now that it has the correct hydrograph, plots below the `SED file + old sed frac` model. I expected ThetSD = 0 to increase erosion of defined channels because it brings the transfer of bed change from wet cells to dry cells to zero. However, it seems like increasing this term actually increases erosion and channel formation.
+The `SED file + old sed frac + ThetSD 0` model, now that it has the correct hydrograph, plots below the `Old SED file + old sed frac` model. I expected ThetSD = 0 to increase erosion of defined channels because it brings the transfer of bed change from wet cells to dry cells to zero. However, it seems like increasing this term actually increases erosion and channel formation.
 
 I wanted to compare the bed change and bed relative elevation for both of these runs to get a better idea of what is happening in the model. 
 
@@ -74,15 +74,27 @@ I noticed that the Masey Road area has become very elevated in this SedThr 0.1 A
 
 Why do some of my runs have higher bed levels at Masey Road? 
 
+Next, let's look at the `SED file + old sed frac + ThetSD 0` model. 
+
 <img width="1543" alt="image" src="https://github.com/user-attachments/assets/2cfbc94f-4962-4a24-b05c-a7f5e288de30" />
 
-*Figure 5. Relative bed elevation for old sediment settings and ThetSD 0*
+*Figure 7. Relative bed elevation for old sediment settings and ThetSD 0*
+
+<img width="1369" height="871" alt="image" src="https://github.com/user-attachments/assets/e56aae31-fc1d-45a9-98cf-63824443c4ed" />
+
+*Figure 8. Relative bed elevation for old sediment settings and ThetSD 0 compared to without ThetSD = 0.*
 
 <img width="1546" alt="image" src="https://github.com/user-attachments/assets/80257bf1-4f01-4442-9792-b776b9903679" />
 
-*Figure 6. Bed change for old sediment settings and ThetSD 0*
+*Figure 9. Bed change for old sediment settings and ThetSD 0*
 
-This result is very baffling to me. How can there be so little floodplain change where the sediment settings and fractions are changed? The only difference is that the ThetSD setting is reduced to zero. I double-checked the hydrograph, MOR settings, and the sediment settings. To confirm that this result is true, I want to run a model that changes ThetSD to 0 only, without touching the sediment settings. If lowering ThetSD from 1.5 to 0 truly reduces erosion as significantly as seen here, then I would expect there to be less overflow in this `ThetSD 0` model than in the `No change` model. 
+<img width="1373" alt="image" src="https://github.com/user-attachments/assets/c258ced7-16f3-49ac-bba2-4f4941e3d126" />
+
+*Figure 10. Bed change for old sediment settings and ThetSD 0 compared to without ThetSD = 0*
+
+This result was very baffling to me until I looked at Figure 10. I didn't understand how there could be so little floodplain change where the sediment settings and fractions are changed. The only difference is that the ThetSD setting is reduced to zero. I double-checked the hydrograph, MOR settings, and the sediment settings. To confirm that this result is true, I want to run a model that changes ThetSD to 0 only, without touching the sediment settings. If lowering ThetSD from 1.5 to 0 truly reduces erosion as significantly as seen here, then I would expect there to be less overflow in this `ThetSD 0` model than in the `No change` model. 
+
+Figure 10 shows a large amount of aggradation in the section of main channel downstream of Everson Bridge. I now have a theory that there are two main mechanisms that cause a large overflow to Sumas: 1- aggradation in the main channel --> backwater effect --> overtopping, and 2 - erosion of channels into the overflow corridor, especially after Main St. 
 
 ## Additional MOR Setting Tests
 
