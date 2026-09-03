@@ -84,7 +84,12 @@ I ran three additional models this week:
 - `OldsedfracXYZfiles_OldSEDfile_SedThr0.1_ThetSD0_HMaxTH1.5`
 - `OldsedfracXYZfiles_OldSEDfile_SedThr0.1_ThetSD0_nohiding`
 
-These models add on the three untested settings that I am hoping make up the gap between `OldsedfracXYZfiles_OldSEDfile_SedThr0.1_ThetSD0` and `Old SED file + old sed frac + Old MOR`. These are currently running. 
+These models add on the three untested settings that I am hoping make up the gap between `OldsedfracXYZfiles_OldSEDfile_SedThr0.1_ThetSD0` and `Old SED file + old sed frac + Old MOR`. So far the `OldsedfracXYZfiles_OldSEDfile_SedThr0.1_ThetSD0_HMaxTH1.5` run has completed, and turns out to have exactly the same overflow to Sumas as `OldsedfracXYZfiles_OldSEDfile_SedThr0.1_ThetSD0`. The - `OldsedfracXYZfiles_OldSEDfile_SedThr0.1_ThetSD0` run has a HMaxTH = 1, which is the value of the current model, whereas HMaxTH = 1.5 is consistent with the old model. 
+
+<img width="1265" alt="image" src="https://github.com/user-attachments/assets/60d0d09b-407f-4bd2-9af9-b8e4a2da3f40" />
+
+*Figure 7. OVerflow to Sumas for model runs with and without HMaxTH1.5. 
+
 
 ## Note on transferring masters credits
 
