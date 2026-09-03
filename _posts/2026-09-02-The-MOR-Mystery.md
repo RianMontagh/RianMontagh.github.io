@@ -122,4 +122,4 @@ From the Graduate School Policy 1.1: Graduate Degree Requirements:
 
 ## Note on using checkpoint resources to run models
 
-Checkpoint resources are resources that are paid for by labs but are not currently being used. They are available to everyone but 
+Checkpoint resources are resources that are paid for by labs but are not currently being used. They are available to everyone but your job can be canceled if the lab decides to use them. In addition, jobs run on CPUs are restarted every 4-5 hours. If your job is longer than that time, you need to have some way for your model to save and restart from a restart point. 
