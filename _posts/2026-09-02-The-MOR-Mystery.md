@@ -56,6 +56,9 @@ I wanted to compare the bed change and bed relative elevation for both of these 
 
 <img width="1543" alt="image" src="https://github.com/user-attachments/assets/e80dae7f-b06b-4db3-b611-9507964696b3" />
 
+<img width="1427" alt="image" src="https://github.com/user-attachments/assets/fe159f70-ee16-4d9c-97cf-8cc0cd75102e" />
+
+
 *Figure 3. Relative bed elevation for SedThr 0.1 Acal 4*
 
 <img width="1546" alt="image" src="https://github.com/user-attachments/assets/cfd1d572-4fcd-4194-8918-deb80721e95f" />
