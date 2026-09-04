@@ -16,5 +16,10 @@ First, I need to rerun simulations with the 10 m floodplain thickness that I dec
 
 One thing we know is that from beginning to end, the alluvial ridges and floodplain do not change enough to route more flow out of the main channel. This might be a function of the erodibility in the model/reality, or, more likely, it is a function of the amount of discharge able to overtop the alluvial ridges and levees. This leads me to my new question &mdash; Why isn't Shelby's feedback mechanism working to push more overflow to Sumas during these huge floods?
 
-## To-do - read paper and 
+<img width="1369" alt="image" src="https://github.com/user-attachments/assets/35f44858-69bf-4296-8d2d-9d56637452d1" />
+
+*Figure 2. REM from beginning to end for the current model.*
+
+
+## To-do - read paper and Shelby's feedback hypothesis section again
 
