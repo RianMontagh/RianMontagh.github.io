@@ -49,5 +49,78 @@ One thing we know is that from beginning to end, the alluvial ridges and floodpl
 *Figure 2. REM from beginning to end for the current model.*
 
 
-## To-do - read paper and Shelby's feedback hypothesis section again
+## Paper - "Crevasse Splays Versus Avulsions: A Recipe for Land Building With Levee Breaches" (Neinhuis, 2018)
+
+### Abstract
+
+**Motivation/background:** levee breaches form avulsions and crevasse splays, and crevasse splays are not well understood. The sedimentation from crevasse splays is important for coastal restoration for sea level rise
+
+**Question:** What is the influence of vegetation and soil consolidation on the evolution of a natural levee breach?
+
+**Methods:** Delft3D
+
+**Results:** 
+
+1. crevasse splays heal due to sedimentation reducing water surface slope
+2. erodible and unvegetated floodplains —> more avulsion
+3. less erodible and more vegetated floodplains —> small, short-lived splays
+4. splays that create the most ‘new land’ have a balance between water and sediment discharge, vegetation root strength, and soil consolidation
+
+### Intro
+
+- some rivers rarely breach AR while others do so frequently
+- paper motivated to understand the conditions when crevasse splays for so that we can engineer them
+- previous channel bifurcation stability models do not take into account floodplain properties
+    - study focuses on vegetation and soil consolidation
+- hypothesize that  crevasse splay is between a breach healing and an avulsion
+
+### Methods
+
+#### Model
+
+- Delft3D FLOW
+- MATLAB routines that feed back into Delft3D for vegetation and consolidation
+- initial breach in the levee varied between 1-3 m
+- model domain starts at the crest of the levee with the breach and ends in the floodplain
+    - main channel is not part of the domain to simplify
+- boundary conditions are water levels at the levee boundary and floodplain boundary
+- water level in the crevasse is allowed to vary due to drawdown - for example, if a lot of water is flowing through the breach, water level lowers
+- sediment allowed onto the floodplain is clay and sand
+- multi-year simulations with only one main channel discharge considered
+
+#### MATLAB
+
+- soil consolidation - lowers floodplain in response to deposition
+- vegetation - adjusts the critical shear stress for erosion and roughness depending on local water depth
+    - in delft you can change the roughness to match vegetation, but not the critical shear
+    - critical depth of 1 m is the depth where plants establish vs. die
+
+### Results
+
+#### Breach Healing vs Avulsion
+
+- balance between net deposition vs erosion
+    - net deposition on the floodplain causes the water surface slope at the breach to decrease —> healing
+    - took 5 years for healing in one example run
+    - net erosion (model with more erodible floodplain)
+- Deposition/Erosion Ration
+    - low D/E —> avulsion
+    - high D/E —> breaches heal quickly
+    - medium D/E —> crevasse splay formation
+- non of the models maintained crevasse splay indefinitely — they all eventually healed
+
+#### Soil Consolidation and Vegetation
+
+- more subsidence —> longer-lived crevasse splays but not more new land
+- more veg —> shorter-lived crevasse splays
+- medium veg —> more new land
+
+#### Compare with Mississippi
+
+- study results had higher aggradation rates that Mississippi splays likely because the study used constant flood stage, which in reality only happens a few times a year
+
+### Discussion
+
+- Interesting - before leveeing of the Mississippi, up to 17% of flood water went into breaches
+    - breaches help reduce flooding?
 
