@@ -68,7 +68,7 @@ One thing we know is that from beginning to end, the alluvial ridges and floodpl
 
 ### Intro
 
-- some rivers rarely breach AR while others do so frequently
+- some rivers rarely breach alluvial ridges while others do so frequently
 - paper motivated to understand the conditions when crevasse splays for so that we can engineer them
 - previous channel bifurcation stability models do not take into account floodplain properties
     - study focuses on vegetation and soil consolidation
