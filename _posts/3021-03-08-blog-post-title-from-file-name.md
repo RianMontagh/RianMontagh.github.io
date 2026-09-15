@@ -33,7 +33,7 @@ ForEach ($thing in $things) {
 }
 ```
 
-#### Adding figures in a row
+#### Adding figures in a table
 
 1.4*100-year             |  2.5*100-year
 :-------------------------:|:-------------------------:
