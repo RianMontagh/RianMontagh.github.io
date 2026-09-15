@@ -60,14 +60,12 @@ One thing we know is that from beginning to end, the alluvial ridges and floodpl
 **Methods:** Delft3D
 
 **Results:** 
-
 1. crevasse splays heal due to sedimentation reducing water surface slope
 2. erodible and unvegetated floodplains —> more avulsion
 3. less erodible and more vegetated floodplains —> small, short-lived splays
 4. splays that create the most ‘new land’ have a balance between water and sediment discharge, vegetation root strength, and soil consolidation
 
 ### Intro
-
 - some rivers rarely breach alluvial ridges while others do so frequently
 - paper motivated to understand the conditions when crevasse splays for so that we can engineer them
 - previous channel bifurcation stability models do not take into account floodplain properties
@@ -75,9 +73,7 @@ One thing we know is that from beginning to end, the alluvial ridges and floodpl
 - hypothesize that  crevasse splay is between a breach healing and an avulsion
 
 ### Methods
-
 #### Model
-
 - Delft3D FLOW
 - MATLAB routines that feed back into Delft3D for vegetation and consolidation
 - initial breach in the levee varied between 1-3 m
@@ -89,16 +85,13 @@ One thing we know is that from beginning to end, the alluvial ridges and floodpl
 - multi-year simulations with only one main channel discharge considered
 
 #### MATLAB
-
 - soil consolidation - lowers floodplain in response to deposition
 - vegetation - adjusts the critical shear stress for erosion and roughness depending on local water depth
     - in delft you can change the roughness to match vegetation, but not the critical shear
     - critical depth of 1 m is the depth where plants establish vs. die
 
 ### Results
-
 #### Breach Healing vs Avulsion
-
 - balance between net deposition vs erosion
     - net deposition on the floodplain causes the water surface slope at the breach to decrease —> healing
     - took 5 years for healing in one example run
@@ -108,19 +101,14 @@ One thing we know is that from beginning to end, the alluvial ridges and floodpl
     - high D/E —> breaches heal quickly
     - medium D/E —> crevasse splay formation
 - non of the models maintained crevasse splay indefinitely — they all eventually healed
-
 #### Soil Consolidation and Vegetation
-
 - more subsidence —> longer-lived crevasse splays but not more new land
 - more veg —> shorter-lived crevasse splays
 - medium veg —> more new land
-
 #### Compare with Mississippi
-
 - study results had higher aggradation rates that Mississippi splays likely because the study used constant flood stage, which in reality only happens a few times a year
 
 ### Discussion
-
 - Interesting - before leveeing of the Mississippi, up to 17% of flood water went into breaches
     - breaches help reduce flooding?
 
