@@ -48,6 +48,7 @@ One thing we know is that from beginning to end, the alluvial ridges and floodpl
 
 *Figure 2. REM from beginning to end for the current model.*
 
+---
 
 ## Paper - "Crevasse Splays Versus Avulsions: A Recipe for Land Building With Levee Breaches" (Neinhuis, 2018)
 
