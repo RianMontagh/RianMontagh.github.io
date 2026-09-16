@@ -1,6 +1,6 @@
 # Why don't large floods drive avulsion of the Nooksack?
 
-## Updates from last week`
+## Updates from last week
 
 Two of my models from the blog last week, "the MOR Mystery" finished running. The first one was `Old SED file + old sed frac + SedThr 0.1 + ThetSD 0 + nohiding`, which I ran to check if the hiding function that was turned on in the new model was in effect or if the Wilcock and Crowe hiding and exposure formula was working as expected. Turns out that we were right and turning on a separate hiding and exposure formula does not do anything when using Wilcock and Crowe. 
 
