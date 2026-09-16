@@ -51,28 +51,21 @@ One thing we know is that from beginning to end, the alluvial ridges and floodpl
 ---
 
 ## Paper - "Crevasse Splays Versus Avulsions: A Recipe for Land Building With Levee Breaches" (Neinhuis, 2018)
-
 ### Abstract
-
-**Motivation/background:** levee breaches form avulsions and crevasse splays, and crevasse splays are not well understood. The sedimentation from crevasse splays is important for coastal restoration for sea level rise
-
-**Question:** What is the influence of vegetation and soil consolidation on the evolution of a natural levee breach?
-
-**Methods:** Delft3D
-
-**Results:** 
+**Motivation/background:** levee breaches form avulsions and crevasse splays, and crevasse splays are not well understood. The sedimentation from crevasse splays is important for coastal restoration for sea level rise  
+**Question:** What is the influence of vegetation and soil consolidation on the evolution of a natural levee breach?  
+**Methods:** Delft3D  
+**Results:**  
 1. crevasse splays heal due to sedimentation reducing water surface slope
 2. erodible and unvegetated floodplains —> more avulsion
 3. less erodible and more vegetated floodplains —> small, short-lived splays
 4. splays that create the most ‘new land’ have a balance between water and sediment discharge, vegetation root strength, and soil consolidation
-
 ### Intro
 - some rivers rarely breach alluvial ridges while others do so frequently
 - paper motivated to understand the conditions when crevasse splays for so that we can engineer them
 - previous channel bifurcation stability models do not take into account floodplain properties
     - study focuses on vegetation and soil consolidation
 - hypothesize that  crevasse splay is between a breach healing and an avulsion
-
 ### Methods
 #### Model
 - Delft3D FLOW
@@ -84,13 +77,11 @@ One thing we know is that from beginning to end, the alluvial ridges and floodpl
 - water level in the crevasse is allowed to vary due to drawdown - for example, if a lot of water is flowing through the breach, water level lowers
 - sediment allowed onto the floodplain is clay and sand
 - multi-year simulations with only one main channel discharge considered
-
 #### MATLAB
 - soil consolidation - lowers floodplain in response to deposition
 - vegetation - adjusts the critical shear stress for erosion and roughness depending on local water depth
     - in delft you can change the roughness to match vegetation, but not the critical shear
     - critical depth of 1 m is the depth where plants establish vs. die
-
 ### Results
 #### Breach Healing vs Avulsion
 - balance between net deposition vs erosion
