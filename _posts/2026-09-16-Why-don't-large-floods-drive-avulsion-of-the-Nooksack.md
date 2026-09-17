@@ -98,12 +98,14 @@ To confirm my analysis is working correctly, I should test it on the 2021 flood 
 2. erodible and unvegetated floodplains —> more avulsion
 3. less erodible and more vegetated floodplains —> small, short-lived splays
 4. splays that create the most ‘new land’ have a balance between water and sediment discharge, vegetation root strength, and soil consolidation
+
 ### Intro
 - some rivers rarely breach alluvial ridges while others do so frequently
 - paper motivated to understand the conditions when crevasse splays for so that we can engineer them
 - previous channel bifurcation stability models do not take into account floodplain properties
     - study focuses on vegetation and soil consolidation
 - hypothesize that  crevasse splay is between a breach healing and an avulsion
+
 ### Methods
 #### Model
 - Delft3D FLOW
