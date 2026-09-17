@@ -28,7 +28,7 @@ Is the bed slope formula the setting responsible for the difference in distinct 
 
 *Figure 5. Zoomed-in overflow to Sumas with the bed slope = Bagnold.*
 
-Turns out that the Bagnold and Ikeda formula still does not answer the entire overflow to Sumas question. The peak overflow is barely higher than the model run without changing the formula. The overflow does stay elevated higher with Bagnold after the peak has passed, however. A brief search into the two different formulas shows that there is some doubt in the performance of Bagnold. Also, HEC-RAS uses Kock and Flokstra. In Delft3D, use of the Kock and Flokstra formula requires additional calibration parameters while Bagnold does not. 
+Turns out that the Bagnold and Ikeda formula still does not answer the entire overflow to Sumas question. The peak overflow is barely higher than the model run without changing the formula. The overflow does stay elevated higher with Bagnold after the peak has passed, however. A brief search into the two different formulas shows that there is some doubt in the performance of Bagnold. Also, HEC-RAS uses Koch and Flokstra. In Delft3D, use of the Koch and Flokstra formula requires additional calibration parameters while Bagnold does not. 
 
 ## New direction! Why doesn't higher discharge induce an avulsion?
 
@@ -52,7 +52,7 @@ I replotted the current model as an REM below.
 
 I reread chapter 4 of Shelby's thesis to get a deeper understanding of the previous findings that our original hypothesis is based on. I want to try and recreate the analyses to see if we can see a decrease in conveyance that corresponds with an increase in bed level. 
 
-I previously plotted flow through the main channel during the 2025 flood, but I remember being stumped on how to interpret the plot since I could see the influence of the timing of the hydrograph in the results. For example, at the snapshot of the flood peak, we see that Q in the main channel is elevated at the upstream boundary of the model. However, this doesn't mean that the main channel has gotten bigger here &mdash; it means that the peak of the flood is traveling through this area at this time. 
+I previously plotted flow through the main channel during the 2025 flood, but I remember being stumped on how to interpret the plot since I could see the influence of the timing of the hydrograph in the results. For example, at the snapshot of the flood peak, we see that Q in the main channel is elevated at the upstream boundary of the model. However, this doesn't mean that the main channel has gotten bigger here &mdash; it means that the peak of the flood is traveling through this area at this time. Another observation I made looking back at these plots is that the discharge is greater than the bankfull value of 600 cms in much of the channel and at most of the output times. Does that mean that my cross sections are defining too wide of a channel? 
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/2b83f93d-447e-4cd0-907f-3b2ca6cd4bf9" />
 
@@ -71,7 +71,6 @@ Compare this with Shelby's plots of main channel Q shown below. Plot c.2 is the 
 I need to figure out a way to plot conveyance without seeing a propagating bump from the flood. I am going to check in with Shelby about this and see if there is something in my methodology that I can change. 
 
 I also wanted to adapt my streamwise bed level plots to work for my conveyance cross sections I created. This is useful to see if bed level increases at the same locations where conveyance is reduced. 
-
 
 
 
