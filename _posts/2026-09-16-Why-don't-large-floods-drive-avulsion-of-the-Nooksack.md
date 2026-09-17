@@ -1,4 +1,4 @@
-# Why don't large floods drive avulsion of the Nooksack?
+# Why don't large floods drive more overflow to Sumas? 
 
 ## Updates from last week
 
