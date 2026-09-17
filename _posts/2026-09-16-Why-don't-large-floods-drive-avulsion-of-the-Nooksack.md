@@ -42,11 +42,26 @@ One thing we know is that from beginning to end, the alluvial ridges and floodpl
 
 - Why isn't Shelby's feedback mechanism working to push more overflow to Sumas during these huge floods?
 - Is there increased aggradation/bed level and/or decreased conveyance in the main channel as flood magnitude increases?
-- 
+- Does conveyance stay low after the flood dissipates?
 
 <img width="1369" alt="image" src="https://github.com/user-attachments/assets/35f44858-69bf-4296-8d2d-9d56637452d1" />
 
 *Figure 2. REM from beginning to end for the current model.*
+
+### Going back to Streamwise Analyses
+
+I reread chapter 4 of Shelby's thesis to get a deeper understanding of the previous findings that our original hypothesis is based on. I want to try and recreate the analyses to see if we can see a decrease in conveyance that corresponds with an increase in bed level. 
+
+I previously plotted flow through the main channel during the 2025 flood and got the following plot. 
+
+Compare this with Shelby's plots of main channel Q shown below. Plot c.2 is the plot at the time of the first flood peak. However, the main channel Q is not elevated at the upstream boundary as it is in my plot. 
+
+<img width="762" alt="image" src="https://github.com/user-attachments/assets/1f0b55a1-8d1d-48df-a3ab-3a5efb615145" />
+
+
+
+
+
 
 ---
 
