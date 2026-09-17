@@ -46,17 +46,31 @@ I replotted the current model as an REM below.
 
 <img width="1369" alt="image" src="https://github.com/user-attachments/assets/35f44858-69bf-4296-8d2d-9d56637452d1" />
 
-*Figure 2. REM from beginning to end for the current model.*
+*Figure 6. REM from beginning to end for the current model.*
 
 ### Going back to Streamwise Analyses
 
 I reread chapter 4 of Shelby's thesis to get a deeper understanding of the previous findings that our original hypothesis is based on. I want to try and recreate the analyses to see if we can see a decrease in conveyance that corresponds with an increase in bed level. 
 
-I previously plotted flow through the main channel during the 2025 flood and got the following plot. 
+I previously plotted flow through the main channel during the 2025 flood, but I remember being stumped on how to interpret the plot since I could see the influence of the timing of the hydrograph in the results. For example, at the snapshot of the flood peak, we see that Q in the main channel is elevated at the upstream boundary of the model. However, this doesn't mean that the main channel has gotten bigger here &mdash; it means that the peak of the flood is traveling through this area at this time. 
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/2b83f93d-447e-4cd0-907f-3b2ca6cd4bf9" />
+
+*Figure 7. Selected times during the North Cedarville hydrograph to plot the conveyance*
+
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/05828e6f-4331-4aba-b390-cb012e34251b" />
+
+*Figure 8. Plot of discharge through bankfull/main channel cross sections. Plots on the left are the three red dots on the first peak, and the plots on the right are from the second peak.*
 
 Compare this with Shelby's plots of main channel Q shown below. Plot c.2 is the plot at the time of the first flood peak. However, the main channel Q is not elevated at the upstream boundary as it is in my plot. 
 
 <img width="762" alt="image" src="https://github.com/user-attachments/assets/1f0b55a1-8d1d-48df-a3ab-3a5efb615145" />
+
+*Figure 8. Shelby's plot of conveyance during the 2021 flood*
+
+I need to figure out a way to plot conveyance without seeing a propagating bump from the flood. I am going to check in with Shelby about this and see if there is something in my methodology that I can change. 
+
+I also wanted to adapt my streamwise bed level plots to work for my conveyance cross sections I created. This is useful to see if bed level increases at the same locations where conveyance is reduced. 
 
 
 
