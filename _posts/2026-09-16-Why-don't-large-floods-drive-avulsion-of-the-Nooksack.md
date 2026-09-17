@@ -117,11 +117,13 @@ To confirm my analysis is working correctly, I should test it on the 2021 flood 
 - water level in the crevasse is allowed to vary due to drawdown - for example, if a lot of water is flowing through the breach, water level lowers
 - sediment allowed onto the floodplain is clay and sand
 - multi-year simulations with only one main channel discharge considered
+  
 #### MATLAB
 - soil consolidation - lowers floodplain in response to deposition
 - vegetation - adjusts the critical shear stress for erosion and roughness depending on local water depth
     - in delft you can change the roughness to match vegetation, but not the critical shear
     - critical depth of 1 m is the depth where plants establish vs. die
+
 ### Results
 #### Breach Healing vs Avulsion
 - balance between net deposition vs erosion
@@ -133,10 +135,12 @@ To confirm my analysis is working correctly, I should test it on the 2021 flood 
     - high D/E —> breaches heal quickly
     - medium D/E —> crevasse splay formation
 - non of the models maintained crevasse splay indefinitely — they all eventually healed
+
 #### Soil Consolidation and Vegetation
 - more subsidence —> longer-lived crevasse splays but not more new land
 - more veg —> shorter-lived crevasse splays
 - medium veg —> more new land
+
 #### Compare with Mississippi
 - study results had higher aggradation rates that Mississippi splays likely because the study used constant flood stage, which in reality only happens a few times a year
 
