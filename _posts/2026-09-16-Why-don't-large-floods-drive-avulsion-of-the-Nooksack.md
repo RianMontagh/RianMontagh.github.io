@@ -64,7 +64,7 @@ I previously plotted flow through the main channel during the 2025 flood, but I 
 
 Compare this with Shelby's plots of main channel Q shown below. Plot c.2 is the plot at the time of the first flood peak. However, the main channel Q is not elevated at the upstream boundary as it is in my plot. 
 
-<img width="762" alt="image" src="https://github.com/user-attachments/assets/1f0b55a1-8d1d-48df-a3ab-3a5efb615145" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/1f0b55a1-8d1d-48df-a3ab-3a5efb615145" />
 
 *Figure 8. Shelby's plot of conveyance during the 2021 flood*
 
