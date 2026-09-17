@@ -70,11 +70,21 @@ Compare this with Shelby's plots of main channel Q shown below. Plot c.2 is the 
 
 I need to figure out a way to plot conveyance without seeing a propagating bump from the flood. I am going to check in with Shelby about this and see if there is something in my methodology that I can change. 
 
-I also wanted to adapt my streamwise bed level plots to work for my conveyance cross sections I created. This is useful to see if bed level increases at the same locations where conveyance is reduced. 
+I also wanted to adapt my streamwise bed level plots to work for my conveyance cross sections I created. This is useful to see if bed level increases at the same locations where conveyance is reduced. I would expect to see bed level increase in the Everson Overflow.
 
+<img width="1570" alt="image" src="https://github.com/user-attachments/assets/03c2b7f4-b2b5-468e-bc40-5c76f86b8a30" />
 
+*Figure 9. Along channel Bed change for the 2025 flood*
 
+Let's compare this with Shelby's plots for the 2021 flood. 
 
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/aa1bffec-0883-4081-8a2e-ae5638449c26" />
+
+*Figure 10. Shelby's bed change plots for 2021 flood*
+
+My bed change is within the same range as hers, on the order of magnitude of 1 m. However, my plots look a lot noisier, with the bed change bouncing on either side of the y=0 line instead of maintaining a pattern of erosion or deposition as clearly as Shelby's. I also want to ask her about any smoothing or other processing she did to get her figures. 
+
+To confirm my analysis is working correctly, I should test it on the 2021 flood to make sure that differences in the hydrograph are not causing differences in the conveyance and bed change. 
 
 ---
 
