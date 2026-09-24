@@ -44,6 +44,11 @@ The portion from 0-4 km has large spikes, which I propose come from the input hy
 
 To plot the area, I used the variable cross_section_area, which is described as "wet area of observation cross section." This term could be used to assess how the cross sectional area has changed due to erosion and deposition &mdash; the only problem with it is that during overtopping, the slice of area that is above the banks will be accounted for. That increase in area does not correspond with erosion of the channel or an increase in the ability of the channel to convey water. However, I still wanted to visualize it because I was hoping to attribute increases or decreases in Q with increases or decreases in velocity and/or wetted area. 
 
+<img width="1572" alt="image" src="https://github.com/user-attachments/assets/3123facc-9ded-4f1b-8244-111f71f38716" />
+
+*Figure 5. Wetted Area Plots*
+
+Similar to velocity, the wetted area has spatial trends that hold true at different times during the flood. Consistent with my predictions from the velocity plot, the wetted area at the upstream boundary is small throughout the flood. In addition, in the braided reach, wetted area increases, which makes sense for this less confined area that also experiences lower velocities. 
 
 
 
