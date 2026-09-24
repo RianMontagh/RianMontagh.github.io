@@ -32,5 +32,11 @@ For the bed change plot, marking the start of the Twin View levee makes me wonde
 
 To understand my conveyance plots more, I need the velocity and area to understand what is contributing to changes in discharge (because Q = VA!). I recently discovered that wetted area is an output variable that is saved at each output time for each cross section. 
 
+The velocity variable I decided to use is the cross section velocity, which is described as the "space-averaged velocity through observation cross section." I am assuming this is the average velocity normal to the cross section, which is the velocity relevant to calculating discharge. 
+
+<img width="1534" alt="image" src="https://github.com/user-attachments/assets/48bb3862-025c-4633-bb76-544cdd01334d" />
+
+*Figure 4. Velocity Plots*
+
 
 
