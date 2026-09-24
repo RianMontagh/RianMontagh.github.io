@@ -50,6 +50,15 @@ To plot the area, I used the variable cross_section_area, which is described as 
 
 Similar to velocity, the wetted area has spatial trends that hold true at different times during the flood. Consistent with my predictions from the velocity plot, the wetted area at the upstream boundary is small throughout the flood. In addition, in the braided reach, wetted area increases, which makes sense for this less confined area that also experiences lower velocities. 
 
+## Plotting Q, V, and A together
+
+<img width="1606" alt="image" src="https://github.com/user-attachments/assets/4259aa42-d1cc-47c9-8c46-56bc234b15f5" />
+
+<img width="1640" alt="image" src="https://github.com/user-attachments/assets/c38b569f-d1fe-4d1c-b972-62d591567bc9" />
+
+<img width="1602" alt="image" src="https://github.com/user-attachments/assets/797c810c-21b6-43e0-9b30-f4c9fcda1d18" />
+
+
 
 
 
