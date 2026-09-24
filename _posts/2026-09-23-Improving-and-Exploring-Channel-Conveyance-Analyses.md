@@ -8,13 +8,29 @@ One of the first improvements I made was account for lag time from the boudary o
 
 *Figure 1. Visualizing lag from North Cedarville to Everson (about 10 km).*
 
-When I looked closer at this plot at the times at which the bankfull and peak discharges pass through North Cedarville and Everson, I see a lag time of about 2 hours. Intuitively, it seems like the bed of a river should be able to change significantly within 2 hours of a flood, so I want to take this into account in my plots. Since we are most interested in the Everson corridor, I will make my output times for my conveyance plots be the times that the Everson gage experiences bankfull and peak flows. 
+When I looked closer at this plot at the times at which the bankfull and peak discharges pass through North Cedarville and Everson, I see a lag time of about 2 hours. Velocity and discharge can change dramatically in two hours. Intuitively, the bed of a river should also be able to change significantly within 2 hours of a flood, so I want to take this into account in my plots. Since we are most interested in the Everson corridor, I will make my output times for my conveyance plots be the times that the Everson gage experiences bankfull and peak flows. 
 
 ## Calculating Along-Channel Distance
 
-The second improvement I made in my plots was converting cross section index with along-channel distance on the x-axis. This was as simple as saving the points of each cross section that intersect with the centerline and calculating the distance between each of these centerline points. 
+The second improvement I made in my plots was converting cross section index with along-channel distance on the x-axis. This was as simple as saving the points of each cross section that intersect with the centerline and calculating the distance between each of these centerline points. I also added markers for different regions of the channel. The Twin View levee marker indicates the beginning of the confined reach, or the overflow reach. I think of the Everson Bridge as the end of the overflow reach, but wonder how Whatcom County defines the Overflow Reach. 
+
+The updated lagged plots are below. 
+
+<img width="1572" alt="image" src="https://github.com/user-attachments/assets/e7005160-1935-4c61-8bc7-84961f2305dc" />
+
+*Figure 2. Updated Conveyance Plots*
+
+<img width="1559" alt="image" src="https://github.com/user-attachments/assets/bae47f3b-9ea7-439c-80fd-66dfce49b8fe" />
+
+*Figure 3. Updated Bed Change Plots*
+
+Now the influence from the flood peaks entering the model domain are more diffuse in the Q plots. It is still visible, but it is more clear to me now what if an effect of the hydrograph timing versus a channel effect. In the second panel on the right, which should be when the biggest peak passes through the Everson gage, it is interesting that there is still more discharge in the upstream cross sections. To me this is indicative of the overtopping before and within the overflow reach. 
+
+For the bed change plot, marking the start of the Twin View levee makes me wonder if the larger spikes of erosion and deposition are related to the narrowing of the channel at this point. This is an area where overtopping due to choking and erosion from flow speeding up due to constriction could be occurring. 
 
 ## Adding Velocity and Wetted Cross Sectional Area
+
+To understand my conveyance plots more, I need the velocity and area to understand what is contributing to changes in discharge (because Q = VA!). I recently discovered that wetted area is an output variable that is saved at each output time for each cross section. 
 
 
 
