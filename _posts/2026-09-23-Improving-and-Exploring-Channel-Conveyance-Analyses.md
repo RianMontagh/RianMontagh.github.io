@@ -30,7 +30,7 @@ For the bed change plot, marking the start of the Twin View levee makes me wonde
 
 ## Adding Velocity and Wetted Cross Sectional Area
 
-To understand my conveyance plots more, I need the velocity and area to understand what is contributing to changes in discharge (because Q = VA!). I recently discovered that wetted area is an output variable that is saved at each output time for each cross section. 
+To understand my conveyance plots more, I need the velocity and wetted area area to understand what is contributing to changes in discharge (because Q = VA!). I recently discovered that wetted area is an output variable that is saved at each output time for each cross section. 
 
 The velocity variable I decided to use is the cross section velocity, which is described as the "space-averaged velocity through observation cross section." I am assuming this is the average velocity normal to the cross section, which is the velocity relevant to calculating discharge. 
 
@@ -40,7 +40,10 @@ The velocity variable I decided to use is the cross section velocity, which is d
 
 This plot surprised me by how static in time some of the velocity patterns are. It made me feel better when I referred back to Shelby's plot and saw that her along-channel velocity also had consistent patterns regardless of output time. In my plots, from 4 km to 8 km, the velocity is consistently lower with less fluctuations. I am guessing this has to do with this portion of the river being wider and braided. 
 
-The portion from 0-4 km has large spikes, which I propose come from the input hydrograph needing some distance to regulate to a realistic velocity. The very upstream part of the model is confined from the North Cedarville bridge, but then quickly becomes braided. 
+The portion from 0-4 km has large spikes, which I propose come from the input hydrograph needing some distance to regulate to a realistic velocity. The very upstream part of the model is confined from the North Cedarville bridge, but then quickly becomes braided. I wonder if the higher velocities here helped prevent the massive deposition that was occurring in the old model.
+
+To plot the area, I used the variable cross_section_area, which is described as "wet area of observation cross section." This term could be used to assess how the cross sectional area has changed due to erosion and deposition &mdash; the only problem with it is that during overtopping, the slice of area that is above the banks will be accounted for. That increase in area does not correspond with erosion of the channel or an increase in the ability of the channel to convey water. However, I still wanted to visualize it because I was hoping to attribute increases or decreases in Q with increases or decreases in velocity and/or wetted area. 
+
 
 
 
