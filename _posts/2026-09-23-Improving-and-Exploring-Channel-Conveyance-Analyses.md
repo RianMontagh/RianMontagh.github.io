@@ -38,5 +38,10 @@ The velocity variable I decided to use is the cross section velocity, which is d
 
 *Figure 4. Velocity Plots*
 
+This plot surprised me by how static in time some of the velocity patterns are. It made me feel better when I referred back to Shelby's plot and saw that her along-channel velocity also had consistent patterns regardless of output time. In my plots, from 4 km to 8 km, the velocity is consistently lower with less fluctuations. I am guessing this has to do with this portion of the river being wider and braided. 
+
+The portion from 0-4 km has large spikes, which I propose come from the input hydrograph needing some distance to regulate to a realistic velocity. The very upstream part of the model is confined from the North Cedarville bridge, but then quickly becomes braided. 
+
+
 
 
