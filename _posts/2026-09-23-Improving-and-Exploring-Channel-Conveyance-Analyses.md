@@ -54,9 +54,15 @@ Similar to velocity, the wetted area has spatial trends that hold true at differ
 
 <img width="1606" alt="image" src="https://github.com/user-attachments/assets/4259aa42-d1cc-47c9-8c46-56bc234b15f5" />
 
+*Figure 6. Q and V*
+
 <img width="1640" alt="image" src="https://github.com/user-attachments/assets/c38b569f-d1fe-4d1c-b972-62d591567bc9" />
 
+*Figure 7. Q and A*
+
 <img width="1602" alt="image" src="https://github.com/user-attachments/assets/797c810c-21b6-43e0-9b30-f4c9fcda1d18" />
+
+*Figure 8. V and A*
 
 
 
