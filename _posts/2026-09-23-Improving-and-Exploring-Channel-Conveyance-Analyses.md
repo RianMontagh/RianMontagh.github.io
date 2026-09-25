@@ -64,9 +64,13 @@ In this plot, we can see that V can spike and drop off without a significant eff
 
 *Figure 7. Zoomed in Q and V on rising limb of first peak*
 
+Even after looking closer at discharge in Figure 7, velocity does not seem to be controlling changes in Q. I expect that when V changes, A is changing in the opposite direction such that Q stays relatively constant. This is shown in Figure 9 and discussed further. 
+
 <img width="1640" alt="image" src="https://github.com/user-attachments/assets/c38b569f-d1fe-4d1c-b972-62d591567bc9" />
 
 *Figure 7. Q and A*
+
+ 
 
 <img width="1602" alt="image" src="https://github.com/user-attachments/assets/797c810c-21b6-43e0-9b30-f4c9fcda1d18" />
 
