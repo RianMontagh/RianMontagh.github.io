@@ -60,6 +60,8 @@ I plotted combinations of Q, V, and A on the same plot to see if I could attribu
 
 In this plot, we can see that V can spike and drop off without a significant effect on Q. For example, on the rising limb of the first peak, velocity spatially varies from less than 1 m/s to about 3 m/s, but discharge does not appear to change with these changes in velocity. I zoomed in on the y-axis of Q to make sure that the y limits of the left axis were squashing effects from velocity. See below. 
 
+In the plot taken at the output time during the main flood peak, we can see that in the overflow corridor between the Twin View levee and the Everson Bridge, the pattern is different because that spikes in Q line up with spikes of V. I don't have a good explanation of why this might be happening during the flood in the overflow reach, and it is possible that the effect is random. Next week I am hoping to get a better understanding of why bumps are forming in the Q anad V plots. 
+
 <img width="926" alt="image" src="https://github.com/user-attachments/assets/5dfe5286-612e-4407-96de-2a573aaa6f11" />
 
 *Figure 7. Zoomed in Q and V on rising limb of first peak*
