@@ -60,23 +60,29 @@ I plotted combinations of Q, V, and A on the same plot to see if I could attribu
 
 In this plot, we can see that V can spike and drop off without a significant effect on Q. For example, on the rising limb of the first peak, velocity spatially varies from less than 1 m/s to about 3 m/s, but discharge does not appear to change with these changes in velocity. I zoomed in on the y-axis of Q to make sure that the y limits of the left axis were squashing effects from velocity. See below. 
 
-In the plot taken at the output time during the main flood peak, we can see that in the overflow corridor between the Twin View levee and the Everson Bridge, the pattern is different because that spikes in Q line up with spikes of V. I don't have a good explanation of why this might be happening during the flood in the overflow reach, and it is possible that the effect is random. Next week I am hoping to get a better understanding of why bumps are forming in the Q anad V plots. 
-
 <img width="926" alt="image" src="https://github.com/user-attachments/assets/5dfe5286-612e-4407-96de-2a573aaa6f11" />
 
 *Figure 7. Zoomed in Q and V on rising limb of first peak*
 
 Even after looking closer at discharge in Figure 7, velocity does not seem to be controlling changes in Q. I expect that when V changes, A is changing in the opposite direction such that Q stays relatively constant. This is shown in Figure 9 and discussed further. 
 
+In the plot taken at the output time during the second flood peak, we can see that in the overflow corridor between the Twin View levee and the Everson Bridge, the pattern is different because spikes in Q line up with spikes of V. I don't have a good explanation of why this might be happening during the flood in the overflow reach, and it is possible that the effect is random. Next week I am hoping to get a better understanding of why bumps are forming in the Q and V plots. Part of that is understanding if the dry parts of the cross sections are getting averaged into the cross_section_velocity as zeros and lowering the velocity, in which case I would need a different variable. The plot below zooms in on the overflow reach, where I wonder if higher discharge is lining up with bumps in V. I see three distinct bumps in V and three less obvious bumps in Q.
+
+<img width="922" alt="image" src="https://github.com/user-attachments/assets/2ad6f81a-66af-4aab-80da-8ed28f336a2a" />
+
+*Figure 8. Zoomed in Q and V during the second peak*
+
+Next, I plotted Q and A together. 
+
 <img width="1640" alt="image" src="https://github.com/user-attachments/assets/c38b569f-d1fe-4d1c-b972-62d591567bc9" />
 
-*Figure 7. Q and A*
+*Figure 9. Q and A*
 
  
 
 <img width="1602" alt="image" src="https://github.com/user-attachments/assets/797c810c-21b6-43e0-9b30-f4c9fcda1d18" />
 
-*Figure 8. V and A*
+*Figure 10. V and A*
 
 
 
