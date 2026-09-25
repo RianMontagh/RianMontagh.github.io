@@ -50,11 +50,19 @@ To plot the area, I used the variable cross_section_area, which is described as 
 
 Similar to velocity, the wetted area has spatial trends that hold true at different times during the flood. Consistent with my predictions from the velocity plot, the wetted area at the upstream boundary is small throughout the flood. In addition, in the braided reach, wetted area increases, which makes sense for this less confined area that also experiences lower velocities. 
 
-## Plotting Q, V, and A together
+## Plotting Q, V, and A Together
+
+I plotted combinations of Q, V, and A on the same plot to see if I could attribute changes in Q to changes in V or A. 
 
 <img width="1606" alt="image" src="https://github.com/user-attachments/assets/4259aa42-d1cc-47c9-8c46-56bc234b15f5" />
 
 *Figure 6. Q and V*
+
+In this plot, we can see that V can spike and drop off without a significant effect on Q. For example, on the rising limb of the first peak, velocity spatially varies from less than 1 m/s to about 3 m/s, but discharge does not appear to change with these changes in velocity. I zoomed in on the y-axis of Q to make sure that the y limits of the left axis were squashing effects from velocity. See below. 
+
+<img width="926" alt="image" src="https://github.com/user-attachments/assets/5dfe5286-612e-4407-96de-2a573aaa6f11" />
+
+*Figure 7. Zoomed in Q and V on rising limb of first peak*
 
 <img width="1640" alt="image" src="https://github.com/user-attachments/assets/c38b569f-d1fe-4d1c-b972-62d591567bc9" />
 
