@@ -64,7 +64,7 @@ In this plot, we can see that V can spike and drop off without a significant eff
 
 *Figure 7. Zoomed in Q and V on rising limb of first peak*
 
-Even after looking closer at discharge in Figure 7, velocity does not seem to be controlling changes in Q. I expect that when V changes, A is changing in the opposite direction such that Q stays relatively constant. This is shown in Figure 9 and discussed further. 
+Even after looking closer at discharge in Figure 7, velocity does not seem to be controlling changes in Q. I expect that when V changes, A is changing in the opposite direction such that Q stays relatively constant. This is shown in Figure 10 and discussed further. 
 
 In the plot taken at the output time during the second flood peak, we can see that in the overflow corridor between the Twin View levee and the Everson Bridge, the pattern is different because spikes in Q line up with spikes of V. I don't have a good explanation of why this might be happening during the flood in the overflow reach, and it is possible that the effect is random. Next week I am hoping to get a better understanding of why bumps are forming in the Q and V plots. Part of that is understanding if the dry parts of the cross sections are getting averaged into the cross_section_velocity as zeros and lowering the velocity, in which case I would need a different variable. The plot below zooms in on the overflow reach, where I wonder if higher discharge is lining up with bumps in V. I see three distinct bumps in V and three less obvious bumps in Q.
 
@@ -72,17 +72,19 @@ In the plot taken at the output time during the second flood peak, we can see th
 
 *Figure 8. Zoomed in Q and V during the second peak*
 
-Next, I plotted Q and A together. 
+Next, I plotted Q and A together. What jumps out to me in this plot is that the static patterns in time of A are reflected in the bumps and dips in Q during the second peak. This is especially true upstream of the Twin View levee, where I propose the water can take up a larger area due to the river being unconfined. The bankfull cross sections are wider in this area than in the confined reaches. One thing I need to consider with these longer cross sections is that the error in accounting for the sliver of wetted area above bankfull depth is going to be more extreme simply because the slivers are wider.  
 
 <img width="1640" alt="image" src="https://github.com/user-attachments/assets/c38b569f-d1fe-4d1c-b972-62d591567bc9" />
 
 *Figure 9. Q and A*
 
- 
+The V vs. A was an exciting plot to look at because it confirmed that these plots are working as expected in the Q = VA. As A increases, V decreases to maintain constant Q (mass conservation). Of course, this doesn't hold when flow exits the channel or if flow is not captured completely from cross section to cross section. During the second peak, we can see that discharge is much larger upstream of the overflow reach because A increases rapidly but V does not decrease enough to compensate for A. 
 
 <img width="1602" alt="image" src="https://github.com/user-attachments/assets/797c810c-21b6-43e0-9b30-f4c9fcda1d18" />
 
 *Figure 10. V and A*
+
+
 
 
 
