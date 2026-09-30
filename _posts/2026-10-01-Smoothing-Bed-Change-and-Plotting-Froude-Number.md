@@ -25,7 +25,7 @@ Thirdly, I wanted to visualize the extent of flooding in comparison to my bankfu
 
 ## Debugging Sediment Fraction Code
 
-In this section I wanted to document a bug I found in the code for creating the sediment fractions. After talking to Wuming, we don't expect it to affect our model results but decided it is still important to fix and test. The bug has to do with using two slightly different masks to define where the channel is; one mask we use to calculate sediment bins from D_50, and the other mask we use add sand and the floodplain. 
+In this section I wanted to document a bug I found in the code for creating the sediment fractions. After talking to Wuming, we don't expect it to affect our model results but decided it is still important to fix and test. The bug has to do with using two slightly different masks to define where the channel is; one mask we use to calculate sediment bins from D_50, and the other mask we use add sand and the floodplain. This causes some cells to have a zero sediment thickness (nonerodible) within the channel, because the second mask is slightly bigger than the first mask, which means it added cells on the bank that did not have sediment bins calculate for it. 
 
 I discovered that in my process of defining the channel vs the floodplain, some cells in the channel end up having zero sediment thickness, making them nonerodible. This happens because after getting the D50, we set small values of D50 to zero, and then make a mask for all the nonzero D50 values.
 
@@ -54,6 +54,8 @@ floodplain_idx = ~channel_idx;
 }
 ```
 
+`channel_idx` is used here: 
+
 ```matlab
 {
 bin_frac_all_addsand(channel_idx, sand_bins) = repmat(sand_target, nnz(channel_idx), 1);
@@ -65,8 +67,21 @@ bin_frac_all_addsand(channel_idx, nonsand_bins) = (1-sum(sand_target)) * ns ./ n
 }
 ```
 
+And `floodplain_idx` is used here: 
+
 ```matlab
 {
 bin_frac_all_addsand(floodplain_idx, :) = repmat(bin_frac_floodplain/sum(bin_frac_floodplain), sum(floodplain_idx), 1); %repmat tiles the fixed distribution to fill all floodplain cells and normalize to get the fraction to add to 1
 }
 ```
+
+Having zeros in the channel sediment fractions causes NaNs to show up in the final sediment fractions as plotted below. I assume that NaN is the same as 0, which is nonerodible.
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/82f9e887-90c1-4bc6-a52b-f3ac1df491d6" />
+
+*Figure x. locations of NaN sediment thickness.*
+
+
+
+
+
