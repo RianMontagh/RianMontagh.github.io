@@ -81,6 +81,20 @@ Having zeros in the channel sediment fractions causes NaNs to show up in the fin
 
 *Figure x. locations of NaN sediment thickness.*
 
+### The Fix
+
+The fix is to simply keep the channel mask consistent between adding in the channel D50, adding sand, and adding the floodplain. I decided to go with a combo of the `mask` that defines everywhere the D50 is non-zero and a velocity criteria. Adding `& mask` ensures that none of the channel_idx have zero sediment fractions. 
+
+```matlab
+{
+channel_idx = u_data3(:,end)>1 & mask;
+}
+```
+
+I replotted the NaN values in the new sediment fraction and none showed up on the plot. 
+
+
+
 
 
 
