@@ -12,16 +12,27 @@ Next, I quickly verified that my output times made sense. For the history files,
 
 <img width="1740" alt="image" src="https://github.com/user-attachments/assets/ad4fbfec-e5fd-41c0-9b95-d6059a86f715" />
 
-*Figure 2. Visualization of the data points spanning the Q = 600 m^3/s line.*
-
-Thirdly, I wanted to visualize the extent of flooding in comparison to my bankfull cross sections. Specifically, I wanted to see if the length of my cross sections make sense and if I can understand more about the bumps in my plots. 
-
-
-## Area-Averaging Instead of Cross Section-Averaging
+*Figure 2. Visualization of the data points spanning the Q = 600 m^3/s line.
 
 ## Streamwise Froude Number
 
-## Reviewing my AGU Abstract
+I created a version of my along-channel profiles that plots the Froude number at each of my bankfull cross sections. I was hoping to see when and where the river transitions between different regimes, if at all, to understand if certain features act as control points on the river. 
+
+To remind myself of the theory behind the Froude number, I reviewed my notes from Open Channel Flow.
+
+The Froude number is $Fr = \frac{V}{\sqrt{gD}}$ which is a comparison of the velocity to the wave celerity or wave speed. When Fr > 1 (supercritical), the river flows faster than waves can propagate. When Fr < 1 (subcritical) waves are able to move downstream. Control points are features like constrictions, steps, bumps, etc in the channel that force flow through Fr = 1 (critical) so that a transition occurs between super and subcritical. 
+
+In the equation, $D$ is the hydraulic depth, where $D=\frac{A}{B}$, where A is the cross sectional area and B is the top width. For purposes of my plots, I have cross sectional area as a model output, but I do not have the top width. However, since the output times I am currently using are all at bankfull discharge or above, I thought it was a good approximation to use the entire bankfull cross section length as the top width $B$. See below for my plot. 
+
+<img width="1614" alt="image" src="https://github.com/user-attachments/assets/42615347-6dc3-426d-ae64-5f297d824bae" />
+
+*Figure 3. Streamwise Froude Number*
+
+Interestingly, this plot shows that Fr stays below 1 in all space and all six output times. I interpret this to mean that there are no control points that are causing a transition in flow regime that my analysis was able to detect. The highest Fr occurs about 1 km downstream from North Cedarville, and there are other consistently high values at the 10.5 km and 12 km distances. 
+
+## Area-Averaging Instead of Cross Section-Averaging - In progress
+
+## Reviewing my AGU Abstract - in progress
 
 ## Debugging Sediment Fraction Code
 
