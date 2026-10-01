@@ -14,13 +14,15 @@ Next, I quickly verified that my output times made sense. For the history files,
 
 *Figure 2. Visualization of the data points spanning the Q = 600 m^3/s line.
 
+Next, I need to verify the extents of flooding at bankfull make sense for my bankfull cross sections. 
+
 ## Streamwise Froude Number
 
 I created a version of my along-channel profiles that plots the Froude number at each of my bankfull cross sections. I was hoping to see when and where the river transitions between different regimes, if at all, to understand if certain features act as control points on the river. 
 
 To remind myself of the theory behind the Froude number, I reviewed my notes from Open Channel Flow.
 
-The Froude number is $Fr = \frac{V}{\sqrt{gD}}$ which is a comparison of the velocity to the wave celerity or wave speed. When Fr > 1 (supercritical), the river flows faster than waves can propagate. When Fr < 1 (subcritical) waves are able to move downstream. Control points are features like constrictions, steps, bumps, etc in the channel that force flow through Fr = 1 (critical) so that a transition occurs between super and subcritical. 
+The Froude number is $Fr = \frac{V}{\sqrt{gD}}$ which is a comparison of the flow velocity to the wave celerity or wave speed. When Fr > 1 (supercritical), the river flows faster than waves can propagate. When Fr < 1 (subcritical) waves are able to move upstream. Control points are features like constrictions, steps, bumps, etc in the channel that force flow through Fr = 1 (critical) so that a transition occurs between super and subcritical. 
 
 In the equation, $D$ is the hydraulic depth, where $D=\frac{A}{B}$, where A is the cross sectional area and B is the top width. For purposes of my plots, I have cross sectional area as a model output, but I do not have the top width. However, since the output times I am currently using are all at bankfull discharge or above, I thought it was a good approximation to use the entire bankfull cross section length as the top width $B$. See below for my plot. 
 
@@ -28,11 +30,15 @@ In the equation, $D$ is the hydraulic depth, where $D=\frac{A}{B}$, where A is t
 
 *Figure 3. Streamwise Froude Number*
 
-Interestingly, this plot shows that Fr stays below 1 in all space and all six output times. I interpret this to mean that there are no control points that are causing a transition in flow regime that my analysis was able to detect. The highest Fr occurs about 1 km downstream from North Cedarville, and there are other consistently high values at the 10.5 km and 12 km distances. 
+Interestingly, this plot shows that Fr stays below 1 in all space and all six output times. I interpret this to mean that there are no control points that are causing a transition in flow regime that my analysis was able to detect. Since the flow is subcritical, more energy is stored in the denominator of the Froude number, which is governed by the hydraulic depth $D = \frac{A}{B}$. The highest Fr occurs about 1 km downstream from North Cedarville, and there are other consistently high values at the 10.5 km and 12 km distances. 
 
-## Area-Averaging Instead of Cross Section-Averaging - In progress
+I reviewed the mechanisms that could cause a regime to transition from sub to supercritical:
 
-## Reviewing my AGU Abstract - in progress
+1. large increase in velocity
+2. force flow to get shallow
+3. Constrict flow
+
+These sound like processes that would be most likely to happen near a bridge or the onset of leveeing (constriction). However, at most of the output times the location of the Twin View levee is lower than other locations. Just upstream and downstream of Everson Bridge the Froude number is more elevated. 
 
 ## Debugging Sediment Fraction Code
 
