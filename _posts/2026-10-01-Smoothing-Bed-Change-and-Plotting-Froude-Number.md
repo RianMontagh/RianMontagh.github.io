@@ -47,49 +47,39 @@ In this section I wanted to document a bug I found in the code for creating the 
 I discovered that in my process of defining the channel vs the floodplain, some cells in the channel end up having zero sediment thickness, making them nonerodible. This happens because after getting the D50, we set small values of D50 to zero, and then make a mask for all the nonzero D50 values.
 
 ```matlab
-{
 D503 = taus_data3(:,end)/rho_water/g/(s-1)/tau_star_r; %recalculate D503 
 D503(D503<0.008)=0; %apply a lower condition for setting D50 to 0 (above it was set to <0.020, which is why we need to recalculate the D503)
 mask = D503~=0; %Mask is true for every nonzero D50 value
-}
 ```
 
 Then, we use that mask to add the sediment bins calculated from the nonzero D50 to the entire domain.
 
 ```matlab
-{
 bin_frac_all(mask, :) = bin_frac_valid;
-}
 ```
 
 This is where the zeros get introduced: a second mask is created called `channel_idx` (and inverse mask `floodplain_idx`) is used for defining which cells should be modified to have 20% sand and which cells should be filled in with the floodplain sediment data. 
 
 ```matlab
-{
 channel_idx = u_data3(:,end)>1;
 floodplain_idx = ~channel_idx;
-}
 ```
 
 `channel_idx` is used here: 
 
 ```matlab
-{
 bin_frac_all_addsand(channel_idx, sand_bins) = repmat(sand_target, nnz(channel_idx), 1);
 
 % Scale the non-sand fractions proportionally to 0.8
 ns = bin_frac_all(channel_idx, nonsand_bins);
 ns_sum = sum(ns, 2);
 bin_frac_all_addsand(channel_idx, nonsand_bins) = (1-sum(sand_target)) * ns ./ ns_sum;
-}
 ```
 
 And `floodplain_idx` is used here: 
 
 ```matlab
-{
 bin_frac_all_addsand(floodplain_idx, :) = repmat(bin_frac_floodplain/sum(bin_frac_floodplain), sum(floodplain_idx), 1); %repmat tiles the fixed distribution to fill all floodplain cells and normalize to get the fraction to add to 1
-}
 ```
 
 Having zeros in the channel sediment fractions causes NaNs to show up in the final sediment fractions as plotted below. I assume that NaN is the same as 0, which is nonerodible.
@@ -103,9 +93,7 @@ Having zeros in the channel sediment fractions causes NaNs to show up in the fin
 The fix is to simply keep the channel mask consistent between adding in the channel D50, adding sand, and adding the floodplain. I decided to go with a combo of the `mask` that defines everywhere the D50 is non-zero and a velocity criteria. Adding `& mask` ensures that none of the channel_idx have zero sediment fractions. 
 
 ```matlab
-{
 channel_idx = u_data3(:,end)>1 & mask;
-}
 ```
 
 I replotted the NaN values in the new sediment fraction and none showed up on the plot. 
