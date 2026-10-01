@@ -1,4 +1,4 @@
-# Verifying Conveyance Plots, Smoothing Streamwise Bed Change, and Plotting Streamwise Froude Number
+# Verifying Conveyance Plots, Plotting Streamwise Froude Number, and Fixing Nonerodible Area
 
 ## Verifying Conveyance Plots
 
