@@ -2,7 +2,7 @@
 
 ## Smoothing Bed Change
 
-This week I started changing my streamwise bed change analysis from a cross sectional average to an areal average over the area between consecutive cross sections. I am hoping that this will improve the readability and smoothness of my bed change plots. The reason for this is that by averaging on a cross section, I am essentially picking just one point every 30 m to plot. This can make the data noisy and hard to interpret. 
+This week I wanted to change my streamwise bed change analysis from a cross sectional average to an areal average over the area between consecutive cross sections. I hoped that this will improve the readability and smoothness of my bed change plots, because by averaging on a cross section, I am essentially picking just one point every 30 m to plot. This can make the data noisy and hard to interpret. 
 
 I started looking back at my cross sections so I could understand how this averaging would work. For reference, here are two snapshots of the bankfull cross sections. The cross sections in the confined reaches are a lot more simple than the ones in the braided reach. 
 
@@ -18,16 +18,25 @@ As a reminder, I removed cross sections that intersected with other cross sectio
 
 One other note&mdash;the area between my cross sections is not uniform. This shouldn't be a problem because dividing by the area for averaging, but in the larger gaps I might lose more bed change granularity.
 
+Next, I checked what my cross sections look like plotted on the unstructured grid and this is where I realized I might be stuck with the cross sectional averaging&mdash;my cross sections have the same spacing as the cells in the channel! See below.
+
+<img width="424" alt="image" src="https://github.com/user-attachments/assets/3145b677-60b7-4dd2-af0c-a4b892f559fc" />
+
+*Figure 3. Bankfull cross sections on the unstructured grid*
+
+This means that the an areal average and a cross sectional average should be almost the same thing, because they average over about one row of cells. This leads me to wonder why my plots are so up and down if I am essentially sampling every cell in the channel. I redid my plots but also added a plot of the bed elevation alongside the bed change to see is my actual bed is very up and down. 
+
+
 ### Verifying Cross Section Lengths with 2025 Flooding
 
 When I made my cross sections, I used a constant 600 cms hydrograph, which very likely has different inundation extents than the 2025 flood at bankfull flow. I still think that the constant bankfull discharge is the correct way to define the active channel, but I was curious to see if taking the 2025 bankfull output times line up with my bankfull cross sections.
 
-
-
-
 One other limitation I thought of is that the channel shifting right or left should have no net change only if the shift remains within the cross section. If the shift goes beyond the cross section length, then the shift would register as a net aggradation. 
 
 
+
+
+## Erodible Roads and Levees
 
 
 
