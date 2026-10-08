@@ -1,4 +1,4 @@
-# Smoothing Bed Change and Recapping Old and Current Model Comparison
+# Smoothing Bed Change and Removing Fixed Weirs
 
 ## Smoothing Bed Change
 
@@ -33,13 +33,37 @@ When I made my cross sections, I used a constant 600 cms hydrograph, which very 
 
 One other limitation I thought of is that the channel shifting right or left should have no net change only if the shift remains within the cross section. If the shift goes beyond the cross section length, then the shift would register as a net aggradation. 
 
-
-
-
 ## Erodible Roads and Levees
 
+After looking at my abstract, I realized that since my hypothesis is related to breaching of alluvial ridges, I might want to start focusing on the nonerodible weirs we have in our model. I started reviewing the Delft3D manual to learn about how the fixed weirs work, because so far I have not had to mess around with them at all yet. 
 
+In the model, a fixed weir is "a fixed non-movable construction generating energy losses due to constriction of the flow. They are commonly used to model sudden changes in depth (roads, summer dikes) and groynes in numerical simulations of rivers." One of the benefits of using a fixed weir instead of modeling these objects as terrain features is that the grid might be too coarse to adequately represent all the geometries of sharp feature like a narrow road. Looking at our grid at Main St. for example, we see how this is the case since one cell is larger than the width of the road.
 
+<img width="999" alt="image" src="https://github.com/user-attachments/assets/170cd124-c8a3-47fd-ac09-4129dc6ac284" />
+
+*Figure x. Comparison of road feature to grid cell size*
+
+So, when I remove the fixed weirs to make the roads act as erodible objects, one implication is that the exact terrain at the road might not be represented as well. I looked at our bed level to see what this looks like, shown below. The triangular cells are large in this area, and are slightly elevated at the road compared to the surrounding fields. 
+
+<img width="1033" height="532" alt="image" src="https://github.com/user-attachments/assets/757a2a9a-fee9-4ac7-8977-1cb91dc8b05f" />
+
+*Figure x. Model-interpolated bed level at Main St*
+
+When I draw a profile line across Main St. using the Delft3D GUI, depending on where I draw the line I get different profiles due to the arrangement of the triangles. 
+
+<img width="939" alt="image" src="https://github.com/user-attachments/assets/0452f4c8-c97e-44e9-a07f-81d85e8df38c" />
+
+*Figure x. Profile through elevated cells in Main St*
+
+<img width="1009" alt="image" src="https://github.com/user-attachments/assets/ccca1d7c-151f-44c6-94c3-b93a337b3fba" />
+
+*Figure x. Profile through non-elevated cells in Main St*
+
+At first, I thought that this would mean that once I remove the fixed weirs, the flow will be able to go through/over the road at Main St very easily through the vertices of the lower-lying cells. However, I reminded myself of the numerics of Delft3D, which say that flow information is passed from cell face to cell face and cannot pass through nodes/vertices.
+
+With this information, I decided to remove the fixed weirs in the overflow path only. This includes the Masey Road, Main St, other downtown Everson roads, and the short levee just upstream of Everson Bridge. This model is currently running. 
+
+Also, while reading the manual, I came across the dam break section, which piqued my interest because in Delft3D, a "dam break is a structure that models a growing breach after a dam failure or levee breach." Maybe this is something I could pursue, which would force a breach to occur at a location of my choosing? This is more inline with the papers I have read so far that model avulsion, where the bifurcation or levee breach exist at the beginning of the model run.
 
 ## Proposal for Nooksack Project Blurb for the Website
 
