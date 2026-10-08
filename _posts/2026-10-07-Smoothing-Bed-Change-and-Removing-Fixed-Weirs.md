@@ -26,8 +26,21 @@ Next, I checked what my cross sections look like plotted on the unstructured gri
 
 *Figure 3. Bankfull cross sections on the unstructured grid*
 
-This means that the an areal average and a cross sectional average should be almost the same thing, because they average over about one row of cells. This leads me to wonder why my plots are so up and down if I am essentially sampling every cell in the channel. I redid my plots but also added a plot of the bed elevation alongside the bed change to see is my actual bed is very up and down. 
+This means that the an areal average and a cross sectional average should be almost the same thing, because they average over about one row of cells. This leads me to wonder why my plots are so up and down if I am essentially sampling every cell in the channel. I decided to look more closely at the bed elevation instead of bed change.
 
+<img width="1378" alt="image" src="https://github.com/user-attachments/assets/34166eb9-b02e-4865-8234-d84392990255" />
+
+*Figure x. Bed level at output times*
+
+<img width="1375" alt="image" src="https://github.com/user-attachments/assets/91df859c-6917-4b36-a24d-a88e996e3b01" />
+
+*Figure x. Zoomed-in bed level at output times*
+
+These plots help me understand my bed change plots below. Instead of a bunch of wiggles, I can see how the bed evolves over time. To me, this plot reminds me of Wuming's theory of sediment being eroded from one bar and depositing on the next bar, because in the stretch between the Twin View levee and Everson Bridge, I see alternation between erosion and aggradation. 
+
+<img width="1559" alt="image" src="https://github.com/user-attachments/assets/07812d2b-8d95-4acd-9def-7a96b9d7fb8a" />
+
+*Figure x. Bed change at output times*
 
 ### Verifying Cross Section Lengths with 2025 Flooding
 
