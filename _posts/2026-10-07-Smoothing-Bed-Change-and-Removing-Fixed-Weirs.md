@@ -31,9 +31,25 @@ This means that the an areal average and a cross sectional average should be alm
 
 ### Verifying Cross Section Lengths with 2025 Flooding
 
-When I made my cross sections, I used a constant 600 cms hydrograph, which very likely has different inundation extents than the 2025 flood at bankfull flow. I still think that the constant bankfull discharge is the correct way to define the active channel, but I was curious to see if taking the 2025 bankfull output times line up with my bankfull cross sections.
+When I made my bankfull cross sections, I used a constant 600 cms hydrograph, which very likely has different inundation extents than the 2025 flood at bankfull flow. I still think that the constant bankfull discharge is the correct way to define the active channel, but I was curious to see if taking the 2025 bankfull output times line up with my bankfull cross sections. I plotted the bankfull cross sections alongside the depths during the 2025 flood at the output times (bankfull or peak discharge times), and applied a mask that I created using the same parameters that I used to generate the limits of my bankfull cross sections: cells with depth > 0.5 m and velocity > 0.5 m. 
 
-One other limitation I thought of is that the channel shifting right or left should have no net change only if the shift remains within the cross section. If the shift goes beyond the cross section length, then the shift would register as a net aggradation. 
+<img width="1474"  alt="image" src="https://github.com/user-attachments/assets/e4ae9a4f-68f6-42b1-8116-ee0e0fab17ff" />
+
+*Figure x. Inundated area of "active flow" during the first bankfull discharge at Everson during 2025 flood*
+
+<img width="1474" alt="image" src="https://github.com/user-attachments/assets/82048b1d-3a43-4e87-b560-5359b5682ae7" />
+
+*Figure x. Inundated area of "active flow" during the first peak discharge at Everson during 2025 flood*
+
+<img width="1474" alt="image" src="https://github.com/user-attachments/assets/50220111-317a-4c25-a20d-26765d91bab8" />
+
+*Figure x. Inundated area of "active flow" during the second peak discharge at Everson during 2025 flood*
+
+The other bankfull output times not shown here look similar to the first output time at bankfull discharge.
+
+Overall, these plots tell me that my cross sections should be capturing flow that is at least half a meter deep and moving at least half a meter per second. One [web source](https://bwi.earth/understanding-surface-water-speed-in-rivers-why-it-matters-and-how-its-measured/)  claims that 0.5 m/s is the upper limit for a calm river. 
+
+One other limitation I thought of is that the channel shifting right or left should have no net change only if the shift remains within the cross section. If the shift goes beyond the cross section length, then the shift would register as a net aggradation. So far, that hasn't seemed like a problem for the Nooksack. I believe that any lateral shifts should be contained within my cross section length.
 
 ## Erodible Roads and Levees
 
@@ -63,7 +79,9 @@ When I draw a profile line across Main St. using the Delft3D GUI, depending on w
 
 At first, I thought that this would mean that once I remove the fixed weirs, the flow will be able to go through/over the road at Main St very easily through the vertices of the lower-lying cells. However, I reminded myself of the numerics of Delft3D, which say that flow information is passed from cell face to cell face and cannot pass through nodes/vertices.
 
-With this information, I decided to remove the fixed weirs in the overflow path only. This includes the Masey Road, Main St, other downtown Everson roads, and the short levee just upstream of Everson Bridge. This model is currently running. 
+With this information, I decided to remove the fixed weirs in the overflow path only. This includes the Masey Road, Main St, other downtown Everson roads, and the short levee just upstream of Everson Bridge. I am currently in the process of editing the fixed weir input file so I can run the model.
+
+Question: Is it important for me to update the fixed weirs to make the 2024 topo?
 
 Also, while reading the manual, I came across the dam break section, which piqued my interest because in Delft3D, a "dam break is a structure that models a growing breach after a dam failure or levee breach." Maybe this is something I could pursue, which would force a breach to occur at a location of my choosing? This is more inline with the papers I have read so far that model avulsion, where the bifurcation or levee breach exist at the beginning of the model run.
 
