@@ -18,3 +18,6 @@ This is the current 2021 hydrograph I have:
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/b116563c-5c46-4359-bca1-f25fcf3a1224" />
 
+I am considering chopping the hydrograph at the point I have highlighted and ramping down to the low flow from there. After looking at Wuming's modeling, it seems like he usually doesn't run past the second peak. 
+
+This is all I have this week since most of my time has been completing class work and prepping content for the EFM meetings. Tomorrow I hope to get the 2021 modified hydrograph done and do a spatially varying Froude number analysis. 
