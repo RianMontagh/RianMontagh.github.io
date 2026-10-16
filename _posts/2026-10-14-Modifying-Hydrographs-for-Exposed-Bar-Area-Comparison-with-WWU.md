@@ -21,3 +21,32 @@ This is the current 2021 hydrograph I have:
 I am considering chopping the hydrograph at the point I have highlighted and ramping down to the low flow from there. After looking at Wuming's modeling, it seems like he usually doesn't run past the second peak. 
 
 This is all I have this week since most of my time has been completing class work and prepping content for the EFM meetings. Tomorrow I hope to get the 2021 modified hydrograph done and do a spatially varying Froude number analysis. 
+
+## Next Steps 
+
+Extract more meaning from the bed level change along channel.
+- plot along the river to make the locations of aggradation and degradation more clear
+- see if there is net aggradation or degradation along channel lengths
+
+Plot along channel Froude number and water surface elevation. Is there a curve that indicates a critical point?
+
+Check water surface elevation on the second peak to see if it is higher for the same discharge, which indicates a loss in conveyance. 
+
+Run a fixed discharge through saved terrain to see how water elevation increases or decreases. 
+
+Simple conceptual model of Exner's linked with a decrease in discharge. 
+
+Is there aggradation in the overflow reach? Is this always going to mean a decrease in flow conveyance?
+
+Overlay velocity vectors or streamlines on the Fr map.
+
+## Froude Plots
+
+Deeper look at how my output times line up with the discharge through Everson cross section now that I am doing map variable analysis instead of his variables.
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/f5b8c58e-3949-4d71-96f7-c721a1b681fe" />
+
+Because my map output times are less frequent (every 2 hours instead of every 1 hour), the nearest output times for the map variables in some cases are more offset from the bankfull discharge. Luckily both of the peaks are pretty well captured. However, two of the bankfull discharges are missed by about 60 cms. It could be worth doing an average later on especially for the map variables. 
+
+Here are my Fr plots for the map output times. Time 1 is the first blue square on the hydrograph, Time 2 is the next time of the hydrograph, etc.  
+
