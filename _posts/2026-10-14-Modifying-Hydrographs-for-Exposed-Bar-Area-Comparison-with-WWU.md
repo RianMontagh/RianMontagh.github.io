@@ -58,7 +58,7 @@ Roads are darker blue, which lines up with our hypothesis that flows will be clo
 
 <img width="2580" alt="image" src="https://github.com/user-attachments/assets/ded36e36-ae11-40b8-8661-45a2f173b4ee" />
 
-Not many Fr values are greater than 0.5. When I filtered for values greater than 0.8, even less cells remained, and almost zero cells have Fr greater than 1. 
+Not many Fr values are greater than 0.5. When I filtered for values greater than 0.8, even less cells remained, and almost zero cells have Fr greater than 1. This might actually make sense for the Nooksack, because during the flood, maximum depths at all timesteps vary from about 6 to 12 m. The Nooksack is unlikely to be supercritical at the deepest parts, because the balancing velocity in the numerator would need to be sufficiently high. For D = 10 m, V would need to be 10 m/s (22 mi/hr). Most of the high Fr values seem to be near the banks of the river where depths are shallower. Same for roads and high points - these are shallower locations. 
 
 
 
