@@ -48,5 +48,17 @@ Deeper look at how my output times line up with the discharge through Everson cr
 
 Because my map output times are less frequent (every 2 hours instead of every 1 hour), the nearest output times for the map variables in some cases are more offset from the bankfull discharge. Luckily both of the peaks are pretty well captured. However, two of the bankfull discharges are missed by about 60 cms. It could be worth doing an average later on especially for the map variables. 
 
-Here are my Fr plots for the map output times. Time 1 is the first blue square on the hydrograph, Time 2 is the next time of the hydrograph, etc.  
+Here are my Fr plots for the map output times. Time 1 is the first blue square on the hydrograph, Time 2 is the next time of the hydrograph, etc. Time 1 is not shown because nothing is going on during the first time step of the model. 
+
+<img width="1206" alt="image" src="https://github.com/user-attachments/assets/af43e896-6bcd-4dac-8eda-fbbcd47d9554" />
+
+Fr values less than 0.001 are set to 0. 
+
+Roads are darker blue, which lines up with our hypothesis that flows will be closer to critical as they pass over high points. However, they are not that close to 1. Below I filtered out cells with Fr < 0.5. I did a lazy trick where I set the max of my color bar to 0.4 so all cells not filtered show up as yellow.
+
+<img width="2580" alt="image" src="https://github.com/user-attachments/assets/ded36e36-ae11-40b8-8661-45a2f173b4ee" />
+
+Not many Fr values are greater than 0.5. When I filtered for values greater than 0.8, even less cells remained, and almost zero cells have Fr greater than 1. 
+
+
 
