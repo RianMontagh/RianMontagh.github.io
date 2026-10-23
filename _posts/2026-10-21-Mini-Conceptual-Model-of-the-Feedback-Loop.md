@@ -35,13 +35,20 @@ $$\tau=\gamma hS_0$$
 
 where $h$ is approximating $R_H$. 
 
-4. Now that we have the bed shear stress, we can use one of the sediment transport formulas. I chose Meyer-Peter-Muller because it is simple and still widely used.
+4. Now that we have the bed shear stress, we can use one of the sediment transport formulas. I chose Meyer-Peter-Muller because it is simple and still widely used. (And I have notes on it from my master's!)
 
 $$
-q_s^{*} = 8(\tau^{*} - \tau_c^{*})^{\frac{3}{2}}
+q_s^* = 8(\tau^* - \tau_c^*)^{3/2}
 $$
 
-6. 
-7. 
+Here, the critical shear $\tau_c^\ast=0.047$ and $\tau^*$ is the nondimensional bed shear stress:
+
+$$
+$\tau^* = \frac{\tau_b}{(\rho_s - \rho) g d_s}$
+$$
+
+I will set $d_s$ to the $D_{50}$. 
+
+5. 
 
 ## Bringing back website blurb for review
