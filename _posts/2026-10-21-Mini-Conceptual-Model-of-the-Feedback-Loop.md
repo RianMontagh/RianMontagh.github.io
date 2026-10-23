@@ -22,6 +22,26 @@ Q gives us a good starting point for the mini model. I could follow these steps:
 
 1. Prescribe a $Q_{in}$, $Q_{out}$, and $Q_{overflow}$. These should be realistic to the model, and I can use discharge through my cross sections to get reasonable values. Hold $Q_{in} = Q_{out} + Q_{overflow}$ to be true. 
 2. Using Manning's equation, convert my $Q_{in}$ and $Q_{out}$ to flow depths.
-   $$Q=\frac{1}{n}R_H^{\frac{2}{3}}S_f^{\frac{1}{2}}$$
+
+$$Q=\frac{1}{n}AR_H^{\frac{2}{3}}S_f^{\frac{1}{2}}$$
+
+For normal flow, $S_f=S_0$, so I can use an estimate for the bed slope. I can also use a reasonable Mannings n value and approximate the hydraulic radius $R_H$ as the flow depth, which is only true for wide, shallow channels and might not be accurate for the Nooksack. Then:
+
+$$h=(\frac{Qn}{bS_0^{\frac{1}{2}}})^{\frac{3}{5}}$$
+
+3. With $h$ at the inlet and outlet of the control volume, I can derive a bed shear stress using the following:
+
+$$\tau=\gamma hS_0$$
+
+where $h$ is approximating $R_H$. 
+
+4. Now that we have the bed shear stress, we can use one of the sediment transport formulas. I chose Meyer-Peter-Muller because it is simple and still widely used.
+
+$$
+q_s^{*} = 8(\tau^{*} - \tau_c^{*})^{\frac{3}{2}}
+$$
+
+6. 
+7. 
 
 ## Bringing back website blurb for review
