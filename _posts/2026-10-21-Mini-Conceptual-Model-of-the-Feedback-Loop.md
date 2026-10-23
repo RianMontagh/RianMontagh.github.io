@@ -47,8 +47,20 @@ $$
 \tau^* = \frac{\tau_b}{(\rho_s - \rho) g d_s}
 $$
 
-I will set $d_s$ to the $D_{50}$. 
+I will set $d_s$ to the $D_{50}$ from this figure:
 
-5. 
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/75cbb670-02bc-4414-b62e-11abadcff9c2" />
+
+At the Everson gage, the $D_{50}$ is about 40-50 mm. 
+
+5. We now have everything we need in order to use the Exner equation.
+
+$$
+(1-\lambda_p)\frac{\partial \eta}{\partial t}=-(\frac{q_{out}-q_{in}}{\delta x})  
+$$
+
+7. I can then update the bed level in my box and restart from step 1 with a higher $Q_overflow$.
+
+Once I start coding this process up, I am sure that I will come across road bumps and new ideas and have to adjust the method. I want to slowly make the mini model more complex and sophisticated while still staying very conceptual and simplistic. This is just the bare bones of it. 
 
 ## Bringing back website blurb for review
