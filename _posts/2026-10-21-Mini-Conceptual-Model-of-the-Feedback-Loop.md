@@ -8,9 +8,9 @@ To construct my model, I started from the basics of bed change, which is the Exn
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/d77a62fa-c94a-442d-959c-f76ca371c025" />
 
-The key variable here is $\frac{\partial \eta}{\partial t}$, which I would use in my mini model to update the bed level in my control volume. The values I need to provide are $\lambda_p$, $\rho_p$, and $q_t$. $\lambda_p$ and $\rho_p$ are simple because I can just use the values for this that we use for the D50 in the model, which are wrapped up in the dry bed density and the specific gravity. The dry bed density is the density of a volume of a specific grain size when the pore space is entirely air (no water, hence "dry"). 
+The key variable here is $\frac{\partial \eta}{\partial t}$, which I would use in my mini model to update the bed level in my control volume. The values I need to provide are $\lambda_p$, $\rho_s$, and $q_t$. $\lambda_p$ and $\rho_s$ are simple because I can just use the values for this that we use for the D50 in the model, which are wrapped up in the dry bed density and the specific gravity. The dry bed density is the density of a volume of a specific grain size when the pore space is entirely air (no water, hence "dry"). 
 
-The harder part is of course obtaining the $q_t$, which is the driver of bed level change. See below for my conceptual drawing of the control volume. 
+The harder part is obtaining the $q_t$, which is the driver of bed level change. See below for my conceptual drawing of the control volume. 
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/cf64a490-301b-4079-9fc2-0480c24f16b8" />
 
