@@ -15,7 +15,7 @@ First, I tried adding color to my bed differene plots. I also cut off the first 
 
 The output times are shown in the next plot:
 
-<img width="700" height="907" alt="image" src="https://github.com/user-attachments/assets/1eaea22d-c98f-4853-813f-5721d50cc22e" />
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/1eaea22d-c98f-4853-813f-5721d50cc22e" />
 
 *Figure 2. Everson hydrograph with output times numbered to match with the titles of the tile plots in Figure 1.*
 
