@@ -8,7 +8,7 @@ I started by improving the way that I show the bed difference in the Everson Ove
 
 First, I tried adding color to my bed differene plots. I also cut off the first 4 km of the model domain to see patterns in the Everson Overflow area more clearly. 
 
-<img width="1723" height="993" alt="image" src="https://github.com/user-attachments/assets/07546546-f67e-44f9-ba2b-eddc41b7f84c" />
+<img width="1723" alt="image" src="https://github.com/user-attachments/assets/07546546-f67e-44f9-ba2b-eddc41b7f84c" />
 
 
 *Figure 1. Bed differenced between consecutive output times with blue for erosion and red for deposition.*
