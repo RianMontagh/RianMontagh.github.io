@@ -28,6 +28,13 @@ Next, I wanted to see if plotting the total bed change might expose more pattern
 
 *Figure 3. Total bed change as opposed to bed change during the intervals between output time*
 
+### Visualizing in Plan View
+
+I was also inspired by one of Shelby's figures in her thesis (Fig. 4.8 b) that showed colored markers plotted on top of water depth data in map/plan view. I decided to try this out with my bankfull cross sections by having Codex create polygons extending 15 m upstream and downstream of each bankfull cross section. The total distance between each cross section is 30 m. I did this for the consecutive and the total bed change. I also added markers for distance from the upstream boundary so that we can match areas on the profile plot with the plan view plot. 
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/bd05bd94-f2c7-4248-a425-828e0ebd0662" />
+
+
 
 
 
