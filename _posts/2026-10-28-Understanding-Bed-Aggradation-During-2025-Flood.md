@@ -36,7 +36,23 @@ I was also inspired by one of Shelby's figures in her thesis (Fig. 4.8 b) that s
 
 *Figure 4. Plan View of Consecutive Bed Change*
 
-<img width="700" alt="image" src="https://github.com/user-attachments/assets/6adeeca3-a852-46f1-8582-a5f82b0d4379" />
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/68b22c66-50e4-4c98-848a-86b4cc461c0d" />
+
+*Figure 5. Plan View of Cumulative Bed Change*
+
+### Zoomed in Plots of Bed Change to Compare with the Plan View Plots
+
+<img width="900" alt="image" src="https://github.com/user-attachments/assets/d3114351-9c5d-484d-859b-76bc71930677" />
+
+*Figure 6. Streamwise consecutive bed change in Everson reach*
+
+<img width="900" alt="image" src="https://github.com/user-attachments/assets/aef6dca5-2d47-4734-a456-f36856025233" />
+
+*Figure 7. Streamwise cumulative bed change in Everson reach*
+
+
+
+
 
 
 
