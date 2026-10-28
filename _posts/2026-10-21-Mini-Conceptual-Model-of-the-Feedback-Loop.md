@@ -60,7 +60,7 @@ $$
 $$
 
 {:start="6"}
-6. I can then update the bed level in my box and restart from step 1 with a higher $Q_overflow$.
+6. I can then update the bed level in my box and restart from step 1 with a higher $Q_{overflow}$.
 
 Once I start coding this process up, I am sure that I will come across road bumps and new ideas and have to adjust the method. I want to slowly make the mini model more complex and sophisticated while still staying very conceptual and simplistic. This is just the bare bones of it. 
 
