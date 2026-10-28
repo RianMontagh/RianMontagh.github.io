@@ -29,12 +29,14 @@ For normal flow, $S_f=S_0$, so I can use an estimate for the bed slope. I can al
 
 $$h=(\frac{Qn}{bS_0^{\frac{1}{2}}})^{\frac{3}{5}}$$
 
+{:start="3"}
 3. With $h$ at the inlet and outlet of the control volume, I can derive a bed shear stress using the following:
 
 $$\tau=\gamma hS_0$$
 
 where $h$ is approximating $R_H$. 
 
+{:start="4"}
 4. Now that we have the bed shear stress, we can use one of the sediment transport formulas. I chose Meyer-Peter-Muller because it is simple and still widely used. (And I have notes on it from my master's!)
 
 $$
@@ -53,6 +55,7 @@ I will set $d_s$ to the $D_{50}$ from this figure:
 
 At the Everson gage, the $D_{50}$ is about 40-50 mm. 
 
+{:start="5"}
 5. We now have everything we need in order to use the Exner equation.
 
 $$
