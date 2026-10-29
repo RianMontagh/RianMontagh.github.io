@@ -70,6 +70,16 @@ I decided to try and get at the net aggradation and erosion between the Twin Vie
 
 However, these values do not take into account the fact that the length of each cross section is different. For example, 0.5 m aggradation over a 100 m cross section is not the same amount of volume change as 0.5 m over a 200 m cross section. I think a better way to quantify this would be a net volume deposited/eroded, which is possible because the model saves the area of each grid cell. I would simply multiply the bed change at each cell by the cell area and sum them up and average by the number of cells. 
 
+
+### Adding Water Level 
+
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/17192add-0734-4a6e-9870-c7ee624942f9" />
+
+<img width="1603" height="993" alt="image" src="https://github.com/user-attachments/assets/cd958c41-3e1a-4301-8623-eb3d8383de93" />
+
+
+
+
 ## Developing Hypotheses for my Mini Model
 
 How will $\frac{\partial \eta}{\partial t}$ change as $Q_{in}$ increases? My first thought was that as $Q_{in}$ increases, the bed change in time should increase. However, I think the answer will be more complicated once I code up the mini model. To address this question, I put $\frac{\partial \eta}{\partial t}$ in terms of $Q_{in}$, so that $\frac{\partial \eta}{\partial t} = f(Q_{in})$. Then I took the derivative with respect to Q and plotted the derivative as well as the function for $\frac{\partial \eta}{\partial t}$. I assume that $Q_{overflow}$ stays constant. 
