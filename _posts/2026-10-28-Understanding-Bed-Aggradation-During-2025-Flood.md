@@ -75,10 +75,7 @@ However, these values do not take into account the fact that the length of each 
 
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/17192add-0734-4a6e-9870-c7ee624942f9" />
 
-<img width="1603" height="993" alt="image" src="https://github.com/user-attachments/assets/cd958c41-3e1a-4301-8623-eb3d8383de93" />
-
-
-
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/cd958c41-3e1a-4301-8623-eb3d8383de93" />
 
 ## Developing Hypotheses for my Mini Model
 
