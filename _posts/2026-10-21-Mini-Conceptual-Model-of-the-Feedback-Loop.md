@@ -59,7 +59,7 @@ At the Everson gage, the $D_{50}$ is about 40-50 mm.
 5. We now have everything we need in order to use the Exner equation.
 
 $$
-(1-\lambda_p)\frac{\partial \eta}{\partial t}=-(\frac{q_{out}-q_{in}}{\delta x})  
+(1-\lambda_p)\frac{\partial \eta}{\partial t}=-(\frac{q_{out}-q_{in}}{\Delta x})  
 $$
 
 {:start="6"}
