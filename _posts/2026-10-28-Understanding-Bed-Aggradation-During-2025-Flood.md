@@ -64,7 +64,7 @@ The next plots are the same as Fig. 1 and 3 but zoomed in to the extents shown i
 
 How will $\frac{\partial \eta}{\partial t}$ change as $Q_{in}$ increases? My first thought was that as $Q_{in}$ increases, the bed change in time should increase. However, I think the answer will be more complicated once I code up the mini model. To address this question, I put $\frac{\partial \eta}{\partial t}$ in terms of $Q_{in}$, so that $\frac{\partial \eta}{\partial t} = f(Q_{in})$. Then I took the derivative with respect to Q and plotted the derivative as well as the function for $\frac{\partial \eta}{\partial t}$. I assume that $Q_{overflow}$ stays constant. 
 
-<img width="700" alt="image" src="https://github.com/user-attachments/assets/bff87c97-f308-4f24-a03b-f4ab60bc13b1" />
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/645b14ed-e706-4754-a209-b78440b9f179" />
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/d6fd260e-b0e7-40b5-bbfc-35380e36ae49" />
 
