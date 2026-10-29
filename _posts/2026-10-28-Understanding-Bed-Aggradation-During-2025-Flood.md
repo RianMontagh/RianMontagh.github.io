@@ -72,7 +72,15 @@ How will $\frac{\partial \eta}{\partial t}$ change as $Q_{in}$ increases? My fir
 
 These equations are pretty messy! It is immediately clear that there is no linear relationship here. I plotted the expression for $\frac{\partial \eta}{\partial t}$ in Desmos as pasted below: 
 
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/c9278c5e-1bf7-43a5-adeb-0d511dc6d7a3" />
 
+I am guessing that something is off with my constants because these are very small changes in bed level. However, the shape of the curve indicates that at small $Q_{in}$, the $\frac{\partial \eta}{\partial t}$ is the highest and as $Q_{in}$ increases, $\frac{\partial \eta}{\partial t}$ asymptotes to zero. This makes sense to me because as we hold $Q_{overflow}$ constant, the $Q_{in}$ and $Q_{out}$ become about the same at high $Q_{in}$. $Q_{overflow}$ becomes negligible. 
+
+Similarly, the change in $\frac{\partial \eta}{\partial t}$ with respect to $Q_{in}$ asymptotes to zero, shown below.
+
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/a32b93a6-8481-4140-9f18-5aa6c80fc69d" />
+
+The take away from this is that bed change is positive, and is greatest when $Q_{in}$ >> $Q_{out}$. This is in line with the idea behind the feedback loop. We think that a bigger storm will cause a greater difference between the flow in and flow out of the Everson area. 
 
 
 
