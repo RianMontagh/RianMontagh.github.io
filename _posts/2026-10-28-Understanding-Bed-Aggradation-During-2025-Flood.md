@@ -1,6 +1,6 @@
 # Understanding Aggradation during the 2025 Flood
 
-So far, I have created analyses for bed change during the 2025 flood by averaging the bed level along bankfull cross sections and plotting these cross sectionally averaged values from upstream to downstream. I have several versions of these plots &mdash; including raw elevation values at bankfull and peak discharge and differenced values. I want to find ways to make these plots more quantitative and easy to get coherent patterns from. 
+So far, I have created analyses for bed change during the 2025 flood by averaging the bed level along bankfull cross sections and plotting these cross sectionally averaged values from upstream to downstream. I have several versions of these plots &mdash; including raw elevation values at bankfull and peak discharge and differenced values. I want to find ways to make these plots more quantitative and easy to get coherent patterns from. I want to be able to show that there is aggradation happening at the overflow section help me understand why the bigger floods don't show the strong feedback loop (at least in terms of normalized overflow to Sumas). 
 
 ## Visualizing the Bed Difference
 
@@ -50,6 +50,8 @@ These plots help give a sense of location and a sense of what I mean when I say 
 
 ### Zoomed in Plots of Bed Change to Compare with the Plan View Plots
 
+The next plots are the same as Fig. 1 and 3 but zoomed in to the extents shown in the plan view plots. I picture these shown together to get a sense of how the bed is changing. 
+
 <img width="900" alt="image" src="https://github.com/user-attachments/assets/d3114351-9c5d-484d-859b-76bc71930677" />
 
 *Figure 6. Streamwise consecutive bed change in Everson reach*
@@ -60,7 +62,9 @@ These plots help give a sense of location and a sense of what I mean when I say 
 
 ## Developing Hypotheses for my Mini Model
 
-1. How do 
+How will $\frac{\partial \eta}{\partial t}$ change as $Q_{in}$ increases? My first thought was that as $Q_{in}$ increases, the bed change in time should increase. However, I think the answer will be more complicated once I code up the mini model. To address this question, I put $\frac{\partial \eta}{\partial t}$ in terms of $Q_{in}$, so that $\frac{\partial \eta}{\partial t} = f(Q_{in})$. Then I took the derivative with respect to Q and plotted the derivative as well as the function for $\frac{\partial \eta}{\partial t}$. I assume that $Q_{overflow}$ stays constant. 
+
+
 
 
 
