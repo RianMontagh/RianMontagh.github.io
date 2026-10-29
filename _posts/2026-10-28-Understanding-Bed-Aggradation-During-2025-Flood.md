@@ -60,6 +60,16 @@ The next plots are the same as Fig. 1 and 3 but zoomed in to the extents shown i
 
 *Figure 7. Streamwise cumulative bed change in Everson reach*
 
+### Quantifying Bed Change from Twin View to Everson Bridge
+
+I decided to try and get at the net aggradation and erosion between the Twin View levee and the Everson Bridge. I don't think I fully answered this question, but I did add up the total bed change at each cross section to get a net change, and I also divided this value by the number of cross sections to get the average total bed change at each cross section. 
+
+| Sum of cross-sectionally averaged bed change from Twin View to Everson Bridge | Average bed change at each cross section from Twin View to Everson Bridge |
+| ----------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| 1.32 m | 0.0239 m |
+
+However, these values do not take into account the fact that the length of each cross section is different. For example, 0.5 m aggradation over a 100 m cross section is not the same amount of volume change as 0.5 m over a 200 m cross section. I think a better way to quantify this would be a net volume deposited/eroded, which is possible because the model saves the area of each grid cell. I would simply multiply the bed change at each cell by the cell area and sum them up and average by the number of cells. 
+
 ## Developing Hypotheses for my Mini Model
 
 How will $\frac{\partial \eta}{\partial t}$ change as $Q_{in}$ increases? My first thought was that as $Q_{in}$ increases, the bed change in time should increase. However, I think the answer will be more complicated once I code up the mini model. To address this question, I put $\frac{\partial \eta}{\partial t}$ in terms of $Q_{in}$, so that $\frac{\partial \eta}{\partial t} = f(Q_{in})$. Then I took the derivative with respect to Q and plotted the derivative as well as the function for $\frac{\partial \eta}{\partial t}$. I assume that $Q_{overflow}$ stays constant. 
