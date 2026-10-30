@@ -40,7 +40,7 @@ $$
 \frac{\Delta \eta}{\Delta t}\sim a^\frac{9}{10}-(a-x)^\frac{9}{10}
 $$
 
-In most cases that we are considering so far, $x << a$. In model runs so far I believe $Q_{over}$ is about 0.2 to 0.4 of $Q_in$. If this is the case, then we can see that the first and second terms in the equation are about the same because $x$ is small. This means that the two terms represent two points that are close together on the function $f(x) = x^\frac{9}{10}$. The derivative of $f(x)$ at $x=a$ can be approximated as:
+In most cases that we are considering so far, $x << a$. In model runs so far I believe $Q_{over}$ is about 0.2 to 0.4 of $Q_{in}$, so this may only be a good assumption in some cases. If we can say that $x << a$, then we can see that the first and second terms in the equation are about the same because $x$ is small. This means that the two terms represent two points that are close together on the function $f(x) = x^\frac{9}{10}$. The derivative of $f(x)$ at $x=a$ can be approximated as:
 
 $$ 
 f\prime(x=a)=\frac{f(a)-f(a-\Delta x)}{\Delta x}
