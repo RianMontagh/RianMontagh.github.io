@@ -28,13 +28,15 @@ $$
 q_{s,in}\sim Q_{in}^\frac{9}{10}
 $$
 
-If we hold $Q_{out}$ to be constant, then we get the result:
+## Understanding dependency on $Q_{out}$
+
+If we hold $Q_{in}$ to be constant, then we can get at the relationship between $Q_{out}$ and $\frac{\Delta \eta}{\Delta t}$. We can start with the same equation for $\frac{\Delta \eta}{\Delta t}$:
 
 $$ 
 \frac{\Delta \eta}{\Delta t}\sim Q_{in}^\frac{9}{10}-(Q_{in}-Q_{over})^\frac{9}{10}
 $$
 
-which we can simplify by calling $Q_{in}=a$ because now we are considering it to be a constant and $Q_{over}=x$ because it is out dependent variable. 
+which we can simplify by calling $Q_{in}=a$ because now we are considering it to be a constant and $Q_{over}=x$ because it is our dependent variable. 
 
 $$ 
 \frac{\Delta \eta}{\Delta t}\sim a^\frac{9}{10}-(a-x)^\frac{9}{10}
@@ -64,4 +66,31 @@ $$
 \frac{\Delta \eta}{\Delta t}=a^\frac{9}{10}-(a-\Delta x)^\frac{9}{10}=\frac{9}{10}a^\frac{-1}{10}\Delta x
 $$
 
-This tells us that $\frac{\Delta \eta}{\Delta t}$ varies approximately linearly with $\Delta x$, which is the same as our $Q_{over}$ when $Q_{over}$ is small compared to $Q_{in}$. 
+This tells us that $\frac{\Delta \eta}{\Delta t}$ varies approximately linearly with $\Delta x$, which is the same as our $Q_{over}$ when $Q_{over}$ is small compared to $Q_{in}$. we can say that the rate of change of the bed elevation is linear with $Q_{over}$ when holding $Q_{in}$ constant and without making adjustments in time. 
+
+## Adding in nonlinearity through the $Q_{over}$ feedback
+
+Now that we understand the $\frac{\Delta \eta}{\Delta t}$ equation's dependence on $Q_{over}$ and $Q_{in}$ a little better, we can start adding in the feedback where $\frac{\Delta \eta}{\Delta t}$ modifies $Q_{over}$. Last week's discussion with Alex and Wuming led to me using the equation for weir flow to approximate flow from the channel onto the floodplain. This addition to the model adds a need for a timestep to solve for an absolute change in bed level during that timestep. 
+
+The general equation for flow over a broad-crested weir is:
+
+$$
+Q_{over}=C_wLH^\frac{3}{2}
+$$
+
+where $H$ is the head of water above the weir crest, $L$ is the width of the crest, and $C_w$ is the weir coefficient. I think a broad-crested weir is the appropriate weir type in our case because topographic features act more as bumps with a significant depth to them. 
+
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/bd799dbc-3d24-465d-8ed8-806f59cbb348" />
+
+Now we can focus on getting an absolute change in bed level. Conceptually, at $t_0$ we have an initial bed level and $Q_{over}$. All other parameters are constant in time. Then the following steps can take place.
+
+1. Calculate the upstream flow depth using Mannings equation from $Q_{in}$ (this does not change in time, which is a major simplification in the model).
+2. Calculate $Q_{over}$ at $t_0$ using the weir equation and calculating $H$ based on the flow depth from (1) and the elevation of the bed and the weir crest.
+3. Calculate a $\Delta eta$ using an ODE solver in MATLAB. Or, I can solve for $\Delta eta$ by doing my own discretization. At each timestep, update the $Q_{over}$ before calculating the next bed change.
+
+Next, I want to see if I can gain any insight into the nonlinearity of the feedback loop.
+
+
+
+
+
