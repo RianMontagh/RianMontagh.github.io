@@ -16,7 +16,7 @@ $$
 \frac{\Delta \eta}{\Delta t}\sim Q_{in}^\frac{9}{10}-(Q_{in}-Q_{over})^\frac{9}{10}
 $$
 
-As $Q_{in}$ gets larger, $Q_{over}$ becomes insignificant and $\frac{\Delta \eta}{\Delta t}$ goes to zero. When holding $Q_{out}$ constant, we would expect the greatest rate of deposition to occur when $Q_{in}$ is closest in magnitude to $Q_{over}$, so that proportionally the difference between $Q_{in}$ and $Q_{out}$ is the greatest. Interestingly, the $q_s$ terms scale almost linearly with $Q$ because the exponent $\frac{9}{10}$ is close to 1. At first this result surprised me because my plotting of $\frac{\Delta \eta}{\Delta t}$ with respect to $Q_{in}$ seemed complicated. 
+As $Q_{in}$ gets larger, $Q_{over}$ becomes insignificant and $\frac{\Delta \eta}{\Delta t}$ goes to zero. When holding $Q_{over}$ constant, we would expect the greatest rate of deposition to occur when $Q_{in}$ is closest in magnitude to $Q_{over}$, so that proportionally the difference between $Q_{in}$ and $Q_{out}$ is the greatest. Interestingly, the $q_s$ terms scale almost linearly with $Q$ because the exponent $\frac{9}{10}$ is close to 1. At first this result surprised me because my plotting of $\frac{\Delta \eta}{\Delta t}$ with respect to $Q_{in}$ seemed complicated. 
 
 $$
 q_{s,in} = C_1(C_2Q_{in}^\frac{3}{5}-C_3)^\frac{3}{2}
