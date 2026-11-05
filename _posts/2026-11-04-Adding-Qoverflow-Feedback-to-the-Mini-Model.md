@@ -90,7 +90,7 @@ Now we can focus on getting an absolute change in bed level. Conceptually, at $t
 
 Next, I want to see if I can gain any insight into the nonlinearity of the feedback loop.
 
-## Nonlinearity in the mini model
+## A more analytical look at nonlinearity in the mini model
 
 Let's express $Q_{over}$ in terms of $\eta$. If we substitute $H=\eta+y_{in}-h_{weir}$ into the weir equation, where $y_{in}$ is the flow depth from $Q_{in}$ we get:
 
