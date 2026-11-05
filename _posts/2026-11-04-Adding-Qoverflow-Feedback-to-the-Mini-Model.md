@@ -115,7 +115,7 @@ From inspection of this equation, I do not see a way to get a simple power law t
 Recall from the section in this blog called "Understanding dependency on $Q_{out}$" we got the linear relationship below:
 
 $$
-\frac{\Delta \eta}{\Delta t}\approx a^\frac{9}{10}-(a-\Delta x)^\frac{9}{10}=\frac{9}{10}a^\frac{-1}{10}\Delta x
+\frac{\Delta \eta}{\Delta t}\approx a^\frac{9}{10}-(a-\Delta x)^\frac{9}{10}\approx\frac{9}{10}a^\frac{-1}{10}\Delta x
 $$
 
 where $\Delta x$ represents $Q_{over}$. If we sub in the weir equation for $\Delta x$
