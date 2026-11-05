@@ -86,7 +86,7 @@ Now we can focus on getting an absolute change in bed level. Conceptually, at $t
 
 1. Calculate the upstream flow depth using Mannings equation from $Q_{in}$ (this does not change in time, which is a major simplification in the model).
 2. Calculate $Q_{over}$ at $t_0$ using the weir equation and calculating $H$ based on the flow depth from (1) and the elevation of the bed and the weir crest.
-3. Calculate a $\Delta \eta$ using an ODE solver in MATLAB. Or, I can solve for $\Delta eta$ by doing my own discretization. At each timestep, update the $Q_{over}$ before calculating the next bed change.
+3. Calculate a $\Delta \eta$ using an ODE solver in MATLAB. Or, I can solve for $\Delta \eta$ by doing my own discretization. At each timestep, update the $Q_{over}$ before calculating the next bed change.
 
 Next, I want to see if I can gain any insight into the nonlinearity of the feedback loop.
 
