@@ -7,7 +7,7 @@ Last week, I did analytical work to get a sense of how my mini model will respon
 Last week, I solved an expression for $\frac{\Delta \eta}{\Delta t}$ as a function of $Q_{in}$. 
 
 $$
-\frac{\Delta \eta}{\Delta t}=C_5\left[(C_2Q_{in}^\frac{3}{5}-C_3)^\frac{3}{2}+(C_2(Q_{in}-Q_{over})^\frac{3}{5}-C_3)^\frac{3}{2}\right]
+\frac{\Delta \eta}{\Delta t}=C_5\left[(C_2Q_{in}^\frac{3}{5}-C_3)^\frac{3}{2}-(C_2(Q_{in}-Q_{over})^\frac{3}{5}-C_3)^\frac{3}{2}\right]
 $$
 
 Each constant in the equation represents properties of the channel or sediment that I am saying are fixed in the model. Specifically, $C_3$ is the nondimensional critical shear stress $\tau_c^*$, which equals 0.047. At high flows, which is what we are interested in, we would expect the bed shear stress from the $Q_{in}$ and $Q_{out}$ to dominate over $\tau_c^\ast$. We can identify a simplified equation where:
@@ -101,13 +101,13 @@ $$
 Now, let's substitute this equation in for $Q_{over}$ in our Exner equation, which is the first equation introduced in this blog. Let's say that $C_6=y_{in}-h_{weir}$. Then,
 
 $$
-\frac{\Delta \eta}{\Delta t}=C_5\left[(C_2Q_{in}^\frac{3}{5}-C_3)^\frac{3}{2}+(C_2(Q_{in}-Q_{over})^\frac{3}{5}-C_3)^\frac{3}{2}\right]
+\frac{\Delta \eta}{\Delta t}=C_5\left[(C_2Q_{in}^\frac{3}{5}-C_3)^\frac{3}{2}-(C_2(Q_{in}-Q_{over})^\frac{3}{5}-C_3)^\frac{3}{2}\right]
 $$
 
 becomes
 
 $$
-\frac{\Delta \eta}{\Delta t}=C_5\left[(C_2Q_{in}^\frac{3}{5}-C_3)^\frac{3}{2}+(C_2(Q_{in}-C_wL(C_6+\eta)^\frac{3}{2})^\frac{3}{5}-C_3)^\frac{3}{2}\right]
+\frac{\Delta \eta}{\Delta t}=C_5\left[(C_2Q_{in}^\frac{3}{5}-C_3)^\frac{3}{2}-(C_2(Q_{in}-C_wL(C_6+\eta)^\frac{3}{2})^\frac{3}{5}-C_3)^\frac{3}{2}\right]
 $$
 
 
