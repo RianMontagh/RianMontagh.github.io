@@ -45,25 +45,25 @@ $$
 In most cases that we are considering so far, $x << a$. In model runs so far I believe $Q_{over}$ is about 0.2 to 0.4 of $Q_{in}$, so this may only be a good assumption in some cases. If we can say that $x << a$, then we can see that the first and second terms in the equation are about the same because $x$ is small. This means that the two terms represent two points that are close together on the function $f(x) = x^\frac{9}{10}$. The derivative of $f(x)$ at $x=a$ can be approximated as:
 
 $$ 
-f\prime(x=a)=\frac{f(a)-f(a-\Delta x)}{\Delta x}
+f\prime(x=a)\approx \frac{f(a)-f(a-\Delta x)}{\Delta x}
 $$
 
 Plugging in for $f()$:
 
 $$ 
-f\prime(x=a)=\frac{a^\frac{9}{10}-(a-\Delta x)^\frac{9}{10}}{\Delta x}
+f\prime(x=a)\approx \frac{a^\frac{9}{10}-(a-\Delta x)^\frac{9}{10}}{\Delta x}
 $$
 
 Rearranging to get our equation for $\frac{\Delta \eta}{\Delta t}$:
 
 $$
-\frac{\Delta \eta}{\Delta t}=a^\frac{9}{10}-(a-\Delta x)^\frac{9}{10}=f\prime(x=a)\Delta x
+\frac{\Delta \eta}{\Delta t}\approx a^\frac{9}{10}-(a-\Delta x)^\frac{9}{10}\approx f\prime(x=a)\Delta x
 $$
 
 And substituting $f\prime(x=a)=\frac{9}{10}a^\frac{-1}{10}$
 
 $$
-\frac{\Delta \eta}{\Delta t}=a^\frac{9}{10}-(a-\Delta x)^\frac{9}{10}=\frac{9}{10}a^\frac{-1}{10}\Delta x
+\frac{\Delta \eta}{\Delta t}\approx a^\frac{9}{10}-(a-\Delta x)^\frac{9}{10}\approx \frac{9}{10}a^\frac{-1}{10}\Delta x
 $$
 
 This tells us that $\frac{\Delta \eta}{\Delta t}$ varies approximately linearly with $\Delta x$, which is the same as our $Q_{over}$ when $Q_{over}$ is small compared to $Q_{in}$. we can say that the rate of change of the bed elevation is linear with $Q_{over}$ when holding $Q_{in}$ constant and without making adjustments in time. 
