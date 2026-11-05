@@ -110,7 +110,28 @@ $$
 \frac{\Delta \eta}{\Delta t}=C_5\left[(C_2Q_{in}^\frac{3}{5}-C_3)^\frac{3}{2}-(C_2(Q_{in}-C_wL(C_6+\eta)^\frac{3}{2})^\frac{3}{5}-C_3)^\frac{3}{2}\right]
 $$
 
-From inspection of this equation, I do not see a simple power law that can describe the nonlinearity. 
+From inspection of this equation, I do not see a way to get a simple power law that can describe the nonlinearity. However, we can use the conclusion of the argument that then $Q_{over}<<Q_{in}$, then $\frac{\Delta \eta}{\Delta t}$ is approximately linear with respect to $Q_{over}$. If we then substitute our weir equation in for $Q_{over}$, then we can get a simpler nonlinear relationship.
 
+Recall from the section in this blog called "Understanding dependency on $Q_{out}$" we got the linear relationship below:
+
+$$
+\frac{\Delta \eta}{\Delta t}=a^\frac{9}{10}-(a-\Delta x)^\frac{9}{10}=\frac{9}{10}a^\frac{-1}{10}\Delta x
+$$
+
+where $\Delta x$ represents $Q_{over}$. If we sub in the weir equation for $\Delta x$
+
+$$
+\frac{\Delta \eta}{\Delta t}=\frac{9}{10}a^\frac{-1}{10}*C_wL(\eta+y_{in}-h_{weir})^\frac{3}{2}
+$$
+
+Ignoring all of the constants outside of the exponent:
+
+$$
+\frac{\Delta \eta}{\Delta t}\sim (\eta+y_{in}-h_{weir})^\frac{3}{2}
+$$
+
+So, my hypothesis is that the change in bed elevation should increase like the head over the weir crest to the power of $\frac{3}{2}$.
+
+Next, I want to solve for $Q_out$ and see how it depends on $\eta$. 
 
 
