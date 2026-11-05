@@ -22,7 +22,7 @@ $$
 q_{s,in} = C_1(C_2Q_{in}^\frac{3}{5}-C_3)^\frac{3}{2}
 $$
 
-Again, during a flood $Q_{in}^\frac{3}{5} >> \tau_c^\ast$, where $\tau_c^\ast=C_3$. Therefore we get the scaling relationship:
+Again, during a flood $\tau_{in} >> \tau_c^\ast$, where $\tau_c^\ast=C_3$ and $\tau_{in}=C_2Q_{in}^\frac{3}{5}$. Therefore we get the scaling relationship:
 
 $$
 q_{s,in}\sim Q_{in}^\frac{9}{10}
