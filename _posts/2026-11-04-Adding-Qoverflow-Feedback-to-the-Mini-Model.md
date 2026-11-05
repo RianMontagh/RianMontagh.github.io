@@ -110,7 +110,7 @@ $$
 \frac{\Delta \eta}{\Delta t}=C_5\left[(C_2Q_{in}^\frac{3}{5}-C_3)^\frac{3}{2}-(C_2(Q_{in}-C_wL(C_6+\eta)^\frac{3}{2})^\frac{3}{5}-C_3)^\frac{3}{2}\right]
 $$
 
-
+From inspection of this equation, I do not see a simple power law that can describe the nonlinearity. 
 
 
 
