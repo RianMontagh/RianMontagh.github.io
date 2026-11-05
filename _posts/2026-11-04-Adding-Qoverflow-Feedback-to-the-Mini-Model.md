@@ -90,7 +90,25 @@ Now we can focus on getting an absolute change in bed level. Conceptually, at $t
 
 Next, I want to see if I can gain any insight into the nonlinearity of the feedback loop.
 
+## Nonlinearity in the mini model
 
+Let's express $Q_{over}$ in terms of $\eta$. If we substitute #H=\eta+y_{in}-h_{weir}$ into the weir equation, where $y_{in}$ is the flow depth from $Q_{in}$ we get:
+
+$$
+Q_{over}=C_wL(\eta+y_{in}-h_{weir})^\frac{3}{2}
+$$
+
+Now, let's substitute this equation in for $Q_{over}$ in our Exner equation, which is the first equation introduced in this blog. Let's say that $C_6=y_{in}-h_{weir}$. Then,
+
+$$
+\frac{\Delta \eta}{\Delta t}=C_5\left[(C_2Q_{in}^\frac{3}{5}-C_3)^\frac{3}{2}+(C_2(Q_{in}-Q_{over})^\frac{3}{5}-C_3)^\frac{3}{2}\right]
+$$
+
+becomes
+
+$$
+\frac{\Delta \eta}{\Delta t}=C_5\left[(C_2Q_{in}^\frac{3}{5}-C_3)^\frac{3}{2}+(C_2(Q_{in}-C_wL(C_6+\eta)^\frac{3}{2})^\frac{3}{5}-C_3)^\frac{3}{2}\right]
+$$
 
 
 
