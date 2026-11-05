@@ -86,13 +86,13 @@ Now we can focus on getting an absolute change in bed level. Conceptually, at $t
 
 1. Calculate the upstream flow depth using Mannings equation from $Q_{in}$ (this does not change in time, which is a major simplification in the model).
 2. Calculate $Q_{over}$ at $t_0$ using the weir equation and calculating $H$ based on the flow depth from (1) and the elevation of the bed and the weir crest.
-3. Calculate a $\Delta eta$ using an ODE solver in MATLAB. Or, I can solve for $\Delta eta$ by doing my own discretization. At each timestep, update the $Q_{over}$ before calculating the next bed change.
+3. Calculate a $\Delta \eta$ using an ODE solver in MATLAB. Or, I can solve for $\Delta eta$ by doing my own discretization. At each timestep, update the $Q_{over}$ before calculating the next bed change.
 
 Next, I want to see if I can gain any insight into the nonlinearity of the feedback loop.
 
 ## Nonlinearity in the mini model
 
-Let's express $Q_{over}$ in terms of $\eta$. If we substitute #H=\eta+y_{in}-h_{weir}$ into the weir equation, where $y_{in}$ is the flow depth from $Q_{in}$ we get:
+Let's express $Q_{over}$ in terms of $\eta$. If we substitute $H=\eta+y_{in}-h_{weir}$ into the weir equation, where $y_{in}$ is the flow depth from $Q_{in}$ we get:
 
 $$
 Q_{over}=C_wL(\eta+y_{in}-h_{weir})^\frac{3}{2}
@@ -109,6 +109,8 @@ becomes
 $$
 \frac{\Delta \eta}{\Delta t}=C_5\left[(C_2Q_{in}^\frac{3}{5}-C_3)^\frac{3}{2}+(C_2(Q_{in}-C_wL(C_6+\eta)^\frac{3}{2})^\frac{3}{5}-C_3)^\frac{3}{2}\right]
 $$
+
+
 
 
 
