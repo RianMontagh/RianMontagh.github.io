@@ -90,5 +90,8 @@ eta_0 = 0; % [m] initial bed elevation, this is our datum
 wc_Emerson = 28.2-eta_0_bankfull; % [m] weir crest elevation
 ```
 
+## Evaluating the Governing Equations
+
+
 
 
