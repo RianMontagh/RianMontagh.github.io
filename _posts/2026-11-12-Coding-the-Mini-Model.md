@@ -65,9 +65,30 @@ gamma_water = rho_water * g; % [N/m^3] specific weight of water
 
 4. Meyer-Peter-Muller
 
-The density of the sediment is the density for granite/quartz, which is used in the model, and the median grain size is taken from the following figure which I believe is an NHC figure.
+The density of the sediment is the density for granite/quartz, which is used in the model, and the median grain size is taken from the following figure which I believe is an NHC figure. The nondimensional critical shear is 0.047 as found by MPM. With these values I can calculate the submerged specific gravity, $R$. 
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/9350e1ae-b047-4e20-8249-61b5cd9ef860" />
+
+5. Exner
+
+The two missing parameters for the Exner equation are the bed porosity (volume of void space per volume of bed) and the along channel length of the control volume. In the Delft3D model, we define the dry bed density, which is the mass of sediment per volume of bed. We can calculate a bed porosity from this value. I defined the $dx$ term based on the distance from the Twin View levee to the Everson Bridge. 
+
+```matlab
+rho_drybed = 1800; % [kg/m^3] dry bed density, mass of sediment per bed volume
+lambda_p = 1-rho_drybed/rho_s; % [-] porosity, percent of the bed volume that is void space
+dx = 1818; % [m] from TV to EB
+```
+
+6. Weir Equation
+
+Lastly, we need to define our initial bed elevation and the elevation of our "weir." I decided to make elevations relative to the initial bed elevation, which means the initial bed elevation is our datum. The height of the weir crest is therefore the difference of the elevation of the weir crest and the elevation of the initial bed elevation. I calculated the bed elevation for the lowflow and bankfull channels and decided to start with the bankfull bed elevation as the datum. For the weir elevation, I decided to go with the average elevation along Emerson Road as this is the closest nonerodible high point in the overflow pathway.
+
+```matlab
+eta_0_bankfull = 24.5; % [m] average elevation along the bankfull centerline from TV to EB
+eta_0_lowflow = 22.9; % [m] average elevation along the lowflow centerline from TV to EB
+eta_0 = 0; % [m] initial bed elevation, this is our datum
+wc_Emerson = 28.2-eta_0_bankfull; % [m] weir crest elevation
+```
 
 
 
