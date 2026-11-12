@@ -65,7 +65,7 @@ gamma_water = rho_water * g; % [N/m^3] specific weight of water
 
 4. Meyer-Peter-Muller
 
-The density of the sediment is the density for granite/quartz, which is used in the model, and the median grain size is taken from the following figure which I believe is an NHC figure. The nondimensional critical shear is 0.047 as found by MPM. With these values I can calculate the submerged specific gravity, $R$. 
+The density of the sediment is the density for granite/quartz, which I set the same in the Delft3D model. The median grain size is taken from the following figure which an NHC figure from their 2025 "Lower Nooksack River 1D HEC-RAS Sediment Model Draft Report". The nondimensional critical shear is 0.047 as found by MPM. With these values I can calculate the submerged specific gravity, $R$. 
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/9350e1ae-b047-4e20-8249-61b5cd9ef860" />
 
@@ -91,6 +91,10 @@ wc_Emerson = 28.2-eta_0_bankfull; % [m] weir crest elevation
 ```
 
 ## Evaluating the Governing Equations
+
+The final step in this process is to solve the governing equations, especially the Exner ODE. First, I solved for all the upstream variables ($Q_{in}, y_{in}, \tau_{in}, q_{s,in}$) as these are constant. I set up a conditional if statement to ensure that the upstream flow depth is greater than the height of the weir crest so that there is overflow at the initial time step. I quickly found that my first try of $Q_{in}=850 cms$ was not enough flow to overtop the weir crest in my model setup. I increased $Q_{in}$ until overtopping was achieved, which ended up being at a value of 2,500 cms to generate a head of 0.2 m. I am guessing that the mini model needs a much higher $Q_{in}$ because there are no backwater effects to accelerate overtopping in the mini model. I set the condition of overtopping to be a prerequisite for the model to solve the Exner equation because otherwise the model might reflect other processes than the overtopping feedback mechanism.
+
+I then wrote a function called `bed_evolution` for input into a MATLAB ODE solver. The `bed_evolution` function first computes the downstream variables ($Q_{out}, y_{out}, \tau_{out}, q_{s,out}$) based on the current $\eta$ and returns the computed $\frac{\partial \eta}{\partial t}$
 
 
 
