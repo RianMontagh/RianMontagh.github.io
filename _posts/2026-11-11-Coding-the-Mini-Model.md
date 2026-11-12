@@ -94,7 +94,38 @@ wc_Emerson = 28.2-eta_0_bankfull; % [m] weir crest elevation
 
 The final step in this process is to solve the governing equations, especially the Exner ODE. First, I solved for all the upstream variables ($Q_{in}, y_{in}, \tau_{in}, q_{s,in}$) as these are constant. I set up a conditional if statement to ensure that the upstream flow depth is greater than the height of the weir crest so that there is overflow at the initial time step. I quickly found that my first try of $Q_{in}=850 cms$ was not enough flow to overtop the weir crest in my model setup. I increased $Q_{in}$ until overtopping was achieved, which ended up being at a value of 2,500 cms to generate a head of 0.2 m. I am guessing that the mini model needs a much higher $Q_{in}$ because there are no backwater effects to accelerate overtopping in the mini model. I set the condition of overtopping to be a prerequisite for the model to solve the Exner equation because otherwise the model might reflect other processes than the overtopping feedback mechanism.
 
-I then wrote a function called `bed_evolution` for input into a MATLAB ODE solver. The `bed_evolution` function first computes the downstream variables ($Q_{out}, y_{out}, \tau_{out}, q_{s,out}$) based on the current $\eta$ and returns the computed $\frac{\partial \eta}{\partial t}$
+I then wrote a function called `bed_evolution` for input into a MATLAB ODE solver. The `bed_evolution` function first computes the downstream variables ($Q_{out}, y_{out}, \tau_{out}, q_{s,out}$) based on the current $\eta$ and returns the computed $\frac{\partial \eta}{\partial t}$ and $Q_{over}$ as its output. 
+
+I reviewed my notes from AMATH 581: Scientific Computing to remind myself of the different methods for solving ODEs. I ended up choosing the MATLAB function `ode45` which uses a Runge-Kutta (4,5) method. This method is explicit, so it only needs the value at the previous timestep to compute the next timestep. This is applicable to the Exner ODE because it can be arranged so that you only need the current $\eta$ to solve for the next $\eta$ value. The numbers 4,5 relate to the truncation error &mdash; the 4 means the global error is fourth order, while the local error is fifth order. That is, the local error at each time step is fifth order while the sum of these errors (global error) is fourth order. Higher order error is better because, for example, fifth order error means the truncated term is on the order of $\Delta t^5$. 
+
+```matlab
+[t,eta] = ode45(@(t, eta) bed_evolution(t, eta, params), [0 tf], eta_0);
+```
+
+## Initial Results
+
+The initial results for the model setup described above are shown below. Specifically, I plot $\eta,\frac{d\eta}{dt},Q_{over}$. I modeled for a very long time to see the range of behavior of the variable. There is a slight nonlinearity but overall the trends in the following plots look close to linear.
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/9f93a820-efe8-4f2b-85e1-96f82819891b" />
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/5e0fb469-0883-453e-af3e-4e6a21a51446" />
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/157f532a-b0b2-4cae-866d-4fe4d01db228" />
+
+Zooming in to the event timescale, the trends are very linear. 
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/00132d0d-cbe8-479f-becf-2cae32301502" />
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/5e802e2c-907b-447d-87f2-a64e011cc9fb" />
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/0d095d9d-4019-4ee4-8cbb-e000a3df6163" />
+
+
+
+
+
+
+
 
 
 
