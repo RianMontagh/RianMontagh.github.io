@@ -141,7 +141,11 @@ Next, I want to write out my equations with all the constants and revisit my ana
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/b1981aef-9a83-4441-a0b0-1ddff140dc6a" />
 
-$\frac{d\eta}{dt}$ does look linear with $Q_{over}$! This seems to hold even when $Q_{over}$ is over 50% the magnitude of $Q_{in}$. 
+$\frac{d\eta}{dt}$ does look linear with $Q_{over}$! This seems to hold even when $Q_{over}$ is over 50% the magnitude of $Q_{in}$. The black line in this plot above is simply connecting the model data points. Next, I fit a linear trend line to the data, excluding the last point where $Q_{over}$ gets very close to $Q_{in}$, to get a more quantitative idea of the linearity and goodness of fit.
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/b2967a1c-7fc7-4733-9cf5-1d5eb7f6b160" />
+
+The $R^2$ value is very high here. However, visually I do see a slight concave down coherent curve in the modeled data. I think that one way I could check my model further is to plot the line as predicted by the full ODE equation with constants included. I feel confident from this plot that my prediction that $d\eta /dt$ vs. $Q_{over}$ can be approximated with a linear relationship at the smaller range of $Q_{over}$ values, but definitely is not exactly linear. The normalized RMSE (NRMSE) value is small, which adds to my confidence that the linear approximation captures the first order behavior of the relationship. I normalized the RMSE by the range of values in the modeled output (excluding the last value). 
 
 Next, let's see how $\frac{d\eta}{dt}$ varies with weir head H.
 
@@ -153,7 +157,7 @@ First, I plotted the data with a fitted power law relationship of the form $ax^b
 
 To me, this fit is not bad! However, I want to go back to my CEWA 565: Data Analysis in Water Science notes to refresh myself on the details of these curve fitting functions and how to interpret them.
 
-
+## Closer look at $R^2$ and RMSE
 
 
 
