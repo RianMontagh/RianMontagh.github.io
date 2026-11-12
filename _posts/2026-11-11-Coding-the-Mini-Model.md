@@ -120,6 +120,50 @@ Zooming in to the event timescale, the trends are very linear.
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/0d095d9d-4019-4ee4-8cbb-e000a3df6163" />
 
+There are a few things to note in these results. First, the magnitudes of all the values are very small. I realized this was because I had seen other weir equations where L is defined as the crest length parallel to flow (road width) instead of the weir length perpendicular to flow (overtopped length). After changing `Lw_Emerson` from 6 m to 150 m, I started getting somewhere more meaningful. I started getting errors because I hadn't added fail safes for when $Q_{over}>Q_{in}$ or for when $Q_{out}$ is so small that $\tau_{out}^\ast<\tau_c^\ast$. Both of these conditions are met when $Q_{out}$ gets very small, so I added a `Qout_min` variable set to 1% of $Q_{in}$. This updated model returned the following results. Note that for the same time range the model now stops itself at ~50 days. 
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/b0954e6e-f420-48e9-ace9-ad983fa13eb3" />
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/63f010f4-1abe-4d5a-8864-f44613c6e041" />
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/60db6af4-3086-49df-8991-e213c4f67147" />
+
+For event scales:
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/07f66ea1-6823-4af1-b000-9498d961cd0d" />
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/0c7c630b-4383-4bdf-ad47-2474bf6ac8c3" />
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/658f5720-68b9-423a-b991-faf9713eb425" />
+
+Next, I want to write out my equations with all the constants and revisit my analyses with the constants fully written out instead of represented as 'C's.' My preliminary interpretation of these plots is that they look like what a runaway feedback loop because of the exponential increase. I am realizing now that I had not done any pre-coding analysis of how variables should vary in time, so I don't have anything to compare these above results with. I do, however, have a prediction that $\frac{d\eta}{dt}$ should vary approximately linearly with $Q_{over}$ and like $H^\frac{3}{2}$ at small $Q_{over}$. 
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/b1981aef-9a83-4441-a0b0-1ddff140dc6a" />
+
+$\frac{d\eta}{dt}$ does look linear with $Q_{over}$! This seems to hold even when $Q_{over}$ is over 50% the magnitude of $Q_{in}$. 
+
+Next, let's see how $\frac{d\eta}{dt}$ varies with weir head H.
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/011698ab-e52b-4e41-b41e-6b3127d0e068" />
+
+First, I plotted the data with a fitted power law relationship of the form $ax^b$. The best fit in this case was a linear function as shown above. However, it is clear to me that there is some sort of nonlinear, exponential relationship. Next, I held the exponent fixed at $\frac{3}{2}$ per my prediction and got the following result.
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/a78b3249-c4dd-42d2-b0fc-943751d72a57" />
+
+To me, this fit is not bad! However, I want to go back to my CEWA 565: Data Analysis in Water Science notes to refresh myself on the details of these curve fitting functions and how to interpret them.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
