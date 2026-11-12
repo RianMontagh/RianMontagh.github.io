@@ -15,6 +15,7 @@ I went through the constants by the governing equation they are associated with.
 % we will use a constant Qin
 Qin = 850; % [cms] overflow threshold is about 30k cfs according to Scott Anderson
 ```
+
 2. Mannings
 
 For Mannings, we need the channel width, which we are assuming to stay constant. I took the average length of the bankfull cross sections from the Twin View levee to the Everson Bridge. For Mannings, I did a less precise inspection of the roughness XYZ file in the Delft3D GUI and found that values in the Everson reach are generally around 0.031. The last constant, bed slope, was the most fiddly. I tried a couple of different methods in ArcGIS Pro, starting with the "Add Surface Information" geoprocessing tool which can calculate the average slope for a polyline on a DEM. However, this method gave unrealistically high values of 0.023 for the low flow channel and 0.016 for the bankfull centerline. My theory is that this tool takes the average slope *magnitude* so that positive and negative slopes both contribute to a higher slope value instead of balancing each other out. Instead, I made elevation profiles in ArcGIS using the Exploratory 3D Analysis elevation profile tool. I made one for the low flow channel centerline and another for the bankfull channel centerline, plotted them, and performed a linear regression. See below:
