@@ -155,11 +155,15 @@ First, I plotted the data with a fitted power law relationship of the form $ax^b
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/cc988ab9-34fc-420c-9fdf-1188c10d8f8f" />
 
-To me, this fit is not bad! However, I want to go back to my CEWA 565: Data Analysis in Water Science notes to refresh myself on the details of these curve fitting functions and how to interpret them.
+To me, this fit is great! I think my pre-analysis was on the right track, which feels great. The $R^2% and RMSE values improved after I fixed $b=1.5$. However, I want to go back to my CEWA 565: Data Analysis in Water Science notes to refresh myself on the details of these curve fitting functions and how to interpret them.
 
-## Closer look at $R^2$ and RMSE
+## Quick Stats Review! Looking Closer at $R^2$ and RMSE
 
+This work with curve fitting made me want to really make sure I understood these regressions, which are a basic but important concept. 
 
+## Definitions
+
+Root mean squared error (RMSE): 
 
 
 
