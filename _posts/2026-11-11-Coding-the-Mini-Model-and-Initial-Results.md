@@ -171,11 +171,15 @@ Total sum of squares (SST) tells us how much variance there is in the data from 
 
 $R^2$ tells us how much of the variance computed in the SST is explained by the predicting model (best fit line). If $R^2=0$ then the model does no better at predicting the data than a horizontal line through the mean. A perfect model would have an $R^2=1$ and SSE=0. 
 
+$$
+R^2=1-\frac{SSE}{SST}
+$$
+
 So, in the best fit lines above explain most of the variance in the plotted mini model output. 
 
 ### Root mean squared error (RMSE)
 
-
+The RMSE 
 
 
 
