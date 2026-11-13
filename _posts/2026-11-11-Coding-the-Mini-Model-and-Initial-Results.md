@@ -189,7 +189,7 @@ In CEWA 565, we learned that you should always plot your residuals to see if the
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/be939daf-a0a9-44a8-a507-88fc477ae416" />
 
-<img width="700" alt="image" src="https://github.com/user-attachments/assets/5e5c6da4-ce41-4c94-9cd3-65778e9d472a" />
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/56d9c9dc-3ac3-445a-9fc8-6f61f19cc2d8" />
 
 Indeed, it is clear that the linear model did not capture all of the behavior in the relationship between $\frac{d\eta}{dt}$ and $Q_{over}$ and H. 
 
