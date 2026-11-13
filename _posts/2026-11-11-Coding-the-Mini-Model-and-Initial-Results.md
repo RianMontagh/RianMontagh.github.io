@@ -189,6 +189,13 @@ RMSE is a useful way to compare two different predictions on the same dataset. F
 
 In CEWA 565, we learned that you should always plot your residuals to see if there are any coherent patterns. A well-performing model should have residuals that look like random noise. I tried that out with the expectation that there will be coherent patterns of increasing residuals as $Q_{over}$ gets bigger.
 
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/be939daf-a0a9-44a8-a507-88fc477ae416" />
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/5e5c6da4-ce41-4c94-9cd3-65778e9d472a" />
+
+Indeed, it is clear that the linear model did not capture all of the behavior in the relationship between $\frac{d\eta}{dt}$ and $Q_{over}$ and H. 
+
+
 
 
 
