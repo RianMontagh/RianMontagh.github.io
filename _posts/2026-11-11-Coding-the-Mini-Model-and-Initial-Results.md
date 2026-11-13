@@ -1,4 +1,4 @@
-# Coding the Mini Model
+# Coding the Mini Model and Initial Results
 
 This week I started coding up the mini model which I have spent the last few weeks conceptualizing. I started by defining the constants in the model to reflect the real-world Nooksack as closely as possible and then put the equations into use. 
 
