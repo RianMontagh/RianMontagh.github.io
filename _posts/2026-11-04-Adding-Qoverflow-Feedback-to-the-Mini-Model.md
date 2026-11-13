@@ -132,6 +132,6 @@ $$
 
 So, my hypothesis is that the change in bed elevation should increase like the head over the weir crest to the power of $\frac{3}{2}$.
 
-Next, I want to solve for $Q_out$ and see how it depends on $\eta$. 
+Next, I want to solve for $Q_{out}$ and see how it depends on $\eta$. 
 
 
