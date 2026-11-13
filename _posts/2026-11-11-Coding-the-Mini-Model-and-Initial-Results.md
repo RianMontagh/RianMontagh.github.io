@@ -161,8 +161,6 @@ To me, this fit is great! I think my pre-analysis was on the right track, which 
 
 This work with curve fitting made me want to really make sure I understood these regressions, which are a basic but important concept. 
 
-## Definitions
-
 ### Coefficient of determination: $R^2$
 
 Sum of squared error (SSE) tells us how much error is there between the data and the predicted value: $SSE=\sum_{i=1}^{n} (data-predicted value)^2$
