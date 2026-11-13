@@ -137,7 +137,7 @@ For event scales:
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/658f5720-68b9-423a-b991-faf9713eb425" />
 
-Next, I want to write out my equations with all the constants and revisit my analyses with the constants fully written out instead of represented as 'C's.' My preliminary interpretation of these plots is that they look like what a runaway feedback loop because of the exponential increase. I am realizing now that I had not done any pre-coding analysis of how variables should vary in time, so I don't have anything to compare these above results with. I do, however, have a prediction that $\frac{d\eta}{dt}$ should vary approximately linearly with $Q_{over}$ and like $H^\frac{3}{2}$ at small $Q_{over}$. 
+These magnitudes make more sense for the Everson overflow system. Next, I want to write out my equations with all the constants and revisit my analyses with the constants fully written out instead of represented as 'C's.' My preliminary interpretation of these plots is that they look like what a runaway feedback loop because of the exponential increase. I am realizing now that I had not done any pre-coding analysis of how variables should vary in time, so I don't have anything to compare these above results with. I do, however, have a prediction that $\frac{d\eta}{dt}$ should vary approximately linearly with $Q_{over}$ and like $H^\frac{3}{2}$ at small $Q_{over}$. 
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/b1981aef-9a83-4441-a0b0-1ddff140dc6a" />
 
