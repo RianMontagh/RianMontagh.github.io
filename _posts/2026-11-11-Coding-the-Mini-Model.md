@@ -143,17 +143,17 @@ Next, I want to write out my equations with all the constants and revisit my ana
 
 $\frac{d\eta}{dt}$ does look linear with $Q_{over}$! This seems to hold even when $Q_{over}$ is over 50% the magnitude of $Q_{in}$. The black line in this plot above is simply connecting the model data points. Next, I fit a linear trend line to the data, excluding the last point where $Q_{over}$ gets very close to $Q_{in}$, to get a more quantitative idea of the linearity and goodness of fit.
 
-<img width="700" alt="image" src="https://github.com/user-attachments/assets/b2967a1c-7fc7-4733-9cf5-1d5eb7f6b160" />
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/03b0827e-fbb1-4d05-a4a9-65dbf088e0ab" />
 
 The $R^2$ value is very high here. However, visually I do see a slight concave down coherent curve in the modeled data. I think that one way I could check my model further is to plot the line as predicted by the full ODE equation with constants included. I feel confident from this plot that my prediction that $d\eta /dt$ vs. $Q_{over}$ can be approximated with a linear relationship at the smaller range of $Q_{over}$ values, but definitely is not exactly linear. The normalized RMSE (NRMSE) value is small, which adds to my confidence that the linear approximation captures the first order behavior of the relationship. I normalized the RMSE by the range of values in the modeled output (excluding the last value). 
 
 Next, let's see how $\frac{d\eta}{dt}$ varies with weir head H.
 
-<img width="700" alt="image" src="https://github.com/user-attachments/assets/011698ab-e52b-4e41-b41e-6b3127d0e068" />
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/abb1ac07-ba7d-4b03-9c2a-af38b036111e" />
 
-First, I plotted the data with a fitted power law relationship of the form $ax^b$. The best fit in this case was a linear function as shown above. However, it is clear to me that there is some sort of nonlinear, exponential relationship. Next, I held the exponent fixed at $\frac{3}{2}$ per my prediction and got the following result.
+First, I plotted the data with a fitted power law relationship of the form $ax^b$. The best fit in this case was an exponential function as shown above, with power of $b=1.29$. The fit looked okay, and definitely diverged at higher $H$. The $b$ value is close to my predicted value of $\frac{3}{2}$, which felt promising. Next, I held the exponent fixed at $\frac{3}{2}$ per my prediction and got the following result.
 
-<img width="700" alt="image" src="https://github.com/user-attachments/assets/a78b3249-c4dd-42d2-b0fc-943751d72a57" />
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/cc988ab9-34fc-420c-9fdf-1188c10d8f8f" />
 
 To me, this fit is not bad! However, I want to go back to my CEWA 565: Data Analysis in Water Science notes to refresh myself on the details of these curve fitting functions and how to interpret them.
 
