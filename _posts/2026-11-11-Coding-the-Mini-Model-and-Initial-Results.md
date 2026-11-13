@@ -155,7 +155,7 @@ First, I plotted the data with a fitted power law relationship of the form $ax^b
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/cc988ab9-34fc-420c-9fdf-1188c10d8f8f" />
 
-To me, this fit is great! I think my pre-analysis was on the right track, which feels great. The $R^2% and RMSE values improved after I fixed $b=1.5$. However, I want to go back to my CEWA 565: Data Analysis in Water Science notes to refresh myself on the details of these curve fitting functions and how to interpret them.
+To me, this fit is great! I think my pre-analysis was on the right track, which feels great. The $R^2$ and RMSE values improved after I fixed $b=1.5$. However, I want to go back to my CEWA 565: Data Analysis in Water Science notes to refresh myself on the details of these curve fitting functions and how to interpret them.
 
 ## Quick Stats Review! Looking Closer at $R^2$ and RMSE
 
@@ -163,13 +163,17 @@ This work with curve fitting made me want to really make sure I understood these
 
 ## Definitions
 
-Root mean squared error (RMSE): 
+### $R^2$
 
+Sum of squared error (SSE) tells us how much error is there between the data and the predicted value: $SSE=\sum_{i=1}^{n} (data-predicted value)^2$
 
+Total sum of squares (SST) tells us how much variance there is in the data from the data's mean value: $SSE=\sum_{i=1}^{n} (data-datamean)^2$
 
+$R^2$ tells us how much of the variance computed in the SST is explained by the predicting model (best fit line). If $R^2=0$ then the model does no better at predicting the data than a horizontal line through the mean. A perfect model would have an $R^2=1$ and SSE=0. 
 
+So, in the best fit lines above explain most of the variance in the plotted mini model output. 
 
-
+### Root mean squared error (RMSE)
 
 
 
