@@ -163,7 +163,7 @@ This work with curve fitting made me want to really make sure I understood these
 
 ## Definitions
 
-### $R^2$
+### Coefficient of determination: $R^2$
 
 Sum of squared error (SSE) tells us how much error is there between the data and the predicted value: $SSE=\sum_{i=1}^{n} (data-predicted value)^2$
 
@@ -179,10 +179,15 @@ So, in the best fit lines above explain most of the variance in the plotted mini
 
 ### Root mean squared error (RMSE)
 
-The RMSE 
+The RMSE is the square of the mean of the difference between the data and the prediction. It has units and a magnitude relative to the data. 
 
+$$
+RMSE=\sqrt{mean(data-predicted value)^2}
+$$
 
+RMSE is a useful way to compare two different predictions on the same dataset. For example, it was useful in my comparison of the power law fit before and after I fixed the exponent as 1.5. 
 
+In CEWA 565, we learned that you should always plot your residuals to see if there are any coherent patterns. A well-performing model should have residuals that look like random noise. I tried that out with the expectation that there will be coherent patterns of increasing residuals as $Q_{over}$ gets bigger.
 
 
 
