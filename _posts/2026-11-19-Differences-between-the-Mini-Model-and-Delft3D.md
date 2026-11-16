@@ -60,7 +60,11 @@ Looking at the exponential plots of overflow discharge and bed elevation, there 
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/f75ada15-bb5d-4029-9c19-28b5ab4c7504" />
 
- 
+The downstream sediment flux curve has a similar shape to the other variables. There is a long period of gradual change followed by rapid change. It doesn't immediately make it clear what an appropriate threshold would be. 
+
+## E-Folding Time
+
+
 
 
 
